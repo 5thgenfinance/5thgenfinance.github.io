@@ -144,6 +144,9 @@
   }
 }
 
+
+
+
 /* Data attribute for manual theme switching */
 [data-color-scheme="dark"] {
   --color-background: rgba(31, 33, 33, 1);
@@ -1062,6 +1065,149 @@ select.form-control {
 .section-breakdown h3 {
     margin-bottom: var(--space-16);
 }
+
+/* Table Styling */
+.table-container {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.spec-table thead {
+    background-color: #f8f9fa;
+}
+
+.spec-table th {
+    background-color: #f5f6f7;
+    color: #333;
+    font-weight: 600;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+    border-right: 1px solid #e8e9ea;
+}
+
+.spec-table th:last-child {
+    border-right: none;
+}
+
+.spec-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f5f5f5;
+    vertical-align: top;
+}
+
+.spec-table td:last-child {
+    border-right: none;
+}
+
+.spec-table tbody tr:hover {
+    background-color: #fafbfc;
+}
+
+.spec-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Enhanced styling for special elements in tables */
+.property-name {
+    background-color: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #d73a49;
+}
+
+.data-type {
+    color: #6f42c1;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.format-constraint {
+    color: #28a745;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+.required-badge {
+    font-size: 1.1em;
+}
+
+/* Info boxes and special content */
+.info-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.info-title {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.choice-examples {
+    margin-top: 10px;
+}
+
+.choice-example {
+    margin: 5px 0;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    color: #6f42c1;
+}
+
+/* Code styling */
+.code-container {
+    margin: 20px 0;
+}
+
+.code-block {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Additional styling for better visual hierarchy */
+.section-header {
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.subsection-title {
+    color: #34495e;
+    margin: 25px 0 15px 0;
+    border-left: 4px solid #3498db;
+    padding-left: 12px;
+}
+
+.content-block {
+    margin-bottom: 30px;
+}
+
 
 .section-results {
     display: flex;
