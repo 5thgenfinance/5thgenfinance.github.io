@@ -1,0 +1,559 @@
+{
+  "quiz_name": "The Hiding Place by Corrie ten Boom",
+  "section_topics": [
+    {
+      "name": "Early Life and Family",
+      "percent": 20
+    },
+    {
+      "name": "Occupation and Resistance",
+      "percent": 40
+    },
+    {
+      "name": "Imprisonment and Camp Life",
+      "percent": 40
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 – The One-Hundredth Birthday Party",
+      "question": "At whose 100th birthday party does the story open?",
+      "choices": [
+        "A) Father (Casper) ten Boom",
+        "B) Aunt Jans",
+        "C) Grandmother ten Boom",
+        "D) Betsie ten Boom"
+      ],
+      "correct_answer": "A",
+      "explanation": "The book begins with the 100th birthday celebration for Casper ten Boom, the family's patriarch and a beloved watchmaker.",
+      "source": "Chapter 1 – The One-Hundredth Birthday Party"
+    },
+    {
+      "id": 2,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 – The One-Hundredth Birthday Party",
+      "question": "What profession is the ten Boom family known for in Haarlem?",
+      "choices": [
+        "A) Baking",
+        "B) Watchmaking",
+        "C) Tulip farming",
+        "D) Printing"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ten Boom family owned and operated a watch shop, a trade passed down through generations.",
+      "source": "Chapter 1 – The One-Hundredth Birthday Party"
+    },
+    {
+      "id": 3,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 – Full Table",
+      "question": "Which of Corrie's siblings was an ordained minister who warned about the dangers in Germany?",
+      "choices": [
+        "A) Betsie",
+        "B) Nollie",
+        "C) Willem",
+        "D) Kik"
+      ],
+      "correct_answer": "C",
+      "explanation": "Willem, Corrie's brother, was a minister who ran a nursing home and was aware of the Nazi threat early on.",
+      "source": "Chapter 2 – Full Table"
+    },
+    {
+      "id": 4,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 – Full Table",
+      "question": "Which sister was known for her housekeeping skills and gentle spirit, managing the Beje household?",
+      "choices": [
+        "A) Corrie",
+        "B) Nollie",
+        "C) Tine",
+        "D) Betsie"
+      ],
+      "correct_answer": "D",
+      "explanation": "Betsie was responsible for the domestic duties of the Beje and was known for her unwavering faith and kindness.",
+      "source": "Chapter 2 – Full Table"
+    },
+    {
+      "id": 5,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 3 – Karel",
+      "question": "Who was Corrie's first and only love, whom she could not marry because his family wanted a more prestigious match?",
+      "choices": [
+        "A) Willem",
+        "B) Otto",
+        "C) Karel",
+        "D) Pickwick"
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie fell in love with Karel, a friend of her brother Willem, but their marriage was forbidden by his family.",
+      "source": "Chapter 3 – Karel"
+    },
+    {
+      "id": 6,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 3 – Karel",
+      "question": "What advice did Father give Corrie to help her overcome her heartbreak over Karel?",
+      "choices": [
+        "A) To find someone else immediately",
+        "B) To ask God to love Karel for her",
+        "C) To write a letter expressing her anger",
+        "D) To move away from Haarlem"
+      ],
+      "correct_answer": "B",
+      "explanation": "Father advised Corrie to give her love for Karel to God, asking Him to carry the burden of that love for her.",
+      "source": "Chapter 3 – Karel"
+    },
+    {
+      "id": 7,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 4 – The Watch Shop",
+      "question": "Corrie became the first licensed female in which profession in Holland?",
+      "choices": [
+        "A) Doctor",
+        "B) Minister",
+        "C) Watchmaker",
+        "D) Teacher"
+      ],
+      "correct_answer": "C",
+      "explanation": "Following in her father's footsteps, Corrie trained and became the first licensed female watchmaker in the Netherlands.",
+      "source": "Chapter 4 – The Watch Shop"
+    },
+    {
+      "id": 8,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 4 – The Watch Shop",
+      "question": "What German apprentice did Father fire for his mistreatment of Christoffels, an elderly employee?",
+      "choices": [
+        "A) Hans",
+        "B) Otto",
+        "C) Toos",
+        "D) Jan"
+      ],
+      "correct_answer": "B",
+      "explanation": "Otto, a young German apprentice and member of the Hitler Youth, was dismissed for disrespecting the elderly clockmender Christoffels.",
+      "source": "Chapter 4 – The Watch Shop"
+    },
+    {
+      "id": 9,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 – The One-Hundredth Birthday Party",
+      "question": "What was the name of the ten Boom family home?",
+      "choices": [
+        "A) The Alpina",
+        "B) The Refuge",
+        "C) The Beje",
+        "D) The Watch House"
+      ],
+      "correct_answer": "C",
+      "explanation": "The ten Boom family's home in Haarlem, which also housed the watch shop, was affectionately known as the Beje.",
+      "source": "Chapter 1 – The One-Hundredth Birthday Party"
+    },
+    {
+      "id": 10,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 – Full Table",
+      "question": "What illness did Corrie's mother suffer from, which left her with limited speech?",
+      "choices": [
+        "A) A stroke",
+        "B) Tuberculosis",
+        "C) Cancer",
+        "D) Influenza"
+      ],
+      "correct_answer": "A",
+      "explanation": "Mother ten Boom suffered a cerebral hemorrhage (a stroke) that left her mostly paralyzed and able to say only a few words.",
+      "source": "Chapter 2 – Full Table"
+    },
+    {
+      "id": 11,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 5 – Invasion",
+      "question": "How did the ten Booms first learn that Holland was being invaded by Germany?",
+      "choices": [
+        "A) A knock on the door from a soldier",
+        "B) A radio broadcast from the Queen",
+        "C) The sound of bombs and airplanes overhead",
+        "D) A telephone call from Willem"
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie was awakened in the middle of the night by the sound of airplanes and explosions, signaling the start of the invasion.",
+      "source": "Chapter 5 – Invasion"
+    },
+    {
+      "id": 12,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 5 – Invasion",
+      "question": "What essential item did the family have to turn in to the authorities, which Father ten Boom refused to do at first?",
+      "choices": [
+        "A) Their car",
+        "B) Their radio",
+        "C) Their valuable watches",
+        "D) Their gold coins"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Germans ordered all radios to be confiscated, but the family hid theirs to listen to news from the BBC.",
+      "source": "Chapter 5 – Invasion"
+    },
+    {
+      "id": 13,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 – The Secret Room",
+      "question": "What was the name of the secret hiding place built in Corrie's bedroom?",
+      "choices": [
+        "A) The Angels' Den",
+        "B) The Lion's Pit",
+        "C) The Secret Room",
+        "D) The Alpina"
+      ],
+      "correct_answer": "D",
+      "explanation": "The code name for the secret room was 'The Alpina,' a triangle sign used by the underground to mark safe houses.",
+      "source": "Chapter 6 – The Secret Room"
+    },
+    {
+      "id": 14,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 – The Secret Room",
+      "question": "Who was the famous European architect who designed and built the secret room?",
+      "choices": [
+        "A) Pickwick",
+        "B) Mr. Smit",
+        "C) Leendert",
+        "D) Eusie"
+      ],
+      "correct_answer": "B",
+      "explanation": "'Mr. Smit' was a code name for the architect from the resistance who skillfully constructed the false wall and hiding place.",
+      "source": "Chapter 6 – The Secret Room"
+    },
+    {
+      "id": 15,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 – The Secret Room",
+      "question": "How did the family signal to the people in hiding that it was dangerous and they needed to get into the secret room?",
+      "choices": [
+        "A) By playing a specific song on the piano",
+        "B) By turning a painting upside down",
+        "C) By pressing a silent alarm buzzer under the table",
+        "D) By dropping a book on the floor"
+      ],
+      "correct_answer": "C",
+      "explanation": "A silent electric buzzer was installed in the house to alert everyone to run to the hiding place without making a sound.",
+      "source": "Chapter 6 – The Secret Room"
+    },
+    {
+      "id": 16,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 7 – Eusie",
+      "question": "What was the real name of Eusie, the Jewish man who came to live at the Beje and was known for his humor?",
+      "choices": [
+        "A) Meyer Mossel",
+        "B) Harry de Vries",
+        "C) Jop",
+        "D) Leendert"
+      ],
+      "correct_answer": "A",
+      "explanation": "Eusie's real name was Meyer Mossel. He was a former synagogue cantor who became a beloved member of the Beje household.",
+      "source": "Chapter 7 – Eusie"
+    },
+    {
+      "id": 17,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 8 – Storm Clouds Gather",
+      "question": "How did Corrie manage to get the 100 ration cards needed to feed the people in hiding?",
+      "choices": [
+        "A) She stole them from the distribution center.",
+        "B) She blackmailed a German officer.",
+        "C) She asked a friend in the food office to fake a robbery.",
+        "D) She found them dropped on the street."
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie asked a man she knew, Fred Koornstra, to stage a robbery at his office, allowing him to provide her with the cards.",
+      "source": "Chapter 8 – Storm Clouds Gather"
+    },
+    {
+      "id": 18,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 8 – Storm Clouds Gather",
+      "question": "Which family member insisted on telling the truth, even when it endangered a Jewish woman named Annaliese?",
+      "choices": [
+        "A) Betsie",
+        "B) Corrie",
+        "C) Father",
+        "D) Nollie"
+      ],
+      "correct_answer": "D",
+      "explanation": "Nollie believed that God honored truth above all and refused to lie to the authorities, though Annaliese was miraculously kept safe.",
+      "source": "Chapter 8 – Storm Clouds Gather"
+    },
+    {
+      "id": 19,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 – The Raid",
+      "question": "What illness was Corrie suffering from on the day the Beje was raided?",
+      "choices": [
+        "A) Influenza",
+        "B) A broken leg",
+        "C) Pneumonia",
+        "D) A severe headache"
+      ],
+      "correct_answer": "A",
+      "explanation": "Corrie had a high fever and was sick with the flu, making the raid and subsequent arrest even more difficult.",
+      "source": "Chapter 9 – The Raid"
+    },
+    {
+      "id": 20,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 – The Raid",
+      "question": "Who was the Dutch man who betrayed the ten Boom family to the Gestapo?",
+      "choices": [
+        "A) Jan Vogel",
+        "B) Otto",
+        "C) Pickwick",
+        "D) The police chief"
+      ],
+      "correct_answer": "A",
+      "explanation": "Jan Vogel, a man from Ermelo who had asked for money to help his wife, was the informant who led the Gestapo to the Beje.",
+      "source": "Chapter 9 – The Raid"
+    },
+    {
+      "id": 21,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 – The Raid",
+      "question": "How many people were hiding in the secret room during the raid?",
+      "choices": [
+        "A) Two",
+        "B) Four",
+        "C) Six",
+        "D) Eight"
+      ],
+      "correct_answer": "C",
+      "explanation": "Six people—four Jews and two members of the Dutch underground—were safely hidden in the Alpina during the Gestapo raid.",
+      "source": "Chapter 9 – The Raid"
+    },
+    {
+      "id": 22,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 – The Raid",
+      "question": "What happened to Father ten Boom ten days after his arrest?",
+      "choices": [
+        "A) He was released.",
+        "B) He was executed.",
+        "C) He died in a hospital corridor.",
+        "D) He escaped from prison."
+      ],
+      "correct_answer": "C",
+      "explanation": "Because of his age and frail health, Casper ten Boom died in a hallway at a municipal hospital just ten days after being arrested.",
+      "source": "Chapter 10 – Scheveningen"
+    },
+    {
+      "id": 23,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 – Scheveningen",
+      "question": "What was Corrie's first place of imprisonment after the raid?",
+      "choices": [
+        "A) Vught",
+        "B) Ravensbrück",
+        "C) Scheveningen",
+        "D) Amsterdam Prison"
+      ],
+      "correct_answer": "C",
+      "explanation": "The arrested family members were first taken to Scheveningen prison, where Corrie was placed in solitary confinement.",
+      "source": "Chapter 10 – Scheveningen"
+    },
+    {
+      "id": 24,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 – Scheveningen",
+      "question": "How did Corrie receive news from her family while in solitary confinement?",
+      "choices": [
+        "A) Through a guard who took pity on her",
+        "B) In a package from the Red Cross",
+        "C) Through coded messages hidden on a piece of thread",
+        "D) Hidden under the stamp of a letter from Nollie"
+      ],
+      "correct_answer": "D",
+      "explanation": "Nollie sent a package with a letter, under the stamp of which was a tiny, secret message updating Corrie on the family.",
+      "source": "Chapter 10 – Scheveningen"
+    },
+    {
+      "id": 25,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 11 – The Lieutenant",
+      "question": "What did Lieutenant Rahms, Corrie's interrogator, seem most interested in?",
+      "choices": [
+        "A) The underground operations",
+        "B) Her family and her faith",
+        "C) The hidden watches",
+        "D) Her political beliefs"
+      ],
+      "correct_answer": "B",
+      "explanation": "Lieutenant Rahms seemed weary of his work and showed personal interest in Corrie's family life and her strong belief in God.",
+      "source": "Chapter 11 – The Lieutenant"
+    },
+    {
+      "id": 26,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 11 – The Lieutenant",
+      "question": "At the reading of Father's will, what did Lieutenant Rahms allow the family to do?",
+      "choices": [
+        "A) Have a meal together",
+        "B) Walk in the garden",
+        "C) Pray together",
+        "D) Exchange news and talk freely"
+      ],
+      "correct_answer": "D",
+      "explanation": "During the will reading, the Lieutenant turned his back, allowing the family members present to briefly and quietly share news.",
+      "source": "Chapter 11 – The Lieutenant"
+    },
+    {
+      "id": 27,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 12 – Vught",
+      "question": "What was the name of the second camp Corrie and Betsie were sent to, located in Holland?",
+      "choices": [
+        "A) Auschwitz",
+        "B) Dachau",
+        "C) Westerbork",
+        "D) Vught"
+      ],
+      "correct_answer": "D",
+      "explanation": "After Scheveningen, Corrie and Betsie were reunited and sent to Vught, a concentration camp for political prisoners.",
+      "source": "Chapter 12 – Vught"
+    },
+    {
+      "id": 28,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 12 – Vught",
+      "question": "What kind of work were Corrie and Betsie assigned at Vught?",
+      "choices": [
+        "A) Sewing uniforms",
+        "B) Assembling radios for the military",
+        "C) Polishing shells",
+        "D) Peeling potatoes"
+      ],
+      "correct_answer": "B",
+      "explanation": "Corrie's experience as a watchmaker made her valuable for the detailed work of assembling radios for German fighter planes.",
+      "source": "Chapter 12 – Vught"
+    },
+    {
+      "id": 29,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 – Ravensbrück",
+      "question": "What was the name of the infamous German concentration camp where Corrie and Betsie were taken?",
+      "choices": [
+        "A) Ravensbrück",
+        "B) Buchenwald",
+        "C) Bergen-Belsen",
+        "D) Treblinka"
+      ],
+      "correct_answer": "A",
+      "explanation": "From Vught, the sisters were packed into a train and transported to Ravensbrück, a notorious women's extermination camp in Germany.",
+      "source": "Chapter 13 – Ravensbrück"
+    },
+    {
+      "id": 30,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 – Ravensbrück",
+      "question": "What precious item did Corrie manage to smuggle into Ravensbrück?",
+      "choices": [
+        "A) Her watch",
+        "B) A family photograph",
+        "C) A small Bible",
+        "D) A bottle of vitamins"
+      ],
+      "correct_answer": "C",
+      "explanation": "Miraculously, Corrie was able to sneak her small Bible past the guards, and it became a source of hope for many in the barracks.",
+      "source": "Chapter 13 – Ravensbrück"
+    },
+    {
+      "id": 31,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 – Ravensbrück",
+      "question": "Why did Betsie thank God for the fleas in their barracks at Ravensbrück?",
+      "choices": [
+        "A) She believed they built character.",
+        "B) She knew the guards would not enter the flea-infested room.",
+        "C) She thought they were a sign of God's humor.",
+        "D) She was delirious from fever."
+      ],
+      "correct_answer": "B",
+      "explanation": "The fleas were so bad that the guards refused to enter their barracks, which allowed the women to hold secret Bible studies without fear.",
+      "source": "Chapter 13 – Ravensbrück"
+    },
+    {
+      "id": 32,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 – The Blue Sweater",
+      "question": "What was Betsie's vision for after the war?",
+      "choices": [
+        "A) To rebuild the watch shop bigger than before",
+        "B) To create a home for concentration camp survivors",
+        "C) To hunt down and prosecute the guards",
+        "D) To move to America and forget the past"
+      ],
+      "correct_answer": "B",
+      "explanation": "Betsie dreamed of opening a home where survivors could heal physically and spiritually, and even a home to rehabilitate their former captors.",
+      "source": "Chapter 14 – The Blue Sweater"
+    },
+    {
+      "id": 33,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 – The Blue Sweater",
+      "question": "What happened to Betsie at Ravensbrück?",
+      "choices": [
+        "A) She was released due to her illness.",
+        "B) She was rescued by the Red Cross.",
+        "C) She died from the harsh conditions.",
+        "D) She escaped with another prisoner."
+      ],
+      "correct_answer": "C",
+      "explanation": "Betsie's health failed in the brutal environment of Ravensbrück, and she died in the camp hospital.",
+      "source": "Chapter 14 – The Blue Sweater"
+    },
+    {
+      "id": 34,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 15 – The Three Visions",
+      "question": "How was Corrie released from Ravensbrück?",
+      "choices": [
+        "A) The camp was liberated by the Allies.",
+        "B) The guards took pity on her.",
+        "C) Her name was called by mistake due to a clerical error.",
+        "D) Nollie paid a large bribe for her release."
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie was released due to a clerical error, a miracle that saved her life as all the women her age were sent to the gas chambers one week later.",
+      "source": "Chapter 15 – The Three Visions"
+    },
+    {
+      "id": 35,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "After her release, what did Corrie do with a former concentration camp?",
+      "choices": [
+        "A) Had it burned to the ground.",
+        "B) Turned it into a memorial museum.",
+        "C) Transformed it into a home to help other survivors heal.",
+        "D) Wrote a book about its history."
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie fulfilled Betsie's vision by acquiring a former camp in Darmstadt, Germany, and turning it into a place of healing.",
+      "source": "Epilogue"
+    },
+    {
+      "id": 36,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "Who did Corrie famously encounter and forgive at a church in Munich after the war?",
+      "choices": [
+        "A) The man who betrayed her family, Jan Vogel",
+        "B) Lieutenant Rahms, her interrogator",
+        "C) A former SS guard from Ravensbrück",
+        "D) Otto, the former apprentice"
+      ],
+      "correct_answer": "C",
+      "explanation": "She came face-to-face with one of the cruelest former guards from Ravensbrück and, with God's help, was able to offer him her hand in forgiveness.",
+      "source": "Epilogue"
+    }
+  ]
+}

@@ -1,0 +1,789 @@
+{
+  "quiz_name": "The Hiding Place by Corrie ten Boom - Comprehensive Quiz",
+  "section_topics": [
+    {
+      "name": "Early Life and Family",
+      "percent": 20
+    },
+    {
+      "name": "Occupation and Resistance",
+      "percent": 40
+    },
+    {
+      "name": "Imprisonment and Camp Life",
+      "percent": 40
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 - The One-Hundredth Birthday Party",
+      "question": "At whose 100th birthday party does the story open?",
+      "choices": [
+        "A) Father (Casper) ten Boom",
+        "B) Aunt Jans",
+        "C) Grandmother ten Boom",
+        "D) Betsie ten Boom"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Father (Casper) ten Boom from Chapter 1 - The One-Hundredth Birthday Party."
+    },
+    {
+      "id": 2,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 - The One-Hundredth Birthday Party",
+      "question": "What item of merchandise is the birthday guest of honor famous for repairing and selling?",
+      "choices": [
+        "A) Pocket watches",
+        "B) Spectacles",
+        "C) Bicycles",
+        "D) Silver spoons"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Pocket watches from Chapter 1 - The One-Hundredth Birthday Party."
+    },
+    {
+      "id": 3,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 - The One-Hundredth Birthday Party",
+      "question": "What daily ritual does Corrie describe as the \"small sermon\" the family shares each morning?",
+      "choices": [
+        "A) Reading aloud from the Bible after breakfast",
+        "B) Singing hymns around the piano",
+        "C) Evening prayers in the parlor",
+        "D) Reciting the Lord’s Prayer in the shop"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Reading aloud from the Bible after breakfast from Chapter 1 - The One-Hundredth Birthday Party."
+    },
+    {
+      "id": 4,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 - The One-Hundredth Birthday Party",
+      "question": "What vision does Betsie have while looking at tulips during the party that foreshadows later events?",
+      "choices": [
+        "A) A giant home for needy people",
+        "B) A hidden compartment in the house wall",
+        "C) A train heading east",
+        "D) The shop rebuilt after a fire"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is A giant home for needy people from Chapter 1 - The One-Hundredth Birthday Party."
+    },
+    {
+      "id": 5,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 - Full Table",
+      "question": "In Chapter 2, why does Corrie become nervous about the news articles her Aunt Jans writes?",
+      "choices": [
+        "A) They criticize the German government",
+        "B) They expose the family’s finances",
+        "C) They mention a secret engagement",
+        "D) They advertise counterfeit watches"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is They criticize the German government from Chapter 2 - Full Table."
+    },
+    {
+      "id": 6,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 - Full Table",
+      "question": "Which sister manages the bookkeeping for the watch shop after Mother’s stroke?",
+      "choices": [
+        "A) Nollie",
+        "B) Betsie",
+        "C) Corrie",
+        "D) Willem"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is Betsie from Chapter 2 - Full Table."
+    },
+    {
+      "id": 7,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 3 - Karel",
+      "question": "What childhood object does Corrie keep as a reminder of her first love, Karel?",
+      "choices": [
+        "A) A bouquet of wilted daffodils",
+        "B) A Delft blue tile",
+        "C) A program from a university concert",
+        "D) A silver watch case"
+      ],
+      "correct_answer": "C",
+      "explanation": "Answer is A program from a university concert from Chapter 3 - Karel."
+    },
+    {
+      "id": 8,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 4 - The Watch Shop",
+      "question": "Why does Father tell Corrie he would not give her the burden she asked for on the train platform?",
+      "choices": [
+        "A) It was too heavy for her at that moment",
+        "B) She had not passed her exams",
+        "C) He feared it would be stolen",
+        "D) He wanted to teach her patience"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is It was too heavy for her at that moment from Chapter 4 - The Watch Shop."
+    },
+    {
+      "id": 9,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 4 - The Watch Shop",
+      "question": "Corrie becomes the first licensed female in which profession in Holland?",
+      "choices": [
+        "A) Watchmaker",
+        "B) Telephone operator",
+        "C) Train conductor",
+        "D) Pharmacist"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Watchmaker from Chapter 4 - The Watch Shop."
+    },
+    {
+      "id": 10,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 5 - Invasion",
+      "question": "On the night the Germans invade Holland, what warning sound does Corrie first hear?",
+      "choices": [
+        "A) The roar of planes overhead",
+        "B) Church bells ringing",
+        "C) Air-raid sirens",
+        "D) A knock at the alley door"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The roar of planes overhead from Chapter 5 - Invasion."
+    },
+    {
+      "id": 11,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 5 - Invasion",
+      "question": "Which family member insists they will open the Bible at the same time every day, even during the occupation?",
+      "choices": [
+        "A) Father",
+        "B) Betsie",
+        "C) Corrie",
+        "D) Nollie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Father from Chapter 5 - Invasion."
+    },
+    {
+      "id": 12,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 - The Secret Room",
+      "question": "What code name do the underground workers use for the secret room built in Corrie’s bedroom?",
+      "choices": [
+        "A) The Angels' Nest",
+        "B) The Beje Hideaway",
+        "C) The Secret Room",
+        "D) The Alpina"
+      ],
+      "correct_answer": "D",
+      "explanation": "Answer is The Alpina from Chapter 6 - The Secret Room."
+    },
+    {
+      "id": 13,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 - The Secret Room",
+      "question": "How do the Jews inside the Beje know when to run to the hiding place?",
+      "choices": [
+        "A) A buzzer installed under the dining-room table",
+        "B) Father’s code phrase in German",
+        "C) Three knocks on the attic ceiling",
+        "D) A whistle blown by Betsie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is A buzzer installed under the dining-room table from Chapter 6 - The Secret Room."
+    },
+    {
+      "id": 14,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 7 - Eusie",
+      "question": "What is Eusie’s real name before he comes to live at the Beje?",
+      "choices": [
+        "A) Meyer Mossel",
+        "B) Aaron de Vries",
+        "C) Herman Sluring",
+        "D) David Cohen"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Meyer Mossel from Chapter 7 - Eusie."
+    },
+    {
+      "id": 15,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 7 - Eusie",
+      "question": "Which of the following best describes Betsie’s attitude toward their German occupiers?",
+      "choices": [
+        "A) Hatred and desire for revenge",
+        "B) Willingness to pray for them",
+        "C) Indifference",
+        "D) Active collaboration"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is Willingness to pray for them from Chapter 7 - Eusie."
+    },
+    {
+      "id": 16,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 8 - Storm Clouds Gather",
+      "question": "What scarce food item does Corrie find through the underground that helps feed the growing household?",
+      "choices": [
+        "A) Ration-card bread",
+        "B) Pork sausages",
+        "C) Extra allotments of butter",
+        "D) Potatoes by the sack"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Ration-card bread from Chapter 8 - Storm Clouds Gather."
+    },
+    {
+      "id": 17,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 8 - Storm Clouds Gather",
+      "question": "Who surprises Corrie by agreeing to help duplicate ration cards?",
+      "choices": [
+        "A) The local police chief",
+        "B) A former watch-shop apprentice",
+        "C) The postmaster",
+        "D) A bakery owner"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The local police chief from Chapter 8 - Storm Clouds Gather."
+    },
+    {
+      "id": 18,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 - The Raid",
+      "question": "During the Gestapo raid on the Beje, how long do the six hidden Jews manage to stay silent in the secret room?",
+      "choices": [
+        "A) 47 hours",
+        "B) 2 hours",
+        "C) 56 minutes",
+        "D) 4 days"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is 47 hours from Chapter 9 - The Raid."
+    },
+    {
+      "id": 19,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 - The Raid",
+      "question": "What object does Corrie hide the incriminating ration cards under just before the Gestapo enter?",
+      "choices": [
+        "A) The trapdoor rug",
+        "B) The wastebasket",
+        "C) The stairs’ bottom step",
+        "D) Betsie’s pillow"
+      ],
+      "correct_answer": "C",
+      "explanation": "Answer is The stairs’ bottom step from Chapter 9 - The Raid."
+    },
+    {
+      "id": 20,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 - Scheveningen",
+      "question": "At Scheveningen prison, what comforting sound does Corrie recognize that helps her keep track of time?",
+      "choices": [
+        "A) The sea gulls crying",
+        "B) The bells of a nearby church",
+        "C) A dripping water pipe",
+        "D) Train whistles at dawn"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The sea gulls crying from Chapter 10 - Scheveningen."
+    },
+    {
+      "id": 21,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 - Scheveningen",
+      "question": "Which personal belonging is Corrie most grateful to keep in her cell?",
+      "choices": [
+        "A) Her mother’s Bible",
+        "B) A roll of bandages",
+        "C) Her watchmaker’s screwdriver",
+        "D) A photograph of Betsie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Her mother’s Bible from Chapter 10 - Scheveningen."
+    },
+    {
+      "id": 22,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 11 - The Lieutenant",
+      "question": "What nickname does Corrie give to Lieutenant Rahms during her interrogations?",
+      "choices": [
+        "A) The Kindly One",
+        "B) The Lieutenant",
+        "C) The Prosecutor",
+        "D) The Hawk"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is The Lieutenant from Chapter 11 - The Lieutenant."
+    },
+    {
+      "id": 23,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 11 - The Lieutenant",
+      "question": "Why does Lieutenant Rahms ask Corrie to speak to him about her faith in one session?",
+      "choices": [
+        "A) He is troubled by the death of his wife",
+        "B) He hopes she will betray underground names",
+        "C) He admires the ten Booms’ courage",
+        "D) He wants to convert to Christianity"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is He is troubled by the death of his wife from Chapter 11 - The Lieutenant."
+    },
+    {
+      "id": 24,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 12 - Vught",
+      "question": "In Vught, what type of factory work are Corrie and Betsie first assigned to?",
+      "choices": [
+        "A) Constructing radio crystals",
+        "B) Sorting ammunition casings",
+        "C) Sewing uniforms",
+        "D) Packaging fuses"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Constructing radio crystals from Chapter 12 - Vught."
+    },
+    {
+      "id": 25,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 12 - Vught",
+      "question": "How does Betsie manage to make her time in the factory meaningful despite the harsh conditions?",
+      "choices": [
+        "A) She organizes secret prayer meetings",
+        "B) She smuggles extra food rations",
+        "C) She sabotages the machinery",
+        "D) She draws encouraging sketches"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is She organizes secret prayer meetings from Chapter 12 - Vught."
+    },
+    {
+      "id": 26,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 - Ravensbrück",
+      "question": "Upon arrival at Ravensbrück, what treasured item miraculously passes inspection inside Corrie’s coat?",
+      "choices": [
+        "A) A vitamin bottle of liquid yeast",
+        "B) Her small Dutch Bible",
+        "C) A hidden string of pearls",
+        "D) Two loaves of bread"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is Her small Dutch Bible from Chapter 13 - Ravensbrück."
+    },
+    {
+      "id": 27,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 - Ravensbrück",
+      "question": "Why do Corrie and Betsie decide to thank God for the fleas in their barracks?",
+      "choices": [
+        "A) The fleas keep guards from entering during worship",
+        "B) They believe fleas will spread disease to the guards",
+        "C) Fleas remind them of Biblical humility",
+        "D) Fleas help them qualify for lighter work"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The fleas keep guards from entering during worship from Chapter 13 - Ravensbrück."
+    },
+    {
+      "id": 28,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 - The Blue Sweater",
+      "question": "Which phrase does Betsie repeatedly use to describe her post-war dream for the camp guards?",
+      "choices": [
+        "A) \"They must learn to love again\"",
+        "B) \"We will build a garden\"",
+        "C) \"There is no pit so deep\"",
+        "D) \"Hate will not have the final word\""
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is \"They must learn to love again\" from Chapter 14 - The Blue Sweater."
+    },
+    {
+      "id": 29,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 - The Blue Sweater",
+      "question": "What personal article of clothing does Corrie give away that symbolizes surrendering her last comfort?",
+      "choices": [
+        "A) Her woolen shawl",
+        "B) The blue sweater",
+        "C) Her wooden shoes",
+        "D) A knitted cap"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is The blue sweater from Chapter 14 - The Blue Sweater."
+    },
+    {
+      "id": 30,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 15 - A Rallying Point",
+      "question": "Betsie’s prophetic words to Corrie before she dies include plans for what two specific places?",
+      "choices": [
+        "A) A home for former prisoners and a house for their German captors",
+        "B) A church and a printing press",
+        "C) An orphanage and a watchmaker’s school",
+        "D) A bakery and a hospital wing"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is A home for former prisoners and a house for their German captors from Chapter 15 - A Rallying Point."
+    },
+    {
+      "id": 31,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 15 - A Rallying Point",
+      "question": "Corrie’s release from Ravensbrück occurs because of what clerical event?",
+      "choices": [
+        "A) A clerical error—her papers are stamped \"released\" by mistake",
+        "B) An order from Lieutenant Rahms",
+        "C) The Red Cross negotiates her freedom",
+        "D) She is traded for a German spy"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is A clerical error—her papers are stamped \"released\" by mistake from Chapter 15 - A Rallying Point."
+    },
+    {
+      "id": 32,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "After the war, where does Corrie first open a place of refuge for concentration-camp survivors?",
+      "choices": [
+        "A) The Beje in Haarlem",
+        "B) A mansion in Bloemendaal",
+        "C) An army barracks in Utrecht",
+        "D) A farmhouse outside Rotterdam"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is A mansion in Bloemendaal from Epilogue."
+    },
+    {
+      "id": 33,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "Which former enemy does Corrie famously forgive when they meet at a church in Munich?",
+      "choices": [
+        "A) A Ravensbrück guard nicknamed \"The Snake\"",
+        "B) Lieutenant Rahms",
+        "C) The Gestapo officer who led the Beje raid",
+        "D) A doctor from Vught"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is A Ravensbrück guard nicknamed \"The Snake\" from Epilogue."
+    },
+    {
+      "id": 34,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "What scripture does Corrie quote to describe forgiveness dropping away 'as far as the east is from the west'?",
+      "choices": [
+        "A) Psalm 103:12",
+        "B) Isaiah 40:31",
+        "C) John 3:16",
+        "D) Romans 8:28"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Psalm 103:12 from Epilogue."
+    },
+    {
+      "id": 35,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 1 - The One-Hundredth Birthday Party",
+      "question": "Growing up, what did Father ten Boom say was the best security system for the Beje?",
+      "choices": [
+        "A) \"God's angels around us\"",
+        "B) \"An honest face at the door\"",
+        "C) \"A strong lock and key\"",
+        "D) \"A well-wound watch\""
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is \"God's angels around us\" from Chapter 1 - The One-Hundredth Birthday Party."
+    },
+    {
+      "id": 36,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 2 - Full Table",
+      "question": "Which of the ten Boom children is ordained as a minister?",
+      "choices": [
+        "A) Willem",
+        "B) Kik",
+        "C) Nollie",
+        "D) Betsie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Willem from Chapter 2 - Full Table."
+    },
+    {
+      "id": 37,
+      "section": "Early Life and Family",
+      "subsection": "Chapter 3 - Karel",
+      "question": "What lesson does Father teach Corrie about love when Karel becomes engaged to someone else?",
+      "choices": [
+        "A) \"Love is larger than your pain\"",
+        "B) \"Love must be seen as a gift\"",
+        "C) \"Love when held too tightly dies\"",
+        "D) \"Love never asks for repayment\""
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is \"Love is larger than your pain\" from Chapter 3 - Karel."
+    },
+    {
+      "id": 38,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 - The Secret Room",
+      "question": "Who designs the architectural plans for the secret room at the Beje?",
+      "choices": [
+        "A) Mr. Smit, an underground architect",
+        "B) Willem ten Boom",
+        "C) Kik ten Boom",
+        "D) A Jewish guest named Harry"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Mr. Smit, an underground architect from Chapter 6 - The Secret Room."
+    },
+    {
+      "id": 39,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 6 - The Secret Room",
+      "question": "Corrie uses what object to test Jewish guests' reaction time during drills?",
+      "choices": [
+        "A) Her pocket watch stopwatch",
+        "B) A kitchen egg timer",
+        "C) A sand glass from a science set",
+        "D) The wall clock pendulum"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is A kitchen egg timer from Chapter 6 - The Secret Room."
+    },
+    {
+      "id": 40,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 8 - Storm Clouds Gather",
+      "question": "Who boldly refuses to lie about the hidden Jews even when directly questioned by the Gestapo, leading to her brief arrest?",
+      "choices": [
+        "A) Nollie",
+        "B) Betsie",
+        "C) Corrie",
+        "D) Aunt Anna"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Nollie from Chapter 8 - Storm Clouds Gather."
+    },
+    {
+      "id": 41,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 5 - Invasion",
+      "question": "Which radio news source does the family secretly listen to for truthful war updates?",
+      "choices": [
+        "A) The BBC",
+        "B) Radio Berlin",
+        "C) Voice of America",
+        "D) Swiss National Radio"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The BBC from Chapter 5 - Invasion."
+    },
+    {
+      "id": 42,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 - The Raid",
+      "question": "During the raid, what does the Gestapo agent find that convinces him Corrie has important underground connections?",
+      "choices": [
+        "A) Her address book full of code names",
+        "B) A stack of illegal ration cards",
+        "C) Blueprints of the secret room",
+        "D) A letter from Eusie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Her address book full of code names from Chapter 9 - The Raid."
+    },
+    {
+      "id": 43,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 - Scheveningen",
+      "question": "In Scheveningen, Corrie receives a coded message hidden inside what everyday item?",
+      "choices": [
+        "A) A package of vitamins",
+        "B) A bar of soap",
+        "C) A towel",
+        "D) The bottom of a porridge bowl"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is A bar of soap from Chapter 10 - Scheveningen."
+    },
+    {
+      "id": 44,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 - Ravensbrück",
+      "question": "Why does the Ravensbrück guard nicknamed \"The Snake\" terrorize the women?",
+      "choices": [
+        "A) She carries a crop and lashes out unpredictably",
+        "B) She releases dogs into the barracks",
+        "C) She controls the food rations",
+        "D) She arbitrarily cancels roll call"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is She carries a crop and lashes out unpredictably from Chapter 13 - Ravensbrück."
+    },
+    {
+      "id": 45,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 - The Blue Sweater",
+      "question": "What medical condition nearly forces Corrie to remain in the infirmary at Ravensbrück, risking execution?",
+      "choices": [
+        "A) Edema in her legs",
+        "B) Tuberculosis",
+        "C) A fever from influenza",
+        "D) A broken wrist"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Edema in her legs from Chapter 14 - The Blue Sweater."
+    },
+    {
+      "id": 46,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 15 - A Rallying Point",
+      "question": "According to Betsie, what is 'greater than all the darkness'?",
+      "choices": [
+        "A) God’s love",
+        "B) Human kindness",
+        "C) Hope",
+        "D) Courage"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is God’s love from Chapter 15 - A Rallying Point."
+    },
+    {
+      "id": 47,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "After liberation, Corrie travels widely to share her story. Which country does she visit first outside Holland?",
+      "choices": [
+        "A) Germany",
+        "B) Norway",
+        "C) England",
+        "D) Switzerland"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Germany from Epilogue."
+    },
+    {
+      "id": 48,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 15 - A Rallying Point",
+      "question": "What symbolic act does Corrie perform in the concentration camp a day after Betsie's death?",
+      "choices": [
+        "A) She leads the women in singing a Christmas carol",
+        "B) She gives away Betsie’s bottle of vitamins",
+        "C) She writes Psalm 91 on the barrack wall",
+        "D) She burns her extra rations in mourning"
+      ],
+      "correct_answer": "B",
+      "explanation": "Answer is She gives away Betsie’s bottle of vitamins from Chapter 15 - A Rallying Point."
+    },
+    {
+      "id": 49,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 12 - Vught",
+      "question": "What event at Vught finally convinces Corrie that sabotage can be justified, leading her to pray for a failed Nazi project?",
+      "choices": [
+        "A) The execution of a group of male prisoners",
+        "B) A child being beaten for dropping a tray",
+        "C) An accidental factory explosion",
+        "D) Betsie collapsing from overwork"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is The execution of a group of male prisoners from Chapter 12 - Vught."
+    },
+    {
+      "id": 50,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 10 - Scheveningen",
+      "question": "What physical sign lets Corrie know her father died peacefully in the Haarlem hospital corridor?",
+      "choices": [
+        "A) His face wears a faint smile",
+        "B) He grips his Bible even in death",
+        "C) His watch has stopped ticking",
+        "D) A nurse brings Corrie his broken spectacles"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is His face wears a faint smile from Chapter 10 - Scheveningen."
+    },
+    {
+      "id": 51,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 9 - The Raid",
+      "question": "On the night of the Beje raid, Corrie suffers from what illness that slows her response?",
+      "choices": [
+        "A) Influenza",
+        "B) Asthma",
+        "C) Pneumonia",
+        "D) Gallstones attack"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Influenza from Chapter 9 - The Raid."
+    },
+    {
+      "id": 52,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Epilogue",
+      "question": "Which family member is executed for underground work eight months after the Beje raid?",
+      "choices": [
+        "A) Kik ten Boom",
+        "B) Aunt Jans",
+        "C) Willem ten Boom",
+        "D) Nollie's husband, Flip"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Kik ten Boom from Epilogue."
+    },
+    {
+      "id": 53,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 14 - The Blue Sweater",
+      "question": "What special day do Corrie and the other prisoners secretly celebrate with a hidden worship service at Ravensbrück?",
+      "choices": [
+        "A) Christmas",
+        "B) Easter",
+        "C) Betsie's birthday",
+        "D) Queen Wilhelmina’s birthday"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Christmas from Chapter 14 - The Blue Sweater."
+    },
+    {
+      "id": 54,
+      "section": "Occupation and Resistance",
+      "subsection": "Chapter 7 - Eusie",
+      "question": "At the Beje, who plays the piano to drown out the sound of a drill session upstairs?",
+      "choices": [
+        "A) Pickwick",
+        "B) Betsie",
+        "C) Corrie",
+        "D) Nollie"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Pickwick from Chapter 7 - Eusie."
+    },
+    {
+      "id": 55,
+      "section": "Imprisonment and Camp Life",
+      "subsection": "Chapter 13 - Ravensbrück",
+      "question": "What everyday activity does Betsie transform into an opportunity for ministry while at Ravensbrück?",
+      "choices": [
+        "A) Knitting socks",
+        "B) Sorting inventory in the tool shed",
+        "C) Standing in roll-call lines",
+        "D) Washing the latrine buckets"
+      ],
+      "correct_answer": "A",
+      "explanation": "Answer is Knitting socks from Chapter 13 - Ravensbrück."
+    }
+  ]
+}

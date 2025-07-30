@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JSON Schema Specification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz JSON Schema Specification</h1>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This schema defines the structure for a multi-choice quiz application with comprehensive metadata tracking, dynamic section management, and detailed question specifications. The schema supports educational content with percentage-based topic distribution and extensive question metadata.</p>
+        </section>
+
+        <section id="root-structure">
+            <h2>Root Schema Structure</h2>
+            <h3>Top-Level Properties</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>metadata</code></td>
+                        <td>object</td>
+                        <td>✅</td>
+                        <td>Comprehensive quiz information and statistics</td>
+                    </tr>
+                    <tr>
+                        <td><code>questions</code></td>
+                        <td>array</td>
+                        <td>✅</td>
+                        <td>Array of quiz questions with detailed metadata</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="metadata-section">
+            <h2>Metadata Section</h2>
+            
+            <h3>Required Metadata Fields</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Format</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>quiz_name</code></td>
+                        <td>string</td>
+                        <td>1-200 characters</td>
+                        <td>Full descriptive name of the quiz/examination</td>
+                    </tr>
+                    <tr>
+                        <td><code>total_questions</code></td>
+                        <td>integer</td>
+                        <td>≥ 1</td>
+                        <td>Total number of questions in the complete quiz</td>
+                    </tr>
+                    <tr>
+                        <td><code>created_date</code></td>
+                        <td>string</td>
+                        <td>YYYY-MM-DD</td>
+                        <td>Date when this quiz file was created</td>
+                    </tr>
+                    <tr>
+                        <td><code>gen_model_used</code></td>
+                        <td>string</td>
+                        <td>Min 1 character</td>
+                        <td>AI model used to generate this JSON file</td>
+                    </tr>
+                    <tr>
+                        <td><code>file_description</code></td>
+                        <td>string</td>
+                        <td>10-500 characters</td>
+                        <td>Detailed description of the quiz content and scope</td>
+                    </tr>
+                    <tr>
+                        <td><code>content_areas</code></td>
+                        <td>array</td>
+                        <td>Min 1 item</td>
+                        <td>Topic categories with statistics</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Optional Metadata Fields</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Format</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>batch_range</code></td>
+                        <td>string</td>
+                        <td>"number-number"</td>
+                        <td>Range of question batches (e.g., "1-18")</td>
+                    </tr>
+                    <tr>
+                        <td><code>question_id_range</code></td>
+                        <td>string</td>
+                        <td>"number-number"</td>
+                        <td>Range of question IDs (e.g., "1-450")</td>
+                    </tr>
+                    <tr>
+                        <td><code>sources</code></td>
+                        <td>array</td>
+                        <td>strings</td>
+                        <td>Reference sources and materials used</td>
+                    </tr>
+                    <tr>
+                        <td><code>special_features</code></td>
+                        <td>array</td>
+                        <td>strings</td>
+                        <td>Descriptive features and highlights</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Content Areas Object Schema</h3>
+            <p>Each content area must include:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Format</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>name</code></td>
+                        <td>string</td>
+                        <td>1-100 characters</td>
+                        <td>Name of the content area/topic</td>
+                    </tr>
+                    <tr>
+                        <td><code>weight</code></td>
+                        <td>string</td>
+                        <td>"number%"</td>
+                        <td>Official exam weight percentage</td>
+                    </tr>
+                    <tr>
+                        <td><code>questions_in_file</code></td>
+                        <td>integer</td>
+                        <td>≥ 0</td>
+                        <td>Actual questions for this topic in current file</td>
+                    </tr>
+                    <tr>
+                        <td><code>percentage</code></td>
+                        <td>string</td>
+                        <td>"number.number%"</td>
+                        <td>Actual percentage in this file</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="questions-section">
+            <h2>Questions Section</h2>
+            
+            <h3>Question Object Schema</h3>
+            <p>Each question must include:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Format</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>id</code></td>
+                        <td>integer</td>
+                        <td>✅</td>
+                        <td>Sequential from 1</td>
+                        <td>Unique question identifier</td>
+                    </tr>
+                    <tr>
+                        <td><code>section</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>1+ characters</td>
+                        <td>Primary content area name</td>
+                    </tr>
+                    <tr>
+                        <td><code>subsection</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>1-100 characters</td>
+                        <td>Specific subtopic within section</td>
+                    </tr>
+                    <tr>
+                        <td><code>question</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>10-1000 characters</td>
+                        <td>The actual question text</td>
+                    </tr>
+                    <tr>
+                        <td><code>choices</code></td>
+                        <td>array</td>
+                        <td>✅</td>
+                        <td>Exactly 4 strings</td>
+                        <td>Multiple choice options</td>
+                    </tr>
+                    <tr>
+                        <td><code>correct_answer</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>A, B, C, or D</td>
+                        <td>Letter designation of correct answer</td>
+                    </tr>
+                    <tr>
+                        <td><code>explanation</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>10-500 characters</td>
+                        <td>Detailed answer explanation</td>
+                    </tr>
+                    <tr>
+                        <td><code>source</code></td>
+                        <td>string</td>
+                        <td>✅</td>
+                        <td>3-100 characters</td>
+                        <td>Reference citation</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Choice Array Requirements</h3>
+            <ul>
+                <li><strong>Length</strong>: Exactly 4 elements</li>
+                <li><strong>Format</strong>: Each choice must be prefixed with letter and parenthesis:</li>
+                <ul>
+                    <li><code>"A) [option text]"</code></li>
+                    <li><code>"B) [option text]"</code></li>
+                    <li><code>"C) [option text]"</code></li>
+                    <li><code>"D) [option text]"</code></li>
+                </ul>
+            </ul>
+        </section>
+
+        <section id="validation-rules">
+            <h2>Validation Rules &amp; Constraints</h2>
+            
+            <h3>Cross-Field Validation</h3>
+            <ol>
+                <li><strong>Section Alignment</strong>: Every <code>questions[].section</code> must correspond to a <code>content_areas[].name</code></li>
+                <li><strong>Answer Validation</strong>: <code>correct_answer</code> must match an existing choice letter (A-D)</li>
+                <li><strong>ID Sequencing</strong>: Question IDs should be consecutive integers starting from 1</li>
+                <li><strong>Percentage Consistency</strong>: <code>content_areas[].questions_in_file</code> should sum to approximately <code>total_questions</code></li>
+            </ol>
+
+            <h3>Data Integrity Checks</h3>
+            <ul>
+                <li>All required string fields must be non-empty</li>
+                <li>Date format must follow YYYY-MM-DD pattern</li>
+                <li>Percentage strings must end with "%" symbol</li>
+                <li>Range strings must follow "number-number" pattern</li>
+                <li>Choice arrays must contain exactly 4 items with proper letter prefixes</li>
+            </ul>
+
+            <h3>Recommended Practices</h3>
+            <ul>
+                <li><strong>Content Quality</strong>: Questions should be clear, unambiguous, and appropriate for target audience</li>
+                <li><strong>Distribution</strong>: Actual question counts should approximate the official content area weights</li>
+                <li><strong>Source Attribution</strong>: Include specific references for educational content</li>
+                <li><strong>Metadata Accuracy</strong>: Ensure all statistics and ranges accurately reflect the file contents</li>
+            </ul>
+        </section>
+
+        <section id="example">
+            <h2>Example Structure</h2>
+            <pre><code>{
+  "metadata": {
+    "quiz_name": "FINRA Series 65 - Uniform Investment Adviser Law Examination",
+    "total_questions": 450,
+    "batch_range": "1-18",
+    "question_id_range": "1-450",
+    "created_date": "2025-07-29",
+    "gen_model_used": "Grok 4.0",
+    "file_description": "Complete Series 65 practice question bank including original 300 questions plus 150 advanced/emerging topic questions",
+    "content_areas": [
+      {
+        "name": "Economic Factors and Business Information",
+        "weight": "15%",
+        "questions_in_file": 71,
+        "percentage": "15.8%"
+      }
+    ],
+    "sources": [
+      "NASAA Series 65 Content Outline 2023",
+      "Achievable Series 65 Practice Questions"
+    ],
+    "special_features": [
+      "Comprehensive coverage of all NASAA content areas",
+      "Advanced investment strategies and modern planning concepts"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "section": "Economic Factors and Business Information",
+      "subsection": "Basic Economic Concepts",
+      "question": "What is the primary function of the Federal Reserve?",
+      "choices": [
+        "A) Regulate stock markets",
+        "B) Control monetary policy",
+        "C) Supervise investment advisers",
+        "D) Enforce securities laws"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Federal Reserve's primary function is to control monetary policy through interest rates and money supply management.",
+      "source": "Federal Reserve System Overview"
+    }
+  ]
+}</code></pre>
+        </section>
+
+        <section id="conclusion">
+            <p>This specification ensures consistent data structure, enables comprehensive quiz management, and supports educational content across different subject areas and examination types.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quiz JSON Schema Specification - Version 1.0</p>
+    </footer>
+</body>
+</html>
