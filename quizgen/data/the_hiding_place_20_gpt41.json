@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "quiz_name": "The Hiding Place: Comprehension and Analysis Quiz",
+    "total_questions": 20,
+    "created_date": "2025-07-30",
+    "gen_model_used": "Perplexity AI",
+    "file_description": "A comprehensive 20-question multiple-choice quiz covering plot details, themes, and characters in 'The Hiding Place' by Corrie Ten Boom, with chapter-based sourcing and single-answer validation.",
+    "content_areas": [
+      {
+        "name": "Plot Events",
+        "weight": "50%",
+        "questions_in_file": 10,
+        "percentage": "50.0%"
+      },
+      {
+        "name": "Characters",
+        "weight": "25%",
+        "questions_in_file": 5,
+        "percentage": "25.0%"
+      },
+      {
+        "name": "Themes & Faith",
+        "weight": "15%",
+        "questions_in_file": 3,
+        "percentage": "15.0%"
+      },
+      {
+        "name": "Historical Context",
+        "weight": "10%",
+        "questions_in_file": 2,
+        "percentage": "10.0%"
+      }
+    ],
+    "sources": [
+      "The Hiding Place by Corrie Ten Boom",
+      "Chapter references as indicated in each question"
+    ],
+    "special_features": [
+      "Each question is tied to a specific chapter (source)",
+      "No duplicate questions",
+      "All questions have exactly four options and one correct answer"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "section": "Plot Events",
+      "subsection": "Opening Celebration",
+      "question": "What significant event is being celebrated at the start of 'The Hiding Place'?",
+      "choices": [
+        "A) Corrie's birthday",
+        "B) Betsie's engagement",
+        "C) 100th anniversary of the watch shop",
+        "D) End of World War I"
+      ],
+      "correct_answer": "C",
+      "explanation": "The book opens with the 100th anniversary of the Ten Boom family watch shop.",
+      "source": "Chapter 1"
+    },
+    {
+      "id": 2,
+      "section": "Characters",
+      "subsection": "Family Members",
+      "question": "Who is the main narrator of 'The Hiding Place'?",
+      "choices": [
+        "A) Betsie ten Boom",
+        "B) Willem ten Boom",
+        "C) Casper ten Boom",
+        "D) Corrie ten Boom"
+      ],
+      "correct_answer": "D",
+      "explanation": "Corrie ten Boom tells the story from her perspective.",
+      "source": "Chapter 1"
+    },
+    {
+      "id": 3,
+      "section": "Characters",
+      "subsection": "Supporting Characters",
+      "question": "What is the name of the ten Boom family’s home?",
+      "choices": [
+        "A) The Beje",
+        "B) The Annex",
+        "C) Vught",
+        "D) The Hideaway"
+      ],
+      "correct_answer": "A",
+      "explanation": "The Beje is the affectionate name for their house and shop.",
+      "source": "Chapter 2"
+    },
+    {
+      "id": 4,
+      "section": "Historical Context",
+      "subsection": "World War II",
+      "question": "Why did the ten Boom family begin hiding Jews in their home?",
+      "choices": [
+        "A) For financial gain",
+        "B) Their Christian faith compelled them to",
+        "C) They were forced by the Nazis",
+        "D) Pressure from neighbors"
+      ],
+      "correct_answer": "B",
+      "explanation": "Their Christian beliefs led them to protect those persecuted by the Nazis.",
+      "source": "Chapter 3"
+    },
+    {
+      "id": 5,
+      "section": "Characters",
+      "subsection": "Friends and Allies",
+      "question": "Who was 'Pickwick' in the story?",
+      "choices": [
+        "A) Corrie’s uncle",
+        "B) A resistance friend of the family",
+        "C) A German officer",
+        "D) A watch shop customer"
+      ],
+      "correct_answer": "B",
+      "explanation": "Pickwick was a code name for a wealthy, eccentric friend and Resistance member.",
+      "source": "Chapter 4"
+    },
+    {
+      "id": 6,
+      "section": "Plot Events",
+      "subsection": "Acts of Defiance",
+      "question": "Who was arrested for playing the Dutch National Anthem in church?",
+      "choices": [
+        "A) Willem",
+        "B) Peter",
+        "C) Casper",
+        "D) Corrie"
+      ],
+      "correct_answer": "B",
+      "explanation": "Peter, Corrie's nephew, was arrested for this act of resistance.",
+      "source": "Chapter 5"
+    },
+    {
+      "id": 7,
+      "section": "Plot Events",
+      "subsection": "Hiding Jews",
+      "question": "What was the secret room in the Beje used for?",
+      "choices": [
+        "A) Prayer meetings",
+        "B) Hiding Jews and fugitives",
+        "C) Storing valuables",
+        "D) Meals"
+      ],
+      "correct_answer": "B",
+      "explanation": "The hidden room was designed to hide Jews from Nazi searches.",
+      "source": "Chapter 6"
+    },
+    {
+      "id": 8,
+      "section": "Characters",
+      "subsection": "Allies",
+      "question": "Who was the family’s ally in the police force?",
+      "choices": [
+        "A) Rolf van Vliet",
+        "B) Otto",
+        "C) Hans",
+        "D) Henk"
+      ],
+      "correct_answer": "A",
+      "explanation": "Rolf the policeman risked his life to help the ten Booms’ efforts.",
+      "source": "Chapter 7"
+    },
+    {
+      "id": 9,
+      "section": "Plot Events",
+      "subsection": "Ration Cards",
+      "question": "How did Corrie obtain extra ration cards for the people in hiding?",
+      "choices": [
+        "A) Bought them illegally",
+        "B) Stole them from the government",
+        "C) Received them from a friendly civil servant",
+        "D) Forged them herself"
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie approached a friend working at the food office who supplied her with cards.",
+      "source": "Chapter 8"
+    },
+    {
+      "id": 10,
+      "section": "Plot Events",
+      "subsection": "Arrest and Betrayal",
+      "question": "How was the ten Boom family discovered and arrested?",
+      "choices": [
+        "A) Random search",
+        "B) Betrayed by a Dutch informant",
+        "C) Suspicious neighbors",
+        "D) Jewish refugees told the Nazis"
+      ],
+      "correct_answer": "B",
+      "explanation": "A Dutch informant tricked Corrie into helping, then turned the family in.",
+      "source": "Chapter 9"
+    },
+    {
+      "id": 11,
+      "section": "Themes & Faith",
+      "subsection": "Faith Under Fire",
+      "question": "How did Corrie’s faith influence her actions during the war?",
+      "choices": [
+        "A) She became resentful",
+        "B) It inspired her to help others selflessly",
+        "C) She questioned her beliefs",
+        "D) She lost her faith"
+      ],
+      "correct_answer": "B",
+      "explanation": "Corrie’s faith sustained her and inspired risky acts of love and courage.",
+      "source": "Chapter 10"
+    },
+    {
+      "id": 12,
+      "section": "Plot Events",
+      "subsection": "Imprisonment",
+      "question": "Which family member died soon after their arrest?",
+      "choices": [
+        "A) Betsie",
+        "B) Nollie",
+        "C) Casper ten Boom",
+        "D) Willem"
+      ],
+      "correct_answer": "C",
+      "explanation": "Father Casper died in prison shortly after being arrested.",
+      "source": "Chapter 10"
+    },
+    {
+      "id": 13,
+      "section": "Plot Events",
+      "subsection": "Transfers",
+      "question": "Where were Corrie and Betsie sent after Scheveningen?",
+      "choices": [
+        "A) Ravensbrück",
+        "B) The Beje",
+        "C) Vught",
+        "D) Amsterdam"
+      ],
+      "correct_answer": "C",
+      "explanation": "After Scheveningen, they were sent to Vught concentration camp.",
+      "source": "Chapter 12"
+    },
+    {
+      "id": 14,
+      "section": "Plot Events",
+      "subsection": "Spiritual Leadership",
+      "question": "What role did Betsie and Corrie take on at Ravensbrück?",
+      "choices": [
+        "A) Kitchen workers",
+        "B) Led Bible studies and prayer",
+        "C) Worked as guards",
+        "D) Dug graves"
+      ],
+      "correct_answer": "B",
+      "explanation": "They led secret Bible study and prayer groups to encourage other prisoners.",
+      "source": "Chapter 13"
+    },
+    {
+      "id": 15,
+      "section": "Themes & Faith",
+      "subsection": "Forgiveness",
+      "question": "How did Betsie treat the prisoners' Nazi guards?",
+      "choices": [
+        "A) With hatred",
+        "B) With prayers and compassion",
+        "C) She ignored them",
+        "D) With resistance"
+      ],
+      "correct_answer": "B",
+      "explanation": "Betsie showed unconditional kindness and faith, praying even for her enemies.",
+      "source": "Chapter 13"
+    },
+    {
+      "id": 16,
+      "section": "Plot Events",
+      "subsection": "Miracles",
+      "question": "What miracle surrounded Corrie’s Bible at the camp?",
+      "choices": [
+        "A) It glowed in the dark",
+        "B) It was never discovered by guards",
+        "C) It healed prisoners",
+        "D) It was duplicated"
+      ],
+      "correct_answer": "B",
+      "explanation": "Despite repeated searches, Corrie’s Bible was never found by the guards.",
+      "source": "Chapter 13"
+    },
+    {
+      "id": 17,
+      "section": "Plot Events",
+      "subsection": "Release",
+      "question": "How was Corrie eventually released from Ravensbrück?",
+      "choices": [
+        "A) She escaped over the fence",
+        "B) She was freed by Allied soldiers",
+        "C) Clerical error",
+        "D) She bribed the guards"
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie was released due to a clerical mistake, not by official pardon.",
+      "source": "Chapter 14"
+    },
+    {
+      "id": 18,
+      "section": "Plot Events",
+      "subsection": "Aftermath",
+      "question": "What vision did Betsie share with Corrie for after the war?",
+      "choices": [
+        "A) Revenge on the Nazis",
+        "B) Emigrating to America",
+        "C) Opening a rehabilitation home",
+        "D) Writing a book"
+      ],
+      "correct_answer": "C",
+      "explanation": "Betsie dreamed of opening a home for survivors—both victims and persecutors.",
+      "source": "Chapter 15"
+    },
+    {
+      "id": 19,
+      "section": "Plot Events",
+      "subsection": "Legacy",
+      "question": "After the war, how did Corrie use the Beje?",
+      "choices": [
+        "A) Sold it",
+        "B) Turned it into a store",
+        "C) Turned it into a school for handicapped children",
+        "D) Left it empty"
+      ],
+      "correct_answer": "C",
+      "explanation": "Corrie transformed the Beje into a refuge for those in need, continuing Betsie’s vision.",
+      "source": "Epilogue"
+    },
+    {
+      "id": 20,
+      "section": "Historical Context",
+      "subsection": "Jewish Resistance",
+      "question": "What was the effect of the fleas in Corrie and Betsie’s camp barracks?",
+      "choices": [
+        "A) Made the guards avoid searches",
+        "B) Spread disease",
+        "C) Forced relocation",
+        "D) Required daily cleaning"
+      ],
+      "correct_answer": "A",
+      "explanation": "The infestation kept guards away, allowing women to hold Bible readings undisturbed.",
+      "source": "Chapter 13"
+    }
+  ]
+}

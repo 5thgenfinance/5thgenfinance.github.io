@@ -1,0 +1,422 @@
+{
+  "metadata": {
+    "quiz_name": "C-130 Copilot Pre-Flight and In-Flight Protocols Exam",
+    "total_questions": 25,
+    "created_date": "2025-07-30",
+    "gen_model_used": "Perplexity AI",
+    "file_description": "A 25-question multiple choice exam covering pre-flight checks, emergency procedures, in-flight responsibilities, and operational protocols for U.S. Air Force C-130 copilots. Intended for qualification and training purposes.",
+    "content_areas": [
+      {
+        "name": "Pre-Flight Procedures",
+        "weight": "32%",
+        "questions_in_file": 8,
+        "percentage": "32.0%"
+      },
+      {
+        "name": "In-Flight Procedures",
+        "weight": "32%",
+        "questions_in_file": 8,
+        "percentage": "32.0%"
+      },
+      {
+        "name": "Emergency Procedures",
+        "weight": "20%",
+        "questions_in_file": 5,
+        "percentage": "20.0%"
+      },
+      {
+        "name": "Post-Flight and Ground Operations",
+        "weight": "16%",
+        "questions_in_file": 4,
+        "percentage": "16.0%"
+      }
+    ],
+    "sources": [
+      "U.S. Air Force C-130J Super Hercules Pilot and Copilot Crew Checklists (AFI 11-2C-130)",
+      "C-130 Flight Manual",
+      "USAF Emergency Procedures Handbook"
+    ],
+    "special_features": [
+      "All questions contain four choices labeled A-D",
+      "Each question includes a detailed explanation",
+      "Exam covers pre-flight to post-flight and emergencies"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Avionics/Flight Deck",
+      "question": "What must the copilot confirm regarding the radar repeater scope prior to exterior inspection?",
+      "choices": [
+        "A) Voltage is within limits",
+        "B) Radar repeater scope is stowed",
+        "C) Radar is set to standby",
+        "D) System is powered off"
+      ],
+      "correct_answer": "B",
+      "explanation": "The radar repeater scope must be stowed to avoid damage during pre-flight walk-around.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 2,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Safety Checks",
+      "question": "During exterior inspection, what is a critical copilot safety precaution?",
+      "choices": [
+        "A) Ignore all leaks",
+        "B) Touch rotating propellers",
+        "C) Wear gloves and face shields during boom inspection",
+        "D) Start engines before inspecting"
+      ],
+      "correct_answer": "C",
+      "explanation": "Gloves and face shields protect against hazards, especially during boom area checks.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 3,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Responsibility",
+      "question": "Who is responsible for verifying hardware and lines are secure during exterior inspection?",
+      "choices": [
+        "A) Pilot",
+        "B) Loadmaster",
+        "C) Copilot",
+        "D) Navigator"
+      ],
+      "correct_answer": "C",
+      "explanation": "The copilot is directly responsible for checking the security of all external components during the walk-around.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 4,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Hazardous Cargo",
+      "question": "What must be briefed if hazardous cargo is loaded?",
+      "choices": [
+        "A) Destination ATIS",
+        "B) MSDS information and medical antidotes",
+        "C) Meal selection",
+        "D) Alternate airfield"
+      ],
+      "correct_answer": "B",
+      "explanation": "Material Safety Data Sheet information and available antidotes must be reviewed when hazardous cargo is on board.",
+      "source": "USAF C-130 Checklists"
+    },
+    {
+      "id": 5,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Avionics Setup",
+      "question": "Prior to start, which avionics items must the copilot confirm installed?",
+      "choices": [
+        "A) Radar altimeter indicators and Remote TAS",
+        "B) Coffee maker system",
+        "C) Inertial navigation covers",
+        "D) Weather radar scanner plates"
+      ],
+      "correct_answer": "A",
+      "explanation": "The copilot must check for installed radar altimeter indicators and Remote TAS as part of the avionics prep.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 6,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Checklist Initiation",
+      "question": "What signals the start of the C-130 pre-start checklist?",
+      "choices": [
+        "A) Pilot attaches escape rope",
+        "B) Crew seated with checklists ready",
+        "C) Flight engineer powers battery",
+        "D) Ground crew signals"
+      ],
+      "correct_answer": "B",
+      "explanation": "When all crew are seated and ready, the pre-start checklist formally begins.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 7,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Emergency Devices",
+      "question": "When are C-130 engine fire handle locations briefed?",
+      "choices": [
+        "A) Postflight",
+        "B) During pre-flight deck check",
+        "C) Before exterior walkaround",
+        "D) After landing"
+      ],
+      "correct_answer": "B",
+      "explanation": "Crews review the location of all emergency handles before flight deck activity.",
+      "source": "C-130 Pre-Flight Checklist"
+    },
+    {
+      "id": 8,
+      "section": "Pre-Flight Procedures",
+      "subsection": "Pre-Taxi Check",
+      "question": "Which task is a critical copilot duty during pre-taxi checks?",
+      "choices": [
+        "A) Verify flight controls are free and correct",
+        "B) Arm life rafts",
+        "C) Open escape hatches",
+        "D) Release parking brake"
+      ],
+      "correct_answer": "A",
+      "explanation": "Flight control freedom and correctness is critical for safe taxi and must be confirmed.",
+      "source": "C-130 Pre-Taxi Checklist"
+    },
+    {
+      "id": 9,
+      "section": "In-Flight Procedures",
+      "subsection": "Takeoff",
+      "question": "Who arms the ground spoilers prior to takeoff in a C-130?",
+      "choices": [
+        "A) Loadmaster",
+        "B) Copilot",
+        "C) Pilot",
+        "D) Navigator"
+      ],
+      "correct_answer": "B",
+      "explanation": "The copilot arms ground spoilers, an integral part of the takeoff configuration.",
+      "source": "C-130 Takeoff Checklist"
+    },
+    {
+      "id": 10,
+      "section": "In-Flight Procedures",
+      "subsection": "Lighting Procedures",
+      "question": "What checklist item is specific to night operations before taxi?",
+      "choices": [
+        "A) Exterior lights set",
+        "B) Cargo doors unlocked",
+        "C) Fuel pumps on",
+        "D) Wing anti-ice tested"
+      ],
+      "correct_answer": "A",
+      "explanation": "Correct exterior lighting is vital for ground operations at night.",
+      "source": "Pre-Taxi/Before Takeoff Checklist"
+    },
+    {
+      "id": 11,
+      "section": "In-Flight Procedures",
+      "subsection": "Takeoff Configuration",
+      "question": "How are flaps set for normal C-130 takeoff?",
+      "choices": [
+        "A) 0%",
+        "B) 10%",
+        "C) 50%",
+        "D) 100%"
+      ],
+      "correct_answer": "C",
+      "explanation": "Standard C-130 takeoff uses a 50% flap setting.",
+      "source": "C-130 Takeoff Checklist"
+    },
+    {
+      "id": 12,
+      "section": "In-Flight Procedures",
+      "subsection": "After Takeoff",
+      "question": "What is the copilot's first action immediately after liftoff?",
+      "choices": [
+        "A) Retract landing gear on command",
+        "B) Lower flaps",
+        "C) Switch on windshield wipers",
+        "D) Turn off anti-skid"
+      ],
+      "correct_answer": "A",
+      "explanation": "On the pilot’s command, the copilot retracts the landing gear as quickly as safely possible.",
+      "source": "C-130 After Takeoff Checklist"
+    },
+    {
+      "id": 13,
+      "section": "In-Flight Procedures",
+      "subsection": "Navigation",
+      "question": "What is the copilot's main navigation duty in enroute flight?",
+      "choices": [
+        "A) Monitor ATIS",
+        "B) Update flight progress and waypoints",
+        "C) Log seat swaps",
+        "D) Open oxygen valves"
+      ],
+      "correct_answer": "B",
+      "explanation": "C-130 copilots continuously monitor and update navigation progress.",
+      "source": "C-130 In-Flight Procedures"
+    },
+    {
+      "id": 14,
+      "section": "In-Flight Procedures",
+      "subsection": "Crew Coordination",
+      "question": "What is the correct copilot response when the pilot commands 'gear up'?",
+      "choices": [
+        "A) Wait for ground clearance",
+        "B) Repeat the command and raise gear",
+        "C) Only raise gear, do not respond",
+        "D) Lower flaps"
+      ],
+      "correct_answer": "B",
+      "explanation": "Crew coordination requires verbal repeat and action; the copilot repeats then actuates the gear.",
+      "source": "C-130 Standard Operating Procedures"
+    },
+    {
+      "id": 15,
+      "section": "In-Flight Procedures",
+      "subsection": "Pressurization",
+      "question": "What must the C-130 copilot do to maintain cabin safety during flight?",
+      "choices": [
+        "A) Ensure the cabin is NOT pressurized",
+        "B) Adjust cabin pressurization as required for altitude",
+        "C) Keep cargo doors unlocked",
+        "D) Lower oxygen masks"
+      ],
+      "correct_answer": "B",
+      "explanation": "Proper altitude-based pressurization is a primary copilot duty for passenger and crew safety.",
+      "source": "C-130 In-Flight Procedures"
+    },
+    {
+      "id": 16,
+      "section": "Emergency Procedures",
+      "subsection": "Engine Fire",
+      "question": "Which emergency action requires copilot confirmation before proceeding?",
+      "choices": [
+        "A) Propeller feather",
+        "B) Engine fire handle pull",
+        "C) APU shutdown",
+        "D) Switch to backup oxygen"
+      ],
+      "correct_answer": "B",
+      "explanation": "Pulling the engine fire handle is a critical action requiring crew confirmation to prevent errors.",
+      "source": "C-130 Emergency Checklist"
+    },
+    {
+      "id": 17,
+      "section": "In-Flight Procedures",
+      "subsection": "Descent & Approach",
+      "question": "During descent, what must the C-130 copilot check?",
+      "choices": [
+        "A) Turn off radios",
+        "B) Set altimeters and review approach brief",
+        "C) Stow ramp",
+        "D) Engage autopilot"
+      ],
+      "correct_answer": "B",
+      "explanation": "Altimeters must be properly set and approach procedures reviewed for safe descent.",
+      "source": "C-130 Descent Checklist"
+    },
+    {
+      "id": 18,
+      "section": "In-Flight Procedures",
+      "subsection": "Approach",
+      "question": "Before starting an instrument approach, what item must be checked?",
+      "choices": [
+        "A) Cargo netting",
+        "B) Altimeters set and approach plates available",
+        "C) APU status",
+        "D) Wing anti-icing"
+      ],
+      "correct_answer": "B",
+      "explanation": "Properly set altimeters and approach plates are required for IFR approach safety.",
+      "source": "C-130 Approach Procedures"
+    },
+    {
+      "id": 19,
+      "section": "In-Flight Procedures",
+      "subsection": "Night Operations",
+      "question": "When operating with NVGs, what must the copilot ensure?",
+      "choices": [
+        "A) NVGs are on and gain is set",
+        "B) Turn all interior lights to bright",
+        "C) Seal cargo ramp",
+        "D) Stow gear lever"
+      ],
+      "correct_answer": "A",
+      "explanation": "Night Vision Goggles must be powered and properly configured before dark operations.",
+      "source": "C-130 Night Ops Checklist"
+    },
+    {
+      "id": 20,
+      "section": "Post-Flight and Ground Operations",
+      "subsection": "After Landing",
+      "question": "After landing, what is the copilot's immediate duty?",
+      "choices": [
+        "A) Set flaps to UP",
+        "B) Cut engine power",
+        "C) Seal the aircraft",
+        "D) Reset altimeters"
+      ],
+      "correct_answer": "A",
+      "explanation": "Raising flaps after landing is standard procedure to reduce lift and prepare for taxi.",
+      "source": "C-130 After Landing Checklist"
+    },
+    {
+      "id": 21,
+      "section": "Post-Flight and Ground Operations",
+      "subsection": "Engine Shutdown",
+      "question": "During engine shutdown, what must the copilot confirm?",
+      "choices": [
+        "A) Parking brake set",
+        "B) Propellers to feather",
+        "C) Remove chocks",
+        "D) Close cargo doors"
+      ],
+      "correct_answer": "B",
+      "explanation": "Propeller feathering ensures safe engine shutdown and prevents windmilling.",
+      "source": "C-130 Shutdown Checklist"
+    },
+    {
+      "id": 22,
+      "section": "In-Flight Procedures",
+      "subsection": "Flight Monitoring",
+      "question": "Which system must the copilot monitor continuously during flight?",
+      "choices": [
+        "A) PA system",
+        "B) Engine instruments",
+        "C) Coffee maker",
+        "D) Cargo ramp"
+      ],
+      "correct_answer": "B",
+      "explanation": "Monitoring engine instruments is a critical ongoing responsibility to detect issues early.",
+      "source": "C-130 In-Flight Checklist"
+    },
+    {
+      "id": 23,
+      "section": "In-Flight Procedures",
+      "subsection": "Crew Duties",
+      "question": "Who manages radio calls and checklists in-flight if the pilot is flying?",
+      "choices": [
+        "A) Copilot",
+        "B) Loadmaster",
+        "C) Flight Engineer",
+        "D) Navigator"
+      ],
+      "correct_answer": "A",
+      "explanation": "The copilot is responsible for all communications and checklist discipline during pilot hand-flying.",
+      "source": "C-130 Flight Procedures"
+    },
+    {
+      "id": 24,
+      "section": "Emergency Procedures",
+      "subsection": "Aborted Takeoff",
+      "question": "During an aborted takeoff, what should the copilot do?",
+      "choices": [
+        "A) Announce 'reject,' assist and verify brake application",
+        "B) Open escape hatch",
+        "C) Wave arms to ground crew",
+        "D) Power down all avionics"
+      ],
+      "correct_answer": "A",
+      "explanation": "Standardized language and brake assistance are critical in reject scenarios to ensure everyone follows emergency checklists.",
+      "source": "C-130 Emergency Procedures"
+    },
+    {
+      "id": 25,
+      "section": "Post-Flight and Ground Operations",
+      "subsection": "Safety Circle",
+      "question": "Before entering the aircraft safety circle on the ground, what must the copilot do?",
+      "choices": [
+        "A) Obtain permission and ensure only authorized personnel enter",
+        "B) Power on avionics",
+        "C) Stow all checklists",
+        "D) Shut down main battery"
+      ],
+      "correct_answer": "A",
+      "explanation": "For accident prevention, strict control of personnel around the aircraft is enforced.",
+      "source": "USAF C-130 Ground Operations Checklist"
+    }
+  ]
+}
