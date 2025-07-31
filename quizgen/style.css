@@ -901,6 +901,24 @@ select.form-control {
     gap: var(--space-8);
 }
 
+.instructions-genai {
+  background: #fafcff;
+  border: 1.5px solid #dae3f3;
+}
+.instructions-genai code {
+  background: #f2f6fa;
+  color: #205ca2;
+  padding: 1px 7px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+.instructions-genai a {
+  color: #1856af;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+
 /* Progress Bar */
 .progress-container {
     margin-bottom: var(--space-24);

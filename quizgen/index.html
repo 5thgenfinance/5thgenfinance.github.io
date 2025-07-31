@@ -18,7 +18,33 @@
             <div class="card exam-setup">
                 <div class="card__body">
                     <h2>Load Question Database</h2>
-                    
+                    <!-- Instructions for creating and gen AI quiz database -->
+					<div class="card instructions-genai" style="margin-bottom:1.5rem;">
+					  <div class="card__body">
+						<h2>Instructions for Creating and Gen AI Quiz Database</h2>
+						<p>
+						  <strong>Prompt Template:</strong> (<em>GPT-4.1 or Claude Sonnet 4 recommended</em>)
+						  <br />
+						  Using the markdown specification 
+						  <a href="/quizgen/data/Quiz JSON Schema Specification.md" target="_blank" rel="noopener">
+							"Quiz JSON Schema Specification.md"
+						  </a>, create a 
+						  <code>[50]</code> question quiz database on the topic of <code>[insert your topic here]</code>.
+						</p>
+						<p style="color: #555; font-size: 0.98em; margin-top: 0.5em;">
+						  <strong>Example:</strong> <br>
+						  Using the markdown specification 
+						  <a href="/quizgen/data/Quiz JSON Schema Specification.md" target="_blank" rel="noopener">
+							"Quiz JSON Schema Specification.md"
+						  </a>, create a 
+						  <code>50</code> question quiz database on the topic of <code>U.S. Securities Laws</code>.
+						</p>
+						<p style="margin-top: 0.3em; font-size: 0.97em;">
+						  Paste this prompt into your preferred AI chat (GPT-4.1 or Claude Sonnet 4) to generate a compliant quiz database.
+						</p>
+					  </div>
+					</div>
+
                     <div class="form-group">
                         <label for="database-file" class="form-label">Select Database File</label>
                         <div class="file-input-container">
