@@ -1,0 +1,26 @@
+name: CORS Proxy Service
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_url:
+        description: 'URL to fetch'
+        required: true
+        type: string
+
+jobs:
+  proxy-fetch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Fetch URL and save response
+      run: |
+        curl -H "User-Agent: Mozilla/5.0 (compatible; NAIC-Bot/1.0)" \
+             "${{ github.event.inputs.target_url }}" \
+             > response.html
+        
+    - name: Upload response as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: proxy-response
+        path: response.html
+        retention-days: 1
