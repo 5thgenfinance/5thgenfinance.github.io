@@ -707,6 +707,24 @@ class NAICDataProcessor {
 			return this.loadFallbackData();
 		}
 	}
+
+	async function fetchViaGitHubActions(url) {
+		// Trigger workflow via GitHub API
+		const workflowResponse = await fetch(`https://api.github.com/repos/5thgenfinance/5thgenfinance.github.io/actions/workflows/cors-proxy.yml/dispatches`, {
+			method: 'POST',
+			headers: {
+				'Authorization': `token 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`,
+				'Accept': 'application/vnd.github.v3+json'
+			},
+			body: JSON.stringify({
+				ref: 'main',
+				inputs: { target_url: url }
+			})
+		});
+		
+		// Poll for completion and download artifact
+		// Implementation details depend on your specific workflow
+	}
 	
 	
 	// ADD NEW SUCCESS STATE METHOD
@@ -715,7 +733,7 @@ class NAICDataProcessor {
 		if (statusDisplay) {
 			statusDisplay.innerHTML = `
 				<span class="status-indicator">✅</span>
-				<span class="status-text">${message}</span>
+				<span class="status-text">Job Successful</span>
 			`;
 		}
 	}
@@ -726,7 +744,7 @@ class NAICDataProcessor {
 		if (statusDisplay) {
 			statusDisplay.innerHTML = `
 				<span class="status-indicator">❌</span>
-				<span class="status-text">${message}</span>
+				<span class="status-text">Job Failed</span>
 			`;
 		}
 	}
