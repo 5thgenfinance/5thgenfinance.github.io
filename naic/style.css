@@ -1233,6 +1233,51 @@ select[multiple] option:checked {
   font-weight: var(--font-weight-bold);
 }
 
+/* ADD THESE STYLES TO YOUR EXISTING CSS */
+.status-panel {
+    margin-bottom: 20px;
+}
+
+.status-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #2a3f54;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.status-indicator {
+    font-size: 1.2em;
+}
+
+.status-text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.progress-bar {
+    height: 4px;
+    background: #17212b;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #92cf43;
+    transition: width 0.3s ease;
+}
+
+.form-hint {
+    display: block;
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 5px;
+}
+
+
 /* Error Panel */
 .error-panel {
   animation: shake 0.5s ease-out;

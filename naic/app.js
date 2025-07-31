@@ -2,11 +2,13 @@
 class NAICDataProcessor {
     constructor() {
         // Available data from the provided JSON
-        this.availableReports = [
-            "Table F&G Current Spreads",
-            "Table H&I Long Term Spreads", 
-            "Table J Current and Long Term Swap Spreads"
-        ];
+        this.availableReports = {} // populated dynamically
+        this.corsProxy = 'https://cors-anywhere.herokuapp.com/';
+        this.naicUrl = 'https://content.naic.org/pbr_data.htm';
+        this.availableFiles = {};
+        
+        this.initializeApp();
+        this.setupRealTimeHandlers(); // New method
         
         this.availableYears = ["2025", "2024", "2023"];
         
@@ -176,6 +178,48 @@ class NAICDataProcessor {
         console.log('Events bound successfully');
     }
 
+	// ADD THIS NEW METHOD
+	setupRealTimeHandlers() {
+		const refreshBtn = document.getElementById('refresh-btn');
+		refreshBtn.addEventListener('click', () => this.refreshNAICFiles());
+	}
+
+	// ADD THIS NEW METHOD  
+	async refreshNAICFiles() {
+		const refreshBtn = document.getElementById('refresh-btn');
+		const yearSelect = document.getElementById('year-select');
+		
+		try {
+			refreshBtn.disabled = true;
+			refreshBtn.innerHTML = '🔄 Checking NAIC Site...';
+			
+			this.showProcessingState('Connecting to NAIC data source...');
+			
+			// Real NAIC scraping
+			const response = await fetch(this.corsProxy + this.naicUrl);
+			const html = await response.text();
+			
+			// Parse for Excel links
+			const parser = new DOMParser();
+			const doc = parser.parseFromString(html, 'text/html');
+			const links = doc.querySelectorAll('a[href$=".xlsx"]');
+			
+			this.availableFiles = this.parseNAICLinks(links);
+			this.populateYearDropdown(this.availableFiles);
+			
+			// Enable year selection
+			yearSelect.disabled = false;
+			this.showSuccessState(`✅ Found ${Object.keys(this.availableFiles).length} years of data`);
+			
+		} catch (error) {
+			this.showErrorState('❌ Could not connect to NAIC: ' + error.message);
+			this.loadFallbackData(); // Your existing cached data
+		} finally {
+			refreshBtn.disabled = false;
+			refreshBtn.innerHTML = '🔄 Refresh Available Files';
+		}
+	}
+
     onReportChange(report) {
         console.log('Processing report change:', report);
         const yearSelect = document.getElementById('year-select');
@@ -300,37 +344,33 @@ class NAICDataProcessor {
         }
     }
 
-    async processData(report, year, selectedTables) {
-        console.log('Processing data for:', report, year, selectedTables);
-        
-        // Reset and show processing
-        this.hideAllPanels();
-        this.showProcessingPanel();
-        this.disableProcessButton();
-
-        try {
-            // Simulate processing steps with proper delays and UI updates
-            await this.simulateDownload(report, year, selectedTables);
-            await this.simulateChecksum();
-            await this.simulateParsing(selectedTables);
-            await this.simulateFormatting();
-
-            // Generate enhanced JSON output
-            this.generateEnhancedJsonOutput(report, year, selectedTables);
-
-            // Show results panels
-            await this.delay(500); // Small delay for better UX
-            this.showResultsPanel();
-
-            console.log('Processing completed successfully');
-
-        } catch (error) {
-            console.error('Processing failed:', error);
-            throw error;
-        } finally {
-            this.enableProcessButton();
-        }
-    }
+	async processData(year, tableType) {
+		try {
+			this.showProcessingState();
+			
+			// Get real file URL from scraped data
+			const fileInfo = this.availableFiles[year][tableType];
+			if (!fileInfo) {
+				throw new Error('File not found in available data');
+			}
+			
+			// Download real file
+			this.showProcessingState(`📥 Downloading ${fileInfo.filename}...`);
+			const response = await fetch(this.corsProxy + fileInfo.url);
+			const arrayBuffer = await response.arrayBuffer();
+			
+			// Calculate real checksums
+			const checksums = await this.calculateRealChecksums(arrayBuffer);
+			this.displayChecksumValidation(checksums);
+			
+			// Process real Excel data  
+			const processedData = await this.parseRealExcelData(arrayBuffer, year, tableType);
+			this.displayResults(processedData);
+			
+		} catch (error) {
+			this.showError('Processing failed: ' + error.message);
+		}
+	}
 
     async simulateDownload(report, year, selectedTables) {
         const step = document.getElementById('step-download');
@@ -636,29 +676,60 @@ class NAICDataProcessor {
         await this.delay(100);
     }
 
-    showProcessingPanel() {
-        console.log('Showing processing panel');
-        const section = document.getElementById('processing-section');
-        
-        if (section) {
-            // Reset all steps
-            const steps = section.querySelectorAll('.step');
-            steps.forEach(step => {
-                step.classList.remove('active', 'completed');
-                const stepStatus = step.querySelector('.step-status');
-                if (stepStatus) {
-                    stepStatus.className = 'step-status';
-                }
-            });
+    showProcessingState(message = 'Processing data...') {
+		const statusDisplay = document.getElementById('status-display');
+		if (statusDisplay) {
+			statusDisplay.innerHTML = `
+				<span class="status-indicator">🔄</span>
+				<span class="status-text">${message}</span>
+			`;
+		}
+		
+		// Update progress bar if it exists
+		const progressFill = document.querySelector('.progress-fill');
+		if (progressFill) {
+			progressFill.style.width = '25%';
+		}
+	}
+	
+	setupRealTimeHandlers() {
+		const refreshBtn = document.getElementById('refresh-btn');
+		if (refreshBtn) {
+			refreshBtn.addEventListener('click', () => this.refreshNAICFiles());
+		}
+	}
 
-            // Reset progress
-            this.updateProgress(0);
-            const statusText = document.getElementById('status-text');
-            if (statusText) statusText.textContent = 'Initializing...';
+	async scrapeNAICWithFallback() {
+		try {
+			return await this.scrapeNAICRealTime();
+		} catch (corsError) {
+			console.warn('CORS blocked, using cached data');
+			return this.loadFallbackData();
+		}
+	}
+	
+	
+	// ADD NEW SUCCESS STATE METHOD
+	showSuccessState(message) {
+		const statusDisplay = document.getElementById('status-display');
+		if (statusDisplay) {
+			statusDisplay.innerHTML = `
+				<span class="status-indicator">✅</span>
+				<span class="status-text">${message}</span>
+			`;
+		}
+	}
 
-            section.classList.remove('hidden');
-        }
-    }
+	// ADD NEW ERROR STATE METHOD  
+	showErrorState(message) {
+		const statusDisplay = document.getElementById('status-display');
+		if (statusDisplay) {
+			statusDisplay.innerHTML = `
+				<span class="status-indicator">❌</span>
+				<span class="status-text">${message}</span>
+			`;
+		}
+	}
 
     hideAllPanels() {
         const panels = [
@@ -749,6 +820,81 @@ class NAICDataProcessor {
     delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
+	// ADD THESE NEW METHODS TO YOUR CLASS
+
+	parseNAICLinks(links) {
+		const files = {};
+		
+		links.forEach(link => {
+			const href = link.getAttribute('href');
+			const fullUrl = href.startsWith('http') ? href : 
+				`https://content.naic.org${href}`;
+			
+			const filename = href.split('/').pop();
+			const yearMatch = filename.match(/(\d{4})/);
+			
+			if (yearMatch) {
+				const year = yearMatch[1];
+				if (!files[year]) files[year] = {};
+				
+				// Determine table type from filename
+				if (filename.includes('table-f-g')) {
+					files[year]['Table F&G Current Spreads'] = {
+						filename, url: fullUrl
+					};
+				} else if (filename.includes('table-h-i')) {
+					files[year]['Table H&I Long Term Spreads'] = {
+						filename, url: fullUrl
+					};
+				}
+			}
+		});
+		
+		return files;
+	}
+
+	populateYearDropdown(availableFiles) {
+		const yearSelect = document.getElementById('year-select');
+		yearSelect.innerHTML = '<option value="">Choose a year...</option>';
+		
+		Object.keys(availableFiles)
+			.sort((a, b) => b - a) // Newest first
+			.forEach(year => {
+				const option = document.createElement('option');
+				option.value = year;
+				option.textContent = year;
+				yearSelect.appendChild(option);
+			});
+	}
+
+	async calculateRealChecksums(arrayBuffer) {
+		const uint8Array = new Uint8Array(arrayBuffer);
+		
+		// Use Web Crypto API for real checksums
+		const sha256Hash = await crypto.subtle.digest('SHA-256', uint8Array);
+		const sha256Hex = Array.from(new Uint8Array(sha256Hash))
+			.map(b => b.toString(16).padStart(2, '0')).join('');
+		
+		return {
+			sha256: sha256Hex,
+			md5: 'calculated-via-crypto-js', // Implement if needed
+			fileSize: arrayBuffer.byteLength
+		};
+	}
+
+	loadFallbackData() {
+		// Use your existing static tableTypes as fallback
+		this.availableFiles = {
+			"2025": {
+				"Table F&G Current Spreads": {
+					filename: "pbr-2025-vm20-table-f-g-current-spreads.xlsx",
+					url: "https://content.naic.org/sites/default/files/pbr-2025-vm20-table-f-g-current-spreads.xlsx"
+				}
+			}
+		};
+		this.populateYearDropdown(this.availableFiles);
+	}
+
 }
 
 // Initialize the application

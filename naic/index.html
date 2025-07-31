@@ -24,24 +24,23 @@
                     <h2>Three-Stage Data Selection & Processing</h2>
                 </div>
                 <div class="card__body">
-                    <form id="data-form" class="form-grid">
-                        <div class="form-group">
-                            <label for="report-select" class="form-label">Published Report</label>
-                            <select id="report-select" class="form-control" required>
-                                <option value="">Choose a published report...</option>
-                                <option value="Table F&G Current Spreads">Table F&G Current Spreads</option>
-                                <option value="Table H&I Long Term Spreads">Table H&I Long Term Spreads</option>
-                                <option value="Table J Current and Long Term Swap Spreads">Table J Current and Long Term Swap Spreads</option>
-                            </select>
-                        </div>
+					<form id="data-form" class="form-grid">
+						<!-- ADD THIS NEW SECTION FIRST -->
+						<div class="form-group">
+							<label for="refresh-btn" class="form-label">Step 1: Check NAIC Site</label>
+							<button type="button" id="refresh-btn" class="btn btn-secondary">
+								🔄 Refresh Available Files
+							</button>
+							<small class="form-hint">Connects to NAIC site to find latest data files</small>
+						</div>
 
-                        <div class="form-group">
-                            <label for="year-select" class="form-label">Published Year</label>
-                            <select id="year-select" class="form-control" disabled required>
-                                <option value="">Select report first...</option>
-                            </select>
-                        </div>
-
+						<!-- MODIFY YOUR EXISTING YEAR SELECT -->
+						<div class="form-group">
+							<label for="year-select" class="form-label">Step 2: Select Year</label>
+							<select id="year-select" class="form-control" disabled>
+								<option value="">Click refresh first...</option>
+							</select>
+						</div>
                         <div class="form-group">
                             <label for="table-select" class="form-label">Table Name(s)</label>
                             <select id="table-select" class="form-control" multiple disabled required>
@@ -70,6 +69,21 @@
                     </form>
                 </div>
             </section>
+			<!-- ADD THIS SECTION IF YOU DON'T HAVE STATUS DISPLAY -->
+			<section class="status-panel card">
+				<div class="card__header">
+					<h3>🔄 Processing Status</h3>
+				</div>
+				<div class="card__body">
+					<div id="status-display" class="status-display">
+						<span class="status-indicator">⏳</span>
+						<span class="status-text">Ready to check NAIC site</span>
+					</div>
+					<div class="progress-bar">
+						<div class="progress-fill" style="width: 0%"></div>
+					</div>
+				</div>
+			</section>
 
             <!-- Processing Status -->
             <section id="processing-section" class="processing-panel hidden">
