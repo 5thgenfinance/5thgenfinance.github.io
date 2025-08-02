@@ -1,0 +1,336 @@
+{
+  "contentMetadata": {
+    "version": "1.0.0",
+    "title": "General Knowledge Mixed Set",
+    "description": "Mixed topics including colors, shapes, and basic concepts",
+    "category": "general",
+    "difficulty": "beginner",
+    "totalPairs": 18
+  },
+  "cardPairs": [
+    {
+      "pairId": "pair_001",
+      "matchContent": "RED",
+      "card1": {
+        "cardId": "card_001_a",
+        "displayContent": "RED",
+        "parameterLeft": "COL",
+        "parameterRight": "R",
+        "metadata": { "weight": 10, "tags": ["color", "primary"] }
+      },
+      "card2": {
+        "cardId": "card_001_b",
+        "displayContent": "RED",
+        "parameterLeft": "COL",
+        "parameterRight": "R",
+        "metadata": { "weight": 10, "tags": ["color", "primary"] }
+      }
+    },
+    {
+      "pairId": "pair_002",
+      "matchContent": "CIRCLE",
+      "card1": {
+        "cardId": "card_002_a",
+        "displayContent": "CIRCLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "O",
+        "metadata": { "weight": 9, "tags": ["shape", "round"] }
+      },
+      "card2": {
+        "cardId": "card_002_b",
+        "displayContent": "CIRCLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "O",
+        "metadata": { "weight": 9, "tags": ["shape", "round"] }
+      }
+    },
+    {
+      "pairId": "pair_003",
+      "matchContent": "BLUE",
+      "card1": {
+        "cardId": "card_003_a",
+        "displayContent": "BLUE",
+        "parameterLeft": "COL",
+        "parameterRight": "B",
+        "metadata": { "weight": 10, "tags": ["color", "primary"] }
+      },
+      "card2": {
+        "cardId": "card_003_b",
+        "displayContent": "BLUE",
+        "parameterLeft": "COL",
+        "parameterRight": "B",
+        "metadata": { "weight": 10, "tags": ["color", "primary"] }
+      }
+    },
+    {
+      "pairId": "pair_004",
+      "matchContent": "SQUARE",
+      "card1": {
+        "cardId": "card_004_a",
+        "displayContent": "SQUARE",
+        "parameterLeft": "SHP",
+        "parameterRight": "□",
+        "metadata": { "weight": 8, "tags": ["shape", "four-sided"] }
+      },
+      "card2": {
+        "cardId": "card_004_b",
+        "displayContent": "SQUARE",
+        "parameterLeft": "SHP",
+        "parameterRight": "□",
+        "metadata": { "weight": 8, "tags": ["shape", "four-sided"] }
+      }
+    },
+    {
+      "pairId": "pair_005",
+      "matchContent": "GREEN",
+      "card1": {
+        "cardId": "card_005_a",
+        "displayContent": "GREEN",
+        "parameterLeft": "COL",
+        "parameterRight": "G",
+        "metadata": { "weight": 9, "tags": ["color", "nature"] }
+      },
+      "card2": {
+        "cardId": "card_005_b",
+        "displayContent": "GREEN",
+        "parameterLeft": "COL",
+        "parameterRight": "G",
+        "metadata": { "weight": 9, "tags": ["color", "nature"] }
+      }
+    },
+    {
+      "pairId": "pair_006",
+      "matchContent": "TRIANGLE",
+      "card1": {
+        "cardId": "card_006_a",
+        "displayContent": "TRIANGLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "△",
+        "metadata": { "weight": 7, "tags": ["shape", "three-sided"] }
+      },
+      "card2": {
+        "cardId": "card_006_b",
+        "displayContent": "TRIANGLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "△",
+        "metadata": { "weight": 7, "tags": ["shape", "three-sided"] }
+      }
+    },
+    {
+      "pairId": "pair_007",
+      "matchContent": "YELLOW",
+      "card1": {
+        "cardId": "card_007_a",
+        "displayContent": "YELLOW",
+        "parameterLeft": "COL",
+        "parameterRight": "Y",
+        "metadata": { "weight": 8, "tags": ["color", "bright"] }
+      },
+      "card2": {
+        "cardId": "card_007_b",
+        "displayContent": "YELLOW",
+        "parameterLeft": "COL",
+        "parameterRight": "Y",
+        "metadata": { "weight": 8, "tags": ["color", "bright"] }
+      }
+    },
+    {
+      "pairId": "pair_008",
+      "matchContent": "STAR",
+      "card1": {
+        "cardId": "card_008_a",
+        "displayContent": "STAR",
+        "parameterLeft": "SHP",
+        "parameterRight": "★",
+        "metadata": { "weight": 6, "tags": ["shape", "pointed"] }
+      },
+      "card2": {
+        "cardId": "card_008_b",
+        "displayContent": "STAR",
+        "parameterLeft": "SHP",
+        "parameterRight": "★",
+        "metadata": { "weight": 6, "tags": ["shape", "pointed"] }
+      }
+    },
+    {
+      "pairId": "pair_009",
+      "matchContent": "PURPLE",
+      "card1": {
+        "cardId": "card_009_a",
+        "displayContent": "PURPLE",
+        "parameterLeft": "COL",
+        "parameterRight": "P",
+        "metadata": { "weight": 5, "tags": ["color", "mixed"] }
+      },
+      "card2": {
+        "cardId": "card_009_b",
+        "displayContent": "PURPLE",
+        "parameterLeft": "COL",
+        "parameterRight": "P",
+        "metadata": { "weight": 5, "tags": ["color", "mixed"] }
+      }
+    },
+    {
+      "pairId": "pair_010",
+      "matchContent": "HEART",
+      "card1": {
+        "cardId": "card_010_a",
+        "displayContent": "HEART",
+        "parameterLeft": "SHP",
+        "parameterRight": "♥",
+        "metadata": { "weight": 7, "tags": ["shape", "symbol"] }
+      },
+      "card2": {
+        "cardId": "card_010_b",
+        "displayContent": "HEART",
+        "parameterLeft": "SHP",
+        "parameterRight": "♥",
+        "metadata": { "weight": 7, "tags": ["shape", "symbol"] }
+      }
+    },
+    {
+      "pairId": "pair_011",
+      "matchContent": "ORANGE",
+      "card1": {
+        "cardId": "card_011_a",
+        "displayContent": "ORANGE",
+        "parameterLeft": "COL",
+        "parameterRight": "O",
+        "metadata": { "weight": 6, "tags": ["color", "warm"] }
+      },
+      "card2": {
+        "cardId": "card_011_b",
+        "displayContent": "ORANGE",
+        "parameterLeft": "COL",
+        "parameterRight": "O",
+        "metadata": { "weight": 6, "tags": ["color", "warm"] }
+      }
+    },
+    {
+      "pairId": "pair_012",
+      "matchContent": "DIAMOND",
+      "card1": {
+        "cardId": "card_012_a",
+        "displayContent": "DIAMOND",
+        "parameterLeft": "SHP",
+        "parameterRight": "◆",
+        "metadata": { "weight": 4, "tags": ["shape", "precious"] }
+      },
+      "card2": {
+        "cardId": "card_012_b",
+        "displayContent": "DIAMOND",
+        "parameterLeft": "SHP",
+        "parameterRight": "◆",
+        "metadata": { "weight": 4, "tags": ["shape", "precious"] }
+      }
+    },
+    {
+      "pairId": "pair_013",
+      "matchContent": "BLACK",
+      "card1": {
+        "cardId": "card_013_a",
+        "displayContent": "BLACK",
+        "parameterLeft": "COL",
+        "parameterRight": "K",
+        "metadata": { "weight": 8, "tags": ["color", "dark"] }
+      },
+      "card2": {
+        "cardId": "card_013_b",
+        "displayContent": "BLACK",
+        "parameterLeft": "COL",
+        "parameterRight": "K",
+        "metadata": { "weight": 8, "tags": ["color", "dark"] }
+      }
+    },
+    {
+      "pairId": "pair_014",
+      "matchContent": "OVAL",
+      "card1": {
+        "cardId": "card_014_a",
+        "displayContent": "OVAL",
+        "parameterLeft": "SHP",
+        "parameterRight": "⬭",
+        "metadata": { "weight": 5, "tags": ["shape", "curved"] }
+      },
+      "card2": {
+        "cardId": "card_014_b",
+        "displayContent": "OVAL",
+        "parameterLeft": "SHP",
+        "parameterRight": "⬭",
+        "metadata": { "weight": 5, "tags": ["shape", "curved"] }
+      }
+    },
+    {
+      "pairId": "pair_015",
+      "matchContent": "WHITE",
+      "card1": {
+        "cardId": "card_015_a",
+        "displayContent": "WHITE",
+        "parameterLeft": "COL",
+        "parameterRight": "W",
+        "metadata": { "weight": 7, "tags": ["color", "light"] }
+      },
+      "card2": {
+        "cardId": "card_015_b",
+        "displayContent": "WHITE",
+        "parameterLeft": "COL",
+        "parameterRight": "W",
+        "metadata": { "weight": 7, "tags": ["color", "light"] }
+      }
+    },
+    {
+      "pairId": "pair_016",
+      "matchContent": "RECTANGLE",
+      "card1": {
+        "cardId": "card_016_a",
+        "displayContent": "RECTANGLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "▭",
+        "metadata": { "weight": 6, "tags": ["shape", "four-sided"] }
+      },
+      "card2": {
+        "cardId": "card_016_b",
+        "displayContent": "RECTANGLE",
+        "parameterLeft": "SHP",
+        "parameterRight": "▭",
+        "metadata": { "weight": 6, "tags": ["shape", "four-sided"] }
+      }
+    },
+    {
+      "pairId": "pair_017",
+      "matchContent": "PINK",
+      "card1": {
+        "cardId": "card_017_a",
+        "displayContent": "PINK",
+        "parameterLeft": "COL",
+        "parameterRight": "PK",
+        "metadata": { "weight": 4, "tags": ["color", "light"] }
+      },
+      "card2": {
+        "cardId": "card_017_b",
+        "displayContent": "PINK",
+        "parameterLeft": "COL",
+        "parameterRight": "PK",
+        "metadata": { "weight": 4, "tags": ["color", "light"] }
+      }
+    },
+    {
+      "pairId": "pair_018",
+      "matchContent": "HEXAGON",
+      "card1": {
+        "cardId": "card_018_a",
+        "displayContent": "HEXAGON",
+        "parameterLeft": "SHP",
+        "parameterRight": "⬡",
+        "metadata": { "weight": 2, "tags": ["shape", "six-sided"] }
+      },
+      "card2": {
+        "cardId": "card_018_b",
+        "displayContent": "HEXAGON",
+        "parameterLeft": "SHP",
+        "parameterRight": "⬡",
+        "metadata": { "weight": 2, "tags": ["shape", "six-sided"] }
+      }
+    }
+  ]
+}

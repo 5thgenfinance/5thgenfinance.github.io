@@ -1,0 +1,150 @@
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .setup-container {
+        padding: 30px 20px;
+        margin: 0 10px;
+    }
+    
+    .player-setup {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .mode-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-header {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .game-board.advanced-mode {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    .card {
+        min-height: 60px;
+        font-size: 0.9rem;
+    }
+    
+    .card-parameters {
+        font-size: 0.6rem;
+    }
+}
+
+/* Mobile file upload adjustments */
+@media (max-width: 480px) {
+    #app {
+        padding: 10px;
+    }
+    
+    .setup-container {
+        padding: 20px 15px;
+    }
+    
+    .setup-container h1 {
+        font-size: 2rem;
+    }
+    
+    .content-source-tabs {
+        flex-direction: column;
+    }
+    
+    .content-tab {
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .content-tab.active::after {
+        display: none;
+    }
+    
+    .content-tab.active {
+        background: rgba(68, 68, 255, 0.1);
+    }
+    
+    .file-upload-area {
+        padding: 20px 15px;
+    }
+    
+    .upload-icon {
+        font-size: 1.5rem;
+    }
+    
+    .file-selected {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+    }
+    
+    .file-name {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .game-board {
+        gap: 5px;
+        padding: 10px;
+    }
+    
+    .game-board.easy-mode {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .game-board.advanced-mode {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+    .card {
+        min-height: 50px;
+        font-size: 0.8rem;
+    }
+    
+    .card-content {
+        font-size: 0.8rem;
+    }
+    
+    .card-parameters {
+        display: none;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .control-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .end-container {
+        padding: 20px 15px;
+    }
+    
+    .end-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .end-controls {
+        flex-direction: column;
+    }
+}
+
+/* Large Screen Optimization */
+@media (min-width: 1200px) {
+    .card {
+        min-height: 100px;
+        font-size: 1.1rem;
+    }
+    
+    .game-board {
+        gap: 15px;
+    }
+    
+    .card-content {
+        font-size: 1.1rem;
+    }
+}

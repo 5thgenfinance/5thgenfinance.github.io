@@ -1,0 +1,492 @@
+{
+  "contentMetadata": {
+    "version": "1.0.0",
+    "title": "Basic Vocabulary Set",
+    "description": "Common English vocabulary words for memory game",
+    "category": "vocabulary",
+    "difficulty": "beginner",
+    "totalPairs": 20
+  },
+  "cardPairs": [
+    {
+      "pairId": "pair_001",
+      "matchContent": "APPLE",
+      "card1": {
+        "cardId": "card_001_a",
+        "displayContent": "APPLE",
+        "parameterLeft": null,
+        "parameterRight": null,
+        "metadata": {
+          "weight": 8,
+          "tags": ["fruit", "food", "common"]
+        }
+      },
+      "card2": {
+        "cardId": "card_001_b",
+        "displayContent": "APPLE",
+        "parameterLeft": null,
+        "parameterRight": null,
+        "metadata": {
+          "weight": 8,
+          "tags": ["fruit", "food", "common"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_002",
+      "matchContent": "HOUSE",
+      "card1": {
+        "cardId": "card_002_a",
+        "displayContent": "HOUSE",
+        "parameterLeft": "H1",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 7,
+          "tags": ["building", "home", "common"]
+        }
+      },
+      "card2": {
+        "cardId": "card_002_b",
+        "displayContent": "HOUSE",
+        "parameterLeft": "H2",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 7,
+          "tags": ["building", "home", "common"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_003",
+      "matchContent": "OCEAN",
+      "card1": {
+        "cardId": "card_003_a",
+        "displayContent": "OCEAN",
+        "parameterLeft": null,
+        "parameterRight": "W",
+        "metadata": {
+          "weight": 5,
+          "tags": ["nature", "water", "large"]
+        }
+      },
+      "card2": {
+        "cardId": "card_003_b",
+        "displayContent": "OCEAN",
+        "parameterLeft": null,
+        "parameterRight": "W",
+        "metadata": {
+          "weight": 5,
+          "tags": ["nature", "water", "large"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_004",
+      "matchContent": "BUTTERFLY",
+      "card1": {
+        "cardId": "card_004_a",
+        "displayContent": "BUTTERFLY",
+        "parameterLeft": "B1",
+        "parameterRight": "A",
+        "metadata": {
+          "weight": 3,
+          "tags": ["animal", "insect", "colorful"]
+        }
+      },
+      "card2": {
+        "cardId": "card_004_b",
+        "displayContent": "BUTTERFLY",
+        "parameterLeft": "B2",
+        "parameterRight": "A",
+        "metadata": {
+          "weight": 3,
+          "tags": ["animal", "insect", "colorful"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_005",
+      "matchContent": "MOUNTAIN",
+      "card1": {
+        "cardId": "card_005_a",
+        "displayContent": "MOUNTAIN",
+        "parameterLeft": "M1",
+        "parameterRight": "G",
+        "metadata": {
+          "weight": 6,
+          "tags": ["nature", "geography", "large"]
+        }
+      },
+      "card2": {
+        "cardId": "card_005_b",
+        "displayContent": "MOUNTAIN",
+        "parameterLeft": "M2",
+        "parameterRight": "G",
+        "metadata": {
+          "weight": 6,
+          "tags": ["nature", "geography", "large"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_006",
+      "matchContent": "COMPUTER",
+      "card1": {
+        "cardId": "card_006_a",
+        "displayContent": "COMPUTER",
+        "parameterLeft": "C1",
+        "parameterRight": "T",
+        "metadata": {
+          "weight": 4,
+          "tags": ["technology", "modern", "tool"]
+        }
+      },
+      "card2": {
+        "cardId": "card_006_b",
+        "displayContent": "COMPUTER",
+        "parameterLeft": "C2",
+        "parameterRight": "T",
+        "metadata": {
+          "weight": 4,
+          "tags": ["technology", "modern", "tool"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_007",
+      "matchContent": "RAINBOW",
+      "card1": {
+        "cardId": "card_007_a",
+        "displayContent": "RAINBOW",
+        "parameterLeft": "R1",
+        "parameterRight": "C",
+        "metadata": {
+          "weight": 5,
+          "tags": ["nature", "weather", "colorful"]
+        }
+      },
+      "card2": {
+        "cardId": "card_007_b",
+        "displayContent": "RAINBOW",
+        "parameterLeft": "R2",
+        "parameterRight": "C",
+        "metadata": {
+          "weight": 5,
+          "tags": ["nature", "weather", "colorful"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_008",
+      "matchContent": "LIBRARY",
+      "card1": {
+        "cardId": "card_008_a",
+        "displayContent": "LIBRARY",
+        "parameterLeft": "L1",
+        "parameterRight": "E",
+        "metadata": {
+          "weight": 7,
+          "tags": ["building", "education", "books"]
+        }
+      },
+      "card2": {
+        "cardId": "card_008_b",
+        "displayContent": "LIBRARY",
+        "parameterLeft": "L2",
+        "parameterRight": "E",
+        "metadata": {
+          "weight": 7,
+          "tags": ["building", "education", "books"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_009",
+      "matchContent": "BICYCLE",
+      "card1": {
+        "cardId": "card_009_a",
+        "displayContent": "BICYCLE",
+        "parameterLeft": "B1",
+        "parameterRight": "V",
+        "metadata": {
+          "weight": 8,
+          "tags": ["vehicle", "transport", "exercise"]
+        }
+      },
+      "card2": {
+        "cardId": "card_009_b",
+        "displayContent": "BICYCLE",
+        "parameterLeft": "B2",
+        "parameterRight": "V",
+        "metadata": {
+          "weight": 8,
+          "tags": ["vehicle", "transport", "exercise"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_010",
+      "matchContent": "GUITAR",
+      "card1": {
+        "cardId": "card_010_a",
+        "displayContent": "GUITAR",
+        "parameterLeft": "G1",
+        "parameterRight": "M",
+        "metadata": {
+          "weight": 6,
+          "tags": ["music", "instrument", "art"]
+        }
+      },
+      "card2": {
+        "cardId": "card_010_b",
+        "displayContent": "GUITAR",
+        "parameterLeft": "G2",
+        "parameterRight": "M",
+        "metadata": {
+          "weight": 6,
+          "tags": ["music", "instrument", "art"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_011",
+      "matchContent": "ELEPHANT",
+      "card1": {
+        "cardId": "card_011_a",
+        "displayContent": "ELEPHANT",
+        "parameterLeft": "E1",
+        "parameterRight": "A",
+        "metadata": {
+          "weight": 4,
+          "tags": ["animal", "large", "mammal"]
+        }
+      },
+      "card2": {
+        "cardId": "card_011_b",
+        "displayContent": "ELEPHANT",
+        "parameterLeft": "E2",
+        "parameterRight": "A",
+        "metadata": {
+          "weight": 4,
+          "tags": ["animal", "large", "mammal"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_012",
+      "matchContent": "KITCHEN",
+      "card1": {
+        "cardId": "card_012_a",
+        "displayContent": "KITCHEN",
+        "parameterLeft": "K1",
+        "parameterRight": "H",
+        "metadata": {
+          "weight": 9,
+          "tags": ["room", "home", "cooking"]
+        }
+      },
+      "card2": {
+        "cardId": "card_012_b",
+        "displayContent": "KITCHEN",
+        "parameterLeft": "K2",
+        "parameterRight": "H",
+        "metadata": {
+          "weight": 9,
+          "tags": ["room", "home", "cooking"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_013",
+      "matchContent": "AIRPLANE",
+      "card1": {
+        "cardId": "card_013_a",
+        "displayContent": "AIRPLANE",
+        "parameterLeft": "A1",
+        "parameterRight": "V",
+        "metadata": {
+          "weight": 5,
+          "tags": ["vehicle", "transport", "flying"]
+        }
+      },
+      "card2": {
+        "cardId": "card_013_b",
+        "displayContent": "AIRPLANE",
+        "parameterLeft": "A2",
+        "parameterRight": "V",
+        "metadata": {
+          "weight": 5,
+          "tags": ["vehicle", "transport", "flying"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_014",
+      "matchContent": "GARDEN",
+      "card1": {
+        "cardId": "card_014_a",
+        "displayContent": "GARDEN",
+        "parameterLeft": "G1",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 7,
+          "tags": ["nature", "plants", "outdoor"]
+        }
+      },
+      "card2": {
+        "cardId": "card_014_b",
+        "displayContent": "GARDEN",
+        "parameterLeft": "G2",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 7,
+          "tags": ["nature", "plants", "outdoor"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_015",
+      "matchContent": "TELESCOPE",
+      "card1": {
+        "cardId": "card_015_a",
+        "displayContent": "TELESCOPE",
+        "parameterLeft": "T1",
+        "parameterRight": "S",
+        "metadata": {
+          "weight": 2,
+          "tags": ["science", "space", "tool"]
+        }
+      },
+      "card2": {
+        "cardId": "card_015_b",
+        "displayContent": "TELESCOPE",
+        "parameterLeft": "T2",
+        "parameterRight": "S",
+        "metadata": {
+          "weight": 2,
+          "tags": ["science", "space", "tool"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_016",
+      "matchContent": "PIZZA",
+      "card1": {
+        "cardId": "card_016_a",
+        "displayContent": "PIZZA",
+        "parameterLeft": "P1",
+        "parameterRight": "F",
+        "metadata": {
+          "weight": 10,
+          "tags": ["food", "popular", "meal"]
+        }
+      },
+      "card2": {
+        "cardId": "card_016_b",
+        "displayContent": "PIZZA",
+        "parameterLeft": "P2",
+        "parameterRight": "F",
+        "metadata": {
+          "weight": 10,
+          "tags": ["food", "popular", "meal"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_017",
+      "matchContent": "CASTLE",
+      "card1": {
+        "cardId": "card_017_a",
+        "displayContent": "CASTLE",
+        "parameterLeft": "C1",
+        "parameterRight": "B",
+        "metadata": {
+          "weight": 3,
+          "tags": ["building", "history", "medieval"]
+        }
+      },
+      "card2": {
+        "cardId": "card_017_b",
+        "displayContent": "CASTLE",
+        "parameterLeft": "C2",
+        "parameterRight": "B",
+        "metadata": {
+          "weight": 3,
+          "tags": ["building", "history", "medieval"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_018",
+      "matchContent": "CAMERA",
+      "card1": {
+        "cardId": "card_018_a",
+        "displayContent": "CAMERA",
+        "parameterLeft": "C1",
+        "parameterRight": "T",
+        "metadata": {
+          "weight": 6,
+          "tags": ["technology", "photography", "tool"]
+        }
+      },
+      "card2": {
+        "cardId": "card_018_b",
+        "displayContent": "CAMERA",
+        "parameterLeft": "C2",
+        "parameterRight": "T",
+        "metadata": {
+          "weight": 6,
+          "tags": ["technology", "photography", "tool"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_019",
+      "matchContent": "FOREST",
+      "card1": {
+        "cardId": "card_019_a",
+        "displayContent": "FOREST",
+        "parameterLeft": "F1",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 8,
+          "tags": ["nature", "trees", "environment"]
+        }
+      },
+      "card2": {
+        "cardId": "card_019_b",
+        "displayContent": "FOREST",
+        "parameterLeft": "F2",
+        "parameterRight": "N",
+        "metadata": {
+          "weight": 8,
+          "tags": ["nature", "trees", "environment"]
+        }
+      }
+    },
+    {
+      "pairId": "pair_020",
+      "matchContent": "ROCKET",
+      "card1": {
+        "cardId": "card_020_a",
+        "displayContent": "ROCKET",
+        "parameterLeft": "R1",
+        "parameterRight": "S",
+        "metadata": {
+          "weight": 1,
+          "tags": ["space", "technology", "travel"]
+        }
+      },
+      "card2": {
+        "cardId": "card_020_b",
+        "displayContent": "ROCKET",
+        "parameterLeft": "R2",
+        "parameterRight": "S",
+        "metadata": {
+          "weight": 1,
+          "tags": ["space", "technology", "travel"]
+        }
+      }
+    }
+  ]
+}

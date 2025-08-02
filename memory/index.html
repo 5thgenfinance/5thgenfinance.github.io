@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - Two Player Challenge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Game Setup Screen -->
+        <div id="setup-screen" class="screen active">
+            <div class="setup-container">
+                <h1>Memory Card Game</h1>
+                <div class="player-setup">
+                    <div class="player-input red-player">
+                        <label for="red-player-name">Red Player Name:</label>
+                        <input type="text" id="red-player-name" maxlength="20" placeholder="Enter red player name">
+                    </div>
+                    <div class="player-input blue-player">
+                        <label for="blue-player-name">Blue Player Name:</label>
+                        <input type="text" id="blue-player-name" maxlength="20" placeholder="Enter blue player name">
+                    </div>
+                </div>
+                <div class="game-mode-selection">
+                    <h3>Select Game Mode</h3>
+                    <div class="mode-buttons">
+                        <button type="button" class="mode-btn" data-mode="easy">
+                            <span class="mode-title">Easy Mode</span>
+                            <span class="mode-desc">16 Cards (4×4 Grid)</span>
+                        </button>
+                        <button type="button" class="mode-btn" data-mode="advanced">
+                            <span class="mode-title">Advanced Mode</span>
+                            <span class="mode-desc">24 Cards (6×4 Grid)</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="content-selection">
+                    <h3>Choose Content Source</h3>
+                    <div class="content-source-tabs">
+                        <button type="button" class="content-tab active" data-source="predefined">Pre-defined Sets</button>
+                        <button type="button" class="content-tab" data-source="custom">Upload Custom File</button>
+                    </div>
+                    
+                    <!-- Pre-defined content selection -->
+                    <div class="content-option predefined-content active">
+                        <label for="content-set">Select Content Set:</label>
+                        <select id="content-set">
+                            <option value="vocabulary-beginner">Vocabulary - Beginner</option>
+                            <option value="math-intermediate">Math - Intermediate</option>
+                            <option value="general-mixed">General - Mixed</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Custom file upload -->
+                    <div class="content-option custom-content">
+                        <label for="custom-content-file">Upload JSON Content File:</label>
+                        <div class="file-upload-container">
+                            <input type="file" id="custom-content-file" accept=".json" class="file-input">
+                            <div class="file-upload-display">
+                                <div class="file-upload-area" id="file-upload-area">
+                                    <span class="upload-icon">📁</span>
+                                    <span class="upload-text">Click to select JSON file or drag and drop</span>
+                                    <span class="file-requirements">Supports .json files up to 5MB</span>
+                                </div>
+                                <div class="file-selected" id="file-selected" style="display: none;">
+                                    <span class="file-icon">📄</span>
+                                    <span class="file-name" id="selected-file-name"></span>
+                                    <button type="button" class="remove-file" id="remove-file">✕</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-validation-status" id="file-validation-status"></div>
+                    </div>
+                </div>
+                <button id="start-game" class="start-btn" disabled>Start Game</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="player-info red-player">
+                    <span class="player-name" id="red-player-display"></span>
+                    <span class="player-score" id="red-score">0</span>
+                </div>
+                <div class="game-status">
+                    <div class="current-turn" id="current-turn"></div>
+                    <div class="game-timer" id="game-timer">00:00</div>
+                </div>
+                <div class="player-info blue-player">
+                    <span class="player-name" id="blue-player-display"></span>
+                    <span class="player-score" id="blue-score">0</span>
+                </div>
+            </div>
+            <div class="game-board" id="game-board">
+                <!-- Cards will be dynamically generated -->
+            </div>
+            <div class="game-controls">
+                <button id="reset-game" class="control-btn">New Game</button>
+                <button id="quit-game" class="control-btn">Quit</button>
+            </div>
+        </div>
+
+        <!-- End Game Screen -->
+        <div id="end-screen" class="screen">
+            <div class="end-container">
+                <h1 id="winner-announcement"></h1>
+                <div class="final-stats">
+                    <div class="stat-row">
+                        <span class="stat-label">Final Score:</span>
+                        <div class="final-scores">
+                            <span class="red-final" id="red-final-score"></span>
+                            <span class="vs">vs</span>
+                            <span class="blue-final" id="blue-final-score"></span>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Game Time:</span>
+                        <span id="final-time"></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Total Turns:</span>
+                        <span id="total-turns"></span>
+                    </div>
+                </div>
+                <div class="end-controls">
+                    <button id="play-again" class="control-btn primary">Play Again</button>
+                    <button id="new
