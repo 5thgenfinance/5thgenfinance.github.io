@@ -18,7 +18,7 @@ Analyze the provided transcript (from a Rick Rule interview or panel discussion 
    - `general_comments`: Summary of Rick's main macro or sector views from the interview.
 
 3. For each company discussed, append to `company_info`:
-   - `ticker`, `company_name`, `company_rating` (1-10), `pos_comments`, `neg_comments`, `ownership` (1 = owns, 0 = does not, 2 = not stated), `timestamp` (hh:mm:ss of segment).
+   - `ticker`, `company_name`, `company_rating` (1-10), `pos_comments`, `neg_comments`, `ownership` (1 = owns, 0 = does not own, leave null if no comment), `timestamp` (hh:mm:ss of segment).
 
 **RESPONSE FORMAT:** Output a single valid JSON file with this exact structure:
 {
