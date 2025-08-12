@@ -1,0 +1,42 @@
+**Workflow Objective:** Conduct a full financial analysis and audit for a given stock.  Validate the agent response and provide reproducibility.
+
+**Instructions:**
+You will execute the following steps sequentially using the specified agent for each. Do not proceed to the next step until the previous one is complete.  Show all work.  Show all sources.
+
+graph TD
+    A[Start: User Prompt Input] --> B{Step 1: DCF Model Agent Gathers Financial Data};
+    B --> C{Step 1b: WillActually Agent Validates Data and Macro Dan will recommend a more appropriate model if DCF not appropriate};
+    C -- Data Valid & DCF Appropriate --> D{Step 2: Macro Dan will recommend WACC, CAGR or projected revenue Bear, Base and Bull case input assumptions based on analysis;
+    C -- Data Invalid or DCF Not Appropriate --> E[End: Halt, Report Data Error and Make Model Recommendation];
+	D --> E{Step 3 DCF Model will input Bear, Base and Bull case assumptions, show all calculations.  Present the price for each path};
+	E --> F{Step 4: Multi-Faceted Audit};
+    subgraph Step 4 [Parallel Processing]
+        F1[AI Accuracy Review]
+        F2[WillActually Review]
+        F3[Actuarial ASOP 56 Review]
+    end;
+    F --> F1;
+    F --> F2;
+    F --> F3;
+    F1 --> G{Step 4: Compile Final Report};
+    F2 --> G;
+    F3 --> G;
+    G --> H[Deliver Executive Summary to User];
+    G--> I[Deliver Detailed DCF Calculation to User];
+    G--> J[Deliver Summary of input assumptions to User];
+    G--> K[Deliver Aggregate Audit Score Summary from F1,F2,F3]
+    G--> L[End: Output Log Data from the Execution Logger]
+
+
+
+    %% Background Process
+    subgraph Background Logging with Execution Logger Agent
+        B --> L1[Log Step 1]
+        D --> L2[Log Step 2]
+        G --> L3[Log Step 3 & 4]
+    end
+
+    style F1 fill:#f9f,stroke:#333,stroke-width:2px
+    style F2 fill:#f9f,stroke:#333,stroke-width:2px
+    style F3 fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#ccf,stroke:#333,stroke-width:2px
