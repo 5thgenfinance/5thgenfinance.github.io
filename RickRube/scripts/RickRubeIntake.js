@@ -11,7 +11,7 @@ const chokidar = require('chokidar');
 const INPUT_FOLDER = 'C:\\MongoApps\\DEV\\RickRube\\intake';
 const ARCHIVE_FOLDER = 'C:\\MongoApps\\DEV\\RickRube\\archive';
 const ERROR_FOLDER = 'C:\\MongoApps\\DEV\\RickRube\\error';
-const MONGO_URI = 'mongodb+srv://maxwere:xx1wCYtsfCFR3sR9@5gfdatapipe.be8riki.mongodb.net/';
+const MONGO_URI = 'mongodb+srv://svc_rw:KB54sRecaazYBSRS@5gfdatapipe.be8riki.mongodb.net/';
 const DB_NAME = 'DEV';
 const COLLECTION_NAME = 'colRickRube';
 
@@ -68,7 +68,7 @@ async function processFile(filePath, client) {
 
     // Metadata
     const fileChecksum = await computeChecksum(filePath);
-    const metadata = {
+    const intake_metadata = {
       originalFilename: filename,
       ingestionDate: new Date().toISOString(),
       sourceFolder: INPUT_FOLDER,
@@ -77,7 +77,7 @@ async function processFile(filePath, client) {
       appName: 'RickRube'
     };
 
-    const enrichedDoc = { metadata, data: jsonDoc };
+    const enrichedDoc = { intake_metadata, data: jsonDoc };
 
     // Insert into MongoDB
     const db = client.db(DB_NAME);
