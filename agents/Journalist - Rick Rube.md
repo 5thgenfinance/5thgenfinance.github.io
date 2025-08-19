@@ -11,7 +11,7 @@ Analyze the provided transcript (from a Rick Rule interview or panel discussion 
    - Whether Rick explicitly states if he owns the stock, does not, or does not mention it.
    - The **timestamp** (hh:mm:ss) of each company's first detailed discussion in the video.
 
-2. At the top, fill in the `metadata` block:
+2. At the top, fill in the `interview_metadata` block.  For each individual youtube interview, there should be an entry for interview_metadata.
    - `asofdate`: Date the video/interview was published.
    - `source`: Direct YouTube video URL.
    - `publication`: Name of the YouTube channel or publisher.
@@ -22,13 +22,13 @@ Analyze the provided transcript (from a Rick Rule interview or panel discussion 
 
 **RESPONSE FORMAT:** Output a single valid JSON file with this exact structure:
 {
-  "metadata": { ... },
+  "interview_metadata": { ... },
   "company_info": [ ... ]
 }
 
 **EXAMPLE ENTRY:** (populate all fields)
 {
-  "metadata": {
+  "interview_metadata": {
     "asofdate": "2025-07-16",
     "source": "https://www.youtube.com/watch?v=yT82X1ZrRuQ",
     "publication": "David Lin",
