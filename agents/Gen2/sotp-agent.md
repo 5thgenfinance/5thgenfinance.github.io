@@ -39,7 +39,7 @@ Respond using the following format:
 <valuation>
 Asset Part | Resource Type | Resource M&I Amount | NPV (US$m) | Ownership % | Multiple | Value (US$m) | % of Total EV | $/Share
 ---|---|---|---|---|---|---|---|---
-...| ... | ... | ... | ... | ... | ... | ... | ...
+... | ... | ... | ... | ... | ... | ... | ... | ...
 
 Below the Line Items:
 - Debt: US$m
@@ -50,7 +50,7 @@ Total EV: US$m
 Equity Value: US$m
 Per Share Value: $/share
 Current Price: US$/share
-Discount us$(Green) / us$Premium (Red) 
+Discount: ✅ Discount % or 🚩 Premium %
 
 Sources:
 1. SEC Filing: [link]
