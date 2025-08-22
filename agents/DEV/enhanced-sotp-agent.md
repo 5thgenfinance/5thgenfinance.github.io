@@ -90,7 +90,7 @@ VALIDATION SUMMARY:
 
 ### Enhanced Data Summary Table
 
-| Asset Part | Resource Type | Ownership % | M&I (oz) | Inferred (oz) | Proven (oz) | Probable (oz) | Grade (g/t) | Cycle | Data Source | Effective Date | QP Certified |
+| Asset Part | Resource Type | Ownership % | M&I (Moz) | Inferred (Moz) | Proven (Moz) | Probable (Moz) | Grade (g/t) | Cycle | Data Source | Effective Date | QP Certified |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 

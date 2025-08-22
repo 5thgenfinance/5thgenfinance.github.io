@@ -1,0 +1,118 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-08-21",
+    "source": "https://www.youtube.com/watch?v=Iee-AXNxA3Y",
+    "publication": "Rule Investment Media",
+    "general_comments": "Rick Rule discusses the precious metals bull market unfolding as expected, with gold leading first, then producers, and eventually juniors. He warns about retail sentiment becoming narrative-driven rather than value-focused. He emphasizes the importance of understanding price vs. value delta and notes that good exploration work is being rewarded with oversubscribed financings. He discusses real inflation being much higher than CPI suggests, with gold responding to negative real interest rates."
+  },
+  "company_info": [
+    {
+      "ticker": "TMQ",
+      "company_name": "Trilogy Metals",
+      "company_rating": null,
+      "pos_comments": "Very fond of those deposits, it's a district not just a single deposit. Fond of the grade and historically fond of management's work with tribal corporations and indigenous people.",
+      "neg_comments": "Blocked by Biden administration on Ambler road access which would have benefited tribal corporation. Would rather wait for regulatory certainty than speculate on political outcomes.",
+      "ownership": null,
+      "timestamp": "00:17:38"
+    },
+    {
+      "ticker": "PDN",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Attracted to their assets and ability to utilize term contracts to finance multiple assets to production. If they execute business plan, will be a must-own for major mining companies - standalone uranium division with forecastable prices, volumes and cash flow.",
+      "neg_comments": "Concerned about recent revisions to their feasibility study.",
+      "ownership": 1,
+      "timestamp": "00:19:35"
+    },
+    {
+      "ticker": "UUUU",
+      "company_name": "Energy Fuels",
+      "company_rating": 5,
+      "pos_comments": "Increased ranking from 6 to 5. Ability to process heavy rare earths on bench scale and deal with nucleide waste in permitted disposal facilities. Uniquely positioned to obtain subsidized financing for both rare earths and uranium businesses in current US administration climate.",
+      "neg_comments": "Previously would have been vilified for uranium and vanadium mining activities, particularly in Colorado plateau.",
+      "ownership": null,
+      "timestamp": "00:21:10"
+    },
+    {
+      "ticker": "MGM",
+      "company_name": "Magnum Mining",
+      "company_rating": null,
+      "pos_comments": "Likes exploration results in Sudbury, adult supervision from Dundee backing, loves idea of consolidating Sudbury district. Infrastructure-rich environment with existing mills and smelters nearby. Currently buying the stock.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:22:50"
+    },
+    {
+      "ticker": "AZM",
+      "company_name": "Azimuth Resources",
+      "company_rating": null,
+      "pos_comments": "Prospect generator in Quebec, well-backed by province of Quebec. Coming into cycle where mining companies need to beef up property pipelines and prospect generators prosper. Confident properties will enjoy work funded by third parties in next 2-3 years.",
+      "neg_comments": "More exploration stage stock, small company, have not yet enjoyed any major exploration success.",
+      "ownership": 1,
+      "timestamp": "00:23:45"
+    },
+    {
+      "ticker": "RIO2",
+      "company_name": "Rio2",
+      "company_rating": 5,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:27:16"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "Monera Alamos",
+      "company_rating": null,
+      "pos_comments": "Understands the time-honored strategy of amalgamating lower quality assets to benefit from size and scale, increase liquidity and share price, lower cost of capital, then eventually buy better assets while selling lower quality ones.",
+      "neg_comments": "Not a buyer. Objected to management changing stated strategy mid-cycle from growing via free cash flow to dilutive acquisition. Collection of lower grade tier 2 assets. Strategy carries real risks if not executed by someone like Ross Beaty.",
+      "ownership": 0,
+      "timestamp": "00:27:57"
+    },
+    {
+      "ticker": "BGL",
+      "company_name": "Belleview Gold",
+      "company_rating": null,
+      "pos_comments": "Unanswered questions about how big deposit can get - traditional Australian approach of doing minimum drilling to get into production rather than fully defining resource.",
+      "neg_comments": "Unanswered questions around reconciling feasibility study with production. Mine needs to shake in.",
+      "ownership": 1,
+      "timestamp": "00:29:51"
+    },
+    {
+      "ticker": "CCO",
+      "company_name": "Cameco",
+      "company_rating": null,
+      "pos_comments": "Way long Cameco - only uranium stock didn't sell when emerged from hated status. Operating numbers suggest they know engineering or are leaving Westinghouse alone. Pricing flexibility as old fixed-price contracts wear off. Real excitement in integrating Westinghouse into full nuclear fuel cycle - from mining to selling finished watts/electrons.",
+      "neg_comments": "Previous concern about uranium miners acquiring Westinghouse engineering company and whether they knew anything about engineering.",
+      "ownership": 1,
+      "timestamp": "00:30:47"
+    },
+    {
+      "ticker": "VALE",
+      "company_name": "Vale",
+      "company_rating": null,
+      "pos_comments": "Value of sum of parts exceeds price of whole. Iron markets continue to be strong. Reasonable NPV of cash flows from deposits relative to company price. Legal issues from Brazil tailings disaster now resolved.",
+      "neg_comments": "Major part of tailings disaster in Brazil that killed 51 people. Faced significant legal and financial liability.",
+      "ownership": 1,
+      "timestamp": "00:33:25"
+    },
+    {
+      "ticker": "SVM", 
+      "company_name": "Silvercorp Metals",
+      "company_rating": 5,
+      "pos_comments": "Very fond of CEO Roy Fang. Wonderful stock experience - led financing at 35 cents with warrant, watched go to $15 over 10 years. Taken out 3-4x initial capital, current dividend may exceed original purchase price.",
+      "neg_comments": "Would raise ranking if had more confidence in opacity of financial reports from China and more confidence in reserve reports around China.",
+      "ownership": 1,
+      "timestamp": "00:40:26"
+    },
+    {
+      "ticker": "AMK",
+      "company_name": "American Creek (A-Mark Resources)",
+      "company_rating": 4,
+      "pos_comments": "Interesting discovery behind successful team of Hutter and Dickinson who have been successful 3-4 times before in same endeavor in BC. Early hallmarks of important discovery by people who understand what that looks like. One of few current BC porphyries that threatens to be tier one mine.",
+      "neg_comments": "Data is by no means certain yet.",
+      "ownership": 1,
+      "timestamp": "00:38:44"
+    }
+  ]
+}

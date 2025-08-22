@@ -1,0 +1,32 @@
+{
+  "name": "rick-rule-viewer",
+  "version": "1.0.0",
+  "description": "Rick Rule Stock Analysis Viewer - GitHub Pages",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "export-data": "node scripts/export-data.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "rick-rule",
+    "stocks", 
+    "mining",
+    "investment",
+    "analysis",
+    "github-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/rick-rule-viewer.git"
+  },
+  "homepage": "https://your-username.github.io/rick-rule-viewer/"
+}
