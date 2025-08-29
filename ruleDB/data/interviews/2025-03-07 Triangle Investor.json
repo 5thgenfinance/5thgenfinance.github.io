@@ -1,0 +1,370 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-03-07",
+    "source": "https://www.youtube.com/watch?v=PYJ9DTK3EdA",
+    "publication": "Triangle Investor",
+    "general_comments": "Rick Rule discusses macroeconomic drivers for gold, silver, uranium, and copper, touching on currency debasement, supply/demand deficits, and geopolitical influences. He expresses bullish long-term views on gold and copper, notes cyclical opportunity and deep undervaluation in uranium juniors, and highlights his preference for operational excellence and exploration predictability. Rick systematically ranks 40 companies across four sectors by a blend of financial, operational, political risk, and personal ownership criteria."
+  },
+  "company_info": [
+    {
+      "ticker": "NEM",
+      "company_name": "Newmont Corporation",
+      "company_rating": 5,
+      "pos_comments": "Divested second-tier mines post-Newcrest merger, raising $4 billion. Improved balance sheet and focus on tier-one assets.",
+      "neg_comments": "Needs to deliver on all-in sustaining cost guidance to be upgraded.",
+      "ownership": null,
+      "timestamp": "00:14:33"
+    },
+    {
+      "ticker": "FNV",
+      "company_name": "Franco-Nevada",
+      "company_rating": 4,
+      "pos_comments": "Portfolio resilience; potential compensation or restart for Cobre Panama asset.",
+      "neg_comments": "Significant NAV hit from Panama mine nationalization and share price decline.",
+      "ownership": null,
+      "timestamp": "00:15:29"
+    },
+    {
+      "ticker": "SKE",
+      "company_name": "Skeena Resources",
+      "company_rating": 4,
+      "pos_comments": "Attractive optionality with significant resource base; interested pending concentrate penalty resolution.",
+      "neg_comments": "Needs clarity on concentrate penalties and First Nations financial arrangements.",
+      "ownership": null,
+      "timestamp": "00:16:21"
+    },
+    {
+      "ticker": "AEM",
+      "company_name": "Agnico Eagle Mines",
+      "company_rating": 4,
+      "pos_comments": "Consistently beats on all-in sustaining costs, best growth profile among majors, delivered strong returns.",
+      "neg_comments": "Most expensive/highest market cap gold equity among peers.",
+      "ownership": null,
+      "timestamp": "00:17:05"
+    },
+    {
+      "ticker": "AGI",
+      "company_name": "Alamos Gold",
+      "company_rating": 5,
+      "pos_comments": "Strong management; delivered growth, potential upside from retooling Mulatos mine.",
+      "neg_comments": "Question about ability to sustain past two years' growth rate.",
+      "ownership": null,
+      "timestamp": "00:17:48"
+    },
+    {
+      "ticker": "SA",
+      "company_name": "Seabridge Gold",
+      "company_rating": null,
+      "pos_comments": "Controls massive resources, great relationships with First Nations. Optionality play on potential takeover.",
+      "neg_comments": "High market cap, large upfront capital requirements. No longer owns.",
+      "ownership": 0,
+      "timestamp": "00:18:33"
+    },
+    {
+      "ticker": "MUX",
+      "company_name": "McEwen Mining",
+      "company_rating": null,
+      "pos_comments": "Management (Rob McEwen) admired for resilience and shareholder alignment. Cult following among gold bulls.",
+      "neg_comments": "Start date of new phase uncertain.",
+      "ownership": null,
+      "timestamp": "00:19:13"
+    },
+    {
+      "ticker": "IAG",
+      "company_name": "Iamgold",
+      "company_rating": null,
+      "pos_comments": "Balance sheet improving, ramp-up at Coté Lake, large resource potential, possible takeover target.",
+      "neg_comments": "Execution and market price risk; does not currently own.",
+      "ownership": 0,
+      "timestamp": "00:20:06"
+    },
+    {
+      "ticker": "OR",
+      "company_name": "Osisko Gold Royalties",
+      "company_rating": 4,
+      "pos_comments": "Royalties sector selloff seen as overdone; attractive relative to big royalty peers. Owns shares.",
+      "neg_comments": "Potential consolidation with larger royalty entities if price doesn't rebound.",
+      "ownership": 1,
+      "timestamp": "00:20:44"
+    },
+    {
+      "ticker": "MTA",
+      "company_name": "Metalla Royalty & Streaming",
+      "company_rating": null,
+      "pos_comments": "Potentially attractive after recent underperformance; formerly owned.",
+      "neg_comments": "Fully valued after major run, prompting sale; currently does not own.",
+      "ownership": 0,
+      "timestamp": "00:21:25"
+    },
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": 4,
+      "pos_comments": "Turnaround in progress, must-own for silver bulls. Significant exploration upside in non-producing assets.",
+      "neg_comments": "Now majority gold by revenue; jurisdiction risk in Argentina/Guatemala.",
+      "ownership": null,
+      "timestamp": "00:21:53"
+    },
+    {
+      "ticker": "HL",
+      "company_name": "Hecla Mining",
+      "company_rating": 6,
+      "pos_comments": "High leverage to silver price upturns, brand name in sector.",
+      "neg_comments": "High cost producer, best suited to aggressive silver bulls. Recently sold holding.",
+      "ownership": 0,
+      "timestamp": "00:23:02"
+    },
+    {
+      "ticker": "AG",
+      "company_name": "First Majestic Silver",
+      "company_rating": null,
+      "pos_comments": "Strong free cash flow from Gatos; good position for turnaround if Jarrett Canyon improves.",
+      "neg_comments": "Short reserve life; fuse problem if not extended through new discoveries; does not own.",
+      "ownership": 0,
+      "timestamp": "00:23:41"
+    },
+    {
+      "ticker": "EXK",
+      "company_name": "Endeavour Silver",
+      "company_rating": null,
+      "pos_comments": "Extremely leveraged to silver price; suitable for optionality.",
+      "neg_comments": "Usually underperforms in flat markets, less appealing for long-term core holding.",
+      "ownership": 0,
+      "timestamp": "00:24:29"
+    },
+    {
+      "ticker": "VZLA",
+      "company_name": "Vizsla Silver",
+      "company_rating": null,
+      "pos_comments": "Major personal holding; predictive exploration success, continued reserve additions.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:24:55"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "MAG Silver",
+      "company_rating": null,
+      "pos_comments": "Owns shares. High exploration potential, excellent financial performance.",
+      "neg_comments": "High G&A for minority position.",
+      "ownership": 1,
+      "timestamp": "00:25:33"
+    },
+    {
+      "ticker": "DV",
+      "company_name": "Dolly Varden Silver",
+      "company_rating": null,
+      "pos_comments": "Past holding fully monetized; remaining position is profit. Major upside if key deposits can be tied.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:26:16"
+    },
+    {
+      "ticker": "GGD",
+      "company_name": "GoGold Resources",
+      "company_rating": null,
+      "pos_comments": "Large holding; predictive exploration, sound cost management. Excited about post-permitting phase.",
+      "neg_comments": "Short-term challenge during permitting/construction.",
+      "ownership": 1,
+      "timestamp": "00:26:50"
+    },
+    {
+      "ticker": "FRES.L",
+      "company_name": "Fresnillo",
+      "company_rating": null,
+      "pos_comments": "Owns shares; not disappointed with operations given size and complexity.",
+      "neg_comments": "Would prefer organizational simplification or upstream amalgamation with Penoles.",
+      "ownership": 1,
+      "timestamp": "00:27:47"
+    },
+    {
+      "ticker": "KAP.L",
+      "company_name": "Kazatomprom",
+      "company_rating": null,
+      "pos_comments": "Still holds shares; admired uranium HR expertise.",
+      "neg_comments": "Losing mid-level staff, operational and political uncertainty in Kazakhstan.",
+      "ownership": 1,
+      "timestamp": "00:28:34"
+    },
+    {
+      "ticker": "CCJ",
+      "company_name": "Cameco",
+      "company_rating": null,
+      "pos_comments": "Essential for generalist uranium exposure. Increased fiscal discipline.",
+      "neg_comments": "Older low-price contracts rolling off; execution risk.",
+      "ownership": 1,
+      "timestamp": "00:29:34"
+    },
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Feasibility study shows promise; cautiously optimistic on ISR mining.",
+      "neg_comments": "Technical risk between feasibility and actual production.",
+      "ownership": null,
+      "timestamp": "00:30:32"
+    },
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": null,
+      "pos_comments": "Strong asset acquisition strategy, poised for torque.",
+      "neg_comments": "Probably fully valued; personally prefers Uranium Royalty Corp for value.",
+      "ownership": null,
+      "timestamp": "00:31:03"
+    },
+    {
+      "ticker": "PDN.AX",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Three developable projects; likely to raise capital effectively despite skepticism.",
+      "neg_comments": "Development and financial risks. Potential for M&A.",
+      "ownership": null,
+      "timestamp": "00:31:37"
+    },
+    {
+      "ticker": "NXE",
+      "company_name": "NexGen Energy",
+      "company_rating": null,
+      "pos_comments": "Owns shares. Best worldwide undeveloped uranium deposit; management derisking asset.",
+      "neg_comments": "High G&A, questionable benefit from some spending; governance optics criticized.",
+      "ownership": 1,
+      "timestamp": "00:32:31"
+    },
+    {
+      "ticker": "UUUU",
+      "company_name": "Energy Fuels",
+      "company_rating": null,
+      "pos_comments": "Permits valuable; appreciates operational turnaround.",
+      "neg_comments": "Collection of smaller, lower-quality assets; does not own.",
+      "ownership": 0,
+      "timestamp": "00:33:44"
+    },
+    {
+      "ticker": "GLO",
+      "company_name": "Global Atomic",
+      "company_rating": null,
+      "pos_comments": "Potential for outsized returns if fiscal/financing stability achieved.",
+      "neg_comments": "High political/financial risk; cannot own until progress.",
+      "ownership": 0,
+      "timestamp": "00:34:06"
+    },
+    {
+      "ticker": "DYL.AX",
+      "company_name": "Deep Yellow",
+      "company_rating": null,
+      "pos_comments": "Owns a large, paid-for position; believes in management and balance sheet.",
+      "neg_comments": "Occasionally takes on too much debt.",
+      "ownership": 1,
+      "timestamp": "00:35:45"
+    },
+    {
+      "ticker": "BMN.L",
+      "company_name": "Bannerman Energy",
+      "company_rating": null,
+      "pos_comments": "Good team, asset has exploration upside.",
+      "neg_comments": "Needs to increase proven resources before buying.",
+      "ownership": 0,
+      "timestamp": "00:36:32"
+    },
+    {
+      "ticker": "ISO",
+      "company_name": "IsoEnergy",
+      "company_rating": null,
+      "pos_comments": "Owns a free position from past gains; smaller than in NexGen and Deep Yellow.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:36:57"
+    },
+    {
+      "ticker": "FCX",
+      "company_name": "Freeport-McMoRan",
+      "company_rating": null,
+      "pos_comments": "Long-time owner; excellent balance sheet and capital discipline. Can easily raise capex.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:37:40"
+    },
+    {
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "company_rating": null,
+      "pos_comments": "Foundational portfolio holding for mining exposure; growth built in via Olympic Dam.",
+      "neg_comments": "Regarded more as iron ore rather than copper company.",
+      "ownership": 1,
+      "timestamp": "00:38:11"
+    },
+    {
+      "ticker": "CODELCO",
+      "company_name": "Codelco",
+      "company_rating": null,
+      "pos_comments": "Significant state copper producer.",
+      "neg_comments": "Underfunded for decades due to state dividends.",
+      "ownership": 0,
+      "timestamp": "00:38:48"
+    },
+    {
+      "ticker": "AAL.L",
+      "company_name": "Anglo American",
+      "company_rating": null,
+      "pos_comments": "Would like to own; merger/takeover speculation.",
+      "neg_comments": "Does not currently own.",
+      "ownership": 0,
+      "timestamp": "00:39:12"
+    },
+    {
+      "ticker": "ANTO.L",
+      "company_name": "Antofagasta",
+      "company_rating": null,
+      "pos_comments": "Strong build and diversification track record.",
+      "neg_comments": "Lacks intermediate-term growth to attract buying.",
+      "ownership": 0,
+      "timestamp": "00:39:28"
+    },
+    {
+      "ticker": "GLEN.L",
+      "company_name": "Glencore",
+      "company_rating": null,
+      "pos_comments": "Large personal holding; massive cash flow from coal and diversified interests.",
+      "neg_comments": "High political and regulatory risk; history of legal fines.",
+      "ownership": 1,
+      "timestamp": "00:39:58"
+    },
+    {
+      "ticker": "FM.TO",
+      "company_name": "First Quantum Minerals",
+      "company_rating": null,
+      "pos_comments": "Very cheap if Panama is resolved; ongoing improvements outside Panama.",
+      "neg_comments": "Balance sheet damage from Panama asset; purely an option on resolution.",
+      "ownership": 0,
+      "timestamp": "00:40:32"
+    },
+    {
+      "ticker": "SCCO",
+      "company_name": "Southern Copper",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Would prefer not to comment; under review by staff.",
+      "ownership": null,
+      "timestamp": "00:40:59"
+    },
+    {
+      "ticker": "IVN.TO",
+      "company_name": "Ivanhoe Mines",
+      "company_rating": null,
+      "pos_comments": "Major personal gain (legacy $0.63/share); multiple discoveries and mine builds; large withdrawal, still holds.",
+      "neg_comments": "Political and financing risk for South African platinum build-out.",
+      "ownership": 1,
+      "timestamp": "00:41:16"
+    },
+    {
+      "ticker": "FDY.TO",
+      "company_name": "Faraday Copper",
+      "company_rating": null,
+      "pos_comments": "Attractive asset, but too small for Rick’s portfolio.",
+      "neg_comments": "Potentially interesting for others, but not for Rick due to size constraint.",
+      "ownership": 0,
+      "timestamp": "00:42:08"
+    }
+  ]
+}

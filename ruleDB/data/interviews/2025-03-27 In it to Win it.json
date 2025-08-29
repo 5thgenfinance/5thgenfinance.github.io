@@ -1,0 +1,163 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-03-27",
+    "source": "https://www.youtube.com/watch?v=bkSCR8B-UZg",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule explains why gold’s breakout above $3,000 is only the start of a bigger secular uptrend, citing prolonged US dollar debasement and echoes of the 1970s. He discusses macro cycles for gold, uranium, and natural gas, advises sector contrarians to rotate capital into select junior uranium stocks, and shares portfolio principles. Rule also addresses management quality, capital allocation, and political risk (especially in Mexico, Canada, Africa, and Latin America). He ranks over a dozen mining and royalty companies, answers viewer questions about operational setbacks, and details his strict discipline for stock ratings and portfolio construction as of late March 2025."
+  },
+  "company_info": [
+    {
+      "ticker": "AEM",
+      "company_name": "Agnico Eagle Mines",
+      "company_rating": 4,
+      "pos_comments": "Top-tier producer; best operating and financial results among North American gold/silver companies; deep development pipeline. Long-term holding, benefit from cost of capital, strong relationships with management.",
+      "neg_comments": "No longer cheap after large multiyear run-up in price; much of the undervaluation has disappeared.",
+      "ownership": 1,
+      "timestamp": "00:05:09"
+    },
+    {
+      "ticker": "NEM",
+      "company_name": "Newmont",
+      "company_rating": 5,
+      "pos_comments": "Multi-asset gold producer, benefit from Newcrest acquisition. Likely takeover target if trading liquidity and share price don’t improve. May become more focused after asset sales.",
+      "neg_comments": "Share price has lagged, needs asset rationalization. Spread over too many second-tier assets.",
+      "ownership": null,
+      "timestamp": "00:05:09"
+    },
+    {
+      "ticker": "GOLD",
+      "company_name": "Barrick Gold",
+      "company_rating": 5,
+      "pos_comments": "Global multi-asset producer. Leadership by Mark Bristow strong; active in high-risk international jurisdictions. Potential upside if Reko Diq succeeds.",
+      "neg_comments": "Political and project risk in places like Pakistan and Mali. Growth strategy unclear without further details on main assets.",
+      "ownership": null,
+      "timestamp": "00:05:09"
+    },
+    {
+      "ticker": "MEG",
+      "company_name": "MEG Energy",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "No specific comments—insufficient information for a rating.",
+      "ownership": null,
+      "timestamp": "00:13:28"
+    },
+    {
+      "ticker": "CTM.AX",
+      "company_name": "Centaurus Metals",
+      "company_rating": 4,
+      "pos_comments": "Ultra-large, high-grade nickel deposit in Brazil—tier one, lowest cost sulfide producer, attractive for major mining companies. Long production life.",
+      "neg_comments": "Nickel sector deeply out of favor; could remain weak in near term if recession. Return on capital assured only if nickel prices normalize.",
+      "ownership": null,
+      "timestamp": "00:13:28"
+    },
+    {
+      "ticker": "DUNDEE",
+      "company_name": "Dundee Corp",
+      "company_rating": null,
+      "pos_comments": "Classic merchant bank, successful long-term value creator in Canadian resource space. Run by Jonathan Goodman.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:17:28"
+    },
+    {
+      "ticker": "CCJ",
+      "company_name": "Cameco",
+      "company_rating": null,
+      "pos_comments": "Largest uranium producer with financial strength; only a few (Cameco, Kazatomprom) able to borrow uranium for long-term contracts.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:18:05"
+    },
+    {
+      "ticker": "KAP.L",
+      "company_name": "Kazatomprom",
+      "company_rating": null,
+      "pos_comments": "Only other uranium major with the balance sheet to arbitrage term/spot pricing; key player in supply contracts.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:18:05"
+    },
+    {
+      "ticker": "BOE.AX",
+      "company_name": "Boss Energy",
+      "company_rating": null,
+      "pos_comments": "Preferable uranium producer versus juniors if able to secure term offtake contracts.",
+      "neg_comments": "Recent production difficulties at Encore lower competitiveness in contract market.",
+      "ownership": null,
+      "timestamp": "00:18:05"
+    },
+    {
+      "ticker": "AYA",
+      "company_name": "Aya Gold & Silver",
+      "company_rating": 5,
+      "pos_comments": "Extremely well-run, strong local relationships, scheduled to double production, substantial exploration upside.",
+      "neg_comments": "Downgraded from 4 to 5 simply because price doubled, no longer stupid cheap.",
+      "ownership": 1,
+      "timestamp": "00:23:01"
+    },
+    {
+      "ticker": "ECO",
+      "company_name": "Ecora Resources",
+      "company_rating": null,
+      "pos_comments": "Owns valuable Australian coal royalty portfolio. Development assets in pipeline; potential for increasing coal royalty in 2 years.",
+      "neg_comments": "Mistake to diversify away from coal towards development-stage base/energy metal royalties. Portfolio selling at a discount to liquidation value.",
+      "ownership": null,
+      "timestamp": "00:25:38"
+    },
+    {
+      "ticker": "ADT.AX",
+      "company_name": "Adriatic Metals",
+      "company_rating": 5,
+      "pos_comments": "Potential upgrade to 4 if operational run-rate achieved. Multiple VMS pods likely, large resource growth expected.",
+      "neg_comments": "Recent political challenges in Bosnia slowed share price. Needs to stabilize mining/milling operations before next re-rating.",
+      "ownership": null,
+      "timestamp": "00:26:40"
+    },
+    {
+      "ticker": "GOG",
+      "company_name": "GoGold Resources",
+      "company_rating": null,
+      "pos_comments": "String of Pearls silver deposit, exploration is predictive, rising community affirmation, strong geology team.",
+      "neg_comments": "Subject to high Mexican political risk (especially on permitting for open pit). Most technical risk resolved.",
+      "ownership": 1,
+      "timestamp": "00:29:38"
+    },
+    {
+      "ticker": "ATX",
+      "company_name": "Atex Resources",
+      "company_rating": null,
+      "pos_comments": "Positive drilling—found high-grade copper intervals after previously broad intervals of lower grade. Steadily improving geological understanding and zone targeting.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:31:21"
+    },
+    {
+      "ticker": "PALAF",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Unique among uranium developers in ability to finance two mines sequentially via offtake contracts. Fission acquisition enables partnership on top undeveloped uranium project (Western Athabasca).",
+      "neg_comments": "Risk around willingness/execution, and need for synergies with NextGen.",
+      "ownership": null,
+      "timestamp": "00:35:31"
+    },
+    {
+      "ticker": "OSK",
+      "company_name": "Osisko Development",
+      "company_rating": 6,
+      "pos_comments": "Large gold endowment, persistent management, strong potential if underground Cariboo project model is proven out.",
+      "neg_comments": "Geological model complex; difficult to tie together, requires more drilling.",
+      "ownership": null,
+      "timestamp": "00:37:17"
+    },
+    {
+      "ticker": "KTO",
+      "company_name": "K2 Gold",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Strongly negative on California permitting. Experience with 13-year delays and substantial sunk costs in region. Not a fan of new California mine developments.",
+      "ownership": 0,
+      "timestamp": "00:38:04"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-03-14",
+    "source": "https://www.youtube.com/watch?v=BsYvBCfhaSA",
+    "publication": "The Andy Millette Show",
+    "general_comments": "Rick Rule discusses macroeconomic headwinds—including the decline in US dollar purchasing power, ballooning federal liabilities, and persistent inflation—as the core drivers for gold’s secular uptrend. He emphasizes gold’s resilience amidst fiat currency weakness and forecasts a much higher nominal gold price if current trends continue. Rule notes that his upcoming Natural Resources Symposium insists on presenting only companies where he and the other conference sponsors are shareholders, reinforcing an alignment of interest. He stresses diligent portfolio evaluation, honest mistakes, and highlights the unique money-back guarantee on conference value. Rick gives specific commentary, including candid positive and cautionary notes, on four mining/resource companies, and underscores the long-term discipline required for ten-baggers."
+  },
+  "company_info": [
+    {
+      "ticker": null,
+      "company_name": "Luca Mining",
+      "company_rating": null,
+      "pos_comments": "Shareholder. Impressed with chairman Javier, who is also the largest shareholder. Likes the out-of-favor Mexico jurisdiction and management’s deep operational and local experience. Luca acquired two mines that were previously mismanaged and starved for capital; turnaround is underway and both mines are now generating cash. Sees large on-concession exploration potential in both projects, thanks to historical underinvestment. Management’s challenge is to execute the turnaround, then expand via exploration, and ultimately achieve scale through further consolidations. Believes that if operational goals are achieved, the stock could be a ten-bagger.",
+      "neg_comments": "Still early in turnaround. Needs to prove sustained operational and exploration success and to scale up via further acquisitions. Acknowledges operational difficulties and the region’s political/social risk, and warns that success is not guaranteed.",
+      "ownership": 1,
+      "timestamp": "00:09:03"
+    },
+    {
+      "ticker": null,
+      "company_name": "West Red Lake Gold",
+      "company_rating": null,
+      "pos_comments": "Positively notes the company acquired a substantial physical plant and lots of historical exploration data at a very cheap price. Frank Giustra’s involvement as the author/backer of the company is regarded as a major asset—Giustra is called a ‘fearsome competitor’ and a great partner. Management is seen as hard-working and present for shareholders.",
+      "neg_comments": "Main caution is that the company may have moved into production too early. Would like to see a new feasibility study to reduce risk; closely monitoring quarterly progress to judge operational execution.",
+      "ownership": null,
+      "timestamp": "00:13:38"
+    },
+    {
+      "ticker": null,
+      "company_name": "Tectonic Metals",
+      "company_rating": null,
+      "pos_comments": "Former and current shareholder. Likes CEO Tony Reda and the technical team’s serial exploration success in Alaska and the far north. Recently re-entered the stock after the company finally published good drill results that validated their exploration thesis. Favors companies where the management’s technical expertise aligns directly with the project’s geology and challenges.",
+      "neg_comments": "Previously sold out due to lack of tangible exploration results; felt prior effort was not delivering progress. Still speculative—and not yet an operating mine.",
+      "ownership": 1,
+      "timestamp": "00:15:23"
+    },
+    {
+      "ticker": null,
+      "company_name": "Mundoro Capital",
+      "company_rating": null,
+      "pos_comments": "Very positive on CEO Teodora Dechev, comparing her to a young Ross Beaty for being bright, tenacious, and highly cost-conscious. Applauds the fact that Mundoro generates its own royalties (rather than buying them), partners with majors for farm-out funding, and is already cash-flow positive (rare for a $16M cap explorer). Strong reputation among larger companies for honest, efficient business practices. Unusually, administrative costs are negative due to external exploration income.",
+      "neg_comments": "No explicit negatives, but recognizes the small size and (implied) early-stage risk. Success is not guaranteed—typical for generative exploration models.",
+      "ownership": 1,
+      "timestamp": "00:17:10"
+    }
+  ]
+}

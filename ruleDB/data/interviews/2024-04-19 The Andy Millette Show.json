@@ -1,0 +1,46 @@
+{
+  "interview_metadata": {
+    "asofdate": "2024-04-19",
+    "source": "https://www.youtube.com/watch?v=64UE3ZRZ3x4",
+    "publication": "Rule Investment Media",
+    "general_comments": "Rick Rule and Andy provide a deep-dive on silver stocks and macroeconomic conditions affecting precious metals. Rick discusses market psychology, the undervaluation of silver equities, and the critical role of patience and discipline in resource investing. He explains his proprietary 1–10 stock ranking system, shares risk-adjusted strategies for investors of all risk tolerances, and explicitly ranks major silver producers, offering performance and risk insights on each. He encourages broad due diligence, being early on deeply hated sectors, and highlights his investment education programs."
+  },
+  "company_info": [
+    {
+      "ticker": "AG",
+      "company_name": "First Majestic Silver",
+      "company_rating": 6,
+      "pos_comments": "Strong management, skilled at acquiring and reviving cash-strapped mines. CEO Keith Neumeyer has built a cult following, lowering cost of capital. Historically high-ranked; reacts strongly to silver price swings.",
+      "neg_comments": "Major issues at Jerritt Canyon mine have downgraded the stock; must resolve operational/pipeline problems to regain former ranking. Actively drilling to establish viability but not currently spending to operate at a loss.",
+      "ownership": null,
+      "timestamp": "00:30:55"
+    },
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": 4,
+      "pos_comments": "Fundamentally attractive post-Yamana asset sale, ongoing marginal asset divestment to strengthen the balance sheet. Owns two major, high-grade silver deposits (Guatemala and Argentina) that could double production if derisked. Warrants on billions of ounces not reflected in the stock price. Long-term bullish on management’s improvements.",
+      "neg_comments": "Shareholder dilution after Yamana acquisition (50% more shares issued). Historic price drop reflects these concerns, but now offers significant upside if political catalysts unlock stranded assets.",
+      "ownership": 1,
+      "timestamp": "00:32:28"
+    },
+    {
+      "ticker": "ADT.AX",
+      "company_name": "Adriatic Metals",
+      "company_rating": 4,
+      "pos_comments": "High-quality VMS (volcanogenic massive sulfide) deposit, well-executed build (on time, on budget) in a non-traditional mining jurisdiction. Achieved political/social consensus. Multi-node deposit suggests expansion/longevity. Potential to upgrade to a 3 if nameplate production/costs are achieved.",
+      "neg_comments": "Currently zinc-centric due to weak silver prices; silver price rally would make it more silver-focused. Needs to prove consistency at scale.",
+      "ownership": null,
+      "timestamp": "00:35:03"
+    },
+    {
+      "ticker": "DV.V",
+      "company_name": "Dolly Varden Silver",
+      "company_rating": 5,
+      "pos_comments": "Upgraded from 6 due to outperforming market. Potential to unify two small high-grade deposits into a much larger system of 200Moz+ resource; possibility for significant discovery upside. Strong performance and management.",
+      "neg_comments": "Outperformance led to higher relative price, thereby reducing immediate value. Still needs to prove system coherence in ongoing drilling.",
+      "ownership": null,
+      "timestamp": "00:36:56"
+    }
+  ]
+}

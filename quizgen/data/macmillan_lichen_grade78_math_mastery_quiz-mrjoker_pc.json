@@ -1,0 +1,2179 @@
+{
+  "metadata": {	
+	  "quiz_name": "Macmillan & Lichen Grade 7/8 Math Mastery Quiz (Section Field Only)",
+	  "time_limit_minutes": 180,
+	  "total_questions": 150},
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is 1/6 - 4/5?",
+      "choices": [
+        "A) -49/30",
+        "B) -5/6",
+        "C) -19/30",
+        "D) -53/60"
+      ],
+      "correct_answer": "C",
+      "explanation": "Compute the operation and simplify: -19/30.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "question": "What is 9/5 - 9/8?",
+      "choices": [
+        "A) 269/280",
+        "B) 27/40",
+        "C) 121/120",
+        "D) 7/40"
+      ],
+      "correct_answer": "B",
+      "explanation": "Compute the operation and simplify: 27/40.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "question": "What is 2/3 * 7/3?",
+      "choices": [
+        "A) 14/9",
+        "B) 47/36",
+        "C) 31/18",
+        "D) 4/3"
+      ],
+      "correct_answer": "A",
+      "explanation": "Compute the operation and simplify: 14/9.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 4,
+      "question": "What is 4/3 * 1/5?",
+      "choices": [
+        "A) 4/15",
+        "B) -2/15",
+        "C) 1/60",
+        "D) 17/45"
+      ],
+      "correct_answer": "A",
+      "explanation": "Compute the operation and simplify: 4/15.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "question": "What is 4/6 - 2/4?",
+      "choices": [
+        "A) 1/2",
+        "B) 1/18",
+        "C) 1/6",
+        "D) 1/42"
+      ],
+      "correct_answer": "C",
+      "explanation": "Compute the operation and simplify: 1/6.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "question": "What is 7/6 * 2/5?",
+      "choices": [
+        "A) 31/45",
+        "B) 7/15",
+        "C) 16/45",
+        "D) 3/10"
+      ],
+      "correct_answer": "B",
+      "explanation": "Compute the operation and simplify: 7/15.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "question": "What is 7/7 \u00f7 4/4?",
+      "choices": [
+        "A) 1",
+        "B) 1/2",
+        "C) 0",
+        "D) 7/8"
+      ],
+      "correct_answer": "A",
+      "explanation": "Compute the operation and simplify: 1.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 8,
+      "question": "What is 9/6 + 9/2?",
+      "choices": [
+        "A) 13/2",
+        "B) 17/3",
+        "C) 43/7",
+        "D) 6"
+      ],
+      "correct_answer": "D",
+      "explanation": "Compute the operation and simplify: 6.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 9,
+      "question": "What is 9/3 - 5/5?",
+      "choices": [
+        "A) 2",
+        "B) 12/7",
+        "C) 9/4",
+        "D) 3"
+      ],
+      "correct_answer": "A",
+      "explanation": "Compute the operation and simplify: 2.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 10,
+      "question": "What is 1/5 \u00f7 2/3?",
+      "choices": [
+        "A) 1/10",
+        "B) 1/20",
+        "C) 3/10",
+        "D) 1/2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Compute the operation and simplify: 3/10.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 11,
+      "question": "What is 9/5 * 5/8?",
+      "choices": [
+        "A) 43/24",
+        "B) 9/8",
+        "C) 37/40",
+        "D) 53/40"
+      ],
+      "correct_answer": "B",
+      "explanation": "Compute the operation and simplify: 9/8.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "question": "What is 4/2 - 2/2?",
+      "choices": [
+        "A) 0",
+        "B) 5/6",
+        "C) 4/3",
+        "D) 1"
+      ],
+      "correct_answer": "D",
+      "explanation": "Compute the operation and simplify: 1.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 13,
+      "question": "What is 4/9 + 7/5?",
+      "choices": [
+        "A) 709/360",
+        "B) 83/45",
+        "C) 31/15",
+        "D) 287/180"
+      ],
+      "correct_answer": "B",
+      "explanation": "Compute the operation and simplify: 83/45.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 14,
+      "question": "What is 7/7 - 2/5?",
+      "choices": [
+        "A) 11/10",
+        "B) 3/5",
+        "C) 32/45",
+        "D) 1/2"
+      ],
+      "correct_answer": "B",
+      "explanation": "Compute the operation and simplify: 3/5.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "question": "What is 1/2 - 2/5?",
+      "choices": [
+        "A) 29/90",
+        "B) 1/2",
+        "C) 1/10",
+        "D) 11/10"
+      ],
+      "correct_answer": "C",
+      "explanation": "Compute the operation and simplify: 1/10.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 16,
+      "question": "What is 5/9 \u00f7 5/8?",
+      "choices": [
+        "A) 31/45",
+        "B) 49/45",
+        "C) 8/9",
+        "D) 38/63"
+      ],
+      "correct_answer": "C",
+      "explanation": "Compute the operation and simplify: 8/9.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 17,
+      "question": "What is 1/3 + 3/3?",
+      "choices": [
+        "A) 14/15",
+        "B) 29/24",
+        "C) 2/3",
+        "D) 4/3"
+      ],
+      "correct_answer": "D",
+      "explanation": "Compute the operation and simplify: 4/3.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 18,
+      "question": "What is 4/7 \u00f7 4/6?",
+      "choices": [
+        "A) -1/7",
+        "B) 29/42",
+        "C) 8/7",
+        "D) 6/7"
+      ],
+      "correct_answer": "D",
+      "explanation": "Compute the operation and simplify: 6/7.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 19,
+      "question": "What is 9/5 - 9/6?",
+      "choices": [
+        "A) 11/20",
+        "B) 19/30",
+        "C) 11/70",
+        "D) 3/10"
+      ],
+      "correct_answer": "D",
+      "explanation": "Compute the operation and simplify: 3/10.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "question": "What is 9/6 * 2/4?",
+      "choices": [
+        "A) 3/4",
+        "B) 7/12",
+        "C) 19/20",
+        "D) 1/12"
+      ],
+      "correct_answer": "A",
+      "explanation": "Compute the operation and simplify: 3/4.",
+      "section": "Rational Numbers and Operations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 21,
+      "question": "If the ratio of cats to dogs is 6:2, how many cats are there when there are 6 dogs?",
+      "choices": [
+        "A) 12",
+        "B) 18",
+        "C) 22",
+        "D) 24"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 3: 6*3=18.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 22,
+      "question": "If the ratio of cats to dogs is 4:12, how many cats are there when there are 72 dogs?",
+      "choices": [
+        "A) 20",
+        "B) 26",
+        "C) 28",
+        "D) 24"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 4*6=24.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 23,
+      "question": "If the ratio of cats to dogs is 3:3, how many cats are there when there are 12 dogs?",
+      "choices": [
+        "A) 9",
+        "B) 12",
+        "C) 17",
+        "D) 15"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 4: 3*4=12.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 24,
+      "question": "If the ratio of cats to dogs is 4:2, how many cats are there when there are 12 dogs?",
+      "choices": [
+        "A) 28",
+        "B) 24",
+        "C) 27",
+        "D) 20"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 4*6=24.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 25,
+      "question": "If the ratio of cats to dogs is 12:3, how many cats are there when there are 21 dogs?",
+      "choices": [
+        "A) 89",
+        "B) 96",
+        "C) 72",
+        "D) 84"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 7: 12*7=84.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 26,
+      "question": "If the ratio of cats to dogs is 4:4, how many cats are there when there are 32 dogs?",
+      "choices": [
+        "A) 28",
+        "B) 32",
+        "C) 36",
+        "D) 33"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 8: 4*8=32.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 27,
+      "question": "If the ratio of cats to dogs is 12:5, how many cats are there when there are 30 dogs?",
+      "choices": [
+        "A) 60",
+        "B) 72",
+        "C) 74",
+        "D) 84"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 12*6=72.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 28,
+      "question": "If the ratio of cats to dogs is 5:5, how many cats are there when there are 45 dogs?",
+      "choices": [
+        "A) 40",
+        "B) 45",
+        "C) 48",
+        "D) 50"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 9: 5*9=45.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 29,
+      "question": "If the ratio of cats to dogs is 12:5, how many cats are there when there are 40 dogs?",
+      "choices": [
+        "A) 96",
+        "B) 108",
+        "C) 84",
+        "D) 99"
+      ],
+      "correct_answer": "A",
+      "explanation": "The ratio is maintained, so multiply cats by 8: 12*8=96.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 30,
+      "question": "If the ratio of cats to dogs is 12:10, how many cats are there when there are 80 dogs?",
+      "choices": [
+        "A) 101",
+        "B) 96",
+        "C) 84",
+        "D) 108"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 8: 12*8=96.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 31,
+      "question": "If the ratio of cats to dogs is 4:11, how many cats are there when there are 66 dogs?",
+      "choices": [
+        "A) 24",
+        "B) 25",
+        "C) 28",
+        "D) 20"
+      ],
+      "correct_answer": "A",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 4*6=24.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 32,
+      "question": "If the ratio of cats to dogs is 7:8, how many cats are there when there are 24 dogs?",
+      "choices": [
+        "A) 28",
+        "B) 25",
+        "C) 21",
+        "D) 14"
+      ],
+      "correct_answer": "C",
+      "explanation": "The ratio is maintained, so multiply cats by 3: 7*3=21.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 33,
+      "question": "If the ratio of cats to dogs is 2:10, how many cats are there when there are 50 dogs?",
+      "choices": [
+        "A) 13",
+        "B) 8",
+        "C) 12",
+        "D) 10"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 5: 2*5=10.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 34,
+      "question": "If the ratio of cats to dogs is 12:3, how many cats are there when there are 18 dogs?",
+      "choices": [
+        "A) 84",
+        "B) 60",
+        "C) 72",
+        "D) 77"
+      ],
+      "correct_answer": "C",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 12*6=72.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 35,
+      "question": "If the ratio of cats to dogs is 8:6, how many cats are there when there are 24 dogs?",
+      "choices": [
+        "A) 34",
+        "B) 40",
+        "C) 24",
+        "D) 32"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 4: 8*4=32.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 36,
+      "question": "If the ratio of cats to dogs is 11:11, how many cats are there when there are 66 dogs?",
+      "choices": [
+        "A) 66",
+        "B) 77",
+        "C) 55",
+        "D) 70"
+      ],
+      "correct_answer": "A",
+      "explanation": "The ratio is maintained, so multiply cats by 6: 11*6=66.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 37,
+      "question": "If the ratio of cats to dogs is 8:11, how many cats are there when there are 77 dogs?",
+      "choices": [
+        "A) 64",
+        "B) 48",
+        "C) 60",
+        "D) 56"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 7: 8*7=56.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 38,
+      "question": "If the ratio of cats to dogs is 4:12, how many cats are there when there are 36 dogs?",
+      "choices": [
+        "A) 15",
+        "B) 12",
+        "C) 8",
+        "D) 16"
+      ],
+      "correct_answer": "B",
+      "explanation": "The ratio is maintained, so multiply cats by 3: 4*3=12.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 39,
+      "question": "If the ratio of cats to dogs is 5:5, how many cats are there when there are 20 dogs?",
+      "choices": [
+        "A) 21",
+        "B) 25",
+        "C) 20",
+        "D) 15"
+      ],
+      "correct_answer": "C",
+      "explanation": "The ratio is maintained, so multiply cats by 4: 5*4=20.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 40,
+      "question": "If the ratio of cats to dogs is 9:8, how many cats are there when there are 40 dogs?",
+      "choices": [
+        "A) 36",
+        "B) 54",
+        "C) 49",
+        "D) 45"
+      ],
+      "correct_answer": "D",
+      "explanation": "The ratio is maintained, so multiply cats by 5: 9*5=45.",
+      "section": "Proportional Relationships",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 41,
+      "question": "Solve for x: 2x + 4 = 0",
+      "choices": [
+        "A) -4.0",
+        "B) -3.0",
+        "C) -1.0",
+        "D) -2.0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 4 and divide by 2: x=-2.0.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 42,
+      "question": "Solve for x: 2x + 18 = 0",
+      "choices": [
+        "A) -18.0",
+        "B) -9.0",
+        "C) -10.0",
+        "D) -8.0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Subtract 18 and divide by 2: x=-9.0.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 43,
+      "question": "Solve for x: 9x + 17 = 0",
+      "choices": [
+        "A) -3.7777777777777777",
+        "B) -1.8888888888888888",
+        "C) -2.888888888888889",
+        "D) -0.8888888888888888"
+      ],
+      "correct_answer": "B",
+      "explanation": "Subtract 17 and divide by 9: x=-1.8888888888888888.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 44,
+      "question": "Solve for x: 4x + 16 = 0",
+      "choices": [
+        "A) -5.0",
+        "B) -3.0",
+        "C) -8.0",
+        "D) -4.0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 16 and divide by 4: x=-4.0.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 45,
+      "question": "Solve for x: 10x + 16 = 0",
+      "choices": [
+        "A) -3.2",
+        "B) -2.6",
+        "C) -1.6",
+        "D) -0.6000000000000001"
+      ],
+      "correct_answer": "C",
+      "explanation": "Subtract 16 and divide by 10: x=-1.6.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 46,
+      "question": "Solve for x: 6x + 8 = 0",
+      "choices": [
+        "A) -0.33333333333333326",
+        "B) -1.3333333333333333",
+        "C) -2.6666666666666665",
+        "D) -2.333333333333333"
+      ],
+      "correct_answer": "B",
+      "explanation": "Subtract 8 and divide by 6: x=-1.3333333333333333.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 47,
+      "question": "Solve for x: 4x + 5 = 0",
+      "choices": [
+        "A) -2.25",
+        "B) -2.5",
+        "C) -1.25",
+        "D) -0.25"
+      ],
+      "correct_answer": "C",
+      "explanation": "Subtract 5 and divide by 4: x=-1.25.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 48,
+      "question": "Solve for x: 3x + 14 = 0",
+      "choices": [
+        "A) -9.333333333333334",
+        "B) -3.666666666666667",
+        "C) -5.666666666666667",
+        "D) -4.666666666666667"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 14 and divide by 3: x=-4.666666666666667.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 49,
+      "question": "Solve for x: 2x + 7 = 0",
+      "choices": [
+        "A) -4.5",
+        "B) -7.0",
+        "C) -2.5",
+        "D) -3.5"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 7 and divide by 2: x=-3.5.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 50,
+      "question": "Solve for x: 9x + 1 = 0",
+      "choices": [
+        "A) -0.2222222222222222",
+        "B) -0.1111111111111111",
+        "C) 0.8888888888888888",
+        "D) -1.1111111111111112"
+      ],
+      "correct_answer": "B",
+      "explanation": "Subtract 1 and divide by 9: x=-0.1111111111111111.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 51,
+      "question": "Solve for x: 10x + 18 = 0",
+      "choices": [
+        "A) -0.8",
+        "B) -2.8",
+        "C) -1.8",
+        "D) -3.6"
+      ],
+      "correct_answer": "C",
+      "explanation": "Subtract 18 and divide by 10: x=-1.8.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 52,
+      "question": "Solve for x: 8x + 16 = 0",
+      "choices": [
+        "A) -2.0",
+        "B) -3.0",
+        "C) -4.0",
+        "D) -1.0"
+      ],
+      "correct_answer": "A",
+      "explanation": "Subtract 16 and divide by 8: x=-2.0.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 53,
+      "question": "Solve for x: 4x + 15 = 0",
+      "choices": [
+        "A) -3.75",
+        "B) -4.75",
+        "C) -2.75",
+        "D) -7.5"
+      ],
+      "correct_answer": "A",
+      "explanation": "Subtract 15 and divide by 4: x=-3.75.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 54,
+      "question": "Solve for x: 2x + 3 = 0",
+      "choices": [
+        "A) -3.0",
+        "B) -0.5",
+        "C) -2.5",
+        "D) -1.5"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 3 and divide by 2: x=-1.5.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 55,
+      "question": "Solve for x: 2x + 9 = 0",
+      "choices": [
+        "A) -5.5",
+        "B) -3.5",
+        "C) -9.0",
+        "D) -4.5"
+      ],
+      "correct_answer": "D",
+      "explanation": "Subtract 9 and divide by 2: x=-4.5.",
+      "section": "Algebraic Expressions and Equations",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 56,
+      "question": "Solve the inequality: 7x - 11 < 0",
+      "choices": [
+        "A) x > 0.5714285714285714",
+        "B) x > 1.5714285714285714",
+        "C) x < 2.571428571428571",
+        "D) x < 1.5714285714285714"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add 11 both sides then divide by 7: x < 1.5714285714285714.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 57,
+      "question": "Solve the inequality: 3x - 16 < 0",
+      "choices": [
+        "A) x < 6.333333333333333",
+        "B) x < 5.333333333333333",
+        "C) x > 5.333333333333333",
+        "D) x > 4.333333333333333"
+      ],
+      "correct_answer": "B",
+      "explanation": "Add 16 both sides then divide by 3: x < 5.333333333333333.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 58,
+      "question": "Solve the inequality: 5x - 3 < 0",
+      "choices": [
+        "A) x > -0.4",
+        "B) x < 1.6",
+        "C) x < 0.6",
+        "D) x > 0.6"
+      ],
+      "correct_answer": "C",
+      "explanation": "Add 3 both sides then divide by 5: x < 0.6.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 59,
+      "question": "Solve the inequality: 2x - 20 < 0",
+      "choices": [
+        "A) x < 10.0",
+        "B) x > 10.0",
+        "C) x < 11.0",
+        "D) x > 9.0"
+      ],
+      "correct_answer": "A",
+      "explanation": "Add 20 both sides then divide by 2: x < 10.0.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 60,
+      "question": "Solve the inequality: 3x - 19 < 0",
+      "choices": [
+        "A) x > 5.333333333333333",
+        "B) x > 6.333333333333333",
+        "C) x < 6.333333333333333",
+        "D) x < 7.333333333333333"
+      ],
+      "correct_answer": "C",
+      "explanation": "Add 19 both sides then divide by 3: x < 6.333333333333333.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 61,
+      "question": "Solve the inequality: 4x - 20 < 0",
+      "choices": [
+        "A) x > 5.0",
+        "B) x < 6.0",
+        "C) x < 5.0",
+        "D) x > 4.0"
+      ],
+      "correct_answer": "C",
+      "explanation": "Add 20 both sides then divide by 4: x < 5.0.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 62,
+      "question": "Solve the inequality: 2x - 10 < 0",
+      "choices": [
+        "A) x > 5.0",
+        "B) x > 4.0",
+        "C) x < 6.0",
+        "D) x < 5.0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add 10 both sides then divide by 2: x < 5.0.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 63,
+      "question": "Solve the inequality: 5x - 4 < 0",
+      "choices": [
+        "A) x > 0.8",
+        "B) x < 1.8",
+        "C) x < 0.8",
+        "D) x > -0.19999999999999996"
+      ],
+      "correct_answer": "C",
+      "explanation": "Add 4 both sides then divide by 5: x < 0.8.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 64,
+      "question": "Solve the inequality: 7x - 18 < 0",
+      "choices": [
+        "A) x > 1.5714285714285716",
+        "B) x > 2.5714285714285716",
+        "C) x < 3.5714285714285716",
+        "D) x < 2.5714285714285716"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add 18 both sides then divide by 7: x < 2.5714285714285716.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 65,
+      "question": "Solve the inequality: 10x - 11 < 0",
+      "choices": [
+        "A) x < 1.1",
+        "B) x > 1.1",
+        "C) x < 2.1",
+        "D) x > 0.10000000000000009"
+      ],
+      "correct_answer": "A",
+      "explanation": "Add 11 both sides then divide by 10: x < 1.1.",
+      "section": "Inequalities",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 66,
+      "question": "A triangle has two angles measuring 47\u00b0 and 77\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 71\u00b0",
+        "B) 46\u00b0",
+        "C) 56\u00b0",
+        "D) 66\u00b0"
+      ],
+      "correct_answer": "C",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(47+77)=56\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 67,
+      "question": "A triangle has two angles measuring 47\u00b0 and 77\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 71\u00b0",
+        "B) 56\u00b0",
+        "C) 66\u00b0",
+        "D) 46\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(47+77)=56\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 68,
+      "question": "A triangle has two angles measuring 49\u00b0 and 79\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 67\u00b0",
+        "B) 62\u00b0",
+        "C) 42\u00b0",
+        "D) 52\u00b0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(49+79)=52\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 69,
+      "question": "A triangle has two angles measuring 35\u00b0 and 65\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 80\u00b0",
+        "B) 95\u00b0",
+        "C) 90\u00b0",
+        "D) 70\u00b0"
+      ],
+      "correct_answer": "A",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(35+65)=80\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 70,
+      "question": "A triangle has two angles measuring 68\u00b0 and 98\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 4\u00b0",
+        "B) 29\u00b0",
+        "C) 24\u00b0",
+        "D) 14\u00b0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(68+98)=14\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 71,
+      "question": "A triangle has two angles measuring 21\u00b0 and 51\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 98\u00b0",
+        "B) 123\u00b0",
+        "C) 118\u00b0",
+        "D) 108\u00b0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(21+51)=108\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 72,
+      "question": "A triangle has two angles measuring 33\u00b0 and 63\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 94\u00b0",
+        "B) 84\u00b0",
+        "C) 74\u00b0",
+        "D) 99\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(33+63)=84\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 73,
+      "question": "A triangle has two angles measuring 58\u00b0 and 88\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 49\u00b0",
+        "B) 44\u00b0",
+        "C) 34\u00b0",
+        "D) 24\u00b0"
+      ],
+      "correct_answer": "C",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(58+88)=34\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 74,
+      "question": "A triangle has two angles measuring 25\u00b0 and 55\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 110\u00b0",
+        "B) 100\u00b0",
+        "C) 115\u00b0",
+        "D) 90\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(25+55)=100\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 75,
+      "question": "A triangle has two angles measuring 55\u00b0 and 85\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 30\u00b0",
+        "B) 40\u00b0",
+        "C) 55\u00b0",
+        "D) 50\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(55+85)=40\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 76,
+      "question": "A triangle has two angles measuring 48\u00b0 and 78\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 64\u00b0",
+        "B) 69\u00b0",
+        "C) 54\u00b0",
+        "D) 44\u00b0"
+      ],
+      "correct_answer": "C",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(48+78)=54\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 77,
+      "question": "A triangle has two angles measuring 45\u00b0 and 75\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 75\u00b0",
+        "B) 50\u00b0",
+        "C) 60\u00b0",
+        "D) 70\u00b0"
+      ],
+      "correct_answer": "C",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(45+75)=60\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 78,
+      "question": "A triangle has two angles measuring 55\u00b0 and 85\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 30\u00b0",
+        "B) 40\u00b0",
+        "C) 50\u00b0",
+        "D) 55\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(55+85)=40\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 79,
+      "question": "A triangle has two angles measuring 64\u00b0 and 94\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 32\u00b0",
+        "B) 12\u00b0",
+        "C) 37\u00b0",
+        "D) 22\u00b0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(64+94)=22\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 80,
+      "question": "A triangle has two angles measuring 34\u00b0 and 64\u00b0. How many degrees is the third angle?",
+      "choices": [
+        "A) 97\u00b0",
+        "B) 82\u00b0",
+        "C) 72\u00b0",
+        "D) 92\u00b0"
+      ],
+      "correct_answer": "B",
+      "explanation": "Angles in triangle sum to 180\u00b0: 180-(34+64)=82\u00b0.",
+      "section": "Geometry - Angles and Scale Drawings",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 81,
+      "question": "What is the area of a rectangle with length 4 cm and width 14 cm?",
+      "choices": [
+        "A) 56 cm\u00b2",
+        "B) 61 cm\u00b2",
+        "C) 42 cm\u00b2",
+        "D) 70 cm\u00b2"
+      ],
+      "correct_answer": "A",
+      "explanation": "Area=length\u00d7width: 4\u00d714=56 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 82,
+      "question": "What is the area of a rectangle with length 7 cm and width 14 cm?",
+      "choices": [
+        "A) 84 cm\u00b2",
+        "B) 98 cm\u00b2",
+        "C) 103 cm\u00b2",
+        "D) 112 cm\u00b2"
+      ],
+      "correct_answer": "B",
+      "explanation": "Area=length\u00d7width: 7\u00d714=98 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 83,
+      "question": "What is the area of a rectangle with length 6 cm and width 8 cm?",
+      "choices": [
+        "A) 56 cm\u00b2",
+        "B) 40 cm\u00b2",
+        "C) 48 cm\u00b2",
+        "D) 53 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 6\u00d78=48 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 84,
+      "question": "What is the area of a rectangle with length 7 cm and width 3 cm?",
+      "choices": [
+        "A) 21 cm\u00b2",
+        "B) 18 cm\u00b2",
+        "C) 26 cm\u00b2",
+        "D) 24 cm\u00b2"
+      ],
+      "correct_answer": "A",
+      "explanation": "Area=length\u00d7width: 7\u00d73=21 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 85,
+      "question": "What is the area of a rectangle with length 13 cm and width 15 cm?",
+      "choices": [
+        "A) 200 cm\u00b2",
+        "B) 210 cm\u00b2",
+        "C) 180 cm\u00b2",
+        "D) 195 cm\u00b2"
+      ],
+      "correct_answer": "D",
+      "explanation": "Area=length\u00d7width: 13\u00d715=195 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 86,
+      "question": "What is the area of a rectangle with length 10 cm and width 10 cm?",
+      "choices": [
+        "A) 105 cm\u00b2",
+        "B) 90 cm\u00b2",
+        "C) 110 cm\u00b2",
+        "D) 100 cm\u00b2"
+      ],
+      "correct_answer": "D",
+      "explanation": "Area=length\u00d7width: 10\u00d710=100 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 87,
+      "question": "What is the area of a rectangle with length 7 cm and width 10 cm?",
+      "choices": [
+        "A) 60 cm\u00b2",
+        "B) 80 cm\u00b2",
+        "C) 70 cm\u00b2",
+        "D) 75 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 7\u00d710=70 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 88,
+      "question": "What is the area of a rectangle with length 4 cm and width 12 cm?",
+      "choices": [
+        "A) 60 cm\u00b2",
+        "B) 53 cm\u00b2",
+        "C) 48 cm\u00b2",
+        "D) 36 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 4\u00d712=48 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 89,
+      "question": "What is the area of a rectangle with length 4 cm and width 6 cm?",
+      "choices": [
+        "A) 24 cm\u00b2",
+        "B) 18 cm\u00b2",
+        "C) 30 cm\u00b2",
+        "D) 29 cm\u00b2"
+      ],
+      "correct_answer": "A",
+      "explanation": "Area=length\u00d7width: 4\u00d76=24 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 90,
+      "question": "What is the area of a rectangle with length 15 cm and width 11 cm?",
+      "choices": [
+        "A) 170 cm\u00b2",
+        "B) 176 cm\u00b2",
+        "C) 154 cm\u00b2",
+        "D) 165 cm\u00b2"
+      ],
+      "correct_answer": "D",
+      "explanation": "Area=length\u00d7width: 15\u00d711=165 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 91,
+      "question": "What is the area of a rectangle with length 12 cm and width 9 cm?",
+      "choices": [
+        "A) 117 cm\u00b2",
+        "B) 113 cm\u00b2",
+        "C) 108 cm\u00b2",
+        "D) 99 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 12\u00d79=108 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 92,
+      "question": "What is the area of a rectangle with length 15 cm and width 6 cm?",
+      "choices": [
+        "A) 96 cm\u00b2",
+        "B) 95 cm\u00b2",
+        "C) 90 cm\u00b2",
+        "D) 84 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 15\u00d76=90 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 93,
+      "question": "What is the area of a rectangle with length 6 cm and width 5 cm?",
+      "choices": [
+        "A) 35 cm\u00b2",
+        "B) 25 cm\u00b2",
+        "C) 30 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 6\u00d75=30 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 94,
+      "question": "What is the area of a rectangle with length 3 cm and width 9 cm?",
+      "choices": [
+        "A) 36 cm\u00b2",
+        "B) 18 cm\u00b2",
+        "C) 32 cm\u00b2",
+        "D) 27 cm\u00b2"
+      ],
+      "correct_answer": "D",
+      "explanation": "Area=length\u00d7width: 3\u00d79=27 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 95,
+      "question": "What is the area of a rectangle with length 3 cm and width 6 cm?",
+      "choices": [
+        "A) 24 cm\u00b2",
+        "B) 23 cm\u00b2",
+        "C) 18 cm\u00b2",
+        "D) 12 cm\u00b2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Area=length\u00d7width: 3\u00d76=18 cm\u00b2.",
+      "section": "Area, Surface Area, and Volume",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 96,
+      "question": "What is the mean of the numbers [3, 8, 9, 7, 16]?",
+      "choices": [
+        "A) 10.6",
+        "B) 8.6",
+        "C) 9.6",
+        "D) 7.6"
+      ],
+      "correct_answer": "B",
+      "explanation": "Add numbers and divide by 5: 43/5=8.6.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 97,
+      "question": "What is the mean of the numbers [9, 5, 3, 2, 17]?",
+      "choices": [
+        "A) 9.2",
+        "B) 6.2",
+        "C) 7.2",
+        "D) 8.2"
+      ],
+      "correct_answer": "C",
+      "explanation": "Add numbers and divide by 5: 36/5=7.2.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 98,
+      "question": "What is the mean of the numbers [4, 15, 10, 13, 5]?",
+      "choices": [
+        "A) 10.4",
+        "B) 8.4",
+        "C) 11.4",
+        "D) 9.4"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 47/5=9.4.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 99,
+      "question": "What is the mean of the numbers [14, 11, 9, 1, 2]?",
+      "choices": [
+        "A) 7.4",
+        "B) 8.4",
+        "C) 9.4",
+        "D) 6.4"
+      ],
+      "correct_answer": "A",
+      "explanation": "Add numbers and divide by 5: 37/5=7.4.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 100,
+      "question": "What is the mean of the numbers [19, 2, 6, 16, 9]?",
+      "choices": [
+        "A) 12.4",
+        "B) 9.4",
+        "C) 11.4",
+        "D) 10.4"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 52/5=10.4.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 101,
+      "question": "What is the mean of the numbers [16, 3, 19, 12, 7]?",
+      "choices": [
+        "A) 11.4",
+        "B) 10.4",
+        "C) 13.4",
+        "D) 12.4"
+      ],
+      "correct_answer": "A",
+      "explanation": "Add numbers and divide by 5: 57/5=11.4.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 102,
+      "question": "What is the mean of the numbers [11, 14, 16, 10, 19]?",
+      "choices": [
+        "A) 16.0",
+        "B) 13.0",
+        "C) 15.0",
+        "D) 14.0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 70/5=14.0.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "medium"
+    },
+    {
+      "id": 103,
+      "question": "What is the mean of the numbers [3, 11, 9, 18, 2]?",
+      "choices": [
+        "A) 10.6",
+        "B) 7.6",
+        "C) 9.6",
+        "D) 8.6"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 43/5=8.6.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 104,
+      "question": "What is the mean of the numbers [14, 2, 7, 12, 10]?",
+      "choices": [
+        "A) 10.0",
+        "B) 8.0",
+        "C) 11.0",
+        "D) 9.0"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 45/5=9.0.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "hard"
+    },
+    {
+      "id": 105,
+      "question": "What is the mean of the numbers [7, 9, 5, 10, 8]?",
+      "choices": [
+        "A) 6.8",
+        "B) 9.8",
+        "C) 8.8",
+        "D) 7.8"
+      ],
+      "correct_answer": "D",
+      "explanation": "Add numbers and divide by 5: 39/5=7.8.",
+      "section": "Statistics and Probability",
+      "grade_level": "7",
+      "difficulty": "easy"
+    },
+    {
+      "id": 106,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) 13",
+        "B) 169",
+        "C) 13/4",
+        "D) \u221a13"
+      ],
+      "correct_answer": "D",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 107,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) \u221a3",
+        "B) 3/5",
+        "C) 3",
+        "D) 9"
+      ],
+      "correct_answer": "A",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 108,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) 81",
+        "B) 9/6",
+        "C) 9",
+        "D) \u221a9"
+      ],
+      "correct_answer": "D",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 109,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) \u221a5",
+        "B) 25",
+        "C) 5/9",
+        "D) 5"
+      ],
+      "correct_answer": "A",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 110,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) 225",
+        "B) 15/3",
+        "C) 15",
+        "D) \u221a15"
+      ],
+      "correct_answer": "D",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 111,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) 225",
+        "B) 15",
+        "C) 15/2",
+        "D) \u221a15"
+      ],
+      "correct_answer": "D",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 112,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) 225",
+        "B) 15",
+        "C) \u221a15",
+        "D) 15/4"
+      ],
+      "correct_answer": "C",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 113,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) \u221a7",
+        "B) 49",
+        "C) 7",
+        "D) 7/8"
+      ],
+      "correct_answer": "A",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 114,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) \u221a11",
+        "B) 121",
+        "C) 11/8",
+        "D) 11"
+      ],
+      "correct_answer": "A",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 115,
+      "question": "Which of the following is an irrational number?",
+      "choices": [
+        "A) \u221a13",
+        "B) 169",
+        "C) 13",
+        "D) 13/9"
+      ],
+      "correct_answer": "A",
+      "explanation": "Square roots of non-perfect squares are irrational.",
+      "section": "The Number System - Irrational Numbers",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 116,
+      "question": "Simplify: (2\u00b2)^2",
+      "choices": [
+        "A) 16",
+        "B) 32",
+        "C) 4",
+        "D) 8"
+      ],
+      "correct_answer": "A",
+      "explanation": "Power rule (a^m)^n = a^(mn): 2^(4)=16.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 117,
+      "question": "Simplify: (6\u00b2)^3",
+      "choices": [
+        "A) 216",
+        "B) 46656",
+        "C) 279936",
+        "D) 7776"
+      ],
+      "correct_answer": "B",
+      "explanation": "Power rule (a^m)^n = a^(mn): 6^(6)=46656.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 118,
+      "question": "Simplify: (8\u00b2)^4",
+      "choices": [
+        "A) 2097152",
+        "B) 16777216",
+        "C) 134217728",
+        "D) 4096"
+      ],
+      "correct_answer": "B",
+      "explanation": "Power rule (a^m)^n = a^(mn): 8^(8)=16777216.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 119,
+      "question": "Simplify: (4\u00b2)^4",
+      "choices": [
+        "A) 262144",
+        "B) 16384",
+        "C) 256",
+        "D) 65536"
+      ],
+      "correct_answer": "D",
+      "explanation": "Power rule (a^m)^n = a^(mn): 4^(8)=65536.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 120,
+      "question": "Simplify: (8\u00b2)^4",
+      "choices": [
+        "A) 134217728",
+        "B) 2097152",
+        "C) 4096",
+        "D) 16777216"
+      ],
+      "correct_answer": "D",
+      "explanation": "Power rule (a^m)^n = a^(mn): 8^(8)=16777216.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 121,
+      "question": "Simplify: (6\u00b2)^2",
+      "choices": [
+        "A) 7776",
+        "B) 1296",
+        "C) 216",
+        "D) 36"
+      ],
+      "correct_answer": "B",
+      "explanation": "Power rule (a^m)^n = a^(mn): 6^(4)=1296.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 122,
+      "question": "Simplify: (7\u00b2)^2",
+      "choices": [
+        "A) 49",
+        "B) 343",
+        "C) 16807",
+        "D) 2401"
+      ],
+      "correct_answer": "D",
+      "explanation": "Power rule (a^m)^n = a^(mn): 7^(4)=2401.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 123,
+      "question": "Simplify: (3\u00b2)^4",
+      "choices": [
+        "A) 2187",
+        "B) 6561",
+        "C) 81",
+        "D) 19683"
+      ],
+      "correct_answer": "B",
+      "explanation": "Power rule (a^m)^n = a^(mn): 3^(8)=6561.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 124,
+      "question": "Simplify: (8\u00b2)^2",
+      "choices": [
+        "A) 32768",
+        "B) 4096",
+        "C) 512",
+        "D) 64"
+      ],
+      "correct_answer": "B",
+      "explanation": "Power rule (a^m)^n = a^(mn): 8^(4)=4096.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 125,
+      "question": "Simplify: (3\u00b2)^2",
+      "choices": [
+        "A) 27",
+        "B) 243",
+        "C) 9",
+        "D) 81"
+      ],
+      "correct_answer": "D",
+      "explanation": "Power rule (a^m)^n = a^(mn): 3^(4)=81.",
+      "section": "Expressions and Equations - Radicals and Exponents",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 126,
+      "question": "Does the point (1, -7) lie on the line y = -3x + -4?",
+      "choices": [
+        "A) No",
+        "B) Yes",
+        "C) Maybe",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "B",
+      "explanation": "Substitute x: -3*1+-4=-7, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 127,
+      "question": "Does the point (-2, -11) lie on the line y = 4x + -3?",
+      "choices": [
+        "A) Yes",
+        "B) No",
+        "C) Maybe",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "A",
+      "explanation": "Substitute x: 4*-2+-3=-11, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 128,
+      "question": "Does the point (-3, 8) lie on the line y = -1x + 5?",
+      "choices": [
+        "A) Maybe",
+        "B) Yes",
+        "C) No",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "B",
+      "explanation": "Substitute x: -1*-3+5=8, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 129,
+      "question": "Does the point (1, 2) lie on the line y = 2x + 0?",
+      "choices": [
+        "A) Yes",
+        "B) No",
+        "C) Cannot determine",
+        "D) Maybe"
+      ],
+      "correct_answer": "A",
+      "explanation": "Substitute x: 2*1+0=2, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 130,
+      "question": "Does the point (-2, -5) lie on the line y = 2x + -1?",
+      "choices": [
+        "A) Maybe",
+        "B) Yes",
+        "C) No",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "B",
+      "explanation": "Substitute x: 2*-2+-1=-5, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 131,
+      "question": "Does the point (-1, 3) lie on the line y = 1x + 4?",
+      "choices": [
+        "A) Yes",
+        "B) No",
+        "C) Cannot determine",
+        "D) Maybe"
+      ],
+      "correct_answer": "A",
+      "explanation": "Substitute x: 1*-1+4=3, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 132,
+      "question": "Does the point (-1, -4) lie on the line y = 5x + 1?",
+      "choices": [
+        "A) No",
+        "B) Cannot determine",
+        "C) Maybe",
+        "D) Yes"
+      ],
+      "correct_answer": "D",
+      "explanation": "Substitute x: 5*-1+1=-4, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 133,
+      "question": "Does the point (1, -3) lie on the line y = -1x + -2?",
+      "choices": [
+        "A) No",
+        "B) Cannot determine",
+        "C) Yes",
+        "D) Maybe"
+      ],
+      "correct_answer": "C",
+      "explanation": "Substitute x: -1*1+-2=-3, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 134,
+      "question": "Does the point (2, 15) lie on the line y = 5x + 5?",
+      "choices": [
+        "A) Cannot determine",
+        "B) Yes",
+        "C) Maybe",
+        "D) No"
+      ],
+      "correct_answer": "B",
+      "explanation": "Substitute x: 5*2+5=15, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 135,
+      "question": "Does the point (-3, 5) lie on the line y = -1x + 2?",
+      "choices": [
+        "A) No",
+        "B) Yes",
+        "C) Cannot determine",
+        "D) Maybe"
+      ],
+      "correct_answer": "B",
+      "explanation": "Substitute x: -1*-3+2=5, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 136,
+      "question": "Does the point (2, -2) lie on the line y = -1x + 0?",
+      "choices": [
+        "A) No",
+        "B) Maybe",
+        "C) Yes",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "C",
+      "explanation": "Substitute x: -1*2+0=-2, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 137,
+      "question": "Does the point (1, 3) lie on the line y = 3x + 0?",
+      "choices": [
+        "A) Cannot determine",
+        "B) No",
+        "C) Yes",
+        "D) Maybe"
+      ],
+      "correct_answer": "C",
+      "explanation": "Substitute x: 3*1+0=3, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 138,
+      "question": "Does the point (3, -3) lie on the line y = -1x + 0?",
+      "choices": [
+        "A) Maybe",
+        "B) Cannot determine",
+        "C) No",
+        "D) Yes"
+      ],
+      "correct_answer": "D",
+      "explanation": "Substitute x: -1*3+0=-3, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 139,
+      "question": "Does the point (2, 1) lie on the line y = -2x + 5?",
+      "choices": [
+        "A) Yes",
+        "B) No",
+        "C) Maybe",
+        "D) Cannot determine"
+      ],
+      "correct_answer": "A",
+      "explanation": "Substitute x: -2*2+5=1, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 140,
+      "question": "Does the point (-1, -6) lie on the line y = 1x + -5?",
+      "choices": [
+        "A) Cannot determine",
+        "B) Maybe",
+        "C) No",
+        "D) Yes"
+      ],
+      "correct_answer": "D",
+      "explanation": "Substitute x: 1*-1+-5=-6, matches point.",
+      "section": "Linear Equations and Systems",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 141,
+      "question": "For f(x)= 10x + 3, what is f(2)?",
+      "choices": [
+        "A) 22",
+        "B) 24",
+        "C) 25",
+        "D) 23"
+      ],
+      "correct_answer": "D",
+      "explanation": "Plug in 2: 10*2+3=23.",
+      "section": "Functions",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 142,
+      "question": "For f(x)= 4x + 3, what is f(2)?",
+      "choices": [
+        "A) 13",
+        "B) 12",
+        "C) 10",
+        "D) 11"
+      ],
+      "correct_answer": "D",
+      "explanation": "Plug in 2: 4*2+3=11.",
+      "section": "Functions",
+      "grade_level": "8",
+      "difficulty": "easy"
+    },
+    {
+      "id": 143,
+      "question": "For f(x)= 2x + 3, what is f(2)?",
+      "choices": [
+        "A) 6",
+        "B) 8",
+        "C) 9",
+        "D) 7"
+      ],
+      "correct_answer": "D",
+      "explanation": "Plug in 2: 2*2+3=7.",
+      "section": "Functions",
+      "grade_level": "8",
+      "difficulty": "medium"
+    },
+    {
+      "id": 144,
+      "question": "For f(x)= 2x + 3, what is f(2)?",
+      "choices": [
+        "A) 7",
+        "B) 9",
+        "C) 6",
+        "D) 8"
+      ],
+      "correct_answer": "A",
+      "explanation": "Plug in 2: 2*2+3=7.",
+      "section": "Functions",
+      "grade_level": "8",
+      "difficulty": "hard"
+    },
+    {
+      "id": 145,
+      "question": "For f(x)= 8x + 3, what is f(2)?",
+      "choices": [
+        "A) 20",
+        "B) 21",
+        "C) 19",
+        "D) 18"
+      ],
+      "correct_answer": "C",
+      "explanation": "Plug in 2: 8*2+3=19.",
+      "section": "Functions",
+      "grade_level": "8",
+      "d

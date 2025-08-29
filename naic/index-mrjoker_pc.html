@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAIC PBR Data Processing Web Application - Sprint 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>NAIC PBR Data Processing Application</h1>
+                <p class="header-subtitle">Sprint 2 - Enhanced JSON Output & Multi-Sheet Processing</p>
+            </div>
+        </header>
+
+        <!-- Main Application -->
+        <main class="main-content">
+            <!-- Control Panel -->
+            <section class="control-panel card">
+                <div class="card__header">
+                    <h2>Three-Stage Data Selection & Processing</h2>
+                </div>
+                <div class="card__body">
+					<form id="data-form" class="form-grid">
+						<!-- ADD THIS NEW SECTION FIRST -->
+						<div class="form-group">
+							<label for="refresh-btn" class="form-label">Step 1: Check NAIC Site</label>
+							<button type="button" id="refresh-btn" class="btn btn-secondary">
+								🔄 Refresh Available Files
+							</button>
+							<small class="form-hint">Connects to NAIC site to find latest data files</small>
+						</div>
+
+						<!-- MODIFY YOUR EXISTING YEAR SELECT -->
+						<div class="form-group">
+							<label for="year-select" class="form-label">Step 2: Select Year</label>
+							<select id="year-select" class="form-control" disabled>
+								<option value="">Click refresh first...</option>
+							</select>
+						</div>
+                        <div class="form-group">
+                            <label for="table-select" class="form-label">Table Name(s)</label>
+                            <select id="table-select" class="form-control" multiple disabled required>
+                                <option value="">Select year first...</option>
+                            </select>
+                            <small class="form-help">Hold Ctrl/Cmd to select multiple sheets</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Quick Selection</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="select-all-sheets" disabled>
+                                    <span>Select All Available Sheets</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="process-btn" class="btn btn--primary btn--lg" disabled>
+                                <span id="process-btn-text">Get Data</span>
+                                <span id="process-spinner" class="spinner hidden"></span>
+                            </button>
+                            <button type="button" id="clear-btn" class="btn btn--outline">Clear Results</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+			<!-- ADD THIS SECTION IF YOU DON'T HAVE STATUS DISPLAY -->
+			<section class="status-panel card">
+				<div class="card__header">
+					<h3>🔄 Processing Status</h3>
+				</div>
+				<div class="card__body">
+					<div id="status-display" class="status-display">
+						<span class="status-indicator">⏳</span>
+						<span class="status-text">Ready to check NAIC site</span>
+					</div>
+					<div class="progress-bar">
+						<div class="progress-fill" style="width: 0%"></div>
+					</div>
+				</div>
+			</section>
+
+            <!-- Processing Status -->
+            <section id="processing-section" class="processing-panel hidden">
+                <div class="status-card card">
+                    <div class="card__body">
+                        <div class="processing-header">
+                            <h3>Processing Status</h3>
+                            <div class="status-indicator">
+                                <span id="status-text">Initializing...</span>
+                                <div class="progress-ring">
+                                    <svg viewBox="0 0 36 36">
+                                        <path class="progress-ring-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                        <path id="progress-ring-fill" class="progress-ring-fill" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                    </svg>
+                                    <div class="progress-text">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="processing-steps">
+                            <div class="step" id="step-download">
+                                <div class="step-icon">⬇</div>
+                                <span>Downloading Excel Files</span>
+                                <div class="step-status"></div>
+                            </div>
+                            <div class="step" id="step-verify">
+                                <div class="step-icon">🔍</div>
+                                <span>Generating Checksums</span>
+                                <div class="step-status"></div>
+                            </div>
+                            <div class="step" id="step-parse">
+                                <div class="step-icon">📊</div>
+                                <span>Parsing Worksheets</span>
+                                <div class="step-status"></div>
+                            </div>
+                            <div class="step" id="step-format">
+                                <div class="step-icon">📋</div>
+                                <span>Building JSON Output</span>
+                                <div class="step-status"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Results Layout -->
+            <section id="results-section" class="results-panel hidden">
+                <div class="results-layout">
+                    <!-- Left Side: JSON Preview -->
+                    <div class="json-panel">
+                        <div class="card json-output">
+                            <div class="card__header">
+                                <h3>📋 Enhanced JSON Output</h3>
+                                <div class="export-controls">
+                                    <button id="export-json-btn" class="btn btn--sm btn--primary">Download JSON</button>
+                                    <button id="export-checksum-btn" class="btn btn--sm btn--outline">+ SHA256</button>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="json-container">
+                                    <pre id="json-output"><code>// Enhanced JSON structure will appear here after processing...</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: QA & Validation -->
+                    <div class="qa-panel">
+                        <!-- Checksum Verification -->
+                        <div class="card validation-card">
+                            <div class="card__header">
+                                <h3>🔐 QA & Validation Panel</h3>
+                            </div>
+                            <div class="card__body">
+                                <div class="verification-status">
+                                    <div class="verified-badge">
+                                        <div class="check-icon">✓</div>
+                                        <div class="verified-text">
+                                            <strong>VERIFIED: Data integrity confirmed</strong>
+                                            <div class="verified-timestamp">Verified at: <span id="verify-time"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="checksums-grid">
+                                    <div class="checksum-item">
+                                        <label>SHA256</label>
+                                        <div class="checksum-value">
+                                            <code id="sha256-value">-</code>
+                                            <span class="checksum-status">✓</span>
+                                        </div>
+                                    </div>
+                                    <div class="checksum-item">
+                                        <label>MD5</label>
+                                        <div class="checksum-value">
+                                            <code id="md5-value">-</code>
+                                            <span class="checksum-status">✓</span>
+                                        </div>
+                                    </div>
+                                    <div class="checksum-item">
+                                        <label>SHA1</label>
+                                        <div class="checksum-value">
+                                            <code id="sha1-value">-</code>
+                                            <span class="checksum-status">✓</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Evidence of Accuracy -->
+                        <div class="card evidence-card">
+                            <div class="card__header">
+                                <h4>📈 Evidence of Accuracy</h4>
+                            </div>
+                            <div class="card__body">
+                                <div class="evidence-grid">
+                                    <div class="evidence-item">
+                                        <label>Row Count</label>
+                                        <div class="evidence-value">
+                                            <span id="row-count">-</span>
+                                            <span class="evidence-status">✓</span>
+                                        </div>
+                                    </div>
+                                    <div class="evidence-item">
+                                        <label>Column Count</label>
+                                        <div class="evidence-value">
+                                            <span id="col-count">-</span>
+                                            <span class="evidence-status">✓</span>
+                                        </div>
+                                    </div>
+                                    <div class="evidence-item">
+                                        <label>WAL Values</label>
+                                        <div class="evidence-value">
+                                            <span id="wal-count">-</span>
+                                            <span class="evidence-status">✓</span>
+                                        </div>
+                                    </div>
+                                    <div class="evidence-item">
+                                        <label>Credit Ratings</label>
+                                        <div class="evidence-value">
+                                            <span id="rating-count">-</span>
+                                            <span class="evidence-status">✓</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sample-check">
+                                    <h5>Sample Data Spot-Check</h5>
+                                    <div class="spot-check-results">
+                                        <div class="spot-check-item">
+                                            <span>WAL=1, Aaa/AAA:</span>
+                                            <code id="sample-check-1">-</code>
+                                            <span class="check-status">✓</span>
+                                        </div>
+                                        <div class="spot-check-item">
+                                            <span>WAL=5, A2/A:</span>
+                                            <code id="sample-check-2">-</code>
+                                            <span class="check-status">✓</span>
+                                        </div>
+                                        <div class="spot-check-item">
+                                            <span>WAL=10, Baa3/BBB-:</span>
+                                            <code id="sample-check-3">-</code>
+                                            <span class="check-status">✓</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Display -->
+            <section id="error-section" class="error-panel hidden">
+                <div class="card error-card">
+                    <div class="card__body">
+                        <div class="error-content">
+                            <div class="error-icon">⚠️</div>
+                            <div class="error-message">
+                                <h3>Processing Error</h3>
+       

@@ -1,0 +1,199 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-06-14",
+    "source": "https://www.youtube.com/watch?v=ndbCxCuXYZQ",
+    "publication": "In It to Win It / Rule Classroom Plus",
+    "general_comments": "Rick Rule analyzes 20+ mining, energy, and royalty stocks with explicit rankings (1-10) as of June 14, 2025. He explains why some gold stocks are undervalued on a net present value (NPV) basis at today’s gold prices despite recent rallies, and underscores the need to track management quality, project IRR, and country risk. He highlights threats from poorly timed financings, points out which companies are facing operational setbacks, and discusses catalysts such as strategic M&A, asset sales, and sovereign support for critical minerals. Rick provides both macro and micro rationale, with numerous examples of personal ownership, explicit buy/hold/sell rationale, and portfolio construction insights."
+  },
+  "company_info": [
+    {
+      "ticker": "IVN.TO",
+      "company_name": "Ivanhoe Mines",
+      "company_rating": null,
+      "pos_comments": "World-class deposit; long-term holder; sees current operational setback as a surmountable 6-month hiccup in a 30-year mine life. Will consider buying more if risk/uncertainty is sufficiently resolved.",
+      "neg_comments": "Current extraction costs will be higher, operational complexity following mine flood and seismic issues.",
+      "ownership": 1,
+      "timestamp": "00:04:00"
+    },
+    {
+      "ticker": "HCH.AX",
+      "company_name": "Hot Chili",
+      "company_rating": 5,
+      "pos_comments": "Attractive for size; new discovery area with high-grade intercepts offers re-rating potential; price/NAV is very cheap.",
+      "neg_comments": "Lacks high-grade starter zone, IRR only 19% (prefers 25%), very high upfront capex ($1B), significant financing risk.",
+      "ownership": null,
+      "timestamp": "00:06:41"
+    },
+    {
+      "ticker": "LUM",
+      "company_name": "Lumina Gold",
+      "company_rating": null,
+      "pos_comments": "Built to be sold; successful transaction pending, expects transfer of ownership to Chinese buyer.",
+      "neg_comments": "No longer involved post-sale; political risk for projects in Ecuador.",
+      "ownership": 0,
+      "timestamp": "00:10:55"
+    },
+    {
+      "ticker": "LUG.TO",
+      "company_name": "Lundin Gold",
+      "company_rating": null,
+      "pos_comments": "Unlikely to be materially impacted by Ecuador’s new fees; large established asset, well-managed.",
+      "neg_comments": "One of few Ecuador projects relatively insulated from new government fee changes.",
+      "ownership": null,
+      "timestamp": "00:10:55"
+    },
+    {
+      "ticker": "PPTA",
+      "company_name": "Perpetua Resources",
+      "company_rating": null,
+      "pos_comments": "Impressed with management securing permits and financing in Idaho; all major permitting and finance hurdles overcome.",
+      "neg_comments": "Not yet true Tier 1; refractory ore, environmental challenges from old pits and proximity to ski resort; strong Tier 2 deposit.",
+      "ownership": null,
+      "timestamp": "00:12:36"
+    },
+    {
+      "ticker": "AYA.TO",
+      "company_name": "Aya Gold & Silver",
+      "company_rating": null,
+      "pos_comments": "350M oz (potentially soon 400-450M) silver deposit with growing drill program; attractive post-recent financing.",
+      "neg_comments": "Not quite Tier 1 yet but could cross the threshold with continued growth.",
+      "ownership": null,
+      "timestamp": "00:12:36"
+    },
+    {
+      "ticker": "SURG.V",
+      "company_name": "Surge Battery Metals",
+      "company_rating": null,
+      "pos_comments": "Surge appears higher quality than neighbor; could be a lithium survivor if oversupply abates.",
+      "neg_comments": "Not ranked yet; sector suffering from near-term ugly lithium oversupply and risk of failures.",
+      "ownership": null,
+      "timestamp": "00:16:21"
+    },
+    {
+      "ticker": "CDPR.V",
+      "company_name": "Cerro de Pasco Resources",
+      "company_rating": 5,
+      "pos_comments": "Very large tailings-based silver resource (~400M oz); extremely leveraged to silver price; very low cost if process infrastructure is built.",
+      "neg_comments": "Process/infrastructure not in place; high technical risk, strictly for experienced risk-tolerant speculators.",
+      "ownership": null,
+      "timestamp": "00:16:21"
+    },
+    {
+      "ticker": "MEI.AX",
+      "company_name": "Meteoric Resources",
+      "company_rating": 4,
+      "pos_comments": "Enormous tier-one rare earth deposit, likely lowest cost quartile; strong global macro/political support for non-Chinese rare earths.",
+      "neg_comments": "Metallurgical and resource size uncertainties; major financing needed ($25-30M required for BFS).",
+      "ownership": null,
+      "timestamp": "00:18:44"
+    },
+    {
+      "ticker": "ARA.AX",
+      "company_name": "Aclara Resources",
+      "company_rating": null,
+      "pos_comments": "High-quality rare earths developer; top management pedigree (Peruvian group); benefiting from US/Brazil cooperation.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:18:44"
+    },
+    {
+      "ticker": "MUX",
+      "company_name": "McEwen Mining",
+      "company_rating": null,
+      "pos_comments": "Management (Rob McEwen) admired for resilience/amalgamation; strong past performance; close personal connection.",
+      "neg_comments": "Gold assets uninspiring; copper asset in Argentina faces major engineering challenges (valley floor deposit anti-gravity).",
+      "ownership": null,
+      "timestamp": "00:23:04"
+    },
+    {
+      "ticker": "FVI.TO",
+      "company_name": "Fortuna Silver Mines",
+      "company_rating": null,
+      "pos_comments": "Long-time holder, cost base zero; positive on recent West African expansion. Generating good free cash and making smart strategic investments.",
+      "neg_comments": "Past problems at open pit Argentina resolved successfully.",
+      "ownership": 1,
+      "timestamp": "00:24:52"
+    },
+    {
+      "ticker": "PDN.AX",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "High-quality assets, strong management, major beneficiary of new uranium contracting cycle; Fission asset acquisition provides global best undeveloped uranium optionality.",
+      "neg_comments": "Must monitor debt and M&A discipline; execution risk in integrating Fission and developing next-gen assets.",
+      "ownership": null,
+      "timestamp": "00:26:11"
+    },
+    {
+      "ticker": "LAT.V",
+      "company_name": "Latin Metals",
+      "company_rating": 5,
+      "pos_comments": "Process/generator model with strong partner funding. Provides torque without sole risk.",
+      "neg_comments": "Very risky, not suited to conservative gold investor profiles.",
+      "ownership": null,
+      "timestamp": "00:28:21"
+    },
+    {
+      "ticker": "ITR.V",
+      "company_name": "Integra Resources",
+      "company_rating": null,
+      "pos_comments": "Positive leverage to gold cycle; owns producing Argonaut asset, provides free cash flow to fund major development pipeline.",
+      "neg_comments": "Development pipeline still being advanced.",
+      "ownership": null,
+      "timestamp": "00:30:26"
+    },
+    {
+      "ticker": "RRI.V",
+      "company_name": "Riverside Resources",
+      "company_rating": null,
+      "pos_comments": "Extremely high regard for Jean-Marc Lulin (CEO); prospect generator success—delivered multiple dividends to shareholders. Continues to perform, even if no major discovery has yet been made.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:35:53"
+    },
+    {
+      "ticker": "DPM.TO",
+      "company_name": "Dundee Precious Metals",
+      "company_rating": 4,
+      "pos_comments": "Still considered deep value; strong management, asset base, and ongoing improvements.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:38:21"
+    },
+    {
+      "ticker": "BTO.TO",
+      "company_name": "B2Gold",
+      "company_rating": null,
+      "pos_comments": "Major personal holding; will add only after successful completion of new northern Canadian construction. CEO Clive Johnson, respected, but age and workload are concerns; solid pipeline, Mali agreement provides growth option.",
+      "neg_comments": "Not adding unless construction de-risked.",
+      "ownership": 1,
+      "timestamp": "00:38:21"
+    },
+    {
+      "ticker": "EMPR.V",
+      "company_name": "Empress Royalty",
+      "company_rating": null,
+      "pos_comments": "Incentive grant post-stock run is not abusive; supports management alignment, but prefers total incentives to remain <10% of shares outstanding.",
+      "neg_comments": "Does not like options/RSU combos unless related to performance.",
+      "ownership": null,
+      "timestamp": "00:40:23"
+    },
+    {
+      "ticker": "KLD.V",
+      "company_name": "Kenorland Minerals",
+      "company_rating": 4,
+      "pos_comments": "Excellent value for cash/Quebec royalty; high-quality explorer, could be upgraded to 3; highly respected management.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:42:02"
+    },
+    {
+      "ticker": "DPM.TO",
+      "company_name": "Dundee Precious Metals",
+      "company_rating": 4,
+      "pos_comments": "Still considered deep value; strong management, asset base, and ongoing improvements.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:38:21"
+    }
+  ]
+}

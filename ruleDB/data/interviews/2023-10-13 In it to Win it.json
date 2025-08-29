@@ -1,0 +1,163 @@
+{
+  "interview_metadata": {
+    "asofdate": "2023-10-13",
+    "source": "https://www.youtube.com/watch?v=YbWwVhHNGII",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule analyzes the macro landscape for oil, coal, uranium, lithium, nickel, and royalties as of October 2023. He emphasizes that royalty/streaming companies are the best low-risk entry for resource investors, but sees opportunity across oil majors, coal conglomerates, and uranium. Rick highlights risks in lithium (oversupplied long-term) and nickel (bearish near-term, bullish in 3-5 years), stresses the importance of management quality, and details his strict numeric ranking system with no current 1 or 2 ratings. He provides candid buy/sell/hold rationale and discusses portfolio construction for war, recession, and commodity cycles, giving explicit stock rankings for about two dozen companies."
+  },
+  "company_info": [
+    {
+      "ticker": "PSK.TO",
+      "company_name": "PrairieSky Royalty",
+      "company_rating": 4,
+      "pos_comments": "Canadian-domiciled royalty company with a high-quality, unsalable royalty portfolio. Has performed well long-term. Management is generally capital efficient.",
+      "neg_comments": "Occasional concerns about capital allocation, recent year performance less impressive.",
+      "ownership": null,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "BSM",
+      "company_name": "Black Stone Minerals",
+      "company_rating": 4,
+      "pos_comments": "Strong dividends and impressive cash flows as an oil/gas mineral/royalty play. Rick owns and appreciates the steady performance.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "GLEN.L",
+      "company_name": "Glencore",
+      "company_rating": null,
+      "pos_comments": "Best large, low-cost coal producer; strong at recycling coal cash flow into multi-decade revenue streams. Positive on ability to defend against political winds.",
+      "neg_comments": "Comes with substantial political and social risk.",
+      "ownership": 1,
+      "timestamp": "00:25:34"
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "ExxonMobil",
+      "company_rating": 1,
+      "pos_comments": "Occasionally rates as a '1' during rare events (e.g. COVID crash, Dow Jones exit). Long-term track record and world-class Guayana discovery make it Rick's preferred oil major for durability and capital allocation.",
+      "neg_comments": "Generally more expensive versus Chevron, but higher long-term value compounded by Pioneer acquisition.",
+      "ownership": 1,
+      "timestamp": "00:27:54"
+    },
+    {
+      "ticker": "CVX",
+      "company_name": "Chevron",
+      "company_rating": null,
+      "pos_comments": "Well-managed, strong upstream/downstream mix. Cheaper than Exxon on some metrics; attractive for value buyers.",
+      "neg_comments": "No recent Guayana-like discovery. Rick prefers Exxon overall.",
+      "ownership": 1,
+      "timestamp": "00:27:54"
+    },
+    {
+      "ticker": "PBR",
+      "company_name": "Petrobras",
+      "company_rating": 5,
+      "pos_comments": "Held due to extreme undervaluation; price and risk/reward were too good to ignore. Shareholder has received high dividends.",
+      "neg_comments": "Frequent underinvestment as Brazilian state diverts cash flow for social priorities. Political risk remains very high.",
+      "ownership": 1,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "EC",
+      "company_name": "Ecopetrol",
+      "company_rating": 5,
+      "pos_comments": "Similar rationale as Petrobras. Extremely cheap at time of purchase. Good dividends and upside if political environment improves.",
+      "neg_comments": "Brazil-scale political interference, capital allocation risk.",
+      "ownership": 1,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "AOI.TO",
+      "company_name": "Africa Oil",
+      "company_rating": 4,
+      "pos_comments": "Longtime holding, founder. Well-managed; high financial and exploration upside in Nigeria, Namibia, South Africa, and Guyana.",
+      "neg_comments": "Very high political/country risk, key man risk as CEO retires.",
+      "ownership": 1,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "STR",
+      "company_name": "Sitio Royalties",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Not enough familiarity for rating.",
+      "ownership": null,
+      "timestamp": "00:32:50"
+    },
+    {
+      "ticker": "URNJ",
+      "company_name": "Sprott Uranium Miners ETF",
+      "company_rating": null,
+      "pos_comments": "Appropriate for beta uranium exposure; Rick suggests easy money has likely been made after a 100%+ run. Recommends trimming winners for risk-averse investors.",
+      "neg_comments": "Much more volatility and higher risk than physical uranium trusts.",
+      "ownership": null,
+      "timestamp": "00:40:25"
+    },
+    {
+      "ticker": "NXE",
+      "company_name": "NexGen Energy",
+      "company_rating": null,
+      "pos_comments": "Owns shares, uranium developer with world-class asset. Impressed by management and project quality.",
+      "neg_comments": "Uranium sector entering late bull cycle, higher risk for new participants.",
+      "ownership": 1,
+      "timestamp": "00:46:41"
+    },
+    {
+      "ticker": "FCUUF",
+      "company_name": "Fission Uranium",
+      "company_rating": null,
+      "pos_comments": "Developer with attractive discovery and large resource base. Remains constructive long-term.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:46:41"
+    },
+    {
+      "ticker": "BQSSF",
+      "company_name": "Boss Energy",
+      "company_rating": null,
+      "pos_comments": "Among few new uranium producers. Seen as a leader among uranium juniors.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:46:41"
+    },
+    {
+      "ticker": "CTTZF",
+      "company_name": "Centaurus Metals",
+      "company_rating": 3,
+      "pos_comments": "Large strategic nickel-PGM discovery in Brazil. Rick is a large shareholder—believes it could be a 10-bagger tier one asset, attracted by deposit size and value.",
+      "neg_comments": "Highly speculative; not for the faint of heart. Brazil/political and technical risk.",
+      "ownership": 1,
+      "timestamp": "00:49:33"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": null,
+      "pos_comments": "Cited in lightning round. Positive on management, mine-building record. Important for diversified gold exposure.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:52:55"
+    },
+    {
+      "ticker": "OGNRF",
+      "company_name": "Orogen Royalties",
+      "company_rating": null,
+      "pos_comments": "Strong hybrid royalty/prospect generator; positive on business model.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:52:55"
+    },
+    {
+      "ticker": "OR",
+      "company_name": "Osisko Gold Royalties",
+      "company_rating": null,
+      "pos_comments": "World-class gold-focused royalty company; rates among top pure plays.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:56:02"
+    }
+  ]
+}

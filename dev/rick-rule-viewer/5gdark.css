@@ -1,0 +1,148 @@
+body {
+    background-color: #17212b;
+    color: #A3C3A3;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/bgdark-chart.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    position: relative;
+    background-color: #17212b;
+    padding: 5px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #92cf43;
+}
+
+p {
+    color: #17212b;
+}
+
+a {
+    color: #4DB8FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4DB8FF;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+label {
+    color: #4a9723;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-section, .info-section, .subcontainer {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.stock-info {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#symbolError {
+    color: red;
+    display: none;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#tradingViewWidget {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.half-width {
+    flex: 1;
+    min-width: 300px;
+}
+
+.full-width {
+    flex-basis: 100%;
+}
+
+.subcontainer h2, .container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+}
+
+select {
+    max-width: 150px;
+}
+
+textarea {
+    max-width: 1000px;
+}
+
+input[type="number"] {
+    max-width: 100px;
+}

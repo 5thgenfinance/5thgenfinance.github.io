@@ -1,0 +1,91 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-05-15",
+    "source": "https://www.youtube.com/watch?v=NkRxATQHvaI",
+    "publication": "Mining Stock Monkey",
+    "general_comments": "Rick Rule shares in-depth macro views and explicit rankings for major mining stocks as of May 13, 2025. He stresses industry concentration, the impact of index fund flows, management quality, and operational scale. Rick highlights risks—political, operational, environmental—and underscores the importance of buying high-quality assets in efficient capital structures. The session also covers his largest personal investments, portfolio construction, changes in mining industry best practices, and the value of holding for multiple cycles."
+  },
+  "company_info": [
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": 4,
+      "pos_comments": "Acquisition of MAG Silver is positive due to high-quality asset, cost reduction from G&A, and exploration upside. Larger size brings passive fund flows. Transaction works for both sides.",
+      "neg_comments": "Minority asset interest, not in control of the asset. Some project restarts (e.g. Kasco Bell) face political and community resistance. Needs further exploration to fully justify acquisition price.",
+      "ownership": 1,
+      "timestamp": "00:00:30"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "MAG Silver",
+      "company_rating": null,
+      "pos_comments": "Strong asset acquired by Pan American. Previously had high G&A, not the operator, but underlying asset quality is excellent.",
+      "neg_comments": "High management costs made MAG less attractive for ownership pre-acquisition.",
+      "ownership": 0,
+      "timestamp": "00:02:00"
+    },
+    {
+      "ticker": "GOLD",
+      "company_name": "Barrick Gold (now Barrick Mining)",
+      "company_rating": 4,
+      "pos_comments": "Repositioning around copper-gold (Reko Diq) is positive for future cost profile. Bristow excels in managing difficult assets/regions. On valuation, cheapest major peer; Pakistan project underappreciated by market.",
+      "neg_comments": "Political, jurisdictional, and execution risks in Pakistan, Mali; underperformed peers over 1 and 5 years. Unclear growth strategy.",
+      "ownership": null,
+      "timestamp": "00:07:00"
+    },
+    {
+      "ticker": "NG",
+      "company_name": "Novagold",
+      "company_rating": null,
+      "pos_comments": "CEO Tom Kaplan is a serially successful asset builder; bet on high quality people/assets.",
+      "neg_comments": "Extremely high G&A ($25M/year) for a single-asset non-producer. Rick does not own due to expense/dilution concern.",
+      "ownership": 0,
+      "timestamp": "00:11:38"
+    },
+    {
+      "ticker": "EMX",
+      "company_name": "EMX Royalty",
+      "company_rating": 4,
+      "pos_comments": "New CFO (ex-Royal Gold) brings rigor. Buybacks imply undervaluation. Major exploration upside in Serbia; Timok royalty could become extremely valuable. Strong global position, quality management.",
+      "neg_comments": "Recent cut in exploration spending as share buybacks prioritized—good for near-term, less good long-term.",
+      "ownership": 1,
+      "timestamp": "00:15:38"
+    },
+    {
+      "ticker": "SII",
+      "company_name": "Sprott Inc.",
+      "company_rating": null,
+      "pos_comments": "Largest individual shareholder. Capital-light, growing AUM, top resources-focused financial brand. Well-positioned for resource bull market flows. Strong balance sheet, dividend payer.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:22:39"
+    },
+    {
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "company_rating": 5,
+      "pos_comments": "Valuation attractive on sum-of-the-parts basis; operational potential if global economy avoids deep recession. Iron ore segment crucial to margins and returns.",
+      "neg_comments": "Major legal liabilities from two tailings dam failures in Brazil; exposure to iron ore market/recession risk. Awaiting resolution of outstanding lawsuits before considering re-investment.",
+      "ownership": 0,
+      "timestamp": "00:29:00"
+    },
+    {
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "company_rating": 4,
+      "pos_comments": "Strong global iron ore position, diversified asset base. Operational and infrastructure edge, long-term viability of Pilbara region.",
+      "neg_comments": "Legacy tailings risk, growing capex on sustainability and new iron ore mill feed specs. Greater focus needed on tailings dam engineering.",
+      "ownership": 1,
+      "timestamp": "00:31:23"
+    },
+    {
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "company_rating": 4,
+      "pos_comments": "Diversified, high-quality iron ore and base metals portfolio. Positioned well for steel industry needs and product upgrades.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:31:23"
+    }
+  ]
+}

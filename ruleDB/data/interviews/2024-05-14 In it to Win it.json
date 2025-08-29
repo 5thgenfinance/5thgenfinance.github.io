@@ -1,0 +1,172 @@
+{
+  "interview_metadata": {
+    "asofdate": "2024-05-14",
+    "source": "https://www.youtube.com/watch?v=BFJoQSXbwuE",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule covers uranium, gold, natural gas, and royalty stocks ahead of the Rule Symposium. He offers candid macro commentary: the easy money in uranium is made but the long-term remains extremely constructive, US policy now subsidizes uranium producers, and American term contracts will create a pricing premium. He gives explicit stock rankings (1–10) and detailed reasoning for major uranium and gold stocks, prospect generators, and royalty companies. Interviews cover the risk/reward equation in the current price environment, the impact of dilution, and how management performance shapes rating upgrades and downgrades."
+  },
+  "company_info": [
+    {
+      "ticker": "NXE",
+      "company_name": "NexGen Energy",
+      "company_rating": null,
+      "pos_comments": "Loves the deposit, believes it is the best undeveloped uranium deposit on the planet.",
+      "neg_comments": "Critical of high general and administrative (G&A) expense and potentially dilutive convertible financings. Questions the value of recent physical uranium purchases at high prices; spending $30 million per quarter pre-construction seen as excessive unless it's for real project derisking.",
+      "ownership": 1,
+      "timestamp": "00:09:41"
+    },
+    {
+      "ticker": "UROY",
+      "company_name": "Uranium Royalty Corp",
+      "company_rating": 5,
+      "pos_comments": "Rank upgraded as company begins to grow into its valuation by deploying cash into physical uranium and new royalties; working capital increase from inventory revaluation.",
+      "neg_comments": "Wants to see capital allocated effectively before further rating upgrade. Previously traded at a premium to NAV.",
+      "ownership": 1,
+      "timestamp": "00:12:03"
+    },
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": null,
+      "pos_comments": "Owns; likes 8M pounds/year US production capability. Hub-and-spoke model for Texas and Wyoming, benefits from US term contracts and cost of capital subsidies.",
+      "neg_comments": "Downside: lacks a single large mine (a collection of small operations); long-term investors must be patient, while traders benefit from strong near-term market narrative.",
+      "ownership": 1,
+      "timestamp": "00:14:21"
+    },
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "If in-situ recovery (ISR) works at depth, could be a home run; owns high-grade Athabasca assets with permitted mill/tailings facility.",
+      "neg_comments": "Technical risk is very high for deep ISR method; sold holding after significant appreciation, preferring to lock in gains given technological uncertainty.",
+      "ownership": 0,
+      "timestamp": "00:16:07"
+    },
+    {
+      "ticker": "GMNIF",
+      "company_name": "G Mining Ventures",
+      "company_rating": null,
+      "pos_comments": "Exceptional mine builders; supported by Lundin family connection. Acquired Reunion Gold, solving growth and construction risk for both companies; believes further consolidation (with nearby G2 Goldfields) is logical and would add more resource scale.",
+      "neg_comments": "Stock softened after merger announcement, but sees this as ironical due to organic value creation and future production ramp.",
+      "ownership": null,
+      "timestamp": "00:22:09"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": 4,
+      "pos_comments": "Completed major Canadian Greenstone mine build. Now 100% owner after acquiring Orion's stake; led by Ross Beaty, praised for capital discipline and mine development expertise. If nameplate production achieved, acquisition is highly accretive.",
+      "neg_comments": "Paid a full price for Greenstone asset; teething/ramp-up risk is significant. Rating influenced by Bullish gold bias and deep trust in management.",
+      "ownership": 1,
+      "timestamp": "00:24:33"
+    },
+    {
+      "ticker": "EMX",
+      "company_name": "EMX Royalty",
+      "company_rating": 4,
+      "pos_comments": "Founder and major shareholder; hybrid prospect generator with 200+ royalties. Flagship royalty at Timok (Serbia, operated by Zijin Mining) is worth the market cap alone; robust pipeline.",
+      "neg_comments": "Extremely volatile; price can swing 10–15% on liquidity events unrelated to fundamentals. Only suitable for patient holders.",
+      "ownership": 1,
+      "timestamp": "00:26:06"
+    },
+    {
+      "ticker": "OGRNF",
+      "company_name": "Orogen Royalties",
+      "company_rating": 5,
+      "pos_comments": "Small generator/royalty firm; profitable, strong cash flow from Ermitano royalty (Mexico, First Majestic). Upside from massive Silicon discovery (Nevada, AngloGold) not priced in yet.",
+      "neg_comments": "Valuation less compelling after share price run-up. Silicon PFS/valuation not yet clear.",
+      "ownership": 1,
+      "timestamp": "00:27:46"
+    },
+    {
+      "ticker": "GROY",
+      "company_name": "Gold Royalty Corp",
+      "company_rating": 5,
+      "pos_comments": "Rapid asset growth, capable management, successful JV monetization. Now cash flow positive, benefitting from higher gold price and ramp-up at key royalties.",
+      "neg_comments": "Valuation less attractive after re-rating; waits for further growth.",
+      "ownership": null,
+      "timestamp": "00:29:45"
+    },
+    {
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "company_rating": null,
+      "pos_comments": "Dividend giant, outstanding capital allocation, reinvesting amid cyclical downturns. Preferred for long-term compounding and dividend growth.",
+      "neg_comments": "Commodity cyclicality means there are times to trim, particularly when stock trades above NAV.",
+      "ownership": null,
+      "timestamp": "00:34:06"
+    },
+    {
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "company_rating": null,
+      "pos_comments": "Major global mining company, suitable for income portfolios and compounding. Buys for dividends and net asset value exposure.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:34:06"
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "ExxonMobil",
+      "company_rating": null,
+      "pos_comments": "Strong capital discipline, buying Pioneer a smart strategic move; significant dividend growth and infrastructure investment. Income compounder for multi-generational portfolios.",
+      "neg_comments": "Sell/trim when market cap exceeds net asset value, be mindful of cycle.",
+      "ownership": null,
+      "timestamp": "00:34:06"
+    },
+    {
+      "ticker": "CVX",
+      "company_name": "Chevron",
+      "company_rating": null,
+      "pos_comments": "One of the two best oil majors. Excellent dividend, balance sheet, and project allocation. Suitable for income compounding.",
+      "neg_comments": "Be wary of overvaluation relative to net present value in bull phases.",
+      "ownership": null,
+      "timestamp": "00:34:06"
+    },
+    {
+      "ticker": "CTTZF",
+      "company_name": "Centaurus Metals",
+      "company_rating": 4,
+      "pos_comments": "Huge, low-cost, tier-one nickel sulphide asset. Very cheap due to sector pessimism; expects high ROC (25%+) even at current nickel prices.",
+      "neg_comments": "Nickel remains out of favor, may take two years for sector to recover. Potential for Rio Tinto takeover would cap long-term upside. Sees deposit getting larger with infill drilling.",
+      "ownership": 1,
+      "timestamp": "00:38:33"
+    },
+    {
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "company_rating": null,
+      "pos_comments": "Iron ore assets very attractive at current price.",
+      "neg_comments": "Avoids ownership until political resolution of major tailings dam liability ($15–30B). Cheap, but liability risk is major overhang.",
+      "ownership": 0,
+      "timestamp": "00:41:14"
+    },
+    {
+      "ticker": "DVN",
+      "company_name": "Devon Energy",
+      "company_rating": null,
+      "pos_comments": "US natural gas stock, attractive entry, strong dividend; cost to produce gas nearly zero when factoring in oil production.",
+      "neg_comments": null,
+      "ownership": "long",
+      "timestamp": "00:45:10"
+    },
+    {
+      "ticker": "EQT",
+      "company_name": "Equitable",
+      "company_rating": null,
+      "pos_comments": "US natural gas with stellar dividend capacity and scale. Low cost, high yield, benefiting from LNG export differential.",
+      "neg_comments": null,
+      "ownership": "long",
+      "timestamp": "00:45:10"
+    },
+    {
+      "ticker": "AFMJF",
+      "company_name": "Alphamin Resources",
+      "company_rating": null,
+      "pos_comments": "Positive on world-class tin assets. Likely beneficiary if long-term scarcity narrative for tin plays out.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:53:10"
+    }
+  ]
+}

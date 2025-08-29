@@ -1,0 +1,109 @@
+{
+  "interview_metadata": {
+    "asofdate": "2023-11-15",
+    "source": "https://www.youtube.com/watch?v=M9VTM9nm4tM&t=720s",
+    "publication": "Resource Talks",
+    "general_comments": "Rick Rule conducts a masterclass on silver and shares his explicit rankings and candid opinions on a range of silver mining companies. He emphasizes contrarian investing, the case for deep speculation in hated silver equities, and his rationale for stock selection and portfolio exit tactics. Rule provides both macro perspectives on silver's risk/reward and detailed company commentary, including operational, jurisdictional, and management-related insights."
+  },
+  "company_info": [
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": 4,
+      "pos_comments": "Fan of Pan American despite recent disappointment. Has doubled and tripled money in past cycles, praises company’s portfolio overhaul and asset sales after Tahoe takeover. Thinks if the Cascabel (Guatemala) and Navidad (Argentina) projects are put into production, silver output could triple for little increase in G&A, providing significant upside.",
+      "neg_comments": "Major dilution to fund Yamana acquisition; initial disappointment led to share sales. Recent price drops make current value more attractive. Catalysts (permit progress at Cascabel, Navidad) are social/political and not guaranteed.",
+      "ownership": 1,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "HL",
+      "company_name": "Hecla Mining",
+      "company_rating": 6,
+      "pos_comments": "Not owned currently. Brand name in American silver, could be biggest beneficiary of inflows during mania. Will outperform if there is a large move in silver price.",
+      "neg_comments": "High-cost producer; less attractive on current net present value at spot prices. Prefers higher-quality assets, but market may favor Hecla in a bull run.",
+      "ownership": 0,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "AG",
+      "company_name": "First Majestic Silver",
+      "company_rating": 6,
+      "pos_comments": "Most leveraged to silver price, high investor expectation, strong management (Keith Neumeyer). CEO track record at acquiring and reviving mines is noted.",
+      "neg_comments": "Biggest risk is turnaround at Jerritt Canyon mine; company has a habit of buying underperforming operations and investing heavily to fix them. Will not upgrade rating until Jerritt Canyon is demonstrably on track.",
+      "ownership": 0,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "FVI",
+      "company_name": "Fortuna Silver Mines",
+      "company_rating": null,
+      "pos_comments": "Positive historical view, previous long-term holder. Recognizes successful diversification and the ability to operate in tough jurisdictions.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "VZLA",
+      "company_name": "Vizsla Silver",
+      "company_rating": null,
+      "pos_comments": "Doubter turned positive. Dramatic stock outperformance (>500%). High-grade epithermal system could prove a major discovery with significant copper upside.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "HERC",
+      "company_name": "Hercules Silver",
+      "company_rating": null,
+      "pos_comments": "Initially doubted, now more positive after strong drill results and core photos. High-grade copper minerals with silver exposure. May be more of a porphyry copper discovery longer term.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "SILV",
+      "company_name": "SilverCrest Metals",
+      "company_rating": null,
+      "pos_comments": "Disappointed by reserve reconciliation versus feasibility, but mine is making money and debt being paid down. Share price down 50%—possible upgrade if execution continues.",
+      "neg_comments": "Past resource/model disappointment.",
+      "ownership": null,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "MAG Silver",
+      "company_rating": null,
+      "pos_comments": "High-quality. Well-run asset, robust grades in Mexico. Seen as higher caliber alongside Silvercrest and Fresnillo. Strong exploration and recent positive operational surprises.",
+      "neg_comments": "Perceived as fully priced for now.",
+      "ownership": 1,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "FRES.L",
+      "company_name": "Fresnillo",
+      "company_rating": null,
+      "pos_comments": "Major Mexican producer, considered the closest thing to a silver bellwether stock globally. Large, long-life assets support sector exposure.",
+      "neg_comments": "Faces substantial Mexican political risk and governance friction.",
+      "ownership": 1,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": "SSR",
+      "company_name": "SSR Mining",
+      "company_rating": null,
+      "pos_comments": "Historic silver performer, participates strongly in sector rallies.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:47:00"
+    },
+    {
+      "ticker": null,
+      "company_name": "Codelco, Hochschild",
+      "company_rating": null,
+      "pos_comments": "Recognizes sector importance for scale and diversity.",
+      "neg_comments": "Generally prefers higher-margin juniors for upside.",
+      "ownership": null,
+      "timestamp": "00:47:00"
+    }
+  ]
+}

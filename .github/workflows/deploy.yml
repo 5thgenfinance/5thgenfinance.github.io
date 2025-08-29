@@ -1,0 +1,148 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Update data daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allows manual triggering
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install MongoDB driver
+      run: npm install mongodb
+    
+    - name: Create data directory
+      run: mkdir -p data
+    
+    - name: Export data from MongoDB
+      env:
+        MONGO_URI: ${{ secrets.MONGO_URI }}
+      run: |
+        node -e "
+        const { MongoClient } = require('mongodb');
+        const fs = require('fs');
+        
+        async function exportData() {
+          const uri = process.env.MONGO_URI || 'mongodb+srv://svc_ro:ZxmatkWiJyXa0YVU@5gfdatapipe.be8riki.mongodb.net/';
+          const client = new MongoClient(uri);
+          
+          try {
+            await client.connect();
+            console.log('✅ Connected to MongoDB');
+            
+            const db = client.db('DEV');
+            const collection = db.collection('colRickRube');
+            
+            const pipeline = [
+              { \$unwind: '\$data.company_info' },
+              { \$match: { 'data.company_info.ticker': { \$ne: null } } },
+              { \$sort: { 'data.interview_metadata.asofdate': -1 } },
+              {
+                \$group: {
+                  _id: '\$data.company_info.ticker',
+                  company_name: { \$first: '\$data.company_info.company_name' },
+                  most_recent_rating: { \$first: '\$data.company_info.company_rating' },
+                  ownership: { \$first: '\$data.company_info.ownership' },
+                  pos_comments: { \$first: '\$data.company_info.pos_comments' },
+                  neg_comments: { \$first: '\$data.company_info.neg_comments' },
+                  asofdate: { \$first: '\$data.interview_metadata.asofdate' },
+                  source: { \$first: '\$data.interview_metadata.source' },
+                  publication: { \$first: '\$data.interview_metadata.publication' }
+                }
+              },
+              {
+                \$project: {
+                  _id: 0,
+                  ticker: '\$_id',
+                  company_name: 1,
+                  most_recent_rating: 1,
+                  ownership: 1,
+                  pos_comments: 1,
+                  neg_comments: 1,
+                  asofdate: 1,
+                  source: 1,
+                  publication: 1
+                }
+              },
+              { \$sort: { ticker: 1 } }
+            ];
+            
+            const companies = await collection.aggregate(pipeline).toArray();
+            const dataWithMeta = {
+              lastUpdated: new Date().toISOString(),
+              totalCompanies: companies.length,
+              companies: companies
+            };
+            
+            fs.writeFileSync('./data/companies.json', JSON.stringify(dataWithMeta, null, 2));
+            console.log(\`✅ Exported \${companies.length} companies\`);
+            console.log('📊 Sample companies:', companies.slice(0, 3).map(c => c.ticker).join(', '));
+            
+          } catch (error) {
+            console.error('❌ Error:', error);
+            
+            // Create fallback data file to prevent build failure
+            const fallbackData = {
+              lastUpdated: new Date().toISOString(),
+              totalCompanies: 0,
+              companies: [],
+              error: 'Failed to connect to MongoDB - using fallback data'
+            };
+            fs.writeFileSync('./data/companies.json', JSON.stringify(fallbackData, null, 2));
+            console.log('⚠️  Created fallback data file');
+            
+          } finally {
+            await client.close();
+            console.log('🔌 Disconnected from MongoDB');
+          }
+        }
+        
+        exportData();
+        "
+    
+    - name: Verify data file
+      run: |
+        if [ -f "./data/companies.json" ]; then
+          echo "✅ Data file created successfully"
+          echo "📁 File size: $(ls -lh ./data/companies.json | awk '{print $5}')"
+          echo "📋 First few lines:"
+          head -10 ./data/companies.json
+        else
+          echo "❌ Data file not found"
+          exit 1
+        fi
+    
+    - name: Setup GitHub Pages
+      uses: actions/configure-pages@v4
+    
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v4
+      with:
+        path: '.'
+    
+    - name: Deploy to Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

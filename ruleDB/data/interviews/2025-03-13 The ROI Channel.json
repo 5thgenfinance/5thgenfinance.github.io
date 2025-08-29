@@ -1,0 +1,136 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-03-13",
+    "source": "https://www.youtube.com/watch?v=xJCV8TH-Byw",
+    "publication": "The ROI Channel",
+    "general_comments": "Rick Rule discusses royalty companies as the best risk-adjusted way to play commodities, especially gold and uranium. He notes the deep undervaluation of uranium juniors, sees value in high-quality gold/silver royalty leaders, and stresses business model durability. Rick explains that most investors misunderstand both uranium term contracts and the capital efficiency of the royalty model. He ranks major royalty companies, is forthright about his ownership interests, and describes strong optionality for leading firms due to future large streaming deals. He also highlights specific concerns and optimism for coal, oil, and water-handling royalties, forecasting a wave of M&A and sector rerating."
+  },
+  "company_info": [
+    {
+      "ticker": "UROY",
+      "company_name": "Uranium Royalty Corp",
+      "company_rating": 4,
+      "pos_comments": "Unique business model in uranium, owns physical pounds, well-positioned for future streaming/royalty growth. Company is 'fairly cashed-up' with no operating costs and ability to enter term contracts at will.",
+      "neg_comments": "Not aggressive enough buying royalties recently (in hindsight, wise given weak junior funding).",
+      "ownership": 1,
+      "timestamp": "00:09:33"
+    },
+    {
+      "ticker": "FNV",
+      "company_name": "Franco-Nevada",
+      "company_rating": 4,
+      "pos_comments": "Best-in-class royalty major, extremely efficient (11bps G&A), strong recycle ratio, expects big optionality from global copper/gold streaming deals and potential Panama legal settlement. Historically high cash flow yield.",
+      "neg_comments": "Panama (Cobre Panama) disruption removed 14% of NAV and caused 42% share price drop; timing for resolution unclear.",
+      "ownership": 1,
+      "timestamp": "00:22:37"
+    },
+    {
+      "ticker": "WPM",
+      "company_name": "Wheaton Precious Metals",
+      "company_rating": 4,
+      "pos_comments": "Co-best in class; exceptional management, efficient, broad portfolio, strong price-to-future-NAV. Will benefit from wave of big copper/gold streaming deals.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:22:37"
+    },
+    {
+      "ticker": "RGLD",
+      "company_name": "Royal Gold",
+      "company_rating": 5,
+      "pos_comments": "Top-5 company, long experience, high-quality pipeline/portfolio.",
+      "neg_comments": "Too much revenue from too few (non-tier-1) mines, lacks big multi-decade mines.",
+      "ownership": 0,
+      "timestamp": "00:29:02"
+    },
+    {
+      "ticker": "GROY",
+      "company_name": "Gold Royalty",
+      "company_rating": 5,
+      "pos_comments": "Owns stable of assets, strong management brought in, expects several strong years. Sister company to Uranium Royalty; management regarded highly.",
+      "neg_comments": "Not 'necessarily cheap' after price decline but assets are being enhanced.",
+      "ownership": 1,
+      "timestamp": "00:34:16"
+    },
+    {
+      "ticker": "EMPR",
+      "company_name": "Empress Royalty",
+      "company_rating": 6,
+      "pos_comments": "Cheap, benefited by exclusive deal flow from Endeavour Financial, trading below NAV; owner believes CEO has unique access.",
+      "neg_comments": "Subscale, high public company cost ratio—must scale up rapidly to survive.",
+      "ownership": 1,
+      "timestamp": "00:34:16"
+    },
+    {
+      "ticker": "GMX",
+      "company_name": "Globex Mining",
+      "company_rating": 4,
+      "pos_comments": "Unique for creating its own royalties, strong Quebec portfolio; occasionally invests in innovative technology.",
+      "neg_comments": "Most royalties non-producing; complex for most to understand, risk from non-producing mix.",
+      "ownership": 1,
+      "timestamp": "00:37:55"
+    },
+    {
+      "ticker": "AURA.TO",
+      "company_name": "Aura Resources",
+      "company_rating": 4,
+      "pos_comments": "Cheapest royalty company on price/cash flow, well-run; liked for capital allocation.",
+      "neg_comments": "Falls due to coal business, considered mistake to pivot away from coal instead of using cash flow to diversify.",
+      "ownership": 1,
+      "timestamp": "00:39:00"
+    },
+    {
+      "ticker": "TPL",
+      "company_name": "Texas Pacific Land Corp",
+      "company_rating": null,
+      "pos_comments": "Long-term shareholder; exceptional land and mineral rights play in West Texas; benefits from both oil/gas and agricultural royalties.",
+      "neg_comments": "Water handling/disposal in Permian Basin is a rising cost/risk factor.",
+      "ownership": 1,
+      "timestamp": "00:40:12"
+    },
+    {
+      "ticker": "PBT",
+      "company_name": "Permian Basin Royalty Trust",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not follow closely; used to follow SBR and others, now only follows Texas Pacific.",
+      "ownership": null,
+      "timestamp": "00:47:12"
+    },
+    {
+      "ticker": "VNOM",
+      "company_name": "Viper Energy",
+      "company_rating": null,
+      "pos_comments": "Spinoff from Diamondback; strong performance, reputable team.",
+      "neg_comments": "Does not follow deeply enough for detailed comment.",
+      "ownership": null,
+      "timestamp": "00:47:48"
+    },
+    {
+      "ticker": "STR",
+      "company_name": "Strata Resources",
+      "company_rating": null,
+      "pos_comments": "Largest shareholder, considers company attractive for copper royalty in Botswana and for Investment Bank buildout (SCP Capital Partners acquisition).",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:47:57"
+    },
+    {
+      "ticker": "PSK.TO",
+      "company_name": "PrairieSky Royalty",
+      "company_rating": 4,
+      "pos_comments": "Owns; very high-quality oil/gas royalties in Canada; spun out of CP Railway and Alberta provincial royalties; long-lived assets.",
+      "neg_comments": "Management has made occasional mistakes, but outlook remains positive.",
+      "ownership": 1,
+      "timestamp": "00:49:55"
+    },
+    {
+      "ticker": "AOI.TO",
+      "company_name": "Africa Oil",
+      "company_rating": null,
+      "pos_comments": "Owner; company trades at half of NAV, management engages in substantial insider buying, exploration upside in Namibia and Nigeria.",
+      "neg_comments": "Focus on 'improper' regimes may concern some.",
+      "ownership": 1,
+      "timestamp": "00:51:02"
+    }
+  ]
+}

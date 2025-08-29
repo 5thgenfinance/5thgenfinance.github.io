@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "quiz_name": "Monday Night Bar Quiz: General Trivia Showdown",
+    "total_questions": 30,
+    "created_date": "2025-07-30",
+    "gen_model_used": "Grok 4.0",
+    "file_description": "A 30-question Monday night bar trivia quiz covering general knowledge, sports, pop culture, history, and science—ideal for lively pub competitions. All questions are cited with their original online sources.",
+    "content_areas": [
+      {
+        "name": "General Knowledge",
+        "weight": "40%",
+        "questions_in_file": 12,
+        "percentage": "40.0%"
+      },
+      {
+        "name": "History",
+        "weight": "20%",
+        "questions_in_file": 6,
+        "percentage": "20.0%"
+      },
+      {
+        "name": "Pop Culture",
+        "weight": "20%",
+        "questions_in_file": 6,
+        "percentage": "20.0%"
+      },
+      {
+        "name": "Science & Nature",
+        "weight": "20%",
+        "questions_in_file": 6,
+        "percentage": "20.0%"
+      }
+    ],
+    "sources": [
+      "https://www.today.com/life/inspiration/trivia-questions-rcna39101",
+      "https://www.opinionstage.com/blog/trivia-questions/",
+      "https://thoughtcatalog.com/katee-fletcher/2020/04/bar-trivia-questions/",
+      "https://www.kraftylab.com/blog/trivia-questions",
+      "https://triviamaker.com/best-trivia-questions-with-answers/",
+      "https://www.rd.com/list/history-questions/"
+    ],
+    "special_features": [
+      "Balanced mix of question difficulties and themes",
+      "Strict answer validation and variety of topics"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "section": "General Knowledge",
+      "subsection": "Language & Abbreviations",
+      "question": "What does 'www' stand for in a website browser address?",
+      "choices": [
+        "A) World Web Web",
+        "B) World Wide Web",
+        "C) Wide World Web",
+        "D) Web World Wide"
+      ],
+      "correct_answer": "B",
+      "explanation": "'www' is short for World Wide Web, describing the global collection of interlinked web pages.",
+      "source": "https://www.quizbreaker.com/trivia-questions"
+    },
+    {
+      "id": 2,
+      "section": "General Knowledge",
+      "subsection": "Measurement",
+      "question": "How many inches are there in a foot?",
+      "choices": [
+        "A) 10",
+        "B) 11",
+        "C) 12",
+        "D) 13"
+      ],
+      "correct_answer": "C",
+      "explanation": "A single foot equals 12 inches.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 3,
+      "section": "General Knowledge",
+      "subsection": "Geography",
+      "question": "What do you call a landmass that is nearly surrounded by water?",
+      "choices": [
+        "A) Peninsula",
+        "B) Island",
+        "C) Continent",
+        "D) Delta"
+      ],
+      "correct_answer": "A",
+      "explanation": "A peninsula is land surrounded by water on the majority of its border while being connected to a mainland.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 4,
+      "section": "General Knowledge",
+      "subsection": "Sports",
+      "question": "How many bases are there in baseball?",
+      "choices": [
+        "A) 3",
+        "B) 4",
+        "C) 5",
+        "D) 6"
+      ],
+      "correct_answer": "B",
+      "explanation": "There are four bases in baseball: first, second, third, and home.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 5,
+      "section": "General Knowledge",
+      "subsection": "Currency",
+      "question": "Which U.S. president is depicted on the rare $2 bill?",
+      "choices": [
+        "A) Abraham Lincoln",
+        "B) Alexander Hamilton",
+        "C) Thomas Jefferson",
+        "D) Andrew Jackson"
+      ],
+      "correct_answer": "C",
+      "explanation": "Thomas Jefferson is featured on the $2 bill in American currency.",
+      "source": "https://www.brightful.me/blog/general-trivia-questions/"
+    },
+    {
+      "id": 6,
+      "section": "General Knowledge",
+      "subsection": "Animals",
+      "question": "What animal is known as the 'King of the Jungle'?",
+      "choices": [
+        "A) Elephant",
+        "B) Tiger",
+        "C) Lion",
+        "D) Gorilla"
+      ],
+      "correct_answer": "C",
+      "explanation": "The lion is often called the 'King of the Jungle,' though it typically lives on the savanna.",
+      "source": "https://triviamaker.com/best-trivia-questions-with-answers/"
+    },
+    {
+      "id": 7,
+      "section": "General Knowledge",
+      "subsection": "Food & Drink",
+      "question": "Besides water, what is the most consumed beverage in the world?",
+      "choices": [
+        "A) Coffee",
+        "B) Tea",
+        "C) Milk",
+        "D) Wine"
+      ],
+      "correct_answer": "B",
+      "explanation": "Tea is the most popular beverage globally after water.",
+      "source": "https://thoughtcatalog.com/katee-fletcher/2020/04/bar-trivia-questions/"
+    },
+    {
+      "id": 8,
+      "section": "General Knowledge",
+      "subsection": "Television",
+      "question": "What cable channel was launched with the words, “Ladies and gentlemen, rock and roll,” at 12:01 a.m. on August 1, 1981?",
+      "choices": [
+        "A) MTV",
+        "B) VH1",
+        "C) CNN",
+        "D) ESPN"
+      ],
+      "correct_answer": "A",
+      "explanation": "MTV started with this iconic phrase and revolutionized music television.",
+      "source": "https://parade.com/living/trivia-questions"
+    },
+    {
+      "id": 9,
+      "section": "General Knowledge",
+      "subsection": "Internet",
+      "question": "In what year was Facebook first launched?",
+      "choices": [
+        "A) 1999",
+        "B) 2002",
+        "C) 2004",
+        "D) 2006"
+      ],
+      "correct_answer": "C",
+      "explanation": "Facebook debuted in 2004, starting as a university networking platform.",
+      "source": "https://parade.com/living/trivia-questions"
+    },
+    {
+      "id": 10,
+      "section": "General Knowledge",
+      "subsection": "Food Properties",
+      "question": "What food is unique in that it never spoils?",
+      "choices": [
+        "A) Rice",
+        "B) Salt",
+        "C) Honey",
+        "D) Sugar"
+      ],
+      "correct_answer": "C",
+      "explanation": "Honey, due to its low moisture and high acidity, can last forever without spoiling.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 11,
+      "section": "General Knowledge",
+      "subsection": "Music",
+      "question": "Who were known as the “Fab Four”?",
+      "choices": [
+        "A) The Rolling Stones",
+        "B) The Beach Boys",
+        "C) The Beatles",
+        "D) The Who"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Beatles are famously nicknamed the 'Fab Four.'",
+      "source": "https://thoughtcatalog.com/katee-fletcher/2020/04/bar-trivia-questions/"
+    },
+    {
+      "id": 12,
+      "section": "General Knowledge",
+      "subsection": "Travel",
+      "question": "What document is required for international travel?",
+      "choices": [
+        "A) Visa",
+        "B) Identification card",
+        "C) Passport",
+        "D) Boarding pass"
+      ],
+      "correct_answer": "C",
+      "explanation": "A passport is the universally accepted document for international travel.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 13,
+      "section": "History",
+      "subsection": "American History",
+      "question": "In 1776, which country did the United States declare independence from?",
+      "choices": [
+        "A) France",
+        "B) The Netherlands",
+        "C) Spain",
+        "D) Great Britain"
+      ],
+      "correct_answer": "D",
+      "explanation": "The U.S. declared independence from Great Britain in 1776.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 14,
+      "section": "History",
+      "subsection": "Ancient Civilizations",
+      "question": "Who was the first ruler of the Mongol Empire?",
+      "choices": [
+        "A) Kublai Khan",
+        "B) Genghis Khan",
+        "C) Timur",
+        "D) Akbar"
+      ],
+      "correct_answer": "B",
+      "explanation": "Genghis Khan founded the Mongol Empire.",
+      "source": "https://www.rd.com/list/history-questions/"
+    },
+    {
+      "id": 15,
+      "section": "History",
+      "subsection": "Exploration",
+      "question": "Who was the first person to set foot on the Moon?",
+      "choices": [
+        "A) Yuri Gagarin",
+        "B) Neil Armstrong",
+        "C) Buzz Aldrin",
+        "D) Alan Shepard"
+      ],
+      "correct_answer": "B",
+      "explanation": "Neil Armstrong was the first human to walk on the Moon, in 1969.",
+      "source": "https://www.rd.com/list/history-questions/"
+    },
+    {
+      "id": 16,
+      "section": "History",
+      "subsection": "Disasters",
+      "question": "What was the name of the Ukrainian nuclear power plant that suffered a meltdown in 1986?",
+      "choices": [
+        "A) Fukushima",
+        "B) Chernobyl",
+        "C) Three Mile Island",
+        "D) Zaporizhzhia"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Chernobyl disaster was a nuclear accident in 1986 in Ukraine.",
+      "source": "https://www.rd.com/list/history-questions/"
+    },
+    {
+      "id": 17,
+      "section": "History",
+      "subsection": "U.S. Presidents",
+      "question": "Who was assassinated on November 22, 1963?",
+      "choices": [
+        "A) Robert F. Kennedy",
+        "B) Abraham Lincoln",
+        "C) John F. Kennedy",
+        "D) Martin Luther King Jr."
+      ],
+      "correct_answer": "C",
+      "explanation": "President John F. Kennedy was assassinated in Dallas, Texas in 1963.",
+      "source": "https://www.brightful.me/blog/general-trivia-questions/"
+    },
+    {
+      "id": 18,
+      "section": "History",
+      "subsection": "Independence",
+      "question": "In what year did India gain independence from Britain?",
+      "choices": [
+        "A) 1945",
+        "B) 1947",
+        "C) 1950",
+        "D) 1952"
+      ],
+      "correct_answer": "B",
+      "explanation": "India gained its independence in 1947.",
+      "source": "https://www.rd.com/list/history-questions/"
+    },
+    {
+      "id": 19,
+      "section": "Pop Culture",
+      "subsection": "Television",
+      "question": "In the animated series 'The Flintstones,' what is the name of the family's pet dinosaur?",
+      "choices": [
+        "A) Dino",
+        "B) Spike",
+        "C) Barney",
+        "D) Pebbles"
+      ],
+      "correct_answer": "A",
+      "explanation": "Dino is the Flintstones' cheerful pet dinosaur.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 20,
+      "section": "Pop Culture",
+      "subsection": "Movies",
+      "question": "Which movie character declares, “To infinity … and beyond!”?",
+      "choices": [
+        "A) Woody",
+        "B) Buzz Lightyear",
+        "C) Mr. Potato Head",
+        "D) Rex"
+      ],
+      "correct_answer": "B",
+      "explanation": "Buzz Lightyear says this famous line in 'Toy Story.'",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 21,
+      "section": "Pop Culture",
+      "subsection": "Music",
+      "question": "Who played guitar on Michael Jackson’s song 'Beat It'?",
+      "choices": [
+        "A) Slash",
+        "B) Jimmy Page",
+        "C) Eddie Van Halen",
+        "D) Eric Clapton"
+      ],
+      "correct_answer": "C",
+      "explanation": "Eddie Van Halen famously played the guitar solo on 'Beat It.'",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 22,
+      "section": "Pop Culture",
+      "subsection": "Pop Music",
+      "question": "Which author wrote the novel 'Jurassic Park'?",
+      "choices": [
+        "A) Stephen King",
+        "B) Michael Crichton",
+        "C) Dean Koontz",
+        "D) Arthur C. Clarke"
+      ],
+      "correct_answer": "B",
+      "explanation": "Michael Crichton penned 'Jurassic Park,' leading to the blockbuster film franchise.",
+      "source": "https://thoughtcatalog.com/katee-fletcher/2020/04/bar-trivia-questions/"
+    },
+    {
+      "id": 23,
+      "section": "Pop Culture",
+      "subsection": "Children’s Literature",
+      "question": "According to Guinness World Records, what is the best-selling book of all time?",
+      "choices": [
+        "A) The Lord of the Rings",
+        "B) Don Quixote",
+        "C) The Bible",
+        "D) Harry Potter"
+      ],
+      "correct_answer": "C",
+      "explanation": "The Bible holds the record for most copies sold globally.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 24,
+      "section": "Pop Culture",
+      "subsection": "Television",
+      "question": "Ed Falco and James Gandolfini starred in which hit HBO series about a New Jersey mob boss?",
+      "choices": [
+        "A) Boardwalk Empire",
+        "B) The Sopranos",
+        "C) The Wire",
+        "D) Mad Men"
+      ],
+      "correct_answer": "B",
+      "explanation": "'The Sopranos' is about mob boss Tony Soprano, played by James Gandolfini.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 25,
+      "section": "Science & Nature",
+      "subsection": "Biology",
+      "question": "Humans inhale oxygen and exhale what gas?",
+      "choices": [
+        "A) Nitrogen",
+        "B) Hydrogen",
+        "C) Carbon Dioxide",
+        "D) Methane"
+      ],
+      "correct_answer": "C",
+      "explanation": "Human respiration brings in oxygen and generates carbon dioxide.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 26,
+      "section": "Science & Nature",
+      "subsection": "Astronomy",
+      "question": "How many planets are in our solar system?",
+      "choices": [
+        "A) 7",
+        "B) 8",
+        "C) 9",
+        "D) 10"
+      ],
+      "correct_answer": "B",
+      "explanation": "After Pluto’s reclassification, there are eight official planets in our solar system.",
+      "source": "https://triviamaker.com/best-trivia-questions-with-answers/"
+    },
+    {
+      "id": 27,
+      "section": "Science & Nature",
+      "subsection": "Physics",
+      "question": "Who is referred to as the 'Father of Relativity'?",
+      "choices": [
+        "A) Isaac Newton",
+        "B) Albert Einstein",
+        "C) Stephen Hawking",
+        "D) Galileo Galilei"
+      ],
+      "correct_answer": "B",
+      "explanation": "Albert Einstein developed the theory of relativity.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 28,
+      "section": "Science & Nature",
+      "subsection": "Natural World",
+      "question": "What is the world's largest mammal?",
+      "choices": [
+        "A) Elephant",
+        "B) Blue Whale",
+        "C) Giraffe",
+        "D) Orca"
+      ],
+      "correct_answer": "B",
+      "explanation": "The blue whale is the largest animal on earth.",
+      "source": "https://www.opinionstage.com/blog/trivia-questions/"
+    },
+    {
+      "id": 29,
+      "section": "Science & Nature",
+      "subsection": "Genetics",
+      "question": "What was the first animal to be cloned?",
+      "choices": [
+        "A) Mouse",
+        "B) Sheep",
+        "C) Rabbit",
+        "D) Cow"
+      ],
+      "correct_answer": "B",
+      "explanation": "Dolly the sheep was the first animal cloned from an adult cell in 1996.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    },
+    {
+      "id": 30,
+      "section": "Science & Nature",
+      "subsection": "Chemistry",
+      "question": "Which type of rock are most fossils found in?",
+      "choices": [
+        "A) Igneous",
+        "B) Metamorphic",
+        "C) Sedimentary",
+        "D) Basalt"
+      ],
+      "correct_answer": "C",
+      "explanation": "Sedimentary rocks are formed by the accumulation of material and are the main source of fossils.",
+      "source": "https://www.today.com/life/inspiration/trivia-questions-rcna39101"
+    }
+  ]
+}

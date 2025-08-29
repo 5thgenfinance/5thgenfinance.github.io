@@ -1,0 +1,136 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-04-11",
+    "source": "https://www.youtube.com/watch?v=H71Ocxqs6_g",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule shares lessons from market volatility, why most investors act irrationally during sell-offs, and how separating price from value aids disciplined investing. He argues gold remains the prime beneficiary of increased liquidity and government intervention, notes uranium sentiment has collapsed among recent entrants, and sees crisis as opportunity. He addresses management quality, sector cycles, and individual company rankings, especially among miners and royalty firms. Rule discusses why he is buying in panic markets, new ventures like Battle Bank, and forecasts a structural shortfall in oil and gas due to underinvestment."
+  },
+  "company_info": [
+    {
+      "ticker": "SLVR",
+      "company_name": "Silver Tiger Metals",
+      "company_rating": null,
+      "pos_comments": "Hasn't been tempted to buy; not in the top five or six development/exploration silver stocks. Hasn't looked in last 5-6 months.",
+      "neg_comments": "Nothing negative, just not compelled to allocate capital.",
+      "ownership": 0,
+      "timestamp": "00:19:01"
+    },
+    {
+      "ticker": "VALE",
+      "company_name": "Vale S.A.",
+      "company_rating": null,
+      "pos_comments": "Substantial free cash flow generation.",
+      "neg_comments": "Sold after tailings dam failure—waited for ultimate liability. $15B cost; iron ore price weak, nickel price soft. Dividend not sustainable due to high required sustaining capex.",
+      "ownership": 0,
+      "timestamp": "00:19:47"
+    },
+    {
+      "ticker": "ARTG",
+      "company_name": "Artemis Gold",
+      "company_rating": 5,
+      "pos_comments": "Strong Tier 2 deposit, superb execution by management. Construction capacity close.",
+      "neg_comments": "Stock performance has outpaced valuation; currently a weak 5 (nearly a 6) from a value perspective.",
+      "ownership": null,
+      "timestamp": "00:23:17"
+    },
+    {
+      "ticker": "LGO",
+      "company_name": "Largo",
+      "company_rating": null,
+      "pos_comments": "Good asset, strong management, long-life mine.",
+      "neg_comments": "Plan to warehouse and lease vanadium didn't work; low vanadium prices have weakened the balance sheet; not timely currently.",
+      "ownership": 1,
+      "timestamp": "00:24:15"
+    },
+    {
+      "ticker": "ATX",
+      "company_name": "Atex Resources",
+      "company_rating": 5,
+      "pos_comments": "Shareholder. Spectacular exploration results, backed by savvy investors. Has sold enough of position to own the remainder at zero cost.",
+      "neg_comments": "Remains a 5 (not a 4) mainly because outperformance is now reflected in valuation.",
+      "ownership": 1,
+      "timestamp": "00:26:04"
+    },
+    {
+      "ticker": "DUNDF",
+      "company_name": "Dundee Corporation",
+      "company_rating": null,
+      "pos_comments": "Classic merchant bank, best buyside due diligence in Canada. Repeatedly demonstrated ability to add value in mining.",
+      "neg_comments": "Trades at 35-40% discount to sum-of-parts value.",
+      "ownership": 1,
+      "timestamp": "00:27:00"
+    },
+    {
+      "ticker": "SRT",
+      "company_name": "Strata",
+      "company_rating": null,
+      "pos_comments": "Principal asset is a royalty on a strong Tier 2 copper deposit in Africa. Royalty likely worth more than market cap. Investment in mining banking business is seen as a positive.",
+      "neg_comments": "Investment portfolio outside of royalty has lagged with junior resource sector weakness.",
+      "ownership": 1,
+      "timestamp": "00:27:00"
+    },
+    {
+      "ticker": "SII",
+      "company_name": "Sprott Inc.",
+      "company_rating": null,
+      "pos_comments": "Largest shareholder. Assets under management growth leverages fixed costs; expects bull market in precious metals to offer outsized returns.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:27:00"
+    },
+    {
+      "ticker": "PMET",
+      "company_name": "Patriot Battery Metals",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Sold out; sees theme as overpriced relative to other resource segments. Prefers not to play in small specialty metals markets with high volatility.",
+      "ownership": 0,
+      "timestamp": "00:40:19"
+    },
+    {
+      "ticker": "SEA",
+      "company_name": "Seabridge Gold",
+      "company_rating": null,
+      "pos_comments": "Rebought after price drop; leverage to a bull market in gold. Progress with First Nations likely to improve tenure.",
+      "neg_comments": "Past sale as valuation ran hard; large capex, long path to production.",
+      "ownership": 1,
+      "timestamp": "00:41:17"
+    },
+    {
+      "ticker": "DEV",
+      "company_name": "Devon Energy",
+      "company_rating": 4,
+      "pos_comments": "Market turbulence has returned stock to better value; likes leverage to U.S. gas arbitrage and global opportunity.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:36:31"
+    },
+    {
+      "ticker": "IVN.TO",
+      "company_name": "Ivanhoe Mines",
+      "company_rating": 5,
+      "pos_comments": "Large growth pipeline: smelter, new PGM and zinc assets. Lowered from 4 to 5 after major stock run. Energy, logistics, and downstream improvements support upside.",
+      "neg_comments": "Political risks in DRC and South Africa; now less cheap after outperformance.",
+      "ownership": 1,
+      "timestamp": "00:36:31"
+    },
+    {
+      "ticker": "UROY",
+      "company_name": "Uranium Royalty Corp.",
+      "company_rating": null,
+      "pos_comments": "Triple upside even without uranium price spike.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:51:10"
+    },
+    {
+      "ticker": "SVM",
+      "company_name": "Silvercorp Metals",
+      "company_rating": null,
+      "pos_comments": "Has the technical team to deliver at El Domo.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:52:28"
+    }
+  ]
+}

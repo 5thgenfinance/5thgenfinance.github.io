@@ -1,0 +1,282 @@
+{
+  "contentMetadata": {
+    "version": "1.0.0",
+    "title": "Math Problems - Intermediate",
+    "description": "Basic mathematical equations and numbers for memory matching",
+    "category": "math",
+    "difficulty": "intermediate",
+    "totalPairs": 15
+  },
+  "cardPairs": [
+    {
+      "pairId": "pair_001",
+      "matchContent": "12",
+      "card1": {
+        "cardId": "card_001_a",
+        "displayContent": "6 + 6",
+        "parameterLeft": "ADD",
+        "parameterRight": "12",
+        "metadata": { "weight": 9, "tags": ["addition", "basic"] }
+      },
+      "card2": {
+        "cardId": "card_001_b",
+        "displayContent": "12",
+        "parameterLeft": "NUM",
+        "parameterRight": "12",
+        "metadata": { "weight": 9, "tags": ["number", "basic"] }
+      }
+    },
+    {
+      "pairId": "pair_002",
+      "matchContent": "25",
+      "card1": {
+        "cardId": "card_002_a",
+        "displayContent": "5 × 5",
+        "parameterLeft": "MUL",
+        "parameterRight": "25",
+        "metadata": { "weight": 7, "tags": ["multiplication", "square"] }
+      },
+      "card2": {
+        "cardId": "card_002_b",
+        "displayContent": "25",
+        "parameterLeft": "NUM",
+        "parameterRight": "25",
+        "metadata": { "weight": 7, "tags": ["number", "square"] }
+      }
+    },
+    {
+      "pairId": "pair_003",
+      "matchContent": "8",
+      "card1": {
+        "cardId": "card_003_a",
+        "displayContent": "16 ÷ 2",
+        "parameterLeft": "DIV",
+        "parameterRight": "8",
+        "metadata": { "weight": 8, "tags": ["division", "basic"] }
+      },
+      "card2": {
+        "cardId": "card_003_b",
+        "displayContent": "8",
+        "parameterLeft": "NUM",
+        "parameterRight": "8",
+        "metadata": { "weight": 8, "tags": ["number", "basic"] }
+      }
+    },
+    {
+      "pairId": "pair_004",
+      "matchContent": "15",
+      "card1": {
+        "cardId": "card_004_a",
+        "displayContent": "20 - 5",
+        "parameterLeft": "SUB",
+        "parameterRight": "15",
+        "metadata": { "weight": 6, "tags": ["subtraction", "teen"] }
+      },
+      "card2": {
+        "cardId": "card_004_b",
+        "displayContent": "15",
+        "parameterLeft": "NUM",
+        "parameterRight": "15",
+        "metadata": { "weight": 6, "tags": ["number", "teen"] }
+      }
+    },
+    {
+      "pairId": "pair_005",
+      "matchContent": "36",
+      "card1": {
+        "cardId": "card_005_a",
+        "displayContent": "6 × 6",
+        "parameterLeft": "MUL",
+        "parameterRight": "36",
+        "metadata": { "weight": 5, "tags": ["multiplication", "square"] }
+      },
+      "card2": {
+        "cardId": "card_005_b",
+        "displayContent": "36",
+        "parameterLeft": "NUM",
+        "parameterRight": "36",
+        "metadata": { "weight": 5, "tags": ["number", "square"] }
+      }
+    },
+    {
+      "pairId": "pair_006",
+      "matchContent": "100",
+      "card1": {
+        "cardId": "card_006_a",
+        "displayContent": "10²",
+        "parameterLeft": "POW",
+        "parameterRight": "100",
+        "metadata": { "weight": 4, "tags": ["power", "hundred"] }
+      },
+      "card2": {
+        "cardId": "card_006_b",
+        "displayContent": "100",
+        "parameterLeft": "NUM",
+        "parameterRight": "100",
+        "metadata": { "weight": 4, "tags": ["number", "hundred"] }
+      }
+    },
+    {
+      "pairId": "pair_007",
+      "matchContent": "7",
+      "card1": {
+        "cardId": "card_007_a",
+        "displayContent": "21 ÷ 3",
+        "parameterLeft": "DIV",
+        "parameterRight": "7",
+        "metadata": { "weight": 8, "tags": ["division", "prime"] }
+      },
+      "card2": {
+        "cardId": "card_007_b",
+        "displayContent": "7",
+        "parameterLeft": "NUM",
+        "parameterRight": "7",
+        "metadata": { "weight": 8, "tags": ["number", "prime"] }
+      }
+    },
+    {
+      "pairId": "pair_008",
+      "matchContent": "50",
+      "card1": {
+        "cardId": "card_008_a",
+        "displayContent": "25 + 25",
+        "parameterLeft": "ADD",
+        "parameterRight": "50",
+        "metadata": { "weight": 7, "tags": ["addition", "half"] }
+      },
+      "card2": {
+        "cardId": "card_008_b",
+        "displayContent": "50",
+        "parameterLeft": "NUM",
+        "parameterRight": "50",
+        "metadata": { "weight": 7, "tags": ["number", "half"] }
+      }
+    },
+    {
+      "pairId": "pair_009",
+      "matchContent": "9",
+      "card1": {
+        "cardId": "card_009_a",
+        "displayContent": "3²",
+        "parameterLeft": "POW",
+        "parameterRight": "9",
+        "metadata": { "weight": 9, "tags": ["power", "square"] }
+      },
+      "card2": {
+        "cardId": "card_009_b",
+        "displayContent": "9",
+        "parameterLeft": "NUM",
+        "parameterRight": "9",
+        "metadata": { "weight": 9, "tags": ["number", "square"] }
+      }
+    },
+    {
+      "pairId": "pair_010",
+      "matchContent": "24",
+      "card1": {
+        "cardId": "card_010_a",
+        "displayContent": "4 × 6",
+        "parameterLeft": "MUL",
+        "parameterRight": "24",
+        "metadata": { "weight": 6, "tags": ["multiplication", "even"] }
+      },
+      "card2": {
+        "cardId": "card_010_b",
+        "displayContent": "24",
+        "parameterLeft": "NUM",
+        "parameterRight": "24",
+        "metadata": { "weight": 6, "tags": ["number", "even"] }
+      }
+    },
+    {
+      "pairId": "pair_011",
+      "matchContent": "0",
+      "card1": {
+        "cardId": "card_011_a",
+        "displayContent": "5 - 5",
+        "parameterLeft": "SUB",
+        "parameterRight": "0",
+        "metadata": { "weight": 10, "tags": ["subtraction", "zero"] }
+      },
+      "card2": {
+        "cardId": "card_011_b",
+        "displayContent": "0",
+        "parameterLeft": "NUM",
+        "parameterRight": "0",
+        "metadata": { "weight": 10, "tags": ["number", "zero"] }
+      }
+    },
+    {
+      "pairId": "pair_012",
+      "matchContent": "18",
+      "card1": {
+        "cardId": "card_012_a",
+        "displayContent": "9 + 9",
+        "parameterLeft": "ADD",
+        "parameterRight": "18",
+        "metadata": { "weight": 5, "tags": ["addition", "even"] }
+      },
+      "card2": {
+        "cardId": "card_012_b",
+        "displayContent": "18",
+        "parameterLeft": "NUM",
+        "parameterRight": "18",
+        "metadata": { "weight": 5, "tags": ["number", "even"] }
+      }
+    },
+    {
+      "pairId": "pair_013",
+      "matchContent": "64",
+      "card1": {
+        "cardId": "card_013_a",
+        "displayContent": "8²",
+        "parameterLeft": "POW",
+        "parameterRight": "64",
+        "metadata": { "weight": 3, "tags": ["power", "large"] }
+      },
+      "card2": {
+        "cardId": "card_013_b",
+        "displayContent": "64",
+        "parameterLeft": "NUM",
+        "parameterRight": "64",
+        "metadata": { "weight": 3, "tags": ["number", "large"] }
+      }
+    },
+    {
+      "pairId": "pair_014",
+      "matchContent": "30",
+      "card1": {
+        "cardId": "card_014_a",
+        "displayContent": "5 × 6",
+        "parameterLeft": "MUL",
+        "parameterRight": "30",
+        "metadata": { "weight": 4, "tags": ["multiplication", "thirty"] }
+      },
+      "card2": {
+        "cardId": "card_014_b",
+        "displayContent": "30",
+        "parameterLeft": "NUM",
+        "parameterRight": "30",
+        "metadata": { "weight": 4, "tags": ["number", "thirty"] }
+      }
+    },
+    {
+      "pairId": "pair_015",
+      "matchContent": "1",
+      "card1": {
+        "cardId": "card_015_a",
+        "displayContent": "10 ÷ 10",
+        "parameterLeft": "DIV",
+        "parameterRight": "1",
+        "metadata": { "weight": 8, "tags": ["division", "one"] }
+      },
+      "card2": {
+        "cardId": "card_015_b",
+        "displayContent": "1",
+        "parameterLeft": "NUM",
+        "parameterRight": "1",
+        "metadata": { "weight": 8, "tags": ["number", "one"] }
+      }
+    }
+  ]
+}

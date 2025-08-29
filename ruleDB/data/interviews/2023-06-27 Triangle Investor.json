@@ -1,0 +1,91 @@
+{
+  "interview_metadata": {
+    "asofdate": "2023-06-27",
+    "source": "https://www.youtube.com/watch?v=PBiVvTb0_5s",
+    "publication": "Triangle Investor",
+    "general_comments": "Rick Rule analyzes uranium market catalysts, the transition from spot to term contracting, and the need for scale and economics in uranium producers. He is bullish on uranium, sees opportunities for speculators, and urges caution regarding the flood of new junior companies (only a minority are viable). Rick ranks and comments on numerous uranium companies, noting personal holdings, ownership, and concerns about jurisdiction, project size, and technical execution. He also discusses key uranium CEOs and ranks selected names in the gold and silver sectors."
+  },
+  "company_info": [
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Shareholder. Third-largest interest holder in Athabasca Basin; familiar with the management team. Two high-grade discoveries, interesting in-situ leaching technology, and permitted mill capacity—a ‘one-of-a-kind asset’.",
+      "neg_comments": "In-situ leaching technology not yet proven.",
+      "ownership": 1,
+      "timestamp": "00:13:53"
+    },
+    {
+      "ticker": "GLO",
+      "company_name": "Global Atomic",
+      "company_rating": null,
+      "pos_comments": "Shareholder. Development-stage asset in Niger; country improving in terms of rule of law and political stability. Important uranium supplier historically.",
+      "neg_comments": "Previously hesitant due to Islamic insurgency and governmental instability in Niger; remains cautious on jurisdiction.",
+      "ownership": 1,
+      "timestamp": "00:15:16"
+    },
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": null,
+      "pos_comments": "Not cheap but strategically important in US uranium policy. Will be a key producer in Texas and Wyoming with existing permitted infrastructure; has acquired Athabasca assets and built a strong 90,000+ shareholder base, making it highly responsive to good news.",
+      "neg_comments": "Premium valuation; company’s broad investor base increases stock reactivity. Intangible value from cost of capital and brand rather than only asset base.",
+      "ownership": null,
+      "timestamp": "00:17:07"
+    },
+    {
+      "ticker": "GXU",
+      "company_name": "Goviex Uranium",
+      "company_rating": null,
+      "pos_comments": "Recently became a shareholder. Resource update and new PEA improved thesis; Robert Friedland involvement seen as a significant intangible benefit.",
+      "neg_comments": "Prior grade concerns and jurisdictional risk (Niger).",
+      "ownership": 1,
+      "timestamp": "00:19:04"
+    },
+    {
+      "ticker": "BMN.AX",
+      "company_name": "Bannerman Energy",
+      "company_rating": null,
+      "pos_comments": "Attracted by optionality and positive view of Namibia as a jurisdiction—familiar with local political class.",
+      "neg_comments": "Does not own shares; nervous about low ore grade.",
+      "ownership": 0,
+      "timestamp": "00:20:22"
+    },
+    {
+      "ticker": "DYL.AX",
+      "company_name": "Deep Yellow",
+      "company_rating": null,
+      "pos_comments": "Large shareholder. Strong regard for John Borshoff, who drove industry consolidation and exploration leverage. Large, low-cost deposit assembled at a bargain.",
+      "neg_comments": "Concerned about grade and CEO’s age, but conviction outweighs concerns.",
+      "ownership": 1,
+      "timestamp": "00:21:07"
+    },
+    {
+      "ticker": "PDN.AX",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Shareholder. Eliminated debt via equity raise at higher prices; positive on database, brownfield nature, and improved balance sheet. Hot shutdown feature seen as valuable.",
+      "neg_comments": "Entry was after price drop. Market previously concerned about debt risk.",
+      "ownership": 1,
+      "timestamp": "00:21:42"
+    },
+    {
+      "ticker": "AEX",
+      "company_name": "Anfield Energy",
+      "company_rating": null,
+      "pos_comments": "Familiar with and fond of the management team.",
+      "neg_comments": "Not a shareholder due to lack of scale and scope.",
+      "ownership": 0,
+      "timestamp": "00:18:42"
+    },
+    {
+      "ticker": "EU",
+      "company_name": "enCore Energy",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Not enough data or scale to comment; prefers deposits >100M lbs uranium.",
+      "ownership": null,
+      "timestamp": "00:16:31"
+    }
+  ]
+}

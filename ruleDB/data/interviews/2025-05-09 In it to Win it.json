@@ -1,0 +1,82 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-05-09",
+    "source": "https://www.youtube.com/watch?v=uyLX8PPP-Pw",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule provides a macro thesis that we are in the early stages of a gold bull market resembling the stagflationary 1970s, fueled by rising long-term interest rates and US dollar weakness. He describes his thesis for physical gold and senior gold stocks, emphasizing the risks of a weakening Fed and the case for gold as a hedge over bonds. Rule answers detailed questions on dozens of stocks—especially gold, silver, rare earths, and energy names—delivering specific comments, risk ratings, and ownership disclosures."
+  },
+  "company_info": [
+    {
+      "ticker": "SVMLF",
+      "company_name": "Sovereign Metals",
+      "company_rating": null,
+      "pos_comments": "Large tier-one rutile/graphite deposit; rare, out-of-favor material. Rick is a steady buyer due to softness across tier-one deposits in unfavored commodities.",
+      "neg_comments": "Price recently dropped below capital raise price. Institutional holders may have expected a quick Rio Tinto takeover, which hasn't materialized.",
+      "ownership": 1,
+      "timestamp": "00:16:24"
+    },
+    {
+      "ticker": "MEI.AX",
+      "company_name": "Meteoric Resources",
+      "company_rating": null,
+      "pos_comments": "Represents unique opportunity due to non-Chinese rare earth supply security. Included within a speculative portfolio for rare earths.",
+      "neg_comments": "Requires advances in processing technology and is highly speculative.",
+      "ownership": null,
+      "timestamp": "00:18:12"
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "ExxonMobil",
+      "company_rating": null,
+      "pos_comments": "Superb capital allocation; maintains investment in down cycles; recent Pioneer merger a shrewd move. Holds 5% of personal portfolio, considering buying more.",
+      "neg_comments": "Share price could decline as oil price falls, but Rick is 'ecstatic' to own long-term.",
+      "ownership": 1,
+      "timestamp": "00:21:11"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": null,
+      "pos_comments": "Ontario mine ramp-up ongoing; if nameplate is achieved, future quarters will be very strong. Advocates rationalizing the portfolio by selling lower-quality assets (e.g., Castle Mountain, Los Filos).",
+      "neg_comments": "Recent earnings disappointing, mainly due to slower than expected Ontario startup and deferred sustaining capital investment elsewhere.",
+      "ownership": null,
+      "timestamp": "00:23:13"
+    },
+    {
+      "ticker": "CDPR.V",
+      "company_name": "Cerro de Pasco Resources",
+      "company_rating": null,
+      "pos_comments": "Massive historical silver tailings project in Peru—over 400M ounces estimated recoverable. Rick owns, sees it as highly leveraged to a silver bull market.",
+      "neg_comments": "Not yet in production. High grade/metallurgy variability. Needs feasibility, capital and a mill; not for weak holders.",
+      "ownership": 1,
+      "timestamp": "00:23:13"
+    },
+    {
+      "ticker": "GGP.L",
+      "company_name": "Greatland Gold",
+      "company_rating": null,
+      "pos_comments": "Still considers it a superior orebody; feels good about the asset.",
+      "neg_comments": "Management has had resource reconciliation problems.",
+      "ownership": null,
+      "timestamp": "00:31:49"
+    },
+    {
+      "ticker": "SOLG.L",
+      "company_name": "SolGold",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Company in turmoil, high upfront capital costs, Ecuador facing ongoing political risk; jury still out.",
+      "ownership": null,
+      "timestamp": "00:31:49"
+    },
+    {
+      "ticker": "AAU.L",
+      "company_name": "Ariana Resources",
+      "company_rating": null,
+      "pos_comments": "Brilliant explorer Keith Barron involved. Continues to see strong potential in copper oxide-silver play and Ecuadorian lowlands.",
+      "neg_comments": "No recent exploration progress, stymied by lack of drill permits (environmental/social headwinds). Company seems to have lost its way.",
+      "ownership": null,
+      "timestamp": "00:34:46"
+    }
+  ]
+}

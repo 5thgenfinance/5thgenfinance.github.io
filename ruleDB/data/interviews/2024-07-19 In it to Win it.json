@@ -1,0 +1,181 @@
+{
+  "interview_metadata": {
+    "asofdate": "2024-07-19",
+    "source": "https://www.youtube.com/watch?v=NuGpf_G1Jv0",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule shares macro insights on commodities, the future of private placements, and financial discipline. He offers pragmatic advice on cash savings, buying undervalued assets during pessimistic markets, and maintaining liquidity (including gold). Rick provides updated company ratings and rationale for majors, juniors, and royalty/resource developers across the gold, uranium, nickel, rare earth, coal, oil, and platinum group metals sectors. He highlights the importance of management quality, jurisdiction risk, and disciplined capital allocation, and warns that successful investing requires patience and long time horizons."
+  },
+  "company_info": [
+    {
+      "ticker": "NEM",
+      "company_name": "Newmont",
+      "company_rating": 5,
+      "pos_comments": "Management has stated intention to focus on tier-one mines after Newcrest acquisition, selling off tier two mines. Freeing up balance sheet capacity is a priority. Rick is positively inclined but wants to see real progress on asset sales and return focus.",
+      "neg_comments": "Has not yet executed the rationalization fully. Rick only a small shareholder currently (owns via puts exercised).",
+      "ownership": 1,
+      "timestamp": "00:10:22"
+    },
+    {
+      "ticker": "GOLD",
+      "company_name": "Barrick Gold",
+      "company_rating": 5,
+      "pos_comments": "Advancing Reko Diq copper-gold project in Pakistan, which could become their largest mine—a major positive if de-risked. Would use any stock weakness from market worries as a buying opportunity.",
+      "neg_comments": "Market concerned about jurisdictional/political risks in Pakistan (Balochistan) and high $7B upfront capex.",
+      "ownership": null,
+      "timestamp": "00:10:22"
+    },
+    {
+      "ticker": "AEM",
+      "company_name": "Agnico Eagle Mines",
+      "company_rating": 4,
+      "pos_comments": "Best capital allocator among gold majors. 100% holdings in Abitibi give similar gold camp exposure as peers' Nevada assets. Chairman and ex-CEO praised for culture and long-term outperformance.",
+      "neg_comments": "Richly valued after substantial price rise.",
+      "ownership": null,
+      "timestamp": "00:10:22"
+    },
+    {
+      "ticker": "BTG",
+      "company_name": "B2Gold",
+      "company_rating": 4,
+      "pos_comments": "Excellent management and mine-building track record in tough jurisdictions. Sees continued long-term value.",
+      "neg_comments": "Canadian mine development behind schedule and over budget, creating short-term pessimism; expects ongoing softness.",
+      "ownership": null,
+      "timestamp": "00:15:13"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": 5,
+      "pos_comments": "Greenfields Canadian construction project completed on time, near budget. Market responding positively to recent execution.",
+      "neg_comments": "Project was not completed precisely on budget.",
+      "ownership": null,
+      "timestamp": "00:15:13"
+    },
+    {
+      "ticker": "CHN",
+      "company_name": "Chakana Copper",
+      "company_rating": 6,
+      "pos_comments": "Exploration upside remains.",
+      "neg_comments": "Recent drilling results disappointed on both gold and deeper copper targets.",
+      "ownership": null,
+      "timestamp": "00:15:13"
+    },
+    {
+      "ticker": "KAP.L",
+      "company_name": "Kazatomprom",
+      "company_rating": null,
+      "pos_comments": "Company buyback shows confidence. Dividend is considered secure and attractive.",
+      "neg_comments": "Possible negative fiscal code change; risk in how government in Kazakhstan negotiates social benefit terms.",
+      "ownership": 1,
+      "timestamp": "00:17:50"
+    },
+    {
+      "ticker": "CTM.AX",
+      "company_name": "Centaurus Metals",
+      "company_rating": 4,
+      "pos_comments": "Large-scale, low-cost nickel deposit in Brazil. Attracted to size and cyclical opportunity (trough in global nickel prices).",
+      "neg_comments": "Nickel market in oversupply, especially from Indonesian laterite; potential price weakness could persist another 1-2 years.",
+      "ownership": null,
+      "timestamp": "00:20:00"
+    },
+    {
+      "ticker": "AURA.L",
+      "company_name": "Aura Resources",
+      "company_rating": 4,
+      "pos_comments": "Holder; strong coal royalty cash flows used wisely to buy other royalties. Polite to shareholders (generous dividend).",
+      "neg_comments": "Coal royalties likely to drop 30-40% in the next few years; market has overreacted with steep share price decline.",
+      "ownership": 1,
+      "timestamp": "00:20:00"
+    },
+    {
+      "ticker": "MEI.AX",
+      "company_name": "Meteoric Resources",
+      "company_rating": 4,
+      "pos_comments": "Attracted to rare earth exploration project in Brazil. Deposit appears large and economic; expects large projects must ultimately be sold to majors.",
+      "neg_comments": "Rare earth mining is complex with high supply/demand and technical risks.",
+      "ownership": null,
+      "timestamp": "00:24:06"
+    },
+    {
+      "ticker": "ANGLY",
+      "company_name": "Anglo American Platinum",
+      "company_rating": 6,
+      "pos_comments": null,
+      "neg_comments": "Ongoing South African political/social/fiscal risks; cannot/will not allocate capital while nationalization/taxation policy is unclear. Not an owner.",
+      "ownership": 0,
+      "timestamp": "00:24:06"
+    },
+    {
+      "ticker": "SBSW",
+      "company_name": "Sibanye Stillwater",
+      "company_rating": 6,
+      "pos_comments": null,
+      "neg_comments": "Similar challenges to Anglo: social/ownership risk and low PGM prices. Not an owner.",
+      "ownership": 0,
+      "timestamp": "00:24:06"
+    },
+    {
+      "ticker": "HCC",
+      "company_name": "Warrior Met Coal",
+      "company_rating": 5,
+      "pos_comments": "Met coal prices remain strong. Good infrastructure and stability.",
+      "neg_comments": "Not in the world's lowest cost quartile. Recent share price rise attributed more to coal price leverage than company operations.",
+      "ownership": null,
+      "timestamp": "00:27:59"
+    },
+    {
+      "ticker": "AMR",
+      "company_name": "Alpha Metallurgical Resources",
+      "company_rating": 5,
+      "pos_comments": "Strong met coal pricing has lifted the stock; solid infrastructure and U.S. stability.",
+      "neg_comments": "Does not qualify as Tier 1 globally based on cost/ROI. As above, price appreciation has been cyclical.",
+      "ownership": null,
+      "timestamp": "00:27:59"
+    },
+    {
+      "ticker": "BSM",
+      "company_name": "Black Stone Minerals",
+      "company_rating": 4,
+      "pos_comments": "Great asset base and history of distributing free cash. Good starter exposure for oil investors; has diversified mineral spread.",
+      "neg_comments": "Production increases may slow as best class-1 drilling locations are depleted. Natural gas pricing risk in Texas is a headwind.",
+      "ownership": null,
+      "timestamp": "00:30:10"
+    },
+    {
+      "ticker": "ELEMF",
+      "company_name": "Elemental Altus Royalties",
+      "company_rating": 5,
+      "pos_comments": "Has sold down position via legacy funds. Not a negative on company quality, just fund duration.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:36:00"
+    },
+    {
+      "ticker": "GOLD.TO",
+      "company_name": "GoldMining Inc.",
+      "company_rating": 5,
+      "pos_comments": "Company has benefited from asset beneficiation, robust activity, and the spinout of Gold Royalty. Track record of picking up unwanted gold assets and creating value.",
+      "neg_comments": "Perpetually overpriced in the past; high G&A.",
+      "ownership": null,
+      "timestamp": "00:36:00"
+    },
+    {
+      "ticker": "EDV.TO",
+      "company_name": "Endeavour Mining",
+      "company_rating": 4,
+      "pos_comments": "Long-term buyer; previously strong operational record; successful implementation over 20 years.",
+      "neg_comments": "Grievous management interruption—CEO resigned/admitted to embezzlement, causing a steep share price decline. Some top execs have left for Montage Gold.",
+      "ownership": 1,
+      "timestamp": "00:36:00"
+    },
+    {
+      "ticker": "IAUX",
+      "company_name": "i-80 Gold",
+      "company_rating": 4,
+      "pos_comments": "Exploration success, strong CEO.",
+      "neg_comments": "Share price weakness due to large Equinox Gold sell-down (was expected from spinoff structure).",
+      "ownership": null,
+      "timestamp": "00:36:00"
+    }
+  ]
+}

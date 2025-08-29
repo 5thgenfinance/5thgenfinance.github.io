@@ -1,0 +1,208 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-06-23",
+    "source": "https://www.youtube.com/watch?v=Bqel7getlDY",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule discusses the temporary impact of Middle Eastern conflicts on oil prices, emphasizing that true drivers for gold and silver are ongoing fiat currency debasement. He warns investors to avoid dilution from junior mining equity raises and stresses due diligence on company value vs. price. Rick systematically addresses and ranks a wide variety of oil, gold, uranium, and junior mining stocks, providing candid views on management, operational risks, valuation, ownership, and sector outlook. He previews the Natural Resources Investment Symposium as a key event for resource investors."
+  },
+  "company_info": [
+    {
+      "ticker": "GGP.L",
+      "company_name": "Greatland Gold",
+      "company_rating": 4,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:08:28"
+    },
+    {
+      "ticker": "SOLG.L",
+      "company_name": "SolGold",
+      "company_rating": 5,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:08:28"
+    },
+    {
+      "ticker": "CTM.AX",
+      "company_name": "Centaurus Metals",
+      "company_rating": null,
+      "pos_comments": "Preferred over Lifezone; world-class deposit that requires further drilling and infill. Potential financing soon.",
+      "neg_comments": "Needs substantial drilling and feasibility, $25-30M capital raise likely.",
+      "ownership": null,
+      "timestamp": "00:10:15"
+    },
+    {
+      "ticker": "LZM.V",
+      "company_name": "Lifezone Metals",
+      "company_rating": null,
+      "pos_comments": "High quality nickel sulfide deposit in Central Africa, likely to grow. Project Kabanga regarded very highly.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:10:15"
+    },
+    {
+      "ticker": "MRN",
+      "company_name": "Meren Energy (formerly Africa Oil)",
+      "company_rating": null,
+      "pos_comments": "Long-term holding. Newly acquired Nigerian assets generating extraordinary free cash flow. Committed to bigger dividends, equity buybacks, and exploration expansion.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:12:45"
+    },
+    {
+      "ticker": "REY",
+      "company_name": "Reyna Silver",
+      "company_rating": 6,
+      "pos_comments": "Good people and exploration concept. Early stage.",
+      "neg_comments": "Drill results have not encouraged; may downgrade to 7 if no progress.",
+      "ownership": null,
+      "timestamp": "00:11:34"
+    },
+    {
+      "ticker": "HERC",
+      "company_name": "Hercules Silver",
+      "company_rating": null,
+      "pos_comments": "Both good and bad drill results, system identified, early-stage. Idaho site seen as technically promising.",
+      "neg_comments": "Jurisdictional risk; market unfamiliar with mining permit culture in Idaho.",
+      "ownership": 1,
+      "timestamp": "00:11:34"
+    },
+    {
+      "ticker": "DMLP",
+      "company_name": "Dorchester Minerals",
+      "company_rating": null,
+      "pos_comments": "Likely very cheap by financial metrics, operates in well-serviced Kansas basin for gas and gas transmission infrastructure.",
+      "neg_comments": "Conventional gas disadvantage versus US tight oil/gas peers. No longer a holding.",
+      "ownership": 0,
+      "timestamp": "00:15:58"
+    },
+    {
+      "ticker": "EMX",
+      "company_name": "EMX Royalty",
+      "company_rating": null,
+      "pos_comments": "Large personal holding; aggressive buyer of own stock; classic prospect generator; valuable Bor royalty in Serbia.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:25:54"
+    },
+    {
+      "ticker": "GOGL",
+      "company_name": "GoGold Resources",
+      "company_rating": 4,
+      "pos_comments": "Excellent community and exploration work. Poly-metallic camp with multiple assets, steady generation of surplus cash flow.",
+      "neg_comments": "Political risk in Mexico; not yet a full-scale mine.",
+      "ownership": null,
+      "timestamp": "00:24:45"
+    },
+    {
+      "ticker": "ROY",
+      "company_name": "Royal Road Minerals",
+      "company_rating": null,
+      "pos_comments": "Shareholder, strong management with frontier market expertise; focused now on Saudi Arabia exploration joint venture.",
+      "neg_comments": "Very early-stage, high operational and jurisdictional risk.",
+      "ownership": 1,
+      "timestamp": "00:25:54"
+    },
+    {
+      "ticker": "OCEANAGOLD",
+      "company_name": "OceanaGold",
+      "company_rating": null,
+      "pos_comments": "Long-mine-life; high gold prices make lower-grade zones economic in core McCrae mine (New Zealand); well-established processing infrastructure.",
+      "neg_comments": "High capex to expand laterally; depends on price to be economic.",
+      "ownership": null,
+      "timestamp": "00:25:54"
+    },
+    {
+      "ticker": "DNMRF",
+      "company_name": "Denison Mines",
+      "company_rating": 5,
+      "pos_comments": "Upgraded from 6 to 5 on technical de-risking for in-situ recovery uranium mining. Best data in Athabasca after Cameco.",
+      "neg_comments": "ISR at depth is unproven; not 'comfortable' yet but less negative than before.",
+      "ownership": null,
+      "timestamp": "00:33:17"
+    },
+    {
+      "ticker": "MUX",
+      "company_name": "McEwen Mining",
+      "company_rating": null,
+      "pos_comments": "Strong management admired for resilience and alignment with shareholders.",
+      "neg_comments": "Uncertain timeline for asset improvement.",
+      "ownership": null,
+      "timestamp": "00:23:04"
+    },
+    {
+      "ticker": "ARAAF",
+      "company_name": "Aclara Resources",
+      "company_rating": 4,
+      "pos_comments": "High quality rare earth development; strong South American miner management; located in highly infrastructured region of Brazil.",
+      "neg_comments": "Will require patience for ranking to be proven.",
+      "ownership": null,
+      "timestamp": "00:40:38"
+    },
+    {
+      "ticker": "MDURF",
+      "company_name": "Mundoro Capital",
+      "company_rating": 4,
+      "pos_comments": "Shareholder; impressive exploration joint ventures; positive on management's parsimony.",
+      "neg_comments": "Tiny, highly illiquid; must be patient trading.",
+      "ownership": 1,
+      "timestamp": "00:34:42"
+    },
+    {
+      "ticker": "AUX",
+      "company_name": "Axo Copper",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Not enough information to comment.",
+      "ownership": null,
+      "timestamp": "00:31:29"
+    },
+    {
+      "ticker": "HOCH.L",
+      "company_name": "Hochschild Mining",
+      "company_rating": null,
+      "pos_comments": "Veteran Peruvian producer; difficult to construct a major silver portfolio without exposure.",
+      "neg_comments": "High national/regional political risk; not great explorers.",
+      "ownership": null,
+      "timestamp": "00:32:39"
+    },
+    {
+      "ticker": "EMP",
+      "company_name": "Emperor Metals",
+      "company_rating": 5,
+      "pos_comments": "Owner; potential as tuck-in acquisition by mill owner; exploration upside; well-situated in mill-rich Abitibi region.",
+      "neg_comments": "Standalone economics uncertain; risky but attractive as a strategic target.",
+      "ownership": 1,
+      "timestamp": "00:36:17"
+    },
+    {
+      "ticker": "KLD.V",
+      "company_name": "Kenorland Minerals",
+      "company_rating": 4,
+      "pos_comments": "Shareholder; strong technical team, valuable 4% royalty on Sumitomo-operated discovery, impressive exploration portfolio.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:36:17"
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "Exxon Mobil",
+      "company_rating": null,
+      "pos_comments": "Preferred large-cap oil holding; world-class capital allocation and Guyana discovery.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:20:25"
+    },
+    {
+      "ticker": "CVX",
+      "company_name": "Chevron",
+      "company_rating": null,
+      "pos_comments": "Top tier integrated company; sound upstream/downstream mix.",
+      "neg_comments": "Not quite as strong as Exxon.",
+      "ownership": null,
+      "timestamp": "00:20:25"
+    }
+  ]
+}

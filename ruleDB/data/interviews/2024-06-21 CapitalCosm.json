@@ -1,0 +1,316 @@
+{
+  "interview_metadata": {
+    "asofdate": "2024-06-21",
+    "source": "https://www.youtube.com/watch?v=7RqZHgNciFw",
+    "publication": "CapitalCosm",
+    "general_comments": "Rick Rule covers his 2025 outlook for gold, silver, uranium, coal, oil & gas stocks, giving explicit 1–10 rankings, rationale, and detailed macro commentary. He stresses that his ratings reflect a unique mix of short-term valuation, long-term operating leverage, management quality, and asset class scarcity. Rick points out that sector-wide, the easy money in uranium and silver has been made, but some opportunities remain for those with patience. Most companies ranked cluster in the 4–6 range. He highlights persistent underinvestment, macro drivers for higher metals prices, and gives advanced explanation on portfolio construction (e.g. risk/reward, jurisdiction, and business model)."
+  },
+  "company_info": [
+    {
+      "ticker": "NEM",
+      "company_name": "Newmont",
+      "company_rating": 5,
+      "pos_comments": "Leverage to higher gold price; Newcrest acquisition beneficial; may upgrade to 4 if asset sales and focus on Tier 1 mines are successful.",
+      "neg_comments": "Current operations spread over too many second-tier mines; needs asset rationalization.",
+      "ownership": null,
+      "timestamp": "00:06:16"
+    },
+    {
+      "ticker": "FNV",
+      "company_name": "Franco-Nevada",
+      "company_rating": 3,
+      "pos_comments": "Premier gold royalty company; upgraded to 3 after Panama expropriation caused a disproportionate price decline; best-in-class management expense ratio and culture.",
+      "neg_comments": "14% NAV loss after Panama mine taken, but stock fell 42%; undervalued relative to NAV.",
+      "ownership": null,
+      "timestamp": "00:07:14"
+    },
+    {
+      "ticker": "SKE",
+      "company_name": "Skeena Resources",
+      "company_rating": 5,
+      "pos_comments": "Strong deposit, excellent First Nations relationships; under review for an upgrade.",
+      "neg_comments": "Needs clarity on concentrate penalty materials, metallurgical process, and sales agreements.",
+      "ownership": null,
+      "timestamp": "00:08:05"
+    },
+    {
+      "ticker": "TFPM",
+      "company_name": "Triple Flag Precious Metals",
+      "company_rating": 4,
+      "pos_comments": "Solid second-tier royalty company; strong management; owns shares.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:08:57"
+    },
+    {
+      "ticker": "TRX",
+      "company_name": "Tanzanian Gold",
+      "company_rating": 6,
+      "pos_comments": null,
+      "neg_comments": "Small mine, limited scale; high risk for little reward; may downgrade to 7.",
+      "ownership": null,
+      "timestamp": "00:09:25"
+    },
+    {
+      "ticker": "HYMC",
+      "company_name": "Hycroft Mining",
+      "company_rating": null,
+      "pos_comments": "Enormous gold/silver resource; suitable for high gold price optionality investors.",
+      "neg_comments": "Not viewed as economic at $2,400; not a buyer of optionality plays anymore.",
+      "ownership": 0,
+      "timestamp": "00:10:18"
+    },
+    {
+      "ticker": "AGI",
+      "company_name": "Alamos Gold",
+      "company_rating": 4,
+      "pos_comments": "Excellent capital allocation and operational execution; strong Tier 2 portfolio.",
+      "neg_comments": "No single Tier 1 asset; mostly well-run Tier 2 assets.",
+      "ownership": null,
+      "timestamp": "00:11:21"
+    },
+    {
+      "ticker": "MTA",
+      "company_name": "Metalla Royalty & Streaming",
+      "company_rating": 5,
+      "pos_comments": "Promotional management took share price higher, now more reasonable.",
+      "neg_comments": "Was priced too high, upgraded from 6 to 5 as valuation reset.",
+      "ownership": null,
+      "timestamp": "00:12:13"
+    },
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": 4,
+      "pos_comments": "Potential for upgrade to 3 if political risk resolved in Guatemala or Argentina; significant exploration upside; good asset rationalization.",
+      "neg_comments": "Key assets shut-in by politics; working to digest Yamana acquisition.",
+      "ownership": null,
+      "timestamp": "00:16:21"
+    },
+    {
+      "ticker": "VZLA",
+      "company_name": "Vizsla Silver",
+      "company_rating": 4,
+      "pos_comments": "Well-drilled, predictive exploration; strong resource growth potential.",
+      "neg_comments": "Share price performance keeps from higher rating.",
+      "ownership": null,
+      "timestamp": "00:17:40"
+    },
+    {
+      "ticker": "FSM",
+      "company_name": "Fortuna Silver Mines",
+      "company_rating": 4,
+      "pos_comments": "Implementation success; pivoted from narrow-vein to large-scale African gold operations.",
+      "neg_comments": "Historically had only Tier 2 and 3 mines.",
+      "ownership": null,
+      "timestamp": "00:19:08"
+    },
+    {
+      "ticker": "BVN",
+      "company_name": "Buenaventura",
+      "company_rating": 4,
+      "pos_comments": "Top-tier assets and people; essential in high-quality silver portfolio.",
+      "neg_comments": "Faces local, regional, national political risk in Peru; may worsen under leftist government.",
+      "ownership": null,
+      "timestamp": "00:20:50"
+    },
+    {
+      "ticker": "CDE",
+      "company_name": "Coeur Mining",
+      "company_rating": 5,
+      "pos_comments": "Leverage to silver price; long-standing US brand in silver space.",
+      "neg_comments": "Recently downgraded due to strong share price; not on operational grounds.",
+      "ownership": null,
+      "timestamp": "00:21:12"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "MAG Silver",
+      "company_rating": 5,
+      "pos_comments": "Owns shares; strong deposit and exploration upside.",
+      "neg_comments": "Considered fully priced but operationally impressive.",
+      "ownership": 1,
+      "timestamp": "00:23:00"
+    },
+    {
+      "ticker": "AG",
+      "company_name": "First Majestic Silver",
+      "company_rating": 6,
+      "pos_comments": "Strong implementation history; CEO highly respected.",
+      "neg_comments": "Jarrett Canyon acquisition a challenge; needs operational turnaround.",
+      "ownership": null,
+      "timestamp": "00:24:06"
+    },
+    {
+      "ticker": "EXK",
+      "company_name": "Endeavour Silver",
+      "company_rating": 6,
+      "pos_comments": "High leverage to silver price.",
+      "neg_comments": "Portfolio of lower quality assets.",
+      "ownership": null,
+      "timestamp": "00:25:10"
+    },
+    {
+      "ticker": "PDN.AX",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Briefly ranked a 3 after fixing debt; downgraded as market cap rose 400%. Benefited as basket of uranium juniors increased four- or five-fold.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:27:31"
+    },
+    {
+      "ticker": "URG",
+      "company_name": "Ur-Energy",
+      "company_rating": 5,
+      "pos_comments": "American asset base; permitted operations; attractive to US speculators; potential for US government subsidy.",
+      "neg_comments": "Not in top quartile for AISC or return on capital.",
+      "ownership": 0,
+      "timestamp": "00:28:30"
+    },
+    {
+      "ticker": "KAP.L",
+      "company_name": "Kazatomprom",
+      "company_rating": null,
+      "pos_comments": "Large shareholder; best development pipeline in industry; great dividend.",
+      "neg_comments": "Internal political turmoil causing loss of key personnel.",
+      "ownership": 1,
+      "timestamp": "00:29:38"
+    },
+    {
+      "ticker": "UUUU",
+      "company_name": "Energy Fuels",
+      "company_rating": null,
+      "pos_comments": "Permitted assets; benefits from US government policy on uranium.",
+      "neg_comments": "Collection of second-tier assets.",
+      "ownership": null,
+      "timestamp": "00:30:36"
+    },
+    {
+      "ticker": "BMN.L",
+      "company_name": "Bannerman Energy",
+      "company_rating": null,
+      "pos_comments": "Owns for management quality (CEO); expects value via sector consolidation.",
+      "neg_comments": "Asset not considered Tier 1.",
+      "ownership": 1,
+      "timestamp": "00:31:29"
+    },
+    {
+      "ticker": "NXE",
+      "company_name": "NexGen Energy",
+      "company_rating": 4,
+      "pos_comments": "Best undeveloped uranium deposit globally; strong handling of First Nations.",
+      "neg_comments": "Very high G&A; large financial PR budget raises skepticism.",
+      "ownership": null,
+      "timestamp": "00:32:46"
+    },
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Owns shares; ISR development could deliver outsized upside if technical risk is overcome.",
+      "neg_comments": "High technical risk; not covered in detail here.",
+      "ownership": 1,
+      "timestamp": "00:34:35"
+    },
+    {
+      "ticker": "DYL.AX",
+      "company_name": "Deep Yellow",
+      "company_rating": null,
+      "pos_comments": "Large shareholder; John Borshoff has executed perfectly; built on Paladin's legacy.",
+      "neg_comments": "Very reliant on one person (key man risk, CEO in mid-70s).",
+      "ownership": 1,
+      "timestamp": "00:37:21"
+    },
+    {
+      "ticker": "BOE.AX",
+      "company_name": "Boss Energy",
+      "company_rating": null,
+      "pos_comments": "Sold down after senior management sold 60–70% of their shares post big run-up.",
+      "neg_comments": "Fully priced after outperformance.",
+      "ownership": null,
+      "timestamp": "00:38:26"
+    },
+    {
+      "ticker": "ENB.TO",
+      "company_name": "Enbridge",
+      "company_rating": 5,
+      "pos_comments": "Owns; utility scale, defensive; significant upside if Canadian politics turn more favorable.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:42:02"
+    },
+    {
+      "ticker": "XOM",
+      "company_name": "ExxonMobil",
+      "company_rating": 3,
+      "pos_comments": "Superb capital allocation; strong return on capital employed; major discoveries in Guyana.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:44:08"
+    },
+    {
+      "ticker": "CVX",
+      "company_name": "Chevron",
+      "company_rating": 4,
+      "pos_comments": "Great company, but not quite as strong as Exxon.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:46:07"
+    },
+    {
+      "ticker": "EQNR",
+      "company_name": "Equinor",
+      "company_rating": null,
+      "pos_comments": "Not followed closely; under review.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": null
+    },
+    {
+      "ticker": "GLEN.L",
+      "company_name": "Glencore",
+      "company_rating": null,
+      "pos_comments": "Owns; best-in-class coal operator; highly efficient in production and capital allocation.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:53:52"
+    },
+    {
+      "ticker": "BTU",
+      "company_name": "Peabody Energy",
+      "company_rating": 5,
+      "pos_comments": "Very large resources, good product pipeline.",
+      "neg_comments": "Not in world’s best quartile for returns or costs.",
+      "ownership": null,
+      "timestamp": "00:48:11"
+    },
+    {
+      "ticker": "SMR.AX",
+      "company_name": "Stanmore Coal",
+      "company_rating": 4,
+      "pos_comments": "Smaller than Peabody; more attractive on value.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:49:54"
+    },
+    {
+      "ticker": "ARCH",
+      "company_name": "Arch Resources",
+      "company_rating": null,
+      "pos_comments": "US-based, stable exports.",
+      "neg_comments": "Not in best quartile for ROI or cost; no ownership.",
+      "ownership": 0,
+      "timestamp": "00:51:04"
+    },
+    {
+      "ticker": "WHC.AX",
+      "company_name": "Whitehaven Coal",
+      "company_rating": 4,
+      "pos_comments": "Cheap relative to FCF and NPV.",
+      "neg_comments": "Not the highest quality assets.",
+      "ownership": null,
+      "timestamp": "00:52:23"
+    }
+  ]
+}

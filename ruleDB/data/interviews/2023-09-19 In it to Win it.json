@@ -1,0 +1,226 @@
+{
+  "interview_metadata": {
+    "asofdate": "2023-09-19",
+    "source": "https://www.youtube.com/watch?v=u6riTt7LKxo",
+    "publication": "In It to Win It",
+    "general_comments": "Rick Rule discusses why royalty and streaming companies provide the lowest-risk entry to natural resources investing, offers detailed views on the uranium bull market and sector allocation (beta vs. alpha), and shares explicit rankings (1-10) and comments on a broad range of gold, uranium, natural gas and junior miners. He emphasizes that portfolio construction favors owning high-quality, scalable companies and stresses due diligence. Rick covers macro commodity cycles, outlines recent changes in Mexican mining risks, and delivers a 'lightning round' of updated stock ratings, including personal ownership status and rationale for recent upgrades or downgrades."
+  },
+  "company_info": [
+    {
+      "ticker": "GROY",
+      "company_name": "Gold Royalty Corp",
+      "company_rating": null,
+      "pos_comments": "Management highly regarded, especially Amir Adnani; company is becoming attractively priced after share price decline and new development stage projects.",
+      "neg_comments": "Stock was previously overpriced; cut dividend to fund mine acquisition in Mexico; value still tied to future cash flow growth rather than current assets.",
+      "ownership": null,
+      "timestamp": "00:06:10"
+    },
+    {
+      "ticker": "MTA",
+      "company_name": "Metalla Royalty",
+      "company_rating": null,
+      "pos_comments": "Merged with Nova Royalty, successfully building scale and index inclusion potential, strong capital markets execution.",
+      "neg_comments": "Previously traded at prices exceeding Rick's value threshold, no longer a shareholder.",
+      "ownership": 0,
+      "timestamp": "00:08:38"
+    },
+    {
+      "ticker": "NOVR",
+      "company_name": "Nova Royalty",
+      "company_rating": null,
+      "pos_comments": "Strong management, merger with Metalla brings scale, liquidity, and potential for index inclusion.",
+      "neg_comments": "Original company built around short-lived projects; traded above fundamental value for yield; not followed closely anymore.",
+      "ownership": 0,
+      "timestamp": "00:08:38"
+    },
+    {
+      "ticker": "U.UN",
+      "company_name": "Sprott Physical Uranium Trust",
+      "company_rating": null,
+      "pos_comments": "Favored as safest way to play uranium for risk-averse investors; benefits from NAV discount narrowing and at-the-market buying model.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:11:09"
+    },
+    {
+      "ticker": "CCJ",
+      "company_name": "Cameco",
+      "company_rating": null,
+      "pos_comments": "Best-in-class uranium major; owns or suggests as core beta holding for uranium exposure.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:11:09"
+    },
+    {
+      "ticker": "KAP.L",
+      "company_name": "Kazatomprom",
+      "company_rating": null,
+      "pos_comments": "Core beta play for uranium; structurally vital for sector exposure.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:11:09"
+    },
+    {
+      "ticker": "NXE",
+      "company_name": "NexGen Energy",
+      "company_rating": null,
+      "pos_comments": "Strong development name for alpha exposure in uranium segment.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:13:17"
+    },
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Strong development optionality in uranium. High leverage to uranium price re-rating.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:13:17"
+    },
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": 4,
+      "pos_comments": "Company improved markedly through recent acquisitions; poised to benefit as 'stealth beneficiary' of the cycle.",
+      "neg_comments": "Stock previously got far ahead of itself (2020); holders stung by big drawdown.",
+      "ownership": null,
+      "timestamp": "00:38:07"
+    },
+    {
+      "ticker": "UROY",
+      "company_name": "Uranium Royalty Corp",
+      "company_rating": 5,
+      "pos_comments": "Positive on management and concept, good long-run prospects as more uranium royalties and streams are acquired.",
+      "neg_comments": "Still needs to scale up its royalty portfolio to become fully valued.",
+      "ownership": null,
+      "timestamp": "00:38:07"
+    },
+    {
+      "ticker": "DVN",
+      "company_name": "Devon Energy",
+      "company_rating": null,
+      "pos_comments": "Top beta play for U.S. natural gas; expects stock to triple in 3–5 years, with strong dividends for total return.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:22:55"
+    },
+    {
+      "ticker": "EQT",
+      "company_name": "Equitable Corp.",
+      "company_rating": null,
+      "pos_comments": "Premier Marcellus gas producer; recommended as core beta play with strong dividend and upside.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:22:55"
+    },
+    {
+      "ticker": "HCH.AX",
+      "company_name": "Hot Chili",
+      "company_rating": 4,
+      "pos_comments": "Copper optionality favorite; strong district consolidation, exploration upside, top management.",
+      "neg_comments": "Still low grade; requires high capital and a high-grade starter pit. Needs $1B+ capex.",
+      "ownership": 1,
+      "timestamp": "00:31:29"
+    },
+    {
+      "ticker": "SILV",
+      "company_name": "SilverCrest Metals",
+      "company_rating": 5,
+      "pos_comments": "On-time, on-budget capital project; technically well executed.",
+      "neg_comments": "Disappointed with latest reserve/resource update.",
+      "ownership": null,
+      "timestamp": "00:33:30"
+    },
+    {
+      "ticker": "SEA",
+      "company_name": "Seabridge Gold",
+      "company_rating": 5,
+      "pos_comments": "Leverage to gold for those seeking bull market upside; could upgrade as catalyst progress.",
+      "neg_comments": "Massive $6–7B capex need is a major overhang; project viability highly sensitive to the gold price.",
+      "ownership": null,
+      "timestamp": "00:33:30"
+    },
+    {
+      "ticker": "WDS",
+      "company_name": "Woodside Energy",
+      "company_rating": 4,
+      "pos_comments": "Approaching 'super major' scale for energy exposure. Operations well-positioned for long-term upswing.",
+      "neg_comments": "Major labor risk in Western Australia; labor unrest a significant variable.",
+      "ownership": null,
+      "timestamp": "00:33:30"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": 4,
+      "pos_comments": "Market concern over large Ontario mine build is overdone; if project hits nameplate capacity in Q1 2024, stock may double. Looking for upgrade to 3 if execution is proven.",
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:33:30"
+    },
+    {
+      "ticker": "SBSW",
+      "company_name": "Sibanye Stillwater",
+      "company_rating": null,
+      "pos_comments": "Doing well at Stillwater in the U.S.",
+      "neg_comments": "Coverage currently suspended; trying to understand South African operations and leverage to PGM/gold prices.",
+      "ownership": null,
+      "timestamp": "00:35:30"
+    },
+    {
+      "ticker": "PWM",
+      "company_name": "Power Metals",
+      "company_rating": 5,
+      "pos_comments": "Largest shareholder; process/merchant banking business model makes it suited for sophisticated investors.",
+      "neg_comments": "Too small/risky for most; best for those who can closely monitor merchant banking activities.",
+      "ownership": 1,
+      "timestamp": "00:35:30"
+    },
+    {
+      "ticker": "EXK",
+      "company_name": "Endeavour Silver",
+      "company_rating": 6,
+      "pos_comments": "Good operational performance, frequent acquisition of new deposits.",
+      "neg_comments": "Too many tier two assets, high exposure to Mexican social/political risks.",
+      "ownership": 0,
+      "timestamp": "00:35:30"
+    },
+    {
+      "ticker": "SVM",
+      "company_name": "Sovereign Metals",
+      "company_rating": 4,
+      "pos_comments": "Owns a lot and buying more; world-class rutile/graphite deposit. If process/market access works, could be a 10 or 15-bagger.",
+      "neg_comments": "Very large, remote, unproven process and marketing; significant jurisdiction and infrastructure risk in Malawi.",
+      "ownership": 1,
+      "timestamp": "00:35:30"
+    },
+    {
+      "ticker": "DNN",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Advanced Athabasca discoveries and permitted mill; if underground ISR (in situ recovery) works, could be a home run.",
+      "neg_comments": "Underground ISR tech is unproven at depth; personal lack of understanding of the tech.",
+      "ownership": null,
+      "timestamp": "00:38:07"
+    },
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": 4,
+      "pos_comments": "Smart capital deployment at recent prices; significant value backfill via acquisitions; could surprise to upside as cycle unfolds.",
+      "neg_comments": "Share price previously corrected sharply; some still nursing losses from 2020 peak.",
+      "ownership": null,
+      "timestamp": "00:38:07"
+    },
+    {
+      "ticker": "UROY",
+      "company_name": "Uranium Royalty Corp",
+      "company_rating": 5,
+      "pos_comments": "Good concept and team; likes business model, expects more growth as uranium royalties/streams increase.",
+      "neg_comments": "Insufficient current royalty/stream book for higher rating; needs more scale.",
+      "ownership": null,
+      "timestamp": "00:38:07"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-04-11",
+    "source": "https://www.youtube.com/watch?v=jMyUDlaQPG8",
+    "publication": "Mining Stock Monkey",
+    "general_comments": "Rick Rule analyzes 25 mining stocks in the wake of market turbulence and stresses buying fundamentally undervalued companies during broad sector pessimism. He covers copper, uranium, silver, gold, rare earths, platinum/palladium, and fertilizer stocks, highlighting world-class assets and quality management. Rule uses his proprietary 1–10 ranking system for stock risk/reward and explicitly comments on ownership and upgrade/downgrade rationale. He warns that all recommendations are a snapshot as of recording, not lasting advice."
+  },
+  "company_info": [
+    {
+      "ticker": "PDI",
+      "company_name": "Predictive Discovery",
+      "company_rating": 5,
+      "pos_comments": "Attracted by discovery history, management quality, and robust exploration upside. Holds large position; willing to upgrade on price weakness.",
+      "neg_comments": "Country has considerable political/legal uncertainty. Net present value estimate contains significant unknowns.",
+      "ownership": 1,
+      "timestamp": "00:02:46"
+    },
+    {
+      "ticker": "FWZ",
+      "company_name": "Fireweed Metals",
+      "company_rating": 4,
+      "pos_comments": "Remotely located but contains two potentially world-class deposits with further exploration upside. Liked the scale and team execution.",
+      "neg_comments": "Remote location and past lack of market attention made funding challenging.",
+      "ownership": null,
+      "timestamp": "00:04:37"
+    },
+    {
+      "ticker": "MAU",
+      "company_name": "Montage Gold",
+      "company_rating": 5,
+      "pos_comments": "Founding shareholder, likes management and team pivot. Significant price appreciation led to downgrade from 4. Could re-upgrade on pullback.",
+      "neg_comments": "Upgraded to 5 after price ran too far.",
+      "ownership": 1,
+      "timestamp": "00:05:20"
+    },
+    {
+      "ticker": "LUG",
+      "company_name": "Lundin Gold",
+      "company_rating": 5,
+      "pos_comments": "Astounded by persistent exploration success in Ecuador project. Construction and operational excellence; social license strong. Long-term bullish.",
+      "neg_comments": "Single-asset company risk. Share price not cheap, so would prefer acquisition for diversification.",
+      "ownership": 1,
+      "timestamp": "00:06:02"
+    },
+    {
+      "ticker": "LUN",
+      "company_name": "Lundin Mining",
+      "company_rating": 5,
+      "pos_comments": "Free cash flow, balance sheet, and management all excellent. Considered upgrade but copper sector froth restrains.",
+      "neg_comments": "Wider market already recognizes its advantages; copper price risk.",
+      "ownership": 1,
+      "timestamp": "00:08:51"
+    },
+    {
+      "ticker": "IVN",
+      "company_name": "Ivanhoe Mines",
+      "company_rating": 4,
+      "pos_comments": "Major, world-class copper, zinc, platinum-palladium growth; successful operational execution. Long-term owner from $0.60/share.",
+      "neg_comments": "Major political risk—most production from Congo and future from South Africa, both high-risk jurisdictions.",
+      "ownership": 1,
+      "timestamp": "00:09:45"
+    },
+    {
+      "ticker": "BRVO",
+      "company_name": "Bravo Mining",
+      "company_rating": 4,
+      "pos_comments": "Early stage but spectacular platinum/palladium find; IOCG drill intercepts possible second discovery. CEO and team have strong track record.",
+      "neg_comments": "Very high risk for non-exploration-focused investors. Further discoveries not yet confirmed.",
+      "ownership": 1,
+      "timestamp": "00:13:38"
+    },
+    {
+      "ticker": "CTM",
+      "company_name": "Centaurus Metals",
+      "company_rating": 4,
+      "pos_comments": "World-class tier-one nickel sulphide, platinum, palladium discovery in Brazil; meets best-in-class ROIC/NPV hurdles. Very cheap due to sector pessimism.",
+      "neg_comments": "Brazil and commodity out-of-favor, significant chart declines—should appeal only to those seeking long-term ten-bagger opportunities. May upgrade to 3 on substantial price drop and further research.",
+      "ownership": null,
+      "timestamp": "00:15:38"
+    },
+    {
+      "ticker": "MEI",
+      "company_name": "Meteoric Resources",
+      "company_rating": 4,
+      "pos_comments": "Largest rare earths deposit globally, unique clay-hosted orebody in Brazil, operationally easy metallurgy. Could be biggest outside China.",
+      "neg_comments": "Resource and metallurgy must still be derisked; sector unloved.",
+      "ownership": null,
+      "timestamp": "00:18:17"
+    },
+    {
+      "ticker": "SVM",
+      "company_name": "Sovereign Metals",
+      "company_rating": 4,
+      "pos_comments": "Tier-one rutile/graphite deposit in Malawi; lowest cost quartile for both products. Rio Tinto (large minority holder) may eventually take over.",
+      "neg_comments": "Major legal, fiscal, and country risk—very little mining in Malawi, no track record. Vulnerable to market pricing in illiquid segment.",
+      "ownership": 1,
+      "timestamp": "00:19:50"
+    },
+    {
+      "ticker": "CCO",
+      "company_name": "Cameco",
+      "company_rating": 4,
+      "pos_comments": "Executing strategy to be cradle-to-grave nuclear enterprise post-Westinghouse deal. Margins rising as long-term contracts replaced at higher prices; exhibits discipline.",
+      "neg_comments": "Westinghouse quarters have previously disappointed, integrating new business lines raises operational risk.",
+      "ownership": null,
+      "timestamp": "00:25:55"
+    },
+    {
+      "ticker": "DML",
+      "company_name": "Denison Mines",
+      "company_rating": null,
+      "pos_comments": "Strong technical team, unique ISR-at-depth uranium project, excellent Athabasca land package and permitted mill.",
+      "neg_comments": "Unproven mining method at project depth. Potentially high capital risk. Not an owner until technology proven.",
+      "ownership": 0,
+      "timestamp": "00:29:28"
+    },
+    {
+      "ticker": "PDN",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Potential upgrade to 3 rating; very cheap relative to global uranium peers. Recently improved capital/debt situation; brownfield developer.",
+      "neg_comments": "Still under review for ranking upgrade.",
+      "ownership": null,
+      "timestamp": "00:32:36"
+    },
+    {
+      "ticker": "NXE",
+      "company_name": "Nexgen Energy",
+      "company_rating": null,
+      "pos_comments": "Best undeveloped uranium deposit globally. Advanced engineering and social agreements add value.",
+      "neg_comments": "Excessive G&A, spending, and sponsorship of non-core activities reduce capital efficiency. Declining market cap makes stock more attractive.",
+      "ownership": null,
+      "timestamp": "00:32:55"
+    },
+    {
+      "ticker": "EMPR",
+      "company_name": "Empress Royalty",
+      "company_rating": null,
+      "pos_comments": "Large personal position; considered a financial structurer with competitive deal access from Endeavour Mine Finance. Generating strong silver cash flow in 2025.",
+      "neg_comments": "Needs additional scale to build durable business. Not a pure silver company.",
+      "ownership": 1,
+      "timestamp": "00:34:02"
+    },
+    {
+      "ticker": "PAAS",
+      "company_name": "Pan American Silver",
+      "company_rating": null,
+      "pos_comments": "Owns—majority of current revenue is gold but tremendous high-grade non-producing silver optionality (1 billion oz+). Legendary founder/management (Ross Beaty).",
+      "neg_comments": "No near-term catalyst for major ounces to go into production. Market slow to recognize full value.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "WPM",
+      "company_name": "Wheaton Precious Metals",
+      "company_rating": null,
+      "pos_comments": "Owns for durable silver/gold cash flow and historical performance.",
+      "neg_comments": "Now less silver-centric; valuation not compelling enough for all investors.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "FRES",
+      "company_name": "Fresnillo",
+      "company_rating": null,
+      "pos_comments": "Owns; ultra-low cost silver, partnered with MAG. Considered cheapest major silver stock by price/NAV. Accepts political risk for value.",
+      "neg_comments": "Control shareholder in conflict with Mexican president, high political risk.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "MAG",
+      "company_name": "MAG Silver",
+      "company_rating": null,
+      "pos_comments": "Owns via partnership with Fresnillo. High-grade, low-cost silver, promising exploration.",
+      "neg_comments": "Not cheap; tied to Fresnillo’s political and operational situation.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "VZLA",
+      "company_name": "Vizsla Silver",
+      "company_rating": null,
+      "pos_comments": "Attracted to ongoing high-impact exploration; early days for full system proof.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "ABRA",
+      "company_name": "AbraSilver",
+      "company_rating": null,
+      "pos_comments": "Owns for exploration and development pipeline.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "AYA",
+      "company_name": "Aya Gold and Silver",
+      "company_rating": null,
+      "pos_comments": "Owns; strong cash flow, exploration, and jurisdictionally unique silver asset.",
+      "neg_comments": "Position partially sold after large gains, remainder owned for free.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "CDPR",
+      "company_name": "Cerro de Pasco Resources",
+      "company_rating": null,
+      "pos_comments": "Owns, bought as silver optionality via massive tailings reprocessing. High leverage to silver bull market.",
+      "neg_comments": "Very large, low-grade deposit—substantial technical and financing risk.",
+      "ownership": 1,
+      "timestamp": "00:35:18"
+    },
+    {
+      "ticker": "NTR",
+      "company_name": "Nutrien",
+      "company_rating": 6,
+      "pos_comments": "Very long-term bullish. Owns, but has no net exposure (fully derisked/cost-basis out). Strong vertically integrated business, global demand rising with population growth.",
+      "neg_comments": "High debt and poor capital allocation (buybacks at cycle tops). Cyclical commodity volatility.",
+      "ownership": 1,
+      "timestamp": "00:38:21"
+    },
+    {
+      "ticker": "MOS",
+      "company_name": "The Mosaic Company",
+      "company_rating": 6,
+      "pos_comments": "Owns, holds for long-term demand and vertical integration. Cost leadership in North America.",
+      "neg_comments": "Debt/EBITDA and aggressive buybacks at high cycle points. Cyclical risk. No near-term re-rating catalyst.",
+      "ownership": 1,
+      "timestamp": "00:38:21"
+    },
+    {
+      "ticker": "ALS",
+      "company_name": "Altius Minerals",
+      "company_rating": 5,
+      "pos_comments": "Large fan of business model, one of earliest shareholders. Potential upgrade due to recent share price pressure.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:38:21"
+    }
+  ]
+}

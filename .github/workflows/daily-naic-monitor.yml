@@ -1,0 +1,55 @@
+name: Daily NAIC Data Monitor
+
+on:
+  schedule:
+    # Runs daily at 6 AM UTC (1 AM CDT)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  monitor-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to commit changes back to repo
+      pages: write     # Required for GitHub Pages deployment
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install jsdom node-fetch@2
+        
+    - name: Run NAIC monitoring script
+      run: node scripts/monitor-naic.js
+      
+    - name: Check for changes and commit
+      run: |
+        git config --local user.email "naic-monitor@5thgenfinance.com"
+        git config --local user.name "NAIC Data Monitor"
+        
+        # Add any new or changed files
+        git add docs/content_history/
+        
+        # Only commit if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes detected"
+        else
+          git commit -m "📊 Update NAIC content history - $(date +'%Y-%m-%d')"
+          git push
+          echo "CHANGES_DETECTED=true" >> $GITHUB_ENV
+        fi
+        
+    - name: Deploy to GitHub Pages (if changes detected)
+      if: env.CHANGES_DETECTED == 'true'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs

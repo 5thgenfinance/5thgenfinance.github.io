@@ -1,0 +1,73 @@
+{
+  "interview_metadata": {
+    "asofdate": "2025-03-27",
+    "source": "https://www.youtube.com/watch?v=bsJCFZrTzWk",
+    "publication": "Mining Stock Monkey",
+    "general_comments": "Rick Rule discusses macro gold demand, the historical outperformance of gold, and why precious metals equities are undervalued. He highlights mean reversion in US investment allocation to gold, fundamental factors like management and jurisdictional risk, and says gold stocks remain cautiously attractive. Rule gives individual rankings to 10 leading gold miners, explaining his rationale in detail."
+  },
+  "company_info": [
+    {
+      "ticker": "GOLD",
+      "company_name": "Barrick Gold",
+      "company_rating": 5,
+      "pos_comments": "Strong management, led by Mark Bristow. Attracted to company as market sentiment turns negative. Holds premier undeveloped gold-copper assets. Willing to take political risk for long-term value.",
+      "neg_comments": "Growth strategy unclear; awaits details on Reko Diq project in Pakistan. Market not ascribing value for key development assets. Stock has underperformed compared to peers. Small personal position held—down from prior large holding.",
+      "ownership": 1,
+      "timestamp": "00:05:21"
+    },
+    {
+      "ticker": "NEM",
+      "company_name": "Newmont Corporation",
+      "company_rating": 5,
+      "pos_comments": "Rationalizing portfolio by selling non-core assets and focusing on tier-one mines. Balance sheet significantly improved after asset sales. Will increase holding if operational improvements are demonstrated.",
+      "neg_comments": "Missed AISC (all-in sustaining cost) estimates for six straight quarters. Previous management spread too thin, lowering returns.",
+      "ownership": 1,
+      "timestamp": "00:11:24"
+    },
+    {
+      "ticker": "AEM",
+      "company_name": "Agnico Eagle Mines",
+      "company_rating": 4,
+      "pos_comments": "Strong cash flow growth per share, robust project pipeline, high free cash flow quality. Board and management considered best-in-class. Confident in succession planning.",
+      "neg_comments": "Stock downgraded from 3 to 4 after 60% share price appreciation. Some concern about new projects in Mexico versus established Canadian base.",
+      "ownership": 1,
+      "timestamp": "00:13:17"
+    },
+    {
+      "ticker": "NFGC",
+      "company_name": "New Found Gold",
+      "company_rating": 6,
+      "pos_comments": "High-profile project; company market cap once very large. Could be upgraded if price-to-value improves.",
+      "neg_comments": "Initial mineral resource estimate well below expectations versus capital spent; share price fell dramatically. Valuation downgraded; may upgrade after future reviews.",
+      "ownership": null,
+      "timestamp": "00:16:36"
+    },
+    {
+      "ticker": "EQX",
+      "company_name": "Equinox Gold",
+      "company_rating": 4,
+      "pos_comments": "Merger with Calibre seen as positive long-term; Canadian development assets coming online. Rationalization of non-core assets expected.",
+      "neg_comments": "Facing objections from large Calibre shareholders; expects near-term price weakness as merger holders exit. Holds California assets, flagged as higher risk.",
+      "ownership": 1,
+      "timestamp": "00:18:53"
+    },
+    {
+      "ticker": "BTG",
+      "company_name": "B2Gold",
+      "company_rating": 4,
+      "pos_comments": "Management regarded as excellent; long-term record of successful mine delivery, even in challenging jurisdictions. Resolving issues in Mali; current pessimistic share price offers upside.",
+      "neg_comments": "Goose project over-budget and behind schedule, affecting returns. CEO succession risk.",
+      "ownership": 1,
+      "timestamp": "00:22:22"
+    },
+    {
+      "ticker": "EDV",
+      "company_name": "Endeavour Mining",
+      "company_rating": 4,
+      "pos_comments": "Efficient low-cost ounce discovery. Delivered builds on time and budget in 2024. Deep West African operating expertise and relationships.",
+      "neg_comments": "Key management left for Montage, lowering confidence in near-term execution. Ongoing political risk in West Africa.",
+      "ownership": 1,
+      "timestamp": "00:31:40"
+    }
+  ]
+}

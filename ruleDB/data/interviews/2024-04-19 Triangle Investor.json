@@ -1,0 +1,361 @@
+{
+  "interview_metadata": {
+    "asofdate": "2024-04-19",
+    "source": "https://www.youtube.com/watch?v=c6s_Mv4IgSM",
+    "publication": "Triangle Investor",
+    "general_comments": "Rick Rule delivers updated opinions and ownership disclosures on 40 stocks—10 uranium, 10 gold, 10 silver, and 10 copper companies—in this April 2024 session. He provides macro commentary on hated commodities (platinum, lithium, nickel), lays out a thesis for structural copper shortfall, and explains why the sure money in uranium is in term contracts rather than price upside. He stresses management quality, project size, country risk, and the superiority of large-scale deposits. Rule describes why investors must distinguish between speculative leverage and true value creation and highlights a bias toward large-cap, highly predictive resource investments."
+  },
+  "company_info": [
+    {
+      "ticker": "UEC",
+      "company_name": "Uranium Energy Corp",
+      "company_rating": null,
+      "pos_comments": "Not cheap, but responds best to uranium price rallies thanks to retail base and disciplined asset acquisition. Production to ramp from TX/WY to 8-10M lbs. Owns substantial shares; now a 'free ride' after selling into rally.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:29:39"
+    },
+    {
+      "ticker": "MGA",
+      "company_name": "Mega Uranium",
+      "company_rating": null,
+      "pos_comments": "Owns; closed-end fund structure where value of assets exceeds market cap due to high G&A. Real uranium assets effectively free at current price.",
+      "neg_comments": "Very high management expense ratio.",
+      "ownership": 1,
+      "timestamp": "00:31:33"
+    },
+    {
+      "ticker": "POW",
+      "company_name": "Power Metal Resources",
+      "company_rating": null,
+      "pos_comments": "Owns. Views less as uranium company, more as mini merchant bank for early-stage projects. Speculative, but not for uranium leverage.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:32:31"
+    },
+    {
+      "ticker": "BMN.AX",
+      "company_name": "Bannerman Energy",
+      "company_rating": null,
+      "pos_comments": "Well-understood deposit and well-liked CEO. Will do well as sector opportunity develops.",
+      "neg_comments": "Does not own; prefers very large deposits. Minimum target >$2.5B recoverable resource.",
+      "ownership": 0,
+      "timestamp": "00:33:13"
+    },
+    {
+      "ticker": "PDN.AX",
+      "company_name": "Paladin Energy",
+      "company_rating": null,
+      "pos_comments": "Potential to be 10M lb producer if term contracts are locked in at $75/lb or higher. Would become attractive if base price certainty achieved.",
+      "neg_comments": "For now, considered fully priced; waiting for contract details to justify new NPV.",
+      "ownership": null,
+      "timestamp": "00:34:01"
+    },
+    {
+      "ticker": "LAM",
+      "company_name": "Laramide Resources",
+      "company_rating": null,
+      "pos_comments": "Owns; same management as Mega Uranium, but prefers the latter for structure.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:35:17"
+    },
+    {
+      "ticker": "WUC",
+      "company_name": "Western Uranium and Vanadium",
+      "company_rating": null,
+      "pos_comments": "Believes US retail will drive share price higher due to localization.",
+      "neg_comments": "Does not own; dislikes small deposits, prefers larger scale.",
+      "ownership": 0,
+      "timestamp": "00:36:14"
+    },
+    {
+      "ticker": "UUUU",
+      "company_name": "Energy Fuels",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own; prefers big deposits only. Thinks Congress will subsidize US uranium pounds, but company does not meet size criterion.",
+      "ownership": 0,
+      "timestamp": "00:36:38"
+    },
+    {
+      "ticker": "BOE.AX",
+      "company_name": "Boss Energy",
+      "company_rating": null,
+      "pos_comments": "Only Australian uranium junior in portfolio.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:37:44"
+    },
+    {
+      "ticker": "EMPR",
+      "company_name": "Empress Royalty",
+      "company_rating": null,
+      "pos_comments": "Owns a large position. Bets on CEO's access to Endeavour Financial deal flow. High-quality people, but subscale public format.",
+      "neg_comments": "Small scale makes public company structure less efficient due to overhead.",
+      "ownership": 1,
+      "timestamp": "00:37:44"
+    },
+    {
+      "ticker": "LUG.TO",
+      "company_name": "Lundin Gold",
+      "company_rating": null,
+      "pos_comments": "Owns; spectacular operational delivery at Fruta del Norte, exceeded all expectations. Expects future acquisitions—track record of value-added deals.",
+      "neg_comments": "Acquisition-driven volatility possible; long-term bullish if accretive.",
+      "ownership": 1,
+      "timestamp": "00:38:57"
+    },
+    {
+      "ticker": "OGC",
+      "company_name": "OceanaGold",
+      "company_rating": null,
+      "pos_comments": "Attracted by exploration success in Waihi (NZ).",
+      "neg_comments": "Does not own. Seeks fewer, higher-quality deposits.",
+      "ownership": 0,
+      "timestamp": "00:41:07"
+    },
+    {
+      "ticker": "CG",
+      "company_name": "Centerra Gold",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own. Assets are good but not top-tier; leveraged to gold price for those seeking warrants.",
+      "ownership": 0,
+      "timestamp": "00:41:28"
+    },
+    {
+      "ticker": "NG",
+      "company_name": "NovaGold Resources",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "No longer owns; leverage objectives achieved.",
+      "ownership": 0,
+      "timestamp": "00:42:02"
+    },
+    {
+      "ticker": "MUX",
+      "company_name": "McEwen Mining",
+      "company_rating": null,
+      "pos_comments": "Does not own but admires Rob McEwen. Company handled a tough period well; sees upside if management premium recognized.",
+      "neg_comments": null,
+      "ownership": 0,
+      "timestamp": "00:42:26"
+    },
+    {
+      "ticker": "VGCX",
+      "company_name": "Victoria Gold",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own. Tier 2 asset, high operational challenge in northern Canada.",
+      "ownership": 0,
+      "timestamp": "00:43:12"
+    },
+    {
+      "ticker": "JAG.TO",
+      "company_name": "Jaguar Mining",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own; extremely marginal deposit, low return on capital. Not interested in marginal businesses.",
+      "ownership": 0,
+      "timestamp": "00:43:58"
+    },
+    {
+      "ticker": "LUM",
+      "company_name": "Lumina Gold",
+      "company_rating": null,
+      "pos_comments": "Owns a lot; big speculative bet on exploration leverage and large deposit size.",
+      "neg_comments": "Risks very high—most people will lose money, but big deposits occasional good surprises.",
+      "ownership": 1,
+      "timestamp": "00:44:24"
+    },
+    {
+      "ticker": "TUD",
+      "company_name": "Tudor Gold",
+      "company_rating": null,
+      "pos_comments": "Canadian exploration appeal; favorable to Talhtan-hosted projects.",
+      "neg_comments": "Does not own; Canadian projects tend to trade at premium. Prefers less popular jurisdictions.",
+      "ownership": 0,
+      "timestamp": "00:45:07"
+    },
+    {
+      "ticker": "SVM",
+      "company_name": "Silvercorp Metals",
+      "company_rating": null,
+      "pos_comments": "Owns; long-running relationship, high dividend. High-quality people.",
+      "neg_comments": "Opacity of Chinese reporting, particularly on reserves. Rarely comments publicly on Silvercorp.",
+      "ownership": 1,
+      "timestamp": "00:46:34"
+    },
+    {
+      "ticker": "GATO",
+      "company_name": "Gatos Silver",
+      "company_rating": null,
+      "pos_comments": "Revisiting; likes operational metrics.",
+      "neg_comments": "Concerns about the drop in reserves/resources after BFS; needs more drilling data to restore confidence.",
+      "ownership": null,
+      "timestamp": "00:47:28"
+    },
+    {
+      "ticker": "EXK",
+      "company_name": "Endeavour Silver",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own. Dislikes small mines, high all-in costs.",
+      "ownership": 0,
+      "timestamp": "00:48:15"
+    },
+    {
+      "ticker": "FRES.L",
+      "company_name": "Fresnillo",
+      "company_rating": null,
+      "pos_comments": "Owns; premier Mexican silver producer. Long-term holding.",
+      "neg_comments": "Mexico is becoming riskier. Political opposition to company leadership is substantial.",
+      "ownership": 1,
+      "timestamp": "00:48:29"
+    },
+    {
+      "ticker": "ADT.L",
+      "company_name": "Adriatic Metals",
+      "company_rating": null,
+      "pos_comments": "Large holding, one of few not yet on 'free ride' status. Anticipates further VMS discoveries and rapid ramp-up to nameplate.",
+      "neg_comments": null,
+      "ownership": 1,
+      "timestamp": "00:49:24"
+    },
+    {
+      "ticker": "BA",
+      "company_name": "Hercules Silver",
+      "company_rating": null,
+      "pos_comments": "Owns; positive initial drill result on copper, willing to take risk, but suffered an immediate 30% loss after entry.",
+      "neg_comments": "Early-stage, highly speculative. Outcome uncertain.",
+      "ownership": 1,
+      "timestamp": "00:51:00"
+    },
+    {
+      "ticker": "KTN",
+      "company_name": "Kootenay Silver",
+      "company_rating": null,
+      "pos_comments": "Used to own; attracted by exploration potential.",
+      "neg_comments": "No recent data to justify re-entry.",
+      "ownership": 0,
+      "timestamp": "00:51:57"
+    },
+    {
+      "ticker": "SKE",
+      "company_name": "Skeena Resources",
+      "company_rating": null,
+      "pos_comments": "Owns; top open-pit grade. Excellent relationship with Talhtan Nation.",
+      "neg_comments": "Anticipates metallurgical challenges ahead.",
+      "ownership": 1,
+      "timestamp": "00:52:16"
+    },
+    {
+      "ticker": "DSV",
+      "company_name": "Discovery Silver",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": "Does not own; cannot tie drill holes into a coherent deposit. Financing may interest warrant holders.",
+      "ownership": 0,
+      "timestamp": "00:53:00"
+    },
+    {
+      "ticker": "GGD",
+      "company_name": "GoGold Resources",
+      "company_rating": null,
+      "pos_comments": "Owns a lot; predictive and successful exploration, believes district- and camp-scale value.",
+      "neg_comments": "Not a single mine but a cluster; sees this as a strength.",
+      "ownership": 1,
+      "timestamp": "00:53:18"
+    },
+    {
+      "ticker": "BHP",
+      "company_name": "BHP Group",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:54:37"
+    },
+    {
+      "ticker": "RIO",
+      "company_name": "Rio Tinto",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:54:37"
+    },
+    {
+      "ticker": "AMC",
+      "company_name": "Arizona Metals",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:56:19"
+    },
+    {
+      "ticker": "SCCO",
+      "company_name": "Southern Copper",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:57:17"
+    },
+    {
+      "ticker": "CGAU",
+      "company_name": "Centera Gold",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:57:46"
+    },
+    {
+      "ticker": "NGEX",
+      "company_name": "NGEx Minerals",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "00:58:20"
+    },
+    {
+      "ticker": "SLS",
+      "company_name": "Solaris Resources",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "01:00:24"
+    },
+    {
+      "ticker": "MARI",
+      "company_name": "Marimaca Copper",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "01:01:18"
+    },
+    {
+      "ticker": "NCU.TO",
+      "company_name": "Nevada Copper",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "01:01:27"
+    },
+    {
+      "ticker": "IE",
+      "company_name": "Ivanhoe Electric",
+      "company_rating": null,
+      "pos_comments": null,
+      "neg_comments": null,
+      "ownership": null,
+      "timestamp": "01:01:45"
+    }
+  ]
+}
