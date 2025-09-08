@@ -946,4 +946,49 @@ function showModal() {
 }
 
 function hideModal() {
-    const suspendModal = document.getElementById('suspe
+    const suspendModal = document.getElementById('suspend-modal');
+    if (suspendModal) {
+        suspendModal.classList.remove('show');
+    }
+}
+
+function printResults() {
+    window.print();
+}
+
+function printCorrections() {
+    window.print();
+}
+
+function newTest() {
+    // Reset state
+    appState.currentQuestionIndex = 0;
+    appState.answers = {};
+    appState.timeRemaining = 10800;
+    appState.suspended = false;
+    appState.testStartTime = null;
+    appState.testCompleted = false;
+    
+    if (appState.timerInterval) {
+        clearInterval(appState.timerInterval);
+        appState.timerInterval = null;
+    }
+    
+    // Clear form
+    const questionCountSelect = document.getElementById('question-count');
+    if (questionCountSelect) {
+        questionCountSelect.value = '130';
+    }
+    
+    appState.questionCount = 130;
+    
+    // Show home page
+    showPage('home-page');
+    
+    // Validate form
+    validateForm();
+}
+
+function backToResults() {
+    showPage('results-page');
+}
