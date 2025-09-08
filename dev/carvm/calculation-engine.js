@@ -1,4 +1,4 @@
-// STAT CARVM Calculation Engine - Complete Implementation
+// STAT CARVM Calculation Engine - Complete Implementation with Enhanced Sample Cash Flows Display
 // Implements Commissioners Annuity Reserve Valuation Method
 // Compliant with NAIC Standard Valuation Law
 
@@ -199,12 +199,15 @@ class AnnuityValuationEngine {
             });
         }
         
+        // ENHANCED: Format sample cash flows as table for better display
+        const sampleCashFlows = cashFlows.slice(0, 10); // First 10 years
+        
         this.addCalculationStep(`Scenario ${scenarioIndex + 1}: ${scenario.name}`, {
             totalPresentValue: totalPV,
             discountRate: discountRate,
             scenarioDescription: scenario.description,
             cashFlowYears: cashFlows.length,
-            sampleCashFlows: cashFlows.slice(0, 10) // First 10 years for display
+            sampleCashFlowsTable: this.formatCashFlowsAsTable(sampleCashFlows)
         });
         
         return {
@@ -212,6 +215,54 @@ class AnnuityValuationEngine {
             presentValue: totalPV,
             cashFlows: cashFlows
         };
+    }
+
+    // NEW: Format cash flows as HTML table for display
+    formatCashFlowsAsTable(cashFlows) {
+        if (!cashFlows || cashFlows.length === 0) {
+            return '<p>No cash flows available</p>';
+        }
+
+        let tableHtml = `
+            <table class="sample-cashflows-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Age</th>
+                        <th>Account Value</th>
+                        <th>Survival Prob</th>
+                        <th>Persistency</th>
+                        <th>Lapse Rate</th>
+                        <th>Benefit Payment</th>
+                        <th>Discount Factor</th>
+                        <th>Present Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+
+        cashFlows.forEach(cf => {
+            tableHtml += `
+                <tr>
+                    <td>${cf.year}</td>
+                    <td>${cf.age}</td>
+                    <td>${formatCurrency(cf.accountValue)}</td>
+                    <td>${(cf.survivalProb * 100).toFixed(3)}%</td>
+                    <td>${(cf.persistency * 100).toFixed(3)}%</td>
+                    <td>${(cf.lapseRate * 100).toFixed(2)}%</td>
+                    <td>${formatCurrency(cf.benefitPayment)}</td>
+                    <td>${cf.discountFactor.toFixed(6)}</td>
+                    <td>${formatCurrency(cf.presentValue)}</td>
+                </tr>
+            `;
+        });
+
+        tableHtml += `
+                </tbody>
+            </table>
+        `;
+
+        return tableHtml;
     }
 
     getLapseRateForScenario(baseLapseRate, lapseAssumption) {
@@ -241,7 +292,7 @@ class AnnuityValuationEngine {
         let expectancy = 0;
         for (let futureAge = age; futureAge < 110; futureAge++) {
             const survivalProb = getSurvivalProbability(age, gender, futureAge - age);
-            if (survivalProb < 0.001) break; // Stop when survival probability becomes negligible
+            if (survivalProb < 0.0001) break; // Stop when survival probability becomes negligible
             expectancy += survivalProb;
         }
         return expectancy;
@@ -305,14 +356,6 @@ class AnnuityValuationEngine {
             .map(pv => ({ name: pv.scenario.name, pv: pv.presentValue, rate: pv.scenario.interestRate }))
             .sort((a, b) => a.rate - b.rate);
             
-        // Generally, lower interest rates should produce higher present values
-        let orderingValid = true;
-        for (let i = 1; i < sortedPVs.length; i++) {
-            if (sortedPVs[i].rate > sortedPVs[i-1].rate && sortedPVs[i].pv > sortedPVs[i-1].pv) {
-                // This could indicate an issue, but may be valid due to other assumption differences
-            }
-        }
-        
         return {
             compliant: true,
             message: "Reserve meets all regulatory requirements and scenario validation",

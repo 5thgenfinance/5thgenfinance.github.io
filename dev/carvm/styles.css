@@ -738,343 +738,653 @@ select.form-control {
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
+```css
 /* Annuity Valuation Calculator Styles */
-* { 
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body { 
-  font-family: var(--font-family-base); 
-  line-height: var(--line-height-normal); 
-  color: var(--color-text); 
-  background-color: var(--color-background); 
+body {
+    font-family: var(--font-family-base);
+    line-height: var(--line-height-normal);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-size: var(--font-size-base);
+    -webkit-font-smoothing: antialiased;
 }
 
-.container { 
-  max-width: var(--container-xl); 
-  margin: 0 auto; 
-  padding: var(--space-20); 
-  background-color: var(--color-surface); 
-  box-shadow: var(--shadow-lg); 
-  min-height: 100vh; 
+.container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding: var(--space-20);
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-lg);
+    min-height: 100vh;
+    border-radius: var(--radius-lg);
 }
 
-header { 
-  text-align: center; 
-  padding: var(--space-32) 0; 
-  border-bottom: 3px solid var(--color-primary); 
-  margin-bottom: var(--space-32); 
+header {
+    text-align: center;
+    padding: var(--space-32) 0;
+    border-bottom: 3px solid var(--color-primary);
+    margin-bottom: var(--space-32);
 }
 
-header h1 { 
-  color: var(--color-primary); 
-  font-size: var(--font-size-4xl); 
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--space-10); 
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
+header h1 {
+    color: var(--color-primary);
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-10);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
 }
 
-header p { 
-  color: var(--color-text-secondary); 
-  font-size: var(--font-size-xl); 
+header p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-xl);
 }
 
-.input-section { 
-  background-color: var(--color-secondary); 
-  padding: var(--space-32); 
-  border-radius: var(--radius-lg); 
-  margin-bottom: var(--space-32); 
-  border: 1px solid var(--color-card-border); 
+.input-section {
+    background-color: var(--color-secondary);
+    padding: var(--space-32);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-32);
+    border: 1px solid var(--color-border);
 }
 
-.input-section h2 { 
-  color: var(--color-primary); 
-  margin-bottom: var(--space-24); 
-  font-size: var(--font-size-3xl); 
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
+.input-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-24);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
 }
 
-.form-group { 
-  margin-bottom: var(--space-20); 
+.form-group {
+    margin-bottom: var(--space-16);
 }
 
-.form-group label { 
-  display: block; 
-  margin-bottom: var(--space-8); 
-  font-weight: var(--font-weight-medium); 
-  color: var(--color-text); 
-  font-size: var(--font-size-sm);
+.form-group label {
+    display: block;
+    margin-bottom: var(--space-8);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
 }
 
-.form-group input, .form-group select { 
-  width: 100%; 
-  padding: var(--space-8) var(--space-12); 
-  border: 1px solid var(--color-border); 
-  border-radius: var(--radius-base); 
-  font-size: var(--font-size-md); 
-  line-height: 1.5;
-  color: var(--color-text);
-  background-color: var(--color-surface);
-  transition: border-color var(--duration-fast) var(--ease-standard), 
-              box-shadow var(--duration-fast) var(--ease-standard); 
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: var(--space-8) var(--space-12);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-md);
+    font-family: var(--font-family-base);
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-surface);
+    transition: border-color var(--duration-fast) var(--ease-standard),
+                box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 .form-group select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: var(--select-caret-light);
-  background-repeat: no-repeat;
-  background-position: right var(--space-12) center;
-  background-size: 16px;
-  padding-right: var(--space-32);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: var(--select-caret-light);
+    background-repeat: no-repeat;
+    background-position: right var(--space-12) center;
+    background-size: 16px;
+    padding-right: var(--space-32);
 }
 
 @media (prefers-color-scheme: dark) {
-  .form-group select {
-    background-image: var(--select-caret-dark);
-  }
+    .form-group select {
+        background-image: var(--select-caret-dark);
+    }
 }
 
 [data-color-scheme="dark"] .form-group select {
-  background-image: var(--select-caret-dark);
+    background-image: var(--select-caret-dark);
 }
 
 [data-color-scheme="light"] .form-group select {
-  background-image: var(--select-caret-light);
+    background-image: var(--select-caret-light);
 }
 
-.form-group input:focus, .form-group select:focus { 
-  outline: var(--focus-outline); 
-  border-color: var(--color-primary); 
-  box-shadow: var(--focus-ring); 
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: var(--focus-ring);
 }
 
-button[type="submit"] { 
-  background-color: var(--color-primary); 
-  color: var(--color-btn-primary-text); 
-  padding: var(--space-10) var(--space-32); 
-  border: none; 
-  border-radius: var(--radius-base); 
-  font-size: var(--font-size-lg); 
-  font-weight: var(--font-weight-medium);
-  cursor: pointer; 
-  transition: background-color var(--duration-normal) var(--ease-standard); 
-  width: 100%; 
-  margin-top: var(--space-20); 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.5;
+button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    padding: var(--space-10) var(--space-32);
+    border: none;
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-standard);
+    width: 100%;
+    margin-top: var(--space-20);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-base);
 }
 
-button[type="submit"]:hover { 
-  background-color: var(--color-primary-hover); 
+button[type="submit"]:hover {
+    background-color: var(--color-primary-hover);
 }
 
-button[type="submit"]:active { 
-  background-color: var(--color-primary-active); 
+button[type="submit"]:active {
+    background-color: var(--color-primary-active);
 }
 
 button[type="submit"]:focus-visible {
-  outline: none;
-  box-shadow: var(--focus-ring);
+    outline: none;
+    box-shadow: var(--focus-ring);
 }
 
-.results-section { 
-  margin-top: var(--space-32); 
+.results-section {
+    margin-top: var(--space-32);
 }
 
-.results-section h2 { 
-  color: var(--color-primary); 
-  margin-bottom: var(--space-24); 
-  font-size: var(--font-size-3xl); 
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-  border-bottom: 2px solid var(--color-primary); 
-  padding-bottom: var(--space-10); 
+.results-section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-24);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: var(--space-10);
 }
 
-.executive-summary { 
-  background-color: var(--color-bg-8); 
-  padding: var(--space-20); 
-  border-radius: var(--radius-lg); 
-  margin-bottom: var(--space-24); 
-  border-left: 5px solid var(--color-primary); 
+.executive-summary {
+    background-color: var(--color-bg-8);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-24);
+    border-left: 5px solid var(--color-primary);
+    border: 1px solid var(--color-card-border);
 }
 
-.assumptions-table, .scenario-results, .reserve-summary, .audit-trail { 
-  margin-bottom: var(--space-32); 
-  background-color: var(--color-secondary); 
-  padding: var(--space-20); 
-  border-radius: var(--radius-lg); 
-  border: 1px solid var(--color-card-border); 
+.executive-summary h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-16);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
 }
 
-.scenario-results table th, .cashflow-table th { 
-  background-color: var(--color-bg-1); 
-  color: var(--color-text);
-  font-weight: var(--font-weight-medium);
+.assumptions-table,
+.scenario-results,
+.reserve-summary,
+.audit-trail {
+    margin-bottom: var(--space-32);
+    background-color: var(--color-secondary);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
 }
 
-.expand-btn { 
-  background: transparent; 
-  border: 1px solid var(--color-primary); 
-  color: var(--color-primary); 
-  padding: var(--space-4) var(--space-8); 
-  border-radius: var(--radius-sm); 
-  cursor: pointer; 
-  font-size: var(--font-size-sm); 
-  transition: all var(--duration-fast) var(--ease-standard);
+.assumptions-table h3,
+.scenario-results h3,
+.reserve-summary h3,
+.audit-trail h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-16);
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
 }
 
-.expand-btn:hover { 
-  background: var(--color-bg-8); 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space-16);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    overflow: hidden;
+    box-shadow: var(--shadow-xs);
+}
+
+table th,
+table td {
+    padding: var(--space-12);
+    text-align: left;
+    border: 1px solid var(--color-border);
+    font-size: var(--font-size-base);
+}
+
+table th {
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    font-weight: var(--font-weight-semibold);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+table tr:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+.calculation-steps {
+    background-color: var(--color-bg-1);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-24);
+    border: 1px solid var(--color-card-border);
+}
+
+.calculation-steps h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-16);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
+}
+
+.calculation-step {
+    margin-bottom: var(--space-16);
+    padding: var(--space-16);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    border-left: 3px solid var(--color-primary);
+    border: 1px solid var(--color-card-border-inner);
+    box-shadow: var(--shadow-xs);
+}
+
+.calculation-step h4 {
+    color: var(--color-text);
+    margin-bottom: var(--space-8);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-tight);
+}
+
+/* Enhanced styles for sample cash flows tables in calculation steps */
+.sample-cashflows-section {
+    margin-top: var(--space-16);
+    padding: var(--space-16);
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-border);
+}
+
+.sample-cashflows-section h5 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-10);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-tight);
+}
+
+.sample-cashflows-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    overflow: hidden;
+}
+
+.sample-cashflows-table th,
+.sample-cashflows-table td {
+    padding: var(--space-8);
+    text-align: center;
+    border: 1px solid var(--color-border);
+}
+
+.sample-cashflows-table th {
+    background-color: var(--color-bg-8);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+}
+
+.sample-cashflows-table tr:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+.sample-cashflows-table tr:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+/* Enhanced styles for expandable cash flow sections */
+.expand-btn {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: var(--space-6) var(--space-12);
+    border-radius: var(--radius-base);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--duration-normal) var(--ease-standard);
+    font-family: var(--font-family-base);
+}
+
+.expand-btn:hover {
+    background: var(--color-secondary);
+    border-color: var(--color-primary-hover);
+    color: var(--color-primary-hover);
 }
 
 .expand-btn:focus-visible {
-  outline: var(--focus-outline);
-  box-shadow: var(--focus-ring);
+    outline: none;
+    box-shadow: var(--focus-ring);
 }
 
-.cashflow-detail .cashflow-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-  margin-top: var(--space-10); 
+.cashflow-detail {
+    display: none;
 }
 
-.cashflow-table th, .cashflow-table td { 
-  border: 1px solid var(--color-border); 
-  padding: var(--space-6); 
-  font-size: var(--font-size-sm); 
+.cashflow-detail.expanded {
+    display: table-row;
 }
 
-.cashflow-table th { 
-  background: var(--color-bg-1); 
-  color: var(--color-text);
-  font-weight: var(--font-weight-medium);
+.cashflow-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space-10);
+    font-size: var(--font-size-sm);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-base);
+    overflow: hidden;
 }
 
+.cashflow-table th,
 .cashflow-table td {
-  color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: var(--space-8);
+    text-align: center;
 }
 
-/* Mobile portrait breakpoint */
-@media (max-width: 480px) { 
-  .container { 
-    padding: var(--space-12); 
-  } 
-  
-  header { 
-    padding: var(--space-20) 0; 
-  }
-  
-  header h1 { 
-    font-size: var(--font-size-3xl); 
-  } 
-  
-  header p {
+.cashflow-table th {
+    background: var(--color-bg-1);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.cashflow-table tr:nth-child(even) {
+    background-color: var(--color-secondary);
+}
+
+.export-controls {
+    margin-top: var(--space-32);
+    text-align: center;
+}
+
+.export-controls button {
+    background-color: var(--color-success);
+    color: var(--color-btn-primary-text);
+    padding: var(--space-12) var(--space-24);
+    border: none;
+    border-radius: var(--radius-base);
+    margin: 0 var(--space-10);
+    cursor: pointer;
     font-size: var(--font-size-lg);
-  }
-  
-  .input-section { 
-    padding: var(--space-16); 
-  } 
-  
-  .input-section h2 {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .results-section h2 {
-    font-size: var(--font-size-2xl);
-  }
-  
-  .form-group input, .form-group select { 
-    font-size: var(--font-size-base); 
-  } 
-  
-  .cashflow-table th, .cashflow-table td { 
-    font-size: var(--font-size-xs);
-    padding: var(--space-4);
-  }
-  
-  .assumptions-table, .scenario-results, .reserve-summary, .audit-trail {
-    padding: var(--space-16);
-  }
-  
-  .executive-summary {
-    padding: var(--space-16);
-  }
-  
-  button[type="submit"] {
-    font-size: var(--font-size-md);
-    padding: var(--space-12) var(--space-16);
-  }
-  
-  .export-controls button { 
-    display: block; 
-    width: 100%; 
-    margin: var(--space-10) 0; 
-  } 
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family-base);
+    transition: all var(--duration-normal) var(--ease-standard);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 768px) { 
-  .container { 
-    padding: var(--space-16); 
-  } 
-  
-  header h1 { 
-    font-size: var(--font-size-3xl); 
-  } 
-  
-  .input-section { 
-    padding: var(--space-20); 
-  } 
-  
-  .form-group input, .form-group select { 
-    font-size: var(--font-size-base); 
-  } 
-  
-  .cashflow-table th, .cashflow-table td { 
-    font-size: var(--font-size-sm); 
-  }
-  
-  .export-controls button { 
-    display: block; 
-    width: 100%; 
-    margin: var(--space-10) 0; 
-  } 
+.export-controls button:hover {
+    background-color: var(--color-teal-600);
 }
 
-@media print { 
-  body { 
-    background-color: var(--color-white); 
-  } 
-  
-  .container { 
-    box-shadow: none; 
-    padding: 0; 
-  } 
-  
-  .input-section, .export-controls { 
-    display: none; 
-  } 
-  
-  .results-section { 
-    margin-top: 0; 
-  } 
-  
-  .cashflow-table, .scenario-results table { 
-    page-break-inside: avoid; 
-  } 
-  
-  .calculation-step { 
-    page-break-inside: avoid; 
-  } 
+.export-controls button:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
 }
+
+footer {
+    text-align: center;
+    margin-top: var(--space-32);
+    padding: var(--space-20) 0;
+    border-top: 2px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--space-10);
+        border-radius: var(--radius-base);
+    }
+    
+    header h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .input-section {
+        padding: var(--space-20);
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: var(--font-size-lg); /* Prevents zoom on iOS */
+    }
+    
+    table {
+        font-size: var(--font-size-sm);
+    }
+    
+    .cashflow-table,
+    .sample-cashflows-table {
+        font-size: var(--font-size-xs);
+    }
+    
+    .sample-cashflows-table th,
+    .sample-cashflows-table td {
+        padding: var(--space-4);
+    }
+    
+    .export-controls button {
+        display: block;
+        width: 100%;
+        margin: var(--space-10) 0;
+    }
+}
+
+/* Mobile Portrait Responsive Design - 480px breakpoint */
+@media (max-width: 480px) {
+    .container {
+        padding: var(--space-8);
+        margin: var(--space-8);
+        min-height: calc(100vh - var(--space-16));
+    }
+    
+    header {
+        padding: var(--space-16) 0;
+        margin-bottom: var(--space-16);
+    }
+    
+    header h1 {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--space-8);
+    }
+    
+    header p {
+        font-size: var(--font-size-lg);
+    }
+    
+    .input-section,
+    .assumptions-table,
+    .scenario-results,
+    .reserve-summary,
+    .audit-trail {
+        padding: var(--space-16);
+        margin-bottom: var(--space-16);
+    }
+    
+    .input-section h2,
+    .results-section h2,
+    .assumptions-table h3,
+    .scenario-results h3,
+    .reserve-summary h3,
+    .audit-trail h3 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--space-12);
+    }
+    
+    .executive-summary {
+        padding: var(--space-16);
+        margin-bottom: var(--space-16);
+    }
+    
+    .executive-summary h3 {
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-12);
+    }
+    
+    .calculation-steps {
+        padding: var(--space-16);
+        margin-bottom: var(--space-16);
+    }
+    
+    .calculation-step {
+        padding: var(--space-12);
+        margin-bottom: var(--space-12);
+    }
+    
+    .sample-cashflows-section {
+        padding: var(--space-12);
+        margin-top: var(--space-12);
+    }
+    
+    table th,
+    table td {
+        padding: var(--space-8);
+        font-size: var(--font-size-xs);
+    }
+    
+    .form-group {
+        margin-bottom: var(--space-12);
+    }
+    
+    button[type="submit"] {
+        padding: var(--space-12) var(--space-16);
+        font-size: var(--font-size-md);
+        margin-top: var(--space-16);
+    }
+    
+    .export-controls {
+        margin-top: var(--space-16);
+    }
+    
+    .export-controls button {
+        padding: var(--space-10) var(--space-16);
+        font-size: var(--font-size-md);
+        margin: var(--space-8) 0;
+        width: 100%;
+    }
+    
+    footer {
+        margin-top: var(--space-20);
+        padding: var(--space-16) 0;
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+    
+    .container {
+        box-shadow: none;
+        padding: 0;
+        background-color: var(--color-white);
+    }
+    
+    .input-section,
+    .export-controls {
+        display: none;
+    }
+    
+    .results-section {
+        margin-top: 0;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+    
+    .calculation-step {
+        page-break-inside: avoid;
+    }
+    
+    .sample-cashflows-section {
+        page-break-inside: avoid;
+    }
+    
+    .expand-btn {
+        display: none;
+    }
+    
+    .cashflow-detail {
+        display: table-row !important;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--color-secondary);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    animation: spin var(--duration-normal) linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error and Success Messages */
+.message {
+    padding: var(--space-16);
+    border-radius: var(--radius-base);
+    margin-bottom: var(--space-20);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-base);
+}
+
+.message.error {
+    background-color: rgba(var(--color-error-rgb), var(--status-bg-opacity));
+    color: var(--color-error);
+    border: 1px solid rgba(var(--color-error-rgb), var(--status-border-opacity));
+}
+
+.message.success {
+    background-color: rgba(var(--color-success-rgb), var(--status-bg-opacity));
+    color: var(--color-success);
+    border: 1px solid rgba(var(--color-success-rgb), var(--status-border-opacity));
+}
+
+.message.warning {
+    background-color: rgba(var(--color-warning-rgb), var(--status-bg-opacity));
+    color: var(--color-warning);
+    border: 1px solid rgba(var(--color-warning-rgb), var(--status-border-opacity));
+}
+```

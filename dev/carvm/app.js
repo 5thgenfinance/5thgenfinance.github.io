@@ -1,4 +1,5 @@
 // Main Application Logic for Annuity Valuation Calculator
+// Updated to include expandable cash flow detail sections and enhanced sample cash flows display
 
 class AnnuityCalculatorApp {
     constructor() {
@@ -10,31 +11,31 @@ class AnnuityCalculatorApp {
     initializeApp() {
         // Set up event listeners
         document.getElementById('valuationForm').addEventListener('submit', this.handleFormSubmit.bind(this));
-
+        
         // Set default dates
         const today = new Date();
         const oneYearAgo = new Date(today.getFullYear() - 1, today.getMonth(), today.getDate());
-
+        
         document.getElementById('valuationDate').value = today.toISOString().split('T')[0];
         document.getElementById('issueDate').value = oneYearAgo.toISOString().split('T')[0];
-
+        
         // Update timestamp in footer
         document.getElementById('timestamp').textContent = today.toLocaleString();
     }
 
     handleFormSubmit(event) {
         event.preventDefault();
-
+        
         try {
             // Show loading state
             this.showLoadingState();
-
+            
             // Collect form data
             const policyData = this.collectFormData();
-
+            
             // Perform validation
             this.validateFormData(policyData);
-
+            
             // Calculate STAT CARVM
             setTimeout(() => {
                 try {
@@ -46,7 +47,7 @@ class AnnuityCalculatorApp {
                     this.hideLoadingState();
                 }
             }, 100); // Small delay to show loading state
-
+            
         } catch (error) {
             this.showError('Input Error: ' + error.message);
             this.hideLoadingState();
@@ -70,11 +71,11 @@ class AnnuityCalculatorApp {
         // Additional client-side validation
         const issueDate = new Date(data.issueDate);
         const valuationDate = new Date(data.valuationDate);
-
+        
         if (valuationDate <= issueDate) {
             throw new Error('Valuation date must be after issue date');
         }
-
+        
         const daysDiff = (valuationDate - issueDate) / (1000 * 60 * 60 * 24);
         if (daysDiff > 365 * 50) { // 50 years maximum
             throw new Error('Policy duration cannot exceed 50 years');
@@ -84,25 +85,25 @@ class AnnuityCalculatorApp {
     displayResults(policyData, results) {
         // Display executive summary
         this.displayExecutiveSummary(policyData, results);
-
+        
         // Display assumptions table
         this.displayAssumptionsTable(policyData, results);
-
+        
         // Display calculation steps
         this.displayCalculationSteps(results);
-
-        // Display scenario results
+        
+        // Display scenario results (with expandable cash flows)
         this.displayScenarioResults(results);
-
+        
         // Display reserve summary
         this.displayReserveSummary(results);
-
+        
         // Display audit trail
         this.displayAuditTrail(results);
-
+        
         // Show results section
         document.getElementById('resultsSection').style.display = 'block';
-
+        
         // Scroll to results
         document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
     }
@@ -120,7 +121,7 @@ class AnnuityCalculatorApp {
                 <strong>Compliance Status:</strong> ${results.compliance.message}
             </div>
         `;
-
+        
         document.getElementById('executiveSummary').innerHTML = summaryHtml;
     }
 
@@ -179,15 +180,16 @@ class AnnuityCalculatorApp {
                 </tbody>
             </table>
         `;
-
+        
         document.getElementById('assumptionsTable').innerHTML = assumptionsHtml;
     }
 
+    // ENHANCED: Updated calculation steps display to render sample cash flows as tables
     displayCalculationSteps(results) {
         let stepsHtml = '<h3>Calculation Methodology</h3>';
         stepsHtml += '<p><strong>CARVM Form Applied:</strong> Greatest Present Value Method</p>';
         stepsHtml += '<p><strong>Regulatory Reference:</strong> NAIC Standard Valuation Law</p>';
-
+        
         results.calculationSteps.forEach((step, index) => {
             stepsHtml += `
                 <div class="calculation-step">
@@ -196,21 +198,33 @@ class AnnuityCalculatorApp {
                 </div>
             `;
         });
-
+        
         document.getElementById('calculationSteps').innerHTML = stepsHtml;
     }
 
+    // ENHANCED: Updated to properly render sample cash flows table
     formatStepDetails(details) {
         if (!details) return '';
-
+        
         let html = '';
-
+        
         for (const [key, value] of Object.entries(details)) {
-            if (Array.isArray(value)) {
+            if (key === 'sampleCashFlowsTable') {
+                // Special handling for the sample cash flows table
+                html += `<div class="sample-cashflows-section">`;
+                html += `<h5>Sample Cash Flows (First 10 Years):</h5>`;
+                html += value; // This is already formatted HTML table from the calculation engine
+                html += `</div>`;
+            } else if (Array.isArray(value)) {
                 html += `<p><strong>${this.formatKey(key)}:</strong></p><ul>`;
                 value.forEach(item => {
                     if (typeof item === 'object') {
-                        html += `<li>${JSON.stringify(item)}</li>`;
+                        if (item.name && item.interestRate !== undefined) {
+                            // Format scenario objects nicely
+                            html += `<li>${item.name}: ${formatPercentage(item.interestRate)}</li>`;
+                        } else {
+                            html += `<li>${JSON.stringify(item)}</li>`;
+                        }
                     } else {
                         html += `<li>${item}</li>`;
                     }
@@ -228,10 +242,11 @@ class AnnuityCalculatorApp {
                 html += `<p><strong>${this.formatKey(key)}:</strong> ${value}</p>`;
             }
         }
-
+        
         return html;
     }
 
+    // UPDATED: Enhanced scenario results display with expandable cash flows
     displayScenarioResults(results) {
         let scenarioHtml = `
             <h3>Scenario Analysis Results</h3>
@@ -243,14 +258,16 @@ class AnnuityCalculatorApp {
                         <th>Interest Rate</th>
                         <th>Present Value</th>
                         <th>Selected</th>
+                        <th>Cash Flows</th>
                     </tr>
                 </thead>
                 <tbody>
         `;
-
+        
         const maxPV = Math.max(...results.presentValues.map(pv => pv.presentValue));
-
-        results.presentValues.forEach(pv => {
+        
+        // Build scenario table with expandable cash flow sections
+        results.presentValues.forEach((pv, idx) => {
             const isSelected = pv.presentValue === maxPV;
             scenarioHtml += `
                 <tr ${isSelected ? 'style="background-color: #e8f4f8; font-weight: bold;"' : ''}>
@@ -259,13 +276,89 @@ class AnnuityCalculatorApp {
                     <td>${formatPercentage(pv.scenario.interestRate)}</td>
                     <td>${formatCurrency(pv.presentValue)}</td>
                     <td>${isSelected ? '✓ CARVM Reserve' : ''}</td>
+                    <td>
+                        <button class="expand-btn" data-scenario-idx="${idx}">Show Cash Flows</button>
+                    </td>
+                </tr>
+                <tr class="cashflow-detail" id="cashflow-detail-${idx}" style="display: none;">
+                    <td colspan="6">
+                        <table class="cashflow-table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Age</th>
+                                    <th>Account Value</th>
+                                    <th>Survival Prob</th>
+                                    <th>Persistency</th>
+                                    <th>Lapse Rate</th>
+                                    <th>Benefit Payment</th>
+                                    <th>Present Value</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cashflow-tbody-${idx}">
+                                <!-- Cash flow data will be populated here -->
+                            </tbody>
+                        </table>
+                    </td>
                 </tr>
             `;
         });
-
+        
         scenarioHtml += '</tbody></table>';
-
         document.getElementById('scenarioResults').innerHTML = scenarioHtml;
+        
+        // Populate cash flow data and set up event listeners
+        results.presentValues.forEach((pv, idx) => {
+            const cashflowTbody = document.getElementById(`cashflow-tbody-${idx}`);
+            let cashflowRowsHtml = '';
+            
+            // Display first 15 years of cash flows for readability
+            const displayRows = Math.min(pv.cashFlows.length, 15);
+            for (let i = 0; i < displayRows; i++) {
+                const cf = pv.cashFlows[i];
+                cashflowRowsHtml += `
+                    <tr>
+                        <td>${cf.year}</td>
+                        <td>${cf.age}</td>
+                        <td>${formatCurrency(cf.accountValue)}</td>
+                        <td>${(cf.survivalProb * 100).toFixed(3)}%</td>
+                        <td>${(cf.persistency * 100).toFixed(3)}%</td>
+                        <td>${(cf.lapseRate * 100).toFixed(2)}%</td>
+                        <td>${formatCurrency(cf.benefitPayment)}</td>
+                        <td>${formatCurrency(cf.presentValue)}</td>
+                    </tr>
+                `;
+            }
+            
+            if (pv.cashFlows.length > 15) {
+                cashflowRowsHtml += `
+                    <tr>
+                        <td colspan="8" style="text-align: center; font-style: italic; color: #666;">
+                            ... and ${pv.cashFlows.length - 15} more years (total: ${pv.cashFlows.length} years)
+                        </td>
+                    </tr>
+                `;
+            }
+            
+            cashflowTbody.innerHTML = cashflowRowsHtml;
+        });
+        
+        // Set up expand/collapse event listeners
+        document.querySelectorAll('.expand-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const scenarioIdx = e.target.getAttribute('data-scenario-idx');
+                const detailRow = document.getElementById(`cashflow-detail-${scenarioIdx}`);
+                const isVisible = detailRow.style.display === 'table-row';
+                
+                if (isVisible) {
+                    detailRow.style.display = 'none';
+                    e.target.textContent = 'Show Cash Flows';
+                } else {
+                    detailRow.style.display = 'table-row';
+                    e.target.textContent = 'Hide Cash Flows';
+                }
+            });
+        });
     }
 
     displayReserveSummary(results) {
@@ -298,7 +391,7 @@ class AnnuityCalculatorApp {
                 </tbody>
             </table>
         `;
-
+        
         document.getElementById('reserveSummary').innerHTML = summaryHtml;
     }
 
@@ -315,7 +408,7 @@ class AnnuityCalculatorApp {
                 </thead>
                 <tbody>
         `;
-
+        
         results.auditTrail.forEach(entry => {
             const timestamp = new Date(entry.timestamp).toLocaleString();
             auditHtml += `
@@ -326,9 +419,9 @@ class AnnuityCalculatorApp {
                 </tr>
             `;
         });
-
+        
         auditHtml += '</tbody></table>';
-
+        
         document.getElementById('auditTrail').innerHTML = auditHtml;
     }
 
@@ -360,10 +453,10 @@ class AnnuityCalculatorApp {
         const errorDiv = document.createElement('div');
         errorDiv.className = 'message error';
         errorDiv.innerHTML = message;
-
+        
         const form = document.getElementById('valuationForm');
         form.insertBefore(errorDiv, form.firstChild);
-
+        
         // Remove error after 5 seconds
         setTimeout(() => {
             if (errorDiv.parentNode) {
@@ -376,10 +469,10 @@ class AnnuityCalculatorApp {
         const successDiv = document.createElement('div');
         successDiv.className = 'message success';
         successDiv.innerHTML = message;
-
+        
         const form = document.getElementById('valuationForm');
         form.insertBefore(successDiv, form.firstChild);
-
+        
         setTimeout(() => {
             if (successDiv.parentNode) {
                 successDiv.parentNode.removeChild(successDiv);
@@ -405,32 +498,32 @@ function exportResults(format) {
 function exportToCSV() {
     const results = window.calculatorApp.currentResults;
     let csvContent = "data:text/csv;charset=utf-8,";
-
+    
     // Add header
-    csvContent += "Annuity STAT CARVM Valuation Results\n\n";
-
+    csvContent += "Annuity STAT CARVM Valuation Results\\n\\n";
+    
     // Add summary
-    csvContent += "Summary\n";
-    csvContent += `CARVM Reserve,${results.reserve}\n\n`;
-
+    csvContent += "Summary\\n";
+    csvContent += `CARVM Reserve,${results.reserve}\\n\\n`;
+    
     // Add scenarios
-    csvContent += "Scenario Analysis\n";
-    csvContent += "Scenario,Description,Interest Rate,Present Value\n";
-
+    csvContent += "Scenario Analysis\\n";
+    csvContent += "Scenario,Description,Interest Rate,Present Value\\n";
+    
     results.presentValues.forEach(pv => {
-        csvContent += `"${pv.scenario.name}","${pv.scenario.description}",${pv.scenario.interestRate},${pv.presentValue}\n`;
+        csvContent += `"${pv.scenario.name}","${pv.scenario.description}",${pv.scenario.interestRate},${pv.presentValue}\\n`;
     });
-
-    csvContent += "\n";
-
+    
+    csvContent += "\\n";
+    
     // Add audit trail
-    csvContent += "Audit Trail\n";
-    csvContent += "Timestamp,Step,Description\n";
-
+    csvContent += "Audit Trail\\n";
+    csvContent += "Timestamp,Step,Description\\n";
+    
     results.auditTrail.forEach(entry => {
-        csvContent += `"${entry.timestamp}","${entry.step}","${entry.description}"\n`;
+        csvContent += `"${entry.timestamp}","${entry.step}","${entry.description}"\\n`;
     });
-
+    
     // Create and trigger download
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
