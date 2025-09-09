@@ -460,7 +460,10 @@ Overall Rating | Sum([Weight]) | [Weighted Avg Score] | [Investment Recommendati
 
 ## Disclaimer
 
-```The opinions and results produced by this agent are strictly for educational purposes only and do not constitute investment advice. All analyses and recommendations should be used at your own risk. Always consult a qualified financial professional before making any investment decisions.```
+```The opinions and results produced by this agent are strictly for educational purposes only and do not constitute investment advice. All analyses and recommendations should be used at your own risk. Always consult a qualified financial professional before making any investment decisions.
+
+Visit us at: https://www.5thgenfinance.com
+```
 
 ## Execution Metadata Log
 
