@@ -3,89 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annuity Valuation Calculator - STAT CARVM Engine</title>
+    <title>STAT CARVM Annuity Valuation Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Annuity Valuation Calculator</h1>
-            <p>Statutory CARVM Reserve Calculation Engine</p>
+            <h1>STAT CARVM Annuity Valuation Calculator</h1>
+            <p class="subtitle">Commissioners' Annuity Reserve Valuation Method - Greatest Present Value</p>
         </header>
 
         <main>
             <section class="input-section">
                 <h2>Policy Information & Assumptions</h2>
-                <form id="valuationForm">
+                
+                <form id="valuationForm" class="valuation-form">
                     <div class="form-group">
                         <label for="productType">Product Type:</label>
-                        <select id="productType" required>
+                        <select id="productType" name="productType" required>
                             <option value="">Select Product Type</option>
-                            <option value="fixed-deferred">Fixed Deferred Annuity</option>
-                            <option value="fixed-immediate">Fixed Immediate Annuity</option>
-                            <option value="variable-deferred">Variable Deferred Annuity</option>
-                            <option value="indexed-deferred">Indexed Deferred Annuity</option>
+                            <option value="fixedDeferred">Fixed Deferred Annuity</option>
+                            <option value="fixedImmediate">Fixed Immediate Annuity</option>
+                            <option value="variableDeferred">Variable Deferred Annuity</option>
+                            <option value="indexedDeferred">Indexed Deferred Annuity</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="premiumAmount">Premium Amount ($):</label>
-                        <input type="number" id="premiumAmount" min="1000" step="100" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="premiumAmount">Premium Amount ($):</label>
+                            <input type="number" id="premiumAmount" name="premiumAmount" 
+                                   min="1000" max="10000000" step="1000" value="50000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="issueAge">Issue Age:</label>
+                            <input type="number" id="issueAge" name="issueAge" 
+                                   min="18" max="85" value="45" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="issueAge">Issue Age:</label>
-                        <input type="number" id="issueAge" min="18" max="85" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="unisex">Unisex</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guaranteedRate">Guaranteed Interest Rate (%):</label>
+                            <input type="number" id="guaranteedRate" name="guaranteedRate" 
+                                   min="0" max="10" step="0.1" value="3.0" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="gender">Gender:</label>
-                        <select id="gender" required>
-                            <option value="">Select Gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="unisex">Unisex</option>
-                        </select>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="issueDate">Issue Date:</label>
+                            <input type="date" id="issueDate" name="issueDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="valuationDate">Valuation Date:</label>
+                            <input type="date" id="valuationDate" name="valuationDate" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="issueDate">Issue Date:</label>
-                        <input type="date" id="issueDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="valuationDate">Valuation Date:</label>
-                        <input type="date" id="valuationDate" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="guaranteedRate">Guaranteed Interest Rate (%):</label>
-                        <input type="number" id="guaranteedRate" min="0" max="10" step="0.01" value="3.0" required>
-                    </div>
+
                     <div class="form-group">
                         <label for="surrenderChargeYears">Surrender Charge Period (Years):</label>
-                        <input type="number" id="surrenderChargeYears" min="0" max="15" value="7" required>
+                        <input type="number" id="surrenderChargeYears" name="surrenderChargeYears" 
+                               min="0" max="15" value="7" required>
                     </div>
-                    <button type="submit">Calculate STAT CARVM Reserve</button>
+
+                    <button type="submit" class="calculate-btn">Calculate STAT CARVM Reserve</button>
                 </form>
             </section>
 
-            <section class="results-section" id="resultsSection" style="display: none;">
-                <h2>STAT CARVM Valuation Results</h2>
-                <div class="executive-summary" id="executiveSummary"></div>
-                <div class="assumptions-table" id="assumptionsTable"></div>
-                <div class="calculation-steps" id="calculationSteps"></div>
-                <div class="scenario-results" id="scenarioResults"></div>
-                <div class="reserve-summary" id="reserveSummary"></div>
-                <div class="audit-trail" id="auditTrail"></div>
-                <div class="export-controls">
-                    <button onclick="exportResults('csv')">Export to CSV</button>
-                    <button onclick="exportResults('print')">Print Report</button>
+            <!-- Error Message Display -->
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>STAT CARVM Valuation Results</h2>
+                    <div class="action-buttons">
+                        <button class="export-btn" onclick="exportResults()">Export to CSV</button>
+                        <button class="print-btn" onclick="printResults()">Print Report</button>
+                    </div>
+                </div>
+
+                <!-- Executive Summary -->
+                <div id="executiveSummary" class="result-card executive-summary">
+                    <!-- Content populated by JavaScript -->
+                </div>
+
+                <!-- Assumptions Table -->
+                <div id="assumptions" class="result-card assumptions-section">
+                    <!-- Content populated by JavaScript -->
+                </div>
+
+                <!-- Calculation Steps -->
+                <div id="calculationSteps" class="result-card calculation-steps">
+                    <!-- Content populated by JavaScript -->
+                </div>
+
+                <!-- CARVM Results (Updated from Scenario Results) -->
+                <div id="scenarioResults" class="result-card carvm-results">
+                    <!-- Content populated by JavaScript -->
+                </div>
+
+                <!-- Reserve Summary -->
+                <div id="reserveSummary" class="result-card reserve-summary">
+                    <!-- Content populated by JavaScript -->
+                </div>
+
+                <!-- Audit Trail -->
+                <div id="auditTrail" class="result-card audit-trail">
+                    <!-- Content populated by JavaScript -->
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>Statutory Reserve Calculation Engine - Compliant with NAIC Standard Valuation Law</p>
-            <p>Generated: <span id="timestamp"></span></p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><strong>STAT CARVM Calculator</strong> - Commissioners' Annuity Reserve Valuation Method</p>
+                    <p class="compliance-note">For actuarial and regulatory compliance use. Results based on simplified assumptions.</p>
+                    <p class="disclaimer">
+                        <em>Disclaimer: This calculator provides estimates based on standard actuarial methods. 
+                        Actual statutory reserves may vary based on company-specific assumptions, 
+                        regulatory requirements, and detailed mortality/lapse experience. 
+                        Consult qualified actuaries for official regulatory filings.</em>
+                    </p>
+                </div>
+                <div class="footer-timestamp">
+                    <p>Generated: <span id="timestamp"></span></p>
+                </div>
+            </div>
         </footer>
     </div>
-    <script src="mortality-tables.js"></script>
-    <script src="calculation-engine.js"></script>
-    <script src="app.js"></script>
+
+    <!-- Include JavaScript Files -->
+    <script src="constants-updated.js"></script>
+    <script src="calculation-engine-corrected.js"></script>
+    <script src="app-corrected.js"></script>
+
+    <!-- Additional Utility Functions -->
+    <script>
+        // Export functionality
+        function exportResults() {
+            if (!window.app || !window.app.currentResults) {
+                alert('No results to export. Please calculate first.');
+                return;
+            }
+            
+            // Create CSV content
+            let csv = 'STAT CARVM Valuation Results\\n';
+            csv += 'Generated,' + new Date().toLocaleString() + '\\n\\n';
+            
+            const results = window.app.currentResults;
+            csv += 'Reserve Amount,' + results.reserve.toFixed(2) + '\\n';
+            csv += 'Selected Year,' + results.selectedYear + '\\n';
+            csv += 'Selected Benefit,' + results.selectedTest.selectedBenefit + '\\n';
+            csv += 'Benefit Amount,' + results.selectedTest.greatestBenefit.toFixed(2) + '\\n\\n';
+            
+            // Add year-by-year test results
+            csv += 'Year-by-Year Test Results\\n';
+            csv += 'Year,Age,Account Value,Survival Prob,Selected Benefit,Benefit Amount,Present Value\\n';
+            
+            if (results.presentValues && results.presentValues[0] && results.presentValues[0].cashFlows) {
+                results.presentValues[0].cashFlows.forEach(cf => {
+                    csv += `${cf.year},${cf.age},${cf.accountValue.toFixed(2)},${(cf.survivalProb * 100).toFixed(3)}%,${cf.selectedBenefit},${cf.benefitAmount.toFixed(2)},${cf.presentValue.toFixed(2)}\\n`;
+                });
+            }
+            
+            // Download CSV
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'carvm-valuation-' + new Date().toISOString().split('T')[0] + '.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+        
+        // Print functionality
+        function printResults() {
+            const resultsSection = document.getElementById('resultsSection');
+            if (!resultsSection || resultsSection.style.display === 'none') {
+                alert('No results to print. Please calculate first.');
+                return;
+            }
+            
+            // Create print-friendly version
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>STAT CARVM Valuation Report</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        .result-card { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; }
+                        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+                        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                        th { background-color: #f5f5f5; }
+                        .selected-row { background-color: #e8f5e8; font-weight: bold; }
+                        .metric { margin: 5px 0; }
+                        .label { font-weight: bold; }
+                        .value { margin-left: 10px; }
+                    </style>
+                </head>
+                <body>
+                    <h1>STAT CARVM Valuation Report</h1>
+                    <p>Generated: ${new Date().toLocaleString()}</p>
+                    ${resultsSection.innerHTML}
+                </body>
+                </html>
+            `);
+            
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => {
+                printWindow.print();
+                printWindow.close();
+            }, 250);
+        }
+        
+        // Store app instance globally for export functions
+        document.addEventListener('DOMContentLoaded', function() {
+            window.app = new AnnuityCalculatorApp();
+        });
+    </script>
 </body>
 </html>

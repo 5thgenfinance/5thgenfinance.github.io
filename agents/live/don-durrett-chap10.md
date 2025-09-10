@@ -398,6 +398,12 @@ Final Investment Score = (10-Factor Score × DQS/10) × Confidence Multiplier
 ### Company Analysis Report Structure:
 
 ```markdown
+## Disclaimer
+
+```This analysis is for research and educational purposes.  It does not constitute financial advice.  Always consult a qualified professional before investing.```
+```Visit us at: https://www.5thgenfinance.com```
+
+
 # [Company Name] ([Ticker]) - Enhanced Valuation Analysis
 **Analysis Date**: [Date]
 **Data Quality Score**: [Score]/10 (A:[score] H:[score] S:[score])
@@ -458,9 +464,9 @@ Overall Rating | Sum([Weight]) | [Weighted Avg Score] | [Investment Recommendati
 - Unverified Information: [List requiring further research]
 - Recommendation Confidence: [%]
 
-## Disclaimer
+## Credits
 
-```The opinions and results produced by this agent are strictly for educational purposes only and do not constitute investment advice. All analyses and recommendations should be used at your own risk. Always consult a qualified financial professional before making any investment decisions.```
+```The preceding agent was constructed by https://www.5htgenfinance.com```
 
 ## Execution Metadata Log
 
