@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a Practice Exam</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="chat-widget.css">
 </head>
 <body>
     <div class="container">
@@ -279,5 +280,59 @@
     </div>
 
     <script src="app.js"></script>
+	
+<!-- Perplexity Chat Widget -->
+<div id="chat-widget">
+  <!-- Chat Bubble -->
+  <div id="chat-bubble" class="chat-bubble">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 13.54 2.39 15.01 3.08 16.31L2 22L7.69 20.92C8.99 21.61 10.46 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="white"/>
+    </svg>
+  </div>
+
+  <!-- Chat Modal -->
+  <div id="chat-modal" class="chat-modal hidden">
+    <div class="chat-header">
+      <h3>AI Assistant</h3>
+      <button id="close-chat" class="close-btn">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="message bot-message">
+        <div class="message-content">
+          Hello! I'm powered by Perplexity AI. How can I help you today?
+        </div>
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="chat-input" placeholder="Type your message..." maxlength="500">
+      <button id="send-btn" class="send-btn">Send</button>
+    </div>
+    <div id="loading" class="loading hidden">
+      <div class="typing-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- API Key Modal -->
+<div id="api-key-modal" class="api-key-modal hidden">
+  <div class="api-key-content">
+    <h3>Setup Perplexity API</h3>
+    <p>Please enter your Perplexity API key to enable the chat feature:</p>
+    <input type="password" id="api-key-input" placeholder="Your Perplexity API Key">
+    <div class="api-key-buttons">
+      <button id="save-api-key">Save</button>
+      <button id="cancel-api-key">Cancel</button>
+    </div>
+    <p class="api-help">
+      Get your API key from <a href="https://www.perplexity.ai/settings/api" target="_blank">Perplexity Settings</a>
+    </p>
+  </div>
+</div>
+<script src="chat-widget.js"></script>
+
 </body>
 </html>
