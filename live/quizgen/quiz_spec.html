@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz JSON Schema Specification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">Quiz JSON Schema Specification</h1>
+            <div class="subtitle">Version 1.0 - Complete Reference Guide</div>
+        </header>
+
+        <main class="main-content">
+            <section class="overview-section">
+                <div class="section-header">
+                    <h2 class="section-title">Overview</h2>
+                </div>
+                <div class="content-block">
+                    <p class="overview-text">This schema defines the structure for a multi-choice quiz application with comprehensive metadata tracking, dynamic section management, and detailed question specifications. The schema supports educational content with percentage-based topic distribution and extensive question metadata.</p>
+                </div>
+            </section>
+
+            <section class="schema-structure">
+                <div class="section-header">
+                    <h2 class="section-title">Root Schema Structure</h2>
+                </div>
+                <div class="content-block">
+                    <h3 class="subsection-title">Top-Level Properties</h3>
+                    <div class="table-container">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="property-name">metadata</code></td>
+                                    <td><span class="data-type">object</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td>Comprehensive quiz information and statistics</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">questions</code></td>
+                                    <td><span class="data-type">array</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td>Array of quiz questions with detailed metadata</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metadata-section">
+                <div class="section-header">
+                    <h2 class="section-title">Metadata Section</h2>
+                </div>
+                
+                <div class="content-block">
+                    <h3 class="subsection-title">Required Metadata Fields</h3>
+                    <div class="table-container">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Type</th>
+                                    <th>Format</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="property-name">quiz_name</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">1-200 characters</span></td>
+                                    <td>Full descriptive name of the quiz/examination</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">total_questions</code></td>
+                                    <td><span class="data-type">integer</span></td>
+                                    <td><span class="format-constraint">≥ 1</span></td>
+                                    <td>Total number of questions in the complete quiz</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">created_date</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">YYYY-MM-DD</span></td>
+                                    <td>Date when this quiz file was created</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">gen_model_used</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">Min 1 character</span></td>
+                                    <td>AI model used to generate this JSON file</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">file_description</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">10-500 characters</span></td>
+                                    <td>Detailed description of the quiz content and scope</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">content_areas</code></td>
+                                    <td><span class="data-type">array</span></td>
+                                    <td><span class="format-constraint">Min 1 item</span></td>
+                                    <td>Topic categories with statistics</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="subsection-title">Optional Metadata Fields</h3>
+                    <div class="table-container">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Type</th>
+                                    <th>Format</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="property-name">batch_range</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">"number-number"</span></td>
+                                    <td>Range of question batches (e.g., "1-18")</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">question_id_range</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">"number-number"</span></td>
+                                    <td>Range of question IDs (e.g., "1-450")</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">sources</code></td>
+                                    <td><span class="data-type">array</span></td>
+                                    <td><span class="format-constraint">strings</span></td>
+                                    <td>Reference sources and materials used</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">special_features</code></td>
+                                    <td><span class="data-type">array</span></td>
+                                    <td><span class="format-constraint">strings</span></td>
+                                    <td>Descriptive features and highlights</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="subsection-title">Content Areas Object Schema</h3>
+                    <p class="schema-note">Each content area must include:</p>
+                    <div class="table-container">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Type</th>
+                                    <th>Format</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="property-name">name</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">1-100 characters</span></td>
+                                    <td>Name of the content area/topic</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">weight</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">"number%"</span></td>
+                                    <td>Official exam weight percentage</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">questions_in_file</code></td>
+                                    <td><span class="data-type">integer</span></td>
+                                    <td><span class="format-constraint">≥ 0</span></td>
+                                    <td>Actual questions for this topic in current file</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">percentage</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="format-constraint">"number.number%"</span></td>
+                                    <td>Actual percentage in this file</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="questions-section">
+                <div class="section-header">
+                    <h2 class="section-title">Questions Section</h2>
+                </div>
+                
+                <div class="content-block">
+                    <h3 class="subsection-title">Question Object Schema</h3>
+                    <p class="schema-note">Each question must include:</p>
+                    <div class="table-container">
+                        <table class="spec-table">
+                            <thead>
+                                <tr>
+                                    <th>Field</th>
+                                    <th>Type</th>
+                                    <th>Required</th>
+                                    <th>Format</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code class="property-name">id</code></td>
+                                    <td><span class="data-type">integer</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">Sequential from 1</span></td>
+                                    <td>Unique question identifier</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">section</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">1+ characters</span></td>
+                                    <td>Primary content area name</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">subsection</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">1-100 characters</span></td>
+                                    <td>Specific subtopic within section</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">question</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">10-1000 characters</span></td>
+                                    <td>The actual question text</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">choices</code></td>
+                                    <td><span class="data-type">array</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">Exactly 4 strings</span></td>
+                                    <td>Multiple choice options</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">correct_answer</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">A, B, C, or D</span></td>
+                                    <td>Letter designation of correct answer</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">explanation</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">10-500 characters</span></td>
+                                    <td>Detailed answer explanation</td>
+                                </tr>
+                                <tr>
+                                    <td><code class="property-name">source</code></td>
+                                    <td><span class="data-type">string</span></td>
+                                    <td><span class="required-badge">✅</span></td>
+                                    <td><span class="format-constraint">3-100 characters</span></td>
+                                    <td>Reference citation</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <h4 class="info-title">Choice Array Requirements</h4>
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <span class="requirement-label">Length:</span>
+                                <span class="requirement-value">Exactly 4 elements</span>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="requirement-label">Format:</span>
+                                <span class="requirement-value">Each choice must be prefixed with letter and parenthesis:</span>
+                            </div>
+                            <div class="choice-examples">
+                                <div class="choice-example"><code>"A) [option text]"</code></div>
+                                <div class="choice-example"><code>"B) [option text]"</code></div>
+                                <div class="choice-example"><code>"C) [option text]"</code></div>
+                                <div class="choice-example"><code>"D) [option text]"</code></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="validation-section">
+                <div class="section-header">
+                    <h2 class="section-title">Validation Rules &amp; Constraints</h2>
+                </div>
+                
+                <div class="content-block">
+                    <div class="validation-group">
+                        <h3 class="subsection-title">Cross-Field Validation</h3>
+                        <ol class="validation-list">
+                            <li><strong>Section Alignment:</strong> Every <code>questions[].section</code> must correspond to a <code>content_areas[].name</code></li>
+                            <li><strong>Answer Validation:</strong> <code>correct_answer</code> must match an existing choice letter (A-D)</li>
+                            <li><strong>ID Sequencing:</strong> Question IDs should be consecutive integers starting from 1</li>
+                            <li><strong>Percentage Consistency:</strong> <code>content_areas[].questions_in_file</code> should sum to approximately <code>total_questions</code></li>
+                        </ol>
+                    </div>
+
+                    <div class="validation-group">
+                        <h3 class="subsection-title">Data Integrity Checks</h3>
+                        <ul class="check-list">
+                            <li>All required string fields must be non-empty</li>
+                            <li>Date format must follow YYYY-MM-DD pattern</li>
+                            <li>Percentage strings must end with "%" symbol</li>
+                            <li>Range strings must follow "number-number" pattern</li>
+                            <li>Choice arrays must contain exactly 4 items with proper letter prefixes</li>
+                        </ul>
+                    </div>
+
+                    <div class="validation-group">
+                        <h3 class="subsection-title">Recommended Practices</h3>
+                        <ul class="practice-list">
+                            <li><strong>Content Quality:</strong> Questions should be clear, unambiguous, and appropriate for target audience</li>
+                            <li><strong>Distribution:</strong> Actual question counts should approximate the official content area weights</li>
+                            <li><strong>Source Attribution:</strong> Include specific references for educational content</li>
+                            <li><strong>Metadata Accuracy:</strong> Ensure all statistics and ranges accurately reflect the file contents</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="example-section">
+                <div class="section-header">
+                    <h2 class="section-title">Example Structure</h2>
+                </div>
+                <div class="content-block">
+                    <div class="code-container">
+                        <pre class="code-block"><code class="json">{
+  "metadata": {
+    "quiz_name": "FINRA Series 65 - Uniform Investment Adviser Law Examination",
+    "total_questions": 450,
+    "batch_range": "1-18",
+    "question_id_range": "1-450",
+    "created_date": "2025-07-29",
+    "gen_model_used": "Grok 4.0",
+    "file_description": "Complete Series 65 practice question bank including original 300 questions plus 150 advanced/emerging topic questions",
+    "content_areas": [
+      {
+        "name": "Economic Factors and Business Information",
+        "weight": "15%",
+        "questions_in_file": 71,
+        "percentage": "15.8%"
+      }
+    ],
+    "sources": [
+      "NASAA Series 65 Content Outline 2023",
+      "Achievable Series 65 Practice Questions"
+    ],
+    "special_features": [
+      "Comprehensive coverage of all NASAA content areas",
+      "Advanced investment strategies and modern planning concepts"
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "section": "Economic Factors and Business Information",
+      "subsection": "Basic Economic Concepts",
+      "question": "What is the primary function of the Federal Reserve?",
+      "choices": [
+        "A) Regulate stock markets",
+        "B) Control monetary policy",
+        "C) Supervise investment advisers",
+        "D) Enforce securities laws"
+      ],
+      "correct_answer": "B",
+      "explanation": "The Federal Reserve's primary function is to control monetary policy through interest rates and money supply management.",
+      "source": "Federal Reserve System Overview"
+    }
+  ]
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conclusion-section">
+                <div class="content-block">
+                    <div class="conclusion-box">
+                        <p class="conclusion-text">This specification ensures consistent data structure, enables comprehensive quiz management, and supports educational content across different subject areas and examination types.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Quiz JSON Schema Specification - Version 1.0</p>
+                <p class="footer-date">Last Updated: July 30, 2025</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

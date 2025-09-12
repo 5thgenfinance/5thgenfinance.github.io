@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Practice Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="header">
+                <h1>Build a 4 Question Multichoice Quiz of Desired Length</h1>
+                <p>Test your knowledge with our comprehensive question databases</p>
+            </div>
+            
+            <div class="card exam-setup">
+                <div class="card__body">
+                    <h2>Load Question Database</h2>
+                    <!-- Instructions for creating and gen AI quiz database -->
+					<div class="card instructions-genai" style="margin-bottom:1.5rem;">
+					  <div class="card__body">
+						<h2>Instructions for Creating and Gen AI Quiz Database</h2>
+						<p>
+						  <strong>Prompt Template:</strong> (<em>GPT-4.1 or Claude Sonnet 4 recommended</em>)
+						  <br />
+						  Using the markdown specification 
+						  <a href="/quizgen/data/Quiz JSON Schema Specification.md"            download>
+							"Quiz JSON Schema Specification.md"
+						  </a>, create a 
+						  <code>[50]</code> question quiz database on the topic of <code>[insert your topic here]</code>.
+						</p>
+						<p style="color: #555; font-size: 0.98em; margin-top: 0.5em;">
+						  <strong>Example:</strong>  <a href="https://youtu.be/oOJqJLggGEQ" target="_blank" rel="noopener">Video Demo Example</a><br>
+						  Using the markdown specification 
+						  <a href="/quizgen/data/Quiz JSON Schema Specification.md"            download>
+							"Quiz JSON Schema Specification.md"
+						  </a>, create a 
+						  <code>50</code> question quiz database on the topic of <code>U.S. Securities Laws</code>.
+						</p>
+						<p style="margin-top: 0.3em; font-size: 0.97em;">
+						  Paste this prompt into your preferred AI chat (GPT-4.1 or Claude Sonnet 4) to generate a compliant quiz database.
+						</p>
+					  </div>
+					</div>
+
+                    <div class="form-group">
+                        <label for="database-file" class="form-label">Select Database File</label>
+                        <div class="file-input-container">
+                            <input type="file" id="database-file" class="file-input" accept=".json" />
+                            <button type="button" class="btn btn--outline file-input-btn" onclick="document.getElementById('database-file').click()">
+                                Choose Database File
+                            </button>
+                            <span id="file-name" class="file-name">No file selected</span>
+                        </div>
+						<!-- Sample JSON Downloads + Spec -->
+						<div class="card sample-data">
+						  <div class="card__body">
+							<h2>Download .json Samples and Spec</h2>
+							<p>If you need sample files to test this application, choose one below.  The full specification is provided under the Json schema.</p>
+							<ul class="sample-list">
+							  <li><a href="/quizgen/data/macmillan_lichen_grade78_math_mastery_quiz.json"            download>MacMillan and Lichen grade 7/8</a></li>
+							  <li><a href="/quizgen/data/saxon45_sample.json"      download>Saxon Math 4/5 • 10 Q Sample</a></li>
+							  <li><a href="/quizgen/data/s65_ex450.json"      download>Series 65 Comprehensive DB • DOWNLOAD TO PREP S65!</a></li>							  
+							</ul>
+
+							<div class="spec-link">
+							  <strong>JSON Schema:</strong>
+							  <a href="quiz_spec.html" target="_blank" rel="noopener">
+								View the specification
+							  </a> || <a href="/quizgen/data/Quiz JSON Schema Specification.pdf"      download>Download the specification (.pdf)</a>
+							  <p>To create a new database file, use Claude Sonnet 4, Grok 4, GPT4.1 or Perplexity Research AI and a prompt and relevant materials documenting source and content topics including the link above.</p>
+							</div>
+						  </div>
+						</div>
+<!--
+                        <div class="file-help">
+                            <small>Select a JSON file containing your test database - <a href="https://www.perplexity.ai/page/quiz-json-schema-specification-jrZf3LPeQaSWPc3YJZiCqQ">per this .json spec</a></small>
+                        </div> -->
+                    </div>
+                    
+                    <div id="database-info" class="database-info" style="display: none;">
+                        <h3>Database Information</h3>
+                        <div class="database-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Total Questions:</span>
+                                <span id="total-questions" class="detail-value">-</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Sections:</span>
+                                <div id="sections-breakdown" class="sections-breakdown"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question-count" class="form-label">Number of Questions</label>
+                        <select id="question-count" class="form-control">
+                            <option value="10">10 Questions</option>
+                            <option value="15">15 Questions</option>
+                            <option value="20">20 Questions</option>
+                            <option value="25">25 Questions</option>
+                            <option value="30">30 Questions</option>
+                            <option value="35">35 Questions</option>
+                            <option value="40">40 Questions</option>
+                            <option value="45">45 Questions</option>
+                            <option value="50">50 Questions</option>
+                            <option value="55">55 Questions</option>
+                            <option value="60">60 Questions</option>
+                            <option value="65">65 Questions</option>
+                            <option value="70">70 Questions</option>
+                            <option value="75">75 Questions</option>
+                            <option value="80">80 Questions</option>
+                            <option value="85">85 Questions</option>
+                            <option value="90">90 Questions</option>
+                            <option value="95">95 Questions</option>
+                            <option value="100">100 Questions</option>
+                            <option value="105">105 Questions</option>
+                            <option value="110">110 Questions</option>
+                            <option value="115">115 Questions</option>
+                            <option value="120">120 Questions</option>
+                            <option value="125">125 Questions</option>
+                            <option value="130" selected>130 Questions (Full Exam)</option>
+                        </select>
+                    </div>
+                    
+                    <div id="loading-indicator" class="loading-indicator" style="display: none;">
+                        <span>Loading database...</span>
+                    </div>
+                    
+                    <div id="error-message" class="error-message" style="display: none;"></div>
+                    
+                    <button id="start-test" class="btn btn--primary btn--full-width" disabled>Start Test</button>
+                </div>
+            </div>
+            
+            <div class="card exam-info">
+                <div class="card__body">
+                    <h3>Exam Information</h3>
+                    <div class="info-grid"><div id="section-topics"></div>
+<!--                        <div class="info-item">
+                            <span class="info-label">Economic Factors:</span>
+                            <span class="info-value">15%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Investment Vehicles:</span>
+                            <span class="info-value">25%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Client Recommendations:</span>
+                            <span class="info-value">30%</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Laws & Regulations:</span>
+                            <span class="info-value">30%</span>
+                        </div>-->
+                    </div>
+                    <p class="pass-info">Passing score: 70%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Page -->
+        <div id="test-page" class="page">
+            <div class="test-header">
+                <div class="test-info">
+                    <h2 id="quiz-title"></h2>
+                    <div class="test-stats">
+                        <span id="question-counter">Question 1 of 130</span>
+                        <span id="timer">Time: 03:00:00</span>
+                    </div>
+                </div>
+                <div class="test-controls">
+                    <button id="suspend-test" class="btn btn--secondary">Suspend Test</button>
+                    <button id="submit-test" class="btn btn--primary">Submit Test</button>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="progress-text">0% Complete</span>
+            </div>
+            
+            <div class="question-container">
+                <div class="card question-card">
+                    <div class="card__body">
+                        <div class="question-header">
+                            <span id="question-section" class="status status--info">Economic Factors</span>
+                            <span id="question-number">Question 1</span>
+                        </div>
+                        <div id="question-text" class="question-text">
+                            Loading question...
+                        </div>
+                        <div id="question-options" class="question-options">
+                            <!-- Options will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-controls">
+                <button id="prev-question" class="btn btn--outline">Previous</button>
+                <button id="next-question" class="btn btn--primary">Next</button>
+            </div>
+        </div>
+
+        <!-- Results Page -->
+        <div id="results-page" class="page">
+            <div class="results-header">
+                <h2>Test Results</h2>
+                <div id="overall-result" class="result-status">
+                    <!-- Pass/Fail status will be populated -->
+                </div>
+            </div>
+            
+            <div class="results-grid">
+                <div class="card results-summary">
+                    <div class="card__body">
+                        <h3>Overall Score</h3>
+                        <div class="score-display">
+                            <span id="overall-score" class="score-number">0%</span>
+                            <span id="score-fraction" class="score-fraction">0/0</span>
+							<p class="result-line">
+								<strong>Time spent:</strong> <span id="time-spent">–:–</span>
+							</p>
+							
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card section-breakdown">
+                    <div class="card__body">
+                        <h3>Section Breakdown</h3>
+                        <div id="section-results" class="section-results">
+                            <!-- Section results will be populated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-actions">
+                <button id="view-corrections" class="btn btn--secondary">View Corrections</button>
+                <button id="print-results" class="btn btn--outline">Print Results</button>
+                <button id="new-test" class="btn btn--primary">Start New Test</button>
+            </div>
+        </div>
+
+        <!-- Corrections Page -->
+        <div id="corrections-page" class="page">
+            <div class="corrections-header">
+                <h2>Corrections Review</h2>
+                <p>Review the questions you missed and learn from explanations</p>
+            </div>
+            
+            <div id="corrections-list" class="corrections-list">
+                <!-- Corrections will be populated by JavaScript -->
+            </div>
+            
+            <div class="corrections-actions">
+                <button id="back-to-results" class="btn btn--secondary">Back to Results</button>
+                <button id="print-corrections" class="btn btn--outline">Print Corrections</button>
+            </div>
+        </div>
+
+        <!-- Suspend Modal -->
+        <div id="suspend-modal" class="modal">
+            <div class="modal-content">
+                <h3>Test Suspended</h3>
+                <p>Your test has been suspended. You can resume at any time.</p>
+                <div class="modal-actions">
+                    <button id="resume-test" class="btn btn--primary">Resume Test</button>
+                    <button id="end-test" class="btn btn--secondary">End Test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
