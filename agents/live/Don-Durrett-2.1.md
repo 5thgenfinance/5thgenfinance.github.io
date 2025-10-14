@@ -59,7 +59,7 @@ messages:
       4. Use PDF extraction tools or direct URL access - NO ESTIMATES
       5. If reports unavailable, search SEDAR.ca for Canadian companies
       6. Document report dates and ensure currency (< 3 years old)
-	  7. If NI 43-101 is not available use company available estimates and disclose "NI-43-101 reports were not available"
+      7. If NI 43-101 is not available use company available estimates and disclose "NI-43-101 reports were not available"
       WARNING: If using estimated resource figures disclose the estimation and do not provide a valuation estimate
 
   - step: cross_reference_sec_filings
@@ -124,9 +124,9 @@ validation_rules:
   - rule: primary_source_verification
     requirement: "All reserve/resource figures must come from NI 43-101 technical reports or equivalent"
     failure_action:
-	  - "USE_BEST_ESTIMATE"
-	  - "CONTINUE_WITHOUT_VALUATION"
-	  - "FLAG_ESTIMATE"
+      - "USE_BEST_ESTIMATE"
+      - "CONTINUE_WITHOUT_VALUATION"
+      - "FLAG_ESTIMATE"
     
   - rule: resource_logic_check
     requirement: "Proven + Probable reserves ≤ Measured + Indicated resources"
@@ -139,11 +139,11 @@ validation_rules:
   - rule: data_currency_check
     requirement: "NI 43-101 reports must be ≤ 3 years old"
     failure_action: "FLAG_OUTDATED_DATA"
-    
+
   - rule: formula_consistency
     requirement: "All Don Durrett formulas must be displayed with calculations"
     failure_action: "SHOW_FORMULAS"
-	
+
 error_handling:
   - scenario: "NI_43_101_NOT_FOUND"
     action: "Search SEDAR.ca, SEC Edgar, or contact company IR"
