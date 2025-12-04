@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# Node modules (if you add build tools later)
+node_modules/
+
+# Build outputs (if you add build process later)
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
