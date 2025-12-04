@@ -461,33 +461,16 @@
     </div>
 
     <script>
-        // CRVM Reserve Calculator - Production Implementation
-        // Version: 1.0 - December 4, 2025
+        // CRVM Reserve Calculator - Production Implementation with Fixed SOA JSON Parser
+        // Version: 1.1 - December 4, 2025
         // Implements 2017 CSO Mortality Tables per VM-20, NAIC 830, ASOP 56
+        // FIX: Corrected parseMortalityTable() to handle actual SOA JSON structure
 
-        // Production implementation - loads actual 2017 CSO mortality data from JSON files
-        // Files should be placed in /mortality/ directory relative to this HTML file
-
-        /**
-         * Mortality data cache - will be populated from JSON files
-         * Structure: {
-         *   'male-nonsmoker': { select: {age: {dur: rate}}, ultimate: {age: rate} },
-         *   'male-smoker': { ... },
-         *   'female-nonsmoker': { ... },
-         *   'female-smoker': { ... }
-         * }
-         */
         let mortalityData = {};
         let mortalityDataLoaded = false;
 
         /**
          * Loads mortality data from JSON files in /mortality/ directory
-         * Files expected:
-         * - 2017_CSO_Unisex_Male_NonSmoker.json
-         * - 2017_CSO_Unisex_Male_Smoker.json
-         * - 2017_CSO_Unisex_Female_NonSmoker.json
-         * - 2017_CSO_Unisex_Female_Smoker.json
-         * @returns {Promise<void>}
          */
         async function loadMortalityData() {
             const files = [
@@ -514,7 +497,6 @@
             } catch (error) {
                 console.error('Error loading mortality data:', error);
                 console.warn('Falling back to sample data for demonstration');
-                // Fallback to sample data if files not found
                 mortalityData = {
                     'male-nonsmoker': generateSampleRates(18, 95, 1.0),
                     'male-smoker': generateSampleRates(18, 95, 1.8),
@@ -527,69 +509,90 @@
 
         /**
          * Parses SOA 2017 CSO JSON format into application format
-         * Extracts Select (Duration 1-5) and Ultimate rates
+         * FIXED: Now correctly handles the nested XML-like JSON structure from SOA
          * @param {Object} soaData - Raw SOA JSON data
          * @returns {Object} Parsed mortality table { select: {}, ultimate: {} }
          */
         function parseMortalityTable(soaData) {
             const table = { select: {}, ultimate: {} };
             
-            // SOA format has Table array with rows
-            if (!soaData.Table || !Array.isArray(soaData.Table)) {
+            // SOA format has nested structure: Table[0].Values.Axis (array of age groups)
+            if (!soaData.Table || !Array.isArray(soaData.Table) || soaData.Table.length === 0) {
                 throw new Error('Invalid SOA table format - missing Table array');
             }
 
-            // First row is header, skip it
-            const rows = soaData.Table.slice(1);
+            const tableData = soaData.Table[0];
+            if (!tableData.Values || !tableData.Values.Axis || !Array.isArray(tableData.Values.Axis)) {
+                throw new Error('Invalid SOA table format - missing Values.Axis');
+            }
 
-            rows.forEach(row => {
-                const age = parseInt(row[0]); // First column is age
+            const ageGroups = tableData.Values.Axis;
+            
+            // Each element in Axis array represents one age
+            ageGroups.forEach(ageGroup => {
+                // Age is in @attributes.t
+                const age = parseInt(ageGroup['@attributes']?.t);
                 
                 if (isNaN(age) || age < 18 || age > 95) {
                     return; // Skip invalid ages
                 }
 
+                // Select rates are in Axis.Y array
+                const yValues = ageGroup.Axis?.Y;
+                if (!yValues || !Array.isArray(yValues)) {
+                    return;
+                }
+
                 // Initialize select rates for this age
                 table.select[age] = {};
 
-                // Columns 1-5 are Select Duration 1-5
-                for (let dur = 1; dur <= 5; dur++) {
-                    const rateValue = parseFloat(row[dur]);
-                    if (!isNaN(rateValue)) {
-                        table.select[age][dur] = rateValue / 1000; // SOA uses per-1000 format
+                // Parse each duration
+                yValues.forEach(yValue => {
+                    const duration = parseInt(yValue['@attributes']?.t);
+                    const rateText = yValue['#text'];
+                    
+                    if (!isNaN(duration) && rateText) {
+                        const rate = parseFloat(rateText);
+                        if (!isNaN(rate)) {
+                            // Durations 1-5 are select, last one (usually 25) is ultimate
+                            if (duration <= 5) {
+                                table.select[age][duration] = rate;
+                            } else if (duration === yValues.length) {
+                                // Last duration is ultimate rate
+                                table.ultimate[age] = rate;
+                            }
+                        }
                     }
-                }
+                });
 
-                // Column 6 is Ultimate rate
-                const ultimateValue = parseFloat(row[6]);
-                if (!isNaN(ultimateValue)) {
-                    table.ultimate[age] = ultimateValue / 1000; // SOA uses per-1000 format
+                // If we don't have an ultimate rate yet, use the last Y value
+                if (!table.ultimate[age] && yValues.length > 0) {
+                    const lastY = yValues[yValues.length - 1];
+                    const ultimateRate = parseFloat(lastY['#text']);
+                    if (!isNaN(ultimateRate)) {
+                        table.ultimate[age] = ultimateRate;
+                    }
                 }
             });
 
+            console.log(`Parsed table with ${Object.keys(table.select).length} ages, select durations 1-5, ultimate rates`);
             return table;
         }
 
         /**
-         * Generates sample mortality rates for demonstration
-         * @param {number} minAge - Minimum age
-         * @param {number} maxAge - Maximum age  
-         * @param {number} multiplier - Rate adjustment factor
-         * @returns {Object} Mortality rate lookup table
+         * Generates sample mortality rates for demonstration (fallback)
          */
         function generateSampleRates(minAge, maxAge, multiplier) {
             const rates = { select: {}, ultimate: {} };
             
             for (let age = minAge; age <= maxAge; age++) {
-                // Select rates (Duration 1-5) - Gompertz-Makeham approximation
                 rates.select[age] = {};
                 for (let dur = 1; dur <= 5; dur++) {
                     const baseRate = 0.0001 * Math.exp(0.08 * (age - 20)) + 0.0001;
-                    const durFactor = 1 - (dur * 0.02); // Slight decrease with duration
+                    const durFactor = 1 - (dur * 0.02);
                     rates.select[age][dur] = Math.min(baseRate * durFactor * multiplier, 1.0);
                 }
                 
-                // Ultimate rates - used for duration 6+
                 const ultimateRate = 0.0001 * Math.exp(0.08 * (age - 20)) + 0.0001;
                 rates.ultimate[age] = Math.min(ultimateRate * multiplier, 1.0);
             }
@@ -599,11 +602,6 @@
 
         /**
          * Gets mortality rate based on issue age, duration, and basis
-         * Implements Duration 1-5 (Select) vs 6+ (Ultimate) logic per spec
-         * @param {number} issueAge - Age at policy issue
-         * @param {number} duration - Years since policy issue
-         * @param {string} basis - Mortality table key (gender-smoker)
-         * @returns {number} Annual mortality rate (q_x)
          */
         function getMortalityRate(issueAge, duration, basis) {
             if (!mortalityDataLoaded) {
@@ -624,7 +622,6 @@
             }
             
             // Duration 6+: Use Ultimate rates at attained age
-            // Attained Age = Issue Age + Duration - 1
             const attainedAge = issueAge + duration - 1;
             if (!table.ultimate[attainedAge]) {
                 throw new Error(`No ultimate rate found for attained age ${attainedAge}`);
@@ -634,9 +631,6 @@
 
         /**
          * Calculates the calculation year from issue date and valuation date
-         * @param {Date} issueDate - Policy issue date
-         * @param {Date} valuationDate - Reserve valuation date
-         * @returns {number} Calculation year (1-based)
          */
         function calculateYear(issueDate, valuationDate) {
             const yearsDiff = valuationDate.getFullYear() - issueDate.getFullYear();
@@ -645,7 +639,6 @@
             
             let calculationYear = yearsDiff + 1;
             
-            // If valuation date hasn't reached anniversary, we're still in previous year
             if (monthsDiff < 0 || (monthsDiff === 0 && daysDiff < 0)) {
                 calculationYear--;
             }
@@ -654,47 +647,38 @@
         }
 
         /**
-         * Validates all input parameters per FR1 requirements
-         * @param {Object} params - Input parameters
-         * @returns {Object} Validation result with isValid flag and errors array
+         * Validates all input parameters
          */
         function validateInputs(params) {
             const errors = [];
             const { issueAge, term, calculationYear, faceAmount, interestRate, issueDate, valuationDate } = params;
 
-            // Date validation
             if (!issueDate || !valuationDate) {
                 errors.push('Both issue date and valuation date are required');
             } else if (valuationDate < issueDate) {
                 errors.push('Valuation date must be on or after issue date');
             }
 
-            // Age validation: 18-95
             if (issueAge < 18 || issueAge > 95) {
                 errors.push('Issue age must be between 18 and 95');
             }
 
-            // Term validation: 1-40 years
             if (term < 1 || term > 40) {
                 errors.push('Term must be between 1 and 40 years');
             }
 
-            // Calculation year validation
             if (calculationYear < 1 || calculationYear > term) {
                 errors.push('Valuation date results in calculation year beyond policy term');
             }
 
-            // Face amount validation
             if (faceAmount < 1 || faceAmount > 50000000) {
                 errors.push('Face amount must be between $1 and $50,000,000');
             }
 
-            // Interest rate validation
             if (interestRate < 0 || interestRate > 20) {
                 errors.push('Interest rate must be between 0% and 20%');
             }
 
-            // Attained age check
             const attainedAge = issueAge + calculationYear - 1;
             if (attainedAge > 95) {
                 errors.push('Attained age exceeds maximum of 95');
@@ -708,29 +692,21 @@
 
         /**
          * Calculates Present Value of Future Benefits
-         * Formula: Sum over remaining term of (Face Amount × q_x × v^t × survival probability)
-         * @param {Object} params - Calculation parameters
-         * @returns {number} PV of benefits
          */
         function calculatePVBenefits(params) {
             const { issueAge, term, calculationYear, faceAmount, interestRate, basis } = params;
-            const v = 1 / (1 + interestRate / 100); // Discount factor
+            const v = 1 / (1 + interestRate / 100);
             const remainingTerm = term - calculationYear + 1;
             
             let pvBenefits = 0;
             let survivalProb = 1.0;
-
-            // Start at current calculation year duration
             const startDuration = calculationYear - 1;
 
             for (let t = 1; t <= remainingTerm; t++) {
                 const duration = startDuration + t;
                 const qx = getMortalityRate(issueAge, duration, basis);
                 
-                // Death benefit occurs at end of year t
                 pvBenefits += faceAmount * qx * survivalProb * Math.pow(v, t);
-                
-                // Update survival probability for next year
                 survivalProb *= (1 - qx);
             }
 
@@ -739,25 +715,16 @@
 
         /**
          * Calculates Present Value of Annuity Due
-         * Formula: Sum of (survival probability × v^t) starting at t=0 (annuity due)
-         * Implements Fix #1: Correct annuity due timing (beginning of year payments)
-         * @param {Object} params - Calculation parameters
-         * @returns {number} PV of annuity due
          */
         function calculatePVAnnuityDue(params) {
             const { issueAge, term, calculationYear, interestRate, basis } = params;
             const v = 1 / (1 + interestRate / 100);
             const remainingTerm = term - calculationYear + 1;
             
-            let pvAnnuity = 0;
+            let pvAnnuity = 1.0; // First payment at t=0
             let survivalProb = 1.0;
-            
-            // Annuity due: First payment at t=0
-            pvAnnuity = 1.0; // Payment at beginning of current year
-
             const startDuration = calculationYear - 1;
 
-            // Then payments at beginning of each future year
             for (let t = 1; t < remainingTerm; t++) {
                 const duration = startDuration + t;
                 const qx = getMortalityRate(issueAge, duration, basis);
@@ -771,51 +738,41 @@
 
         /**
          * Calculates CRVM Reserve with Deficiency Reserve check
-         * Implements Fix #3: Deficiency Reserve per NAIC Model 830
-         * @param {Object} params - Calculation parameters
-         * @returns {Object} Reserve calculation details with audit trail
          */
         function calculateCRVMReserve(params) {
             const { issueAge, term, calculationYear, faceAmount, interestRate, basis } = params;
-            const audit = {}; // Audit trail object
+            const audit = {};
             
-            // Calculate components
             const pvBenefits = calculatePVBenefits(params);
             const pvAnnuityDue = calculatePVAnnuityDue(params);
             
-            // Calculate Net Level Premium at issue (year 1)
-            // This is a more accurate approach than using a flat rate
             const issueParams = { ...params, calculationYear: 1 };
             const issuePVBenefits = calculatePVBenefits(issueParams);
             const issuePVAnnuity = calculatePVAnnuityDue(issueParams);
             const netLevelPremium = issuePVBenefits / issuePVAnnuity;
             
-            // CRVM = PV(Future Benefits) - Net Level Premium × PV(Future Annuity Due)
-            // This represents the excess of future benefits over future premiums
             let crvm = Math.max(0, pvBenefits - (netLevelPremium * pvAnnuityDue));
             
-            // Build audit trail
             audit.pvBenefitsCalc = `PV Benefits (Future) = $${pvBenefits.toFixed(2)}`;
             audit.pvAnnuityCalc = `PV Annuity Due (Future) = ${pvAnnuityDue.toFixed(6)}`;
             audit.issuePVBenefits = `PV Benefits (at Issue) = $${issuePVBenefits.toFixed(2)}`;
             audit.issuePVAnnuity = `PV Annuity (at Issue) = ${issuePVAnnuity.toFixed(6)}`;
-            audit.premiumCalc = `Net Level Premium = PV Benefits (Issue) / PV Annuity (Issue) = $${issuePVBenefits.toFixed(2)} / ${issuePVAnnuity.toFixed(6)} = $${netLevelPremium.toFixed(2)}`;
+            audit.premiumCalc = `Net Level Premium = $${issuePVBenefits.toFixed(2)} / ${issuePVAnnuity.toFixed(6)} = $${netLevelPremium.toFixed(2)}`;
             audit.crvmFormula = `CRVM = Max(0, PV Benefits (Future) - Net Level Premium × PV Annuity (Future))`;
             audit.crvmCalc = `CRVM = Max(0, $${pvBenefits.toFixed(2)} - $${netLevelPremium.toFixed(2)} × ${pvAnnuityDue.toFixed(6)})`;
             audit.crvmResult = `CRVM = Max(0, $${pvBenefits.toFixed(2)} - $${(netLevelPremium * pvAnnuityDue).toFixed(2)}) = $${crvm.toFixed(2)}`;
             
-            // Deficiency Reserve Check (NAIC 830)
             const duration = calculationYear - 1;
             const qx = getMortalityRate(issueAge, duration + 1, basis);
-            const coi = qx * faceAmount; // Cost of insurance
+            const coi = qx * faceAmount;
             const remainingTerm = term - calculationYear + 1;
             const coiFloor = (coi / faceAmount) * remainingTerm * faceAmount;
             
             audit.deficiencyDuration = `Duration at valuation = ${duration}`;
             audit.deficiencyQx = `Mortality rate (q_x) = ${(qx * 1000).toFixed(6)}‰`;
-            audit.deficiencyCOI = `COI = q_x × Face Amount = ${(qx * 1000).toFixed(6)}‰ × $${faceAmount.toLocaleString()} = $${coi.toFixed(2)}`;
-            audit.deficiencyRemaining = `Remaining Term = ${term} - ${calculationYear} + 1 = ${remainingTerm} years`;
-            audit.deficiencyFloor = `COI Floor = (COI / Face) × Remaining × Face = $${coiFloor.toFixed(2)}`;
+            audit.deficiencyCOI = `COI = q_x × Face = ${(qx * 1000).toFixed(6)}‰ × $${faceAmount.toLocaleString()} = $${coi.toFixed(2)}`;
+            audit.deficiencyRemaining = `Remaining Term = ${remainingTerm} years`;
+            audit.deficiencyFloor = `COI Floor = $${coiFloor.toFixed(2)}`;
             audit.deficiencyComparison = `CRVM ($${crvm.toFixed(2)}) ${crvm < coiFloor ? '<' : '≥'} COI Floor ($${coiFloor.toFixed(2)})`;
             
             const deficiencyApplied = crvm < coiFloor;
@@ -831,7 +788,7 @@
                 pvBenefits: pvBenefits,
                 pvAnnuityDue: pvAnnuityDue,
                 deficiencyApplied: deficiencyApplied,
-                duration: calculationYear - 1,
+                duration: duration,
                 attainedAge: issueAge + calculationYear - 1,
                 audit: audit
             };
@@ -839,9 +796,6 @@
 
         /**
          * Generates year-by-year reserve projection
-         * Implements Fix #2: Year-by-Year Algorithm with correct duration logic
-         * @param {Object} params - Base calculation parameters
-         * @returns {Array} Array of year-by-year results
          */
         function generateYearByYear(params) {
             const { term } = params;
@@ -872,26 +826,22 @@
         }
 
         /**
-         * Main calculation function triggered by UI
+         * Main calculation function
          */
         function calculateReserve() {
-            // Check if mortality data is loaded
             if (!mortalityDataLoaded) {
                 const errorMsg = document.getElementById('errorMessage');
-                errorMsg.textContent = 'Error: Mortality data is still loading. Please wait a moment and try again.';
+                errorMsg.textContent = 'Error: Mortality data is still loading. Please wait and try again.';
                 errorMsg.classList.add('show');
                 return;
             }
 
-            // Hide previous results and errors
             document.getElementById('results').classList.remove('show');
             document.getElementById('errorMessage').classList.remove('show');
             document.getElementById('loading').classList.add('show');
 
-            // Small delay to show loading state
             setTimeout(() => {
                 try {
-                    // Gather inputs
                     const issueAge = parseInt(document.getElementById('issueAge').value);
                     const gender = document.getElementById('gender').value;
                     const smoker = document.getElementById('smoker').value;
@@ -908,35 +858,21 @@
                     
                     const issueDate = new Date(issueDateStr);
                     const valuationDate = new Date(valuationDateStr);
-                    
-                    // Calculate the calculation year from dates
                     const calculationYear = calculateYear(issueDate, valuationDate);
-
                     const basis = `${gender}-${smoker}`;
 
                     const params = {
-                        issueAge,
-                        gender,
-                        smoker,
-                        term,
-                        faceAmount,
-                        calculationYear,
-                        interestRate,
-                        basis,
-                        issueDate,
-                        valuationDate
+                        issueAge, gender, smoker, term, faceAmount,
+                        calculationYear, interestRate, basis,
+                        issueDate, valuationDate
                     };
 
-                    // Validate inputs
                     const validation = validateInputs(params);
                     if (!validation.isValid) {
                         throw new Error(validation.errors.join('; '));
                     }
 
-                    // Calculate reserve
                     const result = calculateCRVMReserve(params);
-
-                    // Update results display
                     const totalSTAT = result.crvm + result.pvBenefits;
                     
                     document.getElementById('crvmReserve').textContent = 
@@ -951,10 +887,8 @@
                     document.getElementById('deficiency').textContent = 
                         result.deficiencyApplied ? 'Yes' : 'No';
                     
-                    // Populate audit trail
                     populateAuditTrail(params, result);
 
-                    // Generate year-by-year table
                     const yearByYear = generateYearByYear(params);
                     const tbody = document.getElementById('yearByYearBody');
                     tbody.innerHTML = '';
@@ -972,7 +906,6 @@
                         tbody.appendChild(tr);
                     });
 
-                    // Show results
                     document.getElementById('loading').classList.remove('show');
                     document.getElementById('results').classList.add('show');
 
@@ -986,51 +919,42 @@
         }
 
         /**
-         * Populates the audit trail sections with step-by-step calculations
-         * @param {Object} params - Calculation parameters
-         * @param {Object} result - Calculation results with audit data
+         * Populates audit trail sections
          */
         function populateAuditTrail(params, result) {
             const { issueAge, calculationYear, issueDate, valuationDate, basis, faceAmount, term, interestRate } = params;
             const { audit, duration, attainedAge } = result;
             
-            // Step 1: Duration Calculation
             const durationAudit = `Issue Date: ${issueDate.toLocaleDateString()}
 Valuation Date: ${valuationDate.toLocaleDateString()}
 Years Difference: ${valuationDate.getFullYear() - issueDate.getFullYear()} years
 Calculation Year: ${calculationYear}
-Duration = Calculation Year - 1 = ${calculationYear} - 1 = ${duration}`;
+Duration = Calculation Year - 1 = ${duration}`;
             document.getElementById('auditDuration').textContent = durationAudit;
             
-            // Step 2: Attained Age
             const ageAudit = `Issue Age: ${issueAge}
 Calculation Year: ${calculationYear}
-Attained Age = Issue Age + Calculation Year - 1
-Attained Age = ${issueAge} + ${calculationYear} - 1 = ${attainedAge}`;
+Attained Age = Issue Age + Calculation Year - 1 = ${attainedAge}`;
             document.getElementById('auditAttainedAge').textContent = ageAudit;
             
-            // Step 3: Mortality Rate Selection
             const qx = getMortalityRate(issueAge, duration + 1, basis);
             const mortalityType = (duration + 1 <= 5) ? 'Select' : 'Ultimate';
-            const lookupAge = (duration + 1 <= 5) ? issueAge : attainedAge;
             const mortalityAudit = `Duration for lookup: ${duration + 1}
 Mortality Table: ${basis}
-Table Type: ${mortalityType} (Duration ${duration + 1 <= 5 ? '1-5' : '6+'})
-${mortalityType === 'Select' ? `Issue Age: ${lookupAge}` : `Attained Age: ${lookupAge}`}
+Table Type: ${mortalityType}
 Mortality Rate (q_x): ${(qx * 1000).toFixed(6)}‰ = ${(qx * 100).toFixed(4)}%`;
             document.getElementById('auditMortality').textContent = mortalityAudit;
             
-            // Step 4: PV Benefits (detailed example for first 3 years)
             const v = 1 / (1 + interestRate / 100);
             const remainingTerm = term - calculationYear + 1;
             let pvBenefitsDetail = `Face Amount: $${faceAmount.toLocaleString()}
 Interest Rate: ${interestRate}%
-Discount Factor (v): 1 / (1 + ${interestRate/100}) = ${v.toFixed(6)}
-Remaining Term: ${term} - ${calculationYear} + 1 = ${remainingTerm} years
+Discount Factor (v): ${v.toFixed(6)}
+Remaining Term: ${remainingTerm} years
 
 Formula: Σ (Face × q_x × Survival Prob × v^t)
 
-Example calculation (first 3 years):`;
+Example (first 3 years):`;
             
             let survivalProb = 1.0;
             const startDuration = calculationYear - 1;
@@ -1044,43 +968,36 @@ Example calculation (first 3 years):`;
             if (remainingTerm > 3) {
                 pvBenefitsDetail += `\n... (${remainingTerm - 3} more years)`;
             }
-            pvBenefitsDetail += `\n\nTotal PV Benefits: $${result.pvBenefits.toFixed(2)}`;
+            pvBenefitsDetail += `\n\nTotal: $${result.pvBenefits.toFixed(2)}`;
             document.getElementById('auditPVBenefits').textContent = pvBenefitsDetail;
             
-            // Step 5: PV Annuity Due
-            let pvAnnuityDetail = `Formula: Σ (Survival Prob × v^t) starting at t=0 (annuity due)
+            let pvAnnuityDetail = `Formula: Σ (Survival Prob × v^t) starting at t=0
 
-Year 0 (current): 1.000000 × ${v.toFixed(6)}^0 = 1.000000`;
+Year 0: 1.000000`;
             survivalProb = 1.0;
             for (let t = 1; t <= Math.min(3, remainingTerm - 1); t++) {
                 const dur = startDuration + t;
                 const qxt = getMortalityRate(issueAge, dur, basis);
                 survivalProb *= (1 - qxt);
-                const annuity = survivalProb * Math.pow(v, t);
-                pvAnnuityDetail += `\nYear ${t}: ${survivalProb.toFixed(6)} × ${v.toFixed(6)}^${t} = ${annuity.toFixed(6)}`;
+                pvAnnuityDetail += `\nYear ${t}: ${survivalProb.toFixed(6)} × ${v.toFixed(6)}^${t} = ${(survivalProb * Math.pow(v, t)).toFixed(6)}`;
             }
             if (remainingTerm > 4) {
                 pvAnnuityDetail += `\n... (${remainingTerm - 4} more years)`;
             }
-            pvAnnuityDetail += `\n\nTotal PV Annuity Due: ${result.pvAnnuityDue.toFixed(6)}`;
+            pvAnnuityDetail += `\n\nTotal: ${result.pvAnnuityDue.toFixed(6)}`;
             document.getElementById('auditPVAnnuity').textContent = pvAnnuityDetail;
             
-            // Step 6: CRVM Calculation
-            const crvmAudit = `Net Level Premium Calculation (at Issue):
-${audit.issuePVBenefits}
+            const crvmAudit = `${audit.issuePVBenefits}
 ${audit.issuePVAnnuity}
 ${audit.premiumCalc}
 
-Current Reserve Calculation (at Valuation Date):
 ${audit.pvBenefitsCalc}
 ${audit.pvAnnuityCalc}
 
 ${audit.crvmFormula}
-${audit.crvmCalc}
 ${audit.crvmResult}`;
             document.getElementById('auditCRVM').textContent = crvmAudit;
             
-            // Step 7: Deficiency Reserve
             const deficiencyAudit = `${audit.deficiencyDuration}
 ${audit.deficiencyQx}
 ${audit.deficiencyCOI}
@@ -1093,8 +1010,7 @@ ${audit.deficiencyAction}`;
         }
 
         /**
-         * Toggles the expansion state of an audit section
-         * @param {number} section - Section number (1-7)
+         * Toggles audit section expansion
          */
         function toggleAudit(section) {
             const content = document.getElementById(`content${section}`);
@@ -1109,35 +1025,28 @@ ${audit.deficiencyAction}`;
             }
         }
 
-        // Initialize with default dates and load mortality data on page load
+        // Initialize
         window.addEventListener('DOMContentLoaded', async () => {
-            // Set default issue date to 5 years ago
             const today = new Date();
             const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth(), today.getDate());
             document.getElementById('issueDate').value = fiveYearsAgo.toISOString().split('T')[0];
             document.getElementById('valuationDate').value = today.toISOString().split('T')[0];
             
-            console.log('CRVM Reserve Calculator - Loading mortality data...');
+            console.log('CRVM Calculator - Loading mortality data...');
             
-            // Disable calculate button while loading
             const calcBtn = document.getElementById('calculateBtn');
             calcBtn.disabled = true;
             calcBtn.textContent = 'Loading Mortality Data...';
             
-            // Load mortality data from JSON files
             await loadMortalityData();
             
-            // Re-enable calculate button
             calcBtn.disabled = false;
             calcBtn.textContent = 'Calculate Reserve';
             
             if (mortalityDataLoaded) {
-                console.log('✓ CRVM Reserve Calculator ready with actual 2017 CSO mortality tables');
-            } else {
-                console.warn('⚠ Using sample mortality data (production files not found)');
+                console.log('✓ CRVM Calculator ready with 2017 CSO mortality tables');
             }
         });
     </script>
 </body>
 </html>
-
