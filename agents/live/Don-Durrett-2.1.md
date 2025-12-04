@@ -1,6 +1,6 @@
 ---
 name: Don-Durrett
-version: 2.1
+version: 2.11
 type: financial_analysis_agent
 model: claude-sonnet-3.5
 mode: completion
@@ -1063,18 +1063,19 @@ All reports must include these sections in order:
 
 4. **Reserves & Resources**
    ```
+   ---
    # Reserves & Resources
    **Metal Price**: ${metal_price}/oz ({primary_metal}), ${metal_price}/oz ({secondary_metal})   
    **Proven and Probable**: {proven_probable}M oz {primary_metal}
    **Measured and Indicated**: {measured_indicated}M oz {primary_metal} (exclusive of proven & probable)
    **Inferred**: {inferred}M oz {primary_metal}
    **Plausible Resources**: {plausible_resources_oz}M oz {primary_metal}
-   
+   ---
    # Share structure
    **Shares Outstanding: {shares_outstanding}
    **Warrants, Restricted and Convertibles**: {options_warrants} + {restricted_shares} + {convertible_securities}
    **Fully Diluted Shares**: {fully_diluted_shares} shares
-
+   ---
    # Company Management Economics   
    **EV per locked metal**: ${enterprise_value}/{plausible_resources}oz
    **Break-Even Cost Per Unit**: ${reported_aisc}/oz
