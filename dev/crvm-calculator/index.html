@@ -349,8 +349,8 @@
                         <div class="result-value" id="pvBenefits">$0.00</div>
                     </div>
                     <div class="result-item">
-                        <div class="result-label">Total STAT Reserve</div>
-                        <div class="result-value" id="totalSTAT">$0.00</div>
+                        <div class="result-label">Present Value of Annuity Due</div>
+                        <div class="result-value" id="pvAnnuityDue">0.000000</div>
                     </div>
                     <div class="result-item">
                         <div class="result-label">Attained Age</div>
@@ -462,9 +462,9 @@
 
     <script>
         // CRVM Reserve Calculator - Production Implementation with Fixed SOA JSON Parser
-        // Version: 1.1 - December 4, 2025
+        // Version: 1.2 - December 5, 2025
         // Implements 2017 CSO Mortality Tables per VM-20, NAIC 830, ASOP 56
-        // FIX: Corrected parseMortalityTable() to handle actual SOA JSON structure
+        // REVERTED: Removed incorrect STAT reserve calculation, showing PV Annuity Due instead
 
         let mortalityData = {};
         let mortalityDataLoaded = false;
@@ -873,14 +873,14 @@
                     }
 
                     const result = calculateCRVMReserve(params);
-                    const totalSTAT = result.crvm + result.pvBenefits;
                     
+                    // Display results - REVERTED: Removed STAT Reserve, showing PV Annuity Due
                     document.getElementById('crvmReserve').textContent = 
                         `$${result.crvm.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
                     document.getElementById('pvBenefits').textContent = 
                         `$${result.pvBenefits.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-                    document.getElementById('totalSTAT').textContent = 
-                        `$${totalSTAT.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    document.getElementById('pvAnnuityDue').textContent = 
+                        result.pvAnnuityDue.toFixed(6);
                     document.getElementById('attainedAge').textContent = result.attainedAge;
                     document.getElementById('calculationYear').textContent = calculationYear;
                     document.getElementById('duration').textContent = result.duration;
