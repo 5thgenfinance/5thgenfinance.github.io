@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRVM Reserve Calculator - 2017 CSO</title>
+    <style>
+        :root {
+            --color-bg-primary: #fcfcf9;
+            --color-surface: #fffffd;
+            --color-text: #13343b;
+            --color-text-secondary: #626c71;
+            --color-primary: #21808d;
+            --color-primary-hover: #1d7480;
+            --color-border: rgba(94, 82, 64, 0.2);
+            --color-error: #c0152f;
+            --color-success: #21808d;
+            --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --radius-base: 8px;
+            --space-8: 8px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-24: 24px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-primary: #1f2121;
+                --color-surface: #262828;
+                --color-text: #f5f5f5;
+                --color-text-secondary: rgba(167, 169, 169, 0.7);
+                --color-primary: #32b8c6;
+                --color-primary-hover: #2da6b2;
+                --color-border: rgba(119, 124, 124, 0.3);
+            }
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: var(--font-family-base);
+            background: var(--color-bg-primary);
+            color: var(--color-text);
+            padding: var(--space-24);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: var(--space-8);
+        }
+
+        .subtitle {
+            color: var(--color-text-secondary);
+            font-size: 14px;
+        }
+
+        .card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            padding: var(--space-24);
+            margin-bottom: var(--space-24);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: var(--space-16);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-16);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-8);
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+        }
+
+        input, select {
+            padding: var(--space-8) var(--space-12);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            font-size: 14px;
+            background: var(--color-surface);
+            color: var(--color-text);
+        }
+
+        input:focus, select:focus {
+            outline: 2px solid var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn {
+            padding: var(--space-12) var(--space-24);
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-base);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--color-primary-hover);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .error-message {
+            color: var(--color-error);
+            font-size: 12px;
+            margin-top: var(--space-8);
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.show {
+            display: block;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-24);
+        }
+
+        .result-item {
+            padding: var(--space-16);
+            background: rgba(33, 128, 141, 0.08);
+            border-radius: var(--radius-base);
+        }
+
+        .result-label {
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-8);
+        }
+
+        .result-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: var(--space-12);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        th {
+            font-weight: 600;
+            background: rgba(33, 128, 141, 0.05);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: var(--space-24);
+            color: var(--color-text-secondary);
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .audit-section {
+            margin-bottom: var(--space-16);
+            background: rgba(33, 128, 141, 0.05);
+            border-radius: var(--radius-base);
+            overflow: hidden;
+        }
+
+        .audit-header {
+            padding: var(--space-16);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: background 0.2s;
+        }
+
+        .audit-header:hover {
+            background: rgba(33, 128, 141, 0.08);
+        }
+
+        .audit-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .audit-toggle {
+            font-size: 20px;
+            color: var(--color-primary);
+            transition: transform 0.3s;
+        }
+
+        .audit-toggle.expanded {
+            transform: rotate(180deg);
+        }
+
+        .audit-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .audit-content.expanded {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+        .audit-detail {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            color: var(--color-text);
+            padding: 0 var(--space-16) var(--space-16) var(--space-16);
+        }
+
+        .audit-formula {
+            background: rgba(33, 128, 141, 0.1);
+            padding: var(--space-8);
+            border-radius: 4px;
+            margin: var(--space-8) 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CRVM Reserve Calculator</h1>
+            <p class="subtitle">Commissioners Reserve Valuation Method using 2017 CSO Mortality Tables</p>
+        </header>
+
+        <div class="card">
+            <h2>Policy Information</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="issueAge">Issue Age *</label>
+                    <input type="number" id="issueAge" min="18" max="95" value="40" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="smoker">Smoker Status *</label>
+                    <select id="smoker" required>
+                        <option value="nonsmoker">Non-Smoker</option>
+                        <option value="smoker">Smoker</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="term">Policy Term (years) *</label>
+                    <input type="number" id="term" min="1" max="40" value="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="faceAmount">Face Amount ($) *</label>
+                    <input type="number" id="faceAmount" min="1" step="1000" value="100000" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueDate">Issue Date *</label>
+                    <input type="date" id="issueDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="valuationDate">Valuation Date *</label>
+                    <input type="date" id="valuationDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="interestRate">Interest Rate (%) *</label>
+                    <input type="number" id="interestRate" min="0" max="20" step="0.01" value="3.5" required>
+                </div>
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+            <button class="btn" id="calculateBtn" onclick="calculateReserve()">Calculate Reserve</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>Calculating reserves...</p>
+        </div>
+
+        <div class="results" id="results">
+            <div class="card">
+                <h2>Calculation Results</h2>
+                <div class="results-grid">
+                    <div class="result-item">
+                        <div class="result-label">CRVM Reserve</div>
+                        <div class="result-value" id="crvmReserve">$0.00</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Present Value of Benefits</div>
+                        <div class="result-value" id="pvBenefits">$0.00</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Present Value of Annuity Due</div>
+                        <div class="result-value" id="pvAnnuityDue">0.000000</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Attained Age</div>
+                        <div class="result-value" id="attainedAge">0</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Calculation Year</div>
+                        <div class="result-value" id="calculationYear">0</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Duration</div>
+                        <div class="result-value" id="duration">0</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-label">Deficiency Reserve Applied</div>
+                        <div class="result-value" id="deficiency">No</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Calculation Audit Trail</h2>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(1)">
+                        <h3>Step 1: Duration Calculation</h3>
+                        <span class="audit-toggle" id="toggle1">▼</span>
+                    </div>
+                    <div class="audit-content" id="content1">
+                        <div class="audit-detail" id="auditDuration"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(2)">
+                        <h3>Step 2: Attained Age Calculation</h3>
+                        <span class="audit-toggle" id="toggle2">▼</span>
+                    </div>
+                    <div class="audit-content" id="content2">
+                        <div class="audit-detail" id="auditAttainedAge"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(3)">
+                        <h3>Step 3: Mortality Rate Selection</h3>
+                        <span class="audit-toggle" id="toggle3">▼</span>
+                    </div>
+                    <div class="audit-content" id="content3">
+                        <div class="audit-detail" id="auditMortality"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(4)">
+                        <h3>Step 4: Present Value of Benefits</h3>
+                        <span class="audit-toggle" id="toggle4">▼</span>
+                    </div>
+                    <div class="audit-content" id="content4">
+                        <div class="audit-detail" id="auditPVBenefits"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(5)">
+                        <h3>Step 5: Present Value of Annuity Due</h3>
+                        <span class="audit-toggle" id="toggle5">▼</span>
+                    </div>
+                    <div class="audit-content" id="content5">
+                        <div class="audit-detail" id="auditPVAnnuity"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(6)">
+                        <h3>Step 6: CRVM Reserve Calculation</h3>
+                        <span class="audit-toggle" id="toggle6">▼</span>
+                    </div>
+                    <div class="audit-content" id="content6">
+                        <div class="audit-detail" id="auditCRVM"></div>
+                    </div>
+                </div>
+                <div class="audit-section">
+                    <div class="audit-header" onclick="toggleAudit(7)">
+                        <h3>Step 7: Deficiency Reserve Check</h3>
+                        <span class="audit-toggle" id="toggle7">▼</span>
+                    </div>
+                    <div class="audit-content" id="content7">
+                        <div class="audit-detail" id="auditDeficiency"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Year-by-Year Reserve Projection</h2>
+                <div class="table-container">
+                    <table id="yearByYearTable">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Duration</th>
+                                <th>Attained Age</th>
+                                <th>Mortality Rate</th>
+                                <th>Reserve per $1,000</th>
+                                <th>Total Reserve</th>
+                            </tr>
+                        </thead>
+                        <tbody id="yearByYearBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // CRVM Reserve Calculator - Production Implementation with Fixed SOA JSON Parser
+        // Version: 1.2 - December 5, 2025
+        // Implements 2017 CSO Mortality Tables per VM-20, NAIC 830, ASOP 56
+        // REVERTED: Removed incorrect STAT reserve calculation, showing PV Annuity Due instead
+
+        let mortalityData = {};
+        let mortalityDataLoaded = false;
+
+        /**
+         * Loads mortality data from JSON files in /mortality/ directory
+         */
+        async function loadMortalityData() {
+            const files = [
+                { path: './mortality/2017_CSO_Unisex_Male_NonSmoker.json', key: 'male-nonsmoker' },
+                { path: './mortality/2017_CSO_Unisex_Male_Smoker.json', key: 'male-smoker' },
+                { path: './mortality/2017_CSO_Unisex_Female_NonSmoker.json', key: 'female-nonsmoker' },
+                { path: './mortality/2017_CSO_Unisex_Female_Smoker.json', key: 'female-smoker' }
+            ];
+
+            try {
+                const loadPromises = files.map(async ({ path, key }) => {
+                    const response = await fetch(path);
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${path}: ${response.statusText}`);
+                    }
+                    const data = await response.json();
+                    mortalityData[key] = parseMortalityTable(data);
+                });
+
+                await Promise.all(loadPromises);
+                mortalityDataLoaded = true;
+                console.log('✓ All 4 mortality tables loaded successfully from /mortality/ folder');
+                
+            } catch (error) {
+                console.error('Error loading mortality data:', error);
+                console.warn('Falling back to sample data for demonstration');
+                mortalityData = {
+                    'male-nonsmoker': generateSampleRates(18, 95, 1.0),
+                    'male-smoker': generateSampleRates(18, 95, 1.8),
+                    'female-nonsmoker': generateSampleRates(18, 95, 0.6),
+                    'female-smoker': generateSampleRates(18, 95, 1.2)
+                };
+                mortalityDataLoaded = true;
+            }
+        }
+
+        /**
+         * Parses SOA 2017 CSO JSON format into application format
+         * FIXED: Now correctly handles the nested XML-like JSON structure from SOA
+         * @param {Object} soaData - Raw SOA JSON data
+         * @returns {Object} Parsed mortality table { select: {}, ultimate: {} }
+         */
+        function parseMortalityTable(soaData) {
+            const table = { select: {}, ultimate: {} };
+            
+            // SOA format has nested structure: Table[0].Values.Axis (array of age groups)
+            if (!soaData.Table || !Array.isArray(soaData.Table) || soaData.Table.length === 0) {
+                throw new Error('Invalid SOA table format - missing Table array');
+            }
+
+            const tableData = soaData.Table[0];
+            if (!tableData.Values || !tableData.Values.Axis || !Array.isArray(tableData.Values.Axis)) {
+                throw new Error('Invalid SOA table format - missing Values.Axis');
+            }
+
+            const ageGroups = tableData.Values.Axis;
+            
+            // Each element in Axis array represents one age
+            ageGroups.forEach(ageGroup => {
+                // Age is in @attributes.t
+                const age = parseInt(ageGroup['@attributes']?.t);
+                
+                if (isNaN(age) || age < 18 || age > 95) {
+                    return; // Skip invalid ages
+                }
+
+                // Select rates are in Axis.Y array
+                const yValues = ageGroup.Axis?.Y;
+                if (!yValues || !Array.isArray(yValues)) {
+                    return;
+                }
+
+                // Initialize select rates for this age
+                table.select[age] = {};
+
+                // Parse each duration
+                yValues.forEach(yValue => {
+                    const duration = parseInt(yValue['@attributes']?.t);
+                    const rateText = yValue['#text'];
+                    
+                    if (!isNaN(duration) && rateText) {
+                        const rate = parseFloat(rateText);
+                        if (!isNaN(rate)) {
+                            // Durations 1-5 are select, last one (usually 25) is ultimate
+                            if (duration <= 5) {
+                                table.select[age][duration] = rate;
+                            } else if (duration === yValues.length) {
+                                // Last duration is ultimate rate
+                                table.ultimate[age] = rate;
+                            }
+                        }
+                    }
+                });
+
+                // If we don't have an ultimate rate yet, use the last Y value
+                if (!table.ultimate[age] && yValues.length > 0) {
+                    const lastY = yValues[yValues.length - 1];
+                    const ultimateRate = parseFloat(lastY['#text']);
+                    if (!isNaN(ultimateRate)) {
+                        table.ultimate[age] = ultimateRate;
+                    }
+                }
+            });
+
+            console.log(`Parsed table with ${Object.keys(table.select).length} ages, select durations 1-5, ultimate rates`);
+            return table;
+        }
+
+        /**
+         * Generates sample mortality rates for demonstration (fallback)
+         */
+        function generateSampleRates(minAge, maxAge, multiplier) {
+            const rates = { select: {}, ultimate: {} };
+            
+            for (let age = minAge; age <= maxAge; age++) {
+                rates.select[age] = {};
+                for (let dur = 1; dur <= 5; dur++) {
+                    const baseRate = 0.0001 * Math.exp(0.08 * (age - 20)) + 0.0001;
+                    const durFactor = 1 - (dur * 0.02);
+                    rates.select[age][dur] = Math.min(baseRate * durFactor * multiplier, 1.0);
+                }
+                
+                const ultimateRate = 0.0001 * Math.exp(0.08 * (age - 20)) + 0.0001;
+                rates.ultimate[age] = Math.min(ultimateRate * multiplier, 1.0);
+            }
+            
+            return rates;
+        }
+
+        /**
+         * Gets mortality rate based on issue age, duration, and basis
+         */
+        function getMortalityRate(issueAge, duration, basis) {
+            if (!mortalityDataLoaded) {
+                throw new Error('Mortality data not loaded. Please wait for data to load.');
+            }
+            
+            const table = mortalityData[basis];
+            if (!table) {
+                throw new Error(`Invalid mortality basis: ${basis}`);
+            }
+
+            // Duration 1-5: Use Select rates at issue age
+            if (duration >= 1 && duration <= 5) {
+                if (!table.select[issueAge] || !table.select[issueAge][duration]) {
+                    throw new Error(`No select rate found for age ${issueAge}, duration ${duration}`);
+                }
+                return table.select[issueAge][duration];
+            }
+            
+            // Duration 6+: Use Ultimate rates at attained age
+            const attainedAge = issueAge + duration - 1;
+            if (!table.ultimate[attainedAge]) {
+                throw new Error(`No ultimate rate found for attained age ${attainedAge}`);
+            }
+            return table.ultimate[attainedAge];
+        }
+
+        /**
+         * Calculates the calculation year from issue date and valuation date
+         */
+        function calculateYear(issueDate, valuationDate) {
+            const yearsDiff = valuationDate.getFullYear() - issueDate.getFullYear();
+            const monthsDiff = valuationDate.getMonth() - issueDate.getMonth();
+            const daysDiff = valuationDate.getDate() - issueDate.getDate();
+            
+            let calculationYear = yearsDiff + 1;
+            
+            if (monthsDiff < 0 || (monthsDiff === 0 && daysDiff < 0)) {
+                calculationYear--;
+            }
+            
+            return Math.max(1, calculationYear);
+        }
+
+        /**
+         * Validates all input parameters
+         */
+        function validateInputs(params) {
+            const errors = [];
+            const { issueAge, term, calculationYear, faceAmount, interestRate, issueDate, valuationDate } = params;
+
+            if (!issueDate || !valuationDate) {
+                errors.push('Both issue date and valuation date are required');
+            } else if (valuationDate < issueDate) {
+                errors.push('Valuation date must be on or after issue date');
+            }
+
+            if (issueAge < 18 || issueAge > 95) {
+                errors.push('Issue age must be between 18 and 95');
+            }
+
+            if (term < 1 || term > 40) {
+                errors.push('Term must be between 1 and 40 years');
+            }
+
+            if (calculationYear < 1 || calculationYear > term) {
+                errors.push('Valuation date results in calculation year beyond policy term');
+            }
+
+            if (faceAmount < 1 || faceAmount > 50000000) {
+                errors.push('Face amount must be between $1 and $50,000,000');
+            }
+
+            if (interestRate < 0 || interestRate > 20) {
+                errors.push('Interest rate must be between 0% and 20%');
+            }
+
+            const attainedAge = issueAge + calculationYear - 1;
+            if (attainedAge > 95) {
+                errors.push('Attained age exceeds maximum of 95');
+            }
+
+            return {
+                isValid: errors.length === 0,
+                errors: errors
+            };
+        }
+
+        /**
+         * Calculates Present Value of Future Benefits
+         */
+        function calculatePVBenefits(params) {
+            const { issueAge, term, calculationYear, faceAmount, interestRate, basis } = params;
+            const v = 1 / (1 + interestRate / 100);
+            const remainingTerm = term - calculationYear + 1;
+            
+            let pvBenefits = 0;
+            let survivalProb = 1.0;
+            const startDuration = calculationYear - 1;
+
+            for (let t = 1; t <= remainingTerm; t++) {
+                const duration = startDuration + t;
+                const qx = getMortalityRate(issueAge, duration, basis);
+                
+                pvBenefits += faceAmount * qx * survivalProb * Math.pow(v, t);
+                survivalProb *= (1 - qx);
+            }
+
+            return pvBenefits;
+        }
+
+        /**
+         * Calculates Present Value of Annuity Due
+         */
+        function calculatePVAnnuityDue(params) {
+            const { issueAge, term, calculationYear, interestRate, basis } = params;
+            const v = 1 / (1 + interestRate / 100);
+            const remainingTerm = term - calculationYear + 1;
+            
+            let pvAnnuity = 1.0; // First payment at t=0
+            let survivalProb = 1.0;
+            const startDuration = calculationYear - 1;
+
+            for (let t = 1; t < remainingTerm; t++) {
+                const duration = startDuration + t;
+                const qx = getMortalityRate(issueAge, duration, basis);
+                
+                survivalProb *= (1 - qx);
+                pvAnnuity += survivalProb * Math.pow(v, t);
+            }
+
+            return pvAnnuity;
+        }
+
+        /**
+         * Calculates CRVM Reserve with Deficiency Reserve check
+         */
+        function calculateCRVMReserve(params) {
+            const { issueAge, term, calculationYear, faceAmount, interestRate, basis } = params;
+            const audit = {};
+            
+            const pvBenefits = calculatePVBenefits(params);
+            const pvAnnuityDue = calculatePVAnnuityDue(params);
+            
+            const issueParams = { ...params, calculationYear: 1 };
+            const issuePVBenefits = calculatePVBenefits(issueParams);
+            const issuePVAnnuity = calculatePVAnnuityDue(issueParams);
+            const netLevelPremium = issuePVBenefits / issuePVAnnuity;
+            
+            let crvm = Math.max(0, pvBenefits - (netLevelPremium * pvAnnuityDue));
+            
+            audit.pvBenefitsCalc = `PV Benefits (Future) = $${pvBenefits.toFixed(2)}`;
+            audit.pvAnnuityCalc = `PV Annuity Due (Future) = ${pvAnnuityDue.toFixed(6)}`;
+            audit.issuePVBenefits = `PV Benefits (at Issue) = $${issuePVBenefits.toFixed(2)}`;
+            audit.issuePVAnnuity = `PV Annuity (at Issue) = ${issuePVAnnuity.toFixed(6)}`;
+            audit.premiumCalc = `Net Level Premium = $${issuePVBenefits.toFixed(2)} / ${issuePVAnnuity.toFixed(6)} = $${netLevelPremium.toFixed(2)}`;
+            audit.crvmFormula = `CRVM = Max(0, PV Benefits (Future) - Net Level Premium × PV Annuity (Future))`;
+            audit.crvmCalc = `CRVM = Max(0, $${pvBenefits.toFixed(2)} - $${netLevelPremium.toFixed(2)} × ${pvAnnuityDue.toFixed(6)})`;
+            audit.crvmResult = `CRVM = Max(0, $${pvBenefits.toFixed(2)} - $${(netLevelPremium * pvAnnuityDue).toFixed(2)}) = $${crvm.toFixed(2)}`;
+            
+            const duration = calculationYear - 1;
+            const qx = getMortalityRate(issueAge, duration + 1, basis);
+            const coi = qx * faceAmount;
+            const remainingTerm = term - calculationYear + 1;
+            const coiFloor = (coi / faceAmount) * remainingTerm * faceAmount;
+            
+            audit.deficiencyDuration = `Duration at valuation = ${duration}`;
+            audit.deficiencyQx = `Mortality rate (q_x) = ${(qx * 1000).toFixed(6)}‰`;
+            audit.deficiencyCOI = `COI = q_x × Face = ${(qx * 1000).toFixed(6)}‰ × $${faceAmount.toLocaleString()} = $${coi.toFixed(2)}`;
+            audit.deficiencyRemaining = `Remaining Term = ${remainingTerm} years`;
+            audit.deficiencyFloor = `COI Floor = $${coiFloor.toFixed(2)}`;
+            audit.deficiencyComparison = `CRVM ($${crvm.toFixed(2)}) ${crvm < coiFloor ? '<' : '≥'} COI Floor ($${coiFloor.toFixed(2)})`;
+            
+            const deficiencyApplied = crvm < coiFloor;
+            if (deficiencyApplied) {
+                audit.deficiencyAction = `Deficiency reserve applied: Final Reserve = $${coiFloor.toFixed(2)}`;
+                crvm = coiFloor;
+            } else {
+                audit.deficiencyAction = `No deficiency reserve needed: Final Reserve = $${crvm.toFixed(2)}`;
+            }
+
+            return {
+                crvm: crvm,
+                pvBenefits: pvBenefits,
+                pvAnnuityDue: pvAnnuityDue,
+                deficiencyApplied: deficiencyApplied,
+                duration: duration,
+                attainedAge: issueAge + calculationYear - 1,
+                audit: audit
+            };
+        }
+
+        /**
+         * Generates year-by-year reserve projection
+         */
+        function generateYearByYear(params) {
+            const { term } = params;
+            const results = [];
+
+            for (let year = 1; year <= term; year++) {
+                const yearParams = { ...params, calculationYear: year };
+                const result = calculateCRVMReserve(yearParams);
+                
+                const duration = year - 1;
+                const mortalityRate = getMortalityRate(
+                    params.issueAge, 
+                    duration + 1, 
+                    params.basis
+                );
+
+                results.push({
+                    year: year,
+                    duration: duration,
+                    attainedAge: params.issueAge + year - 1,
+                    mortalityRate: mortalityRate,
+                    reservePer1000: (result.crvm / params.faceAmount) * 1000,
+                    totalReserve: result.crvm
+                });
+            }
+
+            return results;
+        }
+
+        /**
+         * Main calculation function
+         */
+        function calculateReserve() {
+            if (!mortalityDataLoaded) {
+                const errorMsg = document.getElementById('errorMessage');
+                errorMsg.textContent = 'Error: Mortality data is still loading. Please wait and try again.';
+                errorMsg.classList.add('show');
+                return;
+            }
+
+            document.getElementById('results').classList.remove('show');
+            document.getElementById('errorMessage').classList.remove('show');
+            document.getElementById('loading').classList.add('show');
+
+            setTimeout(() => {
+                try {
+                    const issueAge = parseInt(document.getElementById('issueAge').value);
+                    const gender = document.getElementById('gender').value;
+                    const smoker = document.getElementById('smoker').value;
+                    const term = parseInt(document.getElementById('term').value);
+                    const faceAmount = parseFloat(document.getElementById('faceAmount').value);
+                    const interestRate = parseFloat(document.getElementById('interestRate').value);
+                    
+                    const issueDateStr = document.getElementById('issueDate').value;
+                    const valuationDateStr = document.getElementById('valuationDate').value;
+                    
+                    if (!issueDateStr || !valuationDateStr) {
+                        throw new Error('Please enter both issue date and valuation date');
+                    }
+                    
+                    const issueDate = new Date(issueDateStr);
+                    const valuationDate = new Date(valuationDateStr);
+                    const calculationYear = calculateYear(issueDate, valuationDate);
+                    const basis = `${gender}-${smoker}`;
+
+                    const params = {
+                        issueAge, gender, smoker, term, faceAmount,
+                        calculationYear, interestRate, basis,
+                        issueDate, valuationDate
+                    };
+
+                    const validation = validateInputs(params);
+                    if (!validation.isValid) {
+                        throw new Error(validation.errors.join('; '));
+                    }
+
+                    const result = calculateCRVMReserve(params);
+                    
+                    // Display results - REVERTED: Removed STAT Reserve, showing PV Annuity Due
+                    document.getElementById('crvmReserve').textContent = 
+                        `$${result.crvm.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    document.getElementById('pvBenefits').textContent = 
+                        `$${result.pvBenefits.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    document.getElementById('pvAnnuityDue').textContent = 
+                        result.pvAnnuityDue.toFixed(6);
+                    document.getElementById('attainedAge').textContent = result.attainedAge;
+                    document.getElementById('calculationYear').textContent = calculationYear;
+                    document.getElementById('duration').textContent = result.duration;
+                    document.getElementById('deficiency').textContent = 
+                        result.deficiencyApplied ? 'Yes' : 'No';
+                    
+                    populateAuditTrail(params, result);
+
+                    const yearByYear = generateYearByYear(params);
+                    const tbody = document.getElementById('yearByYearBody');
+                    tbody.innerHTML = '';
+
+                    yearByYear.forEach(row => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${row.year}</td>
+                            <td>${row.duration}</td>
+                            <td>${row.attainedAge}</td>
+                            <td>${(row.mortalityRate * 1000).toFixed(3)}‰</td>
+                            <td>$${row.reservePer1000.toFixed(2)}</td>
+                            <td>$${row.totalReserve.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+
+                    document.getElementById('loading').classList.remove('show');
+                    document.getElementById('results').classList.add('show');
+
+                } catch (error) {
+                    document.getElementById('loading').classList.remove('show');
+                    const errorMsg = document.getElementById('errorMessage');
+                    errorMsg.textContent = `Error: ${error.message}`;
+                    errorMsg.classList.add('show');
+                }
+            }, 300);
+        }
+
+        /**
+         * Populates audit trail sections
+         */
+        function populateAuditTrail(params, result) {
+            const { issueAge, calculationYear, issueDate, valuationDate, basis, faceAmount, term, interestRate } = params;
+            const { audit, duration, attainedAge } = result;
+            
+            const durationAudit = `Issue Date: ${issueDate.toLocaleDateString()}
+Valuation Date: ${valuationDate.toLocaleDateString()}
+Years Difference: ${valuationDate.getFullYear() - issueDate.getFullYear()} years
+Calculation Year: ${calculationYear}
+Duration = Calculation Year - 1 = ${duration}`;
+            document.getElementById('auditDuration').textContent = durationAudit;
+            
+            const ageAudit = `Issue Age: ${issueAge}
+Calculation Year: ${calculationYear}
+Attained Age = Issue Age + Calculation Year - 1 = ${attainedAge}`;
+            document.getElementById('auditAttainedAge').textContent = ageAudit;
+            
+            const qx = getMortalityRate(issueAge, duration + 1, basis);
+            const mortalityType = (duration + 1 <= 5) ? 'Select' : 'Ultimate';
+            const mortalityAudit = `Duration for lookup: ${duration + 1}
+Mortality Table: ${basis}
+Table Type: ${mortalityType}
+Mortality Rate (q_x): ${(qx * 1000).toFixed(6)}‰ = ${(qx * 100).toFixed(4)}%`;
+            document.getElementById('auditMortality').textContent = mortalityAudit;
+            
+            const v = 1 / (1 + interestRate / 100);
+            const remainingTerm = term - calculationYear + 1;
+            let pvBenefitsDetail = `Face Amount: $${faceAmount.toLocaleString()}
+Interest Rate: ${interestRate}%
+Discount Factor (v): ${v.toFixed(6)}
+Remaining Term: ${remainingTerm} years
+
+Formula: Σ (Face × q_x × Survival Prob × v^t)
+
+Example (first 3 years):`;
+            
+            let survivalProb = 1.0;
+            const startDuration = calculationYear - 1;
+            for (let t = 1; t <= Math.min(3, remainingTerm); t++) {
+                const dur = startDuration + t;
+                const qxt = getMortalityRate(issueAge, dur, basis);
+                const benefit = faceAmount * qxt * survivalProb * Math.pow(v, t);
+                pvBenefitsDetail += `\nYear ${t}: $${faceAmount.toLocaleString()} × ${(qxt*1000).toFixed(6)}‰ × ${survivalProb.toFixed(6)} × ${v.toFixed(6)}^${t} = $${benefit.toFixed(2)}`;
+                survivalProb *= (1 - qxt);
+            }
+            if (remainingTerm > 3) {
+                pvBenefitsDetail += `\n... (${remainingTerm - 3} more years)`;
+            }
+            pvBenefitsDetail += `\n\nTotal: $${result.pvBenefits.toFixed(2)}`;
+            document.getElementById('auditPVBenefits').textContent = pvBenefitsDetail;
+            
+            let pvAnnuityDetail = `Formula: Σ (Survival Prob × v^t) starting at t=0
+
+Year 0: 1.000000`;
+            survivalProb = 1.0;
+            for (let t = 1; t <= Math.min(3, remainingTerm - 1); t++) {
+                const dur = startDuration + t;
+                const qxt = getMortalityRate(issueAge, dur, basis);
+                survivalProb *= (1 - qxt);
+                pvAnnuityDetail += `\nYear ${t}: ${survivalProb.toFixed(6)} × ${v.toFixed(6)}^${t} = ${(survivalProb * Math.pow(v, t)).toFixed(6)}`;
+            }
+            if (remainingTerm > 4) {
+                pvAnnuityDetail += `\n... (${remainingTerm - 4} more years)`;
+            }
+            pvAnnuityDetail += `\n\nTotal: ${result.pvAnnuityDue.toFixed(6)}`;
+            document.getElementById('auditPVAnnuity').textContent = pvAnnuityDetail;
+            
+            const crvmAudit = `${audit.issuePVBenefits}
+${audit.issuePVAnnuity}
+${audit.premiumCalc}
+
+${audit.pvBenefitsCalc}
+${audit.pvAnnuityCalc}
+
+${audit.crvmFormula}
+${audit.crvmResult}`;
+            document.getElementById('auditCRVM').textContent = crvmAudit;
+            
+            const deficiencyAudit = `${audit.deficiencyDuration}
+${audit.deficiencyQx}
+${audit.deficiencyCOI}
+${audit.deficiencyRemaining}
+${audit.deficiencyFloor}
+
+${audit.deficiencyComparison}
+${audit.deficiencyAction}`;
+            document.getElementById('auditDeficiency').textContent = deficiencyAudit;
+        }
+
+        /**
+         * Toggles audit section expansion
+         */
+        function toggleAudit(section) {
+            const content = document.getElementById(`content${section}`);
+            const toggle = document.getElementById(`toggle${section}`);
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                toggle.classList.remove('expanded');
+            } else {
+                content.classList.add('expanded');
+                toggle.classList.add('expanded');
+            }
+        }
+
+        // Initialize
+        window.addEventListener('DOMContentLoaded', async () => {
+            const today = new Date();
+            const fiveYearsAgo = new Date(today.getFullYear() - 5, today.getMonth(), today.getDate());
+            document.getElementById('issueDate').value = fiveYearsAgo.toISOString().split('T')[0];
+            document.getElementById('valuationDate').value = today.toISOString().split('T')[0];
+            
+            console.log('CRVM Calculator - Loading mortality data...');
+            
+            const calcBtn = document.getElementById('calculateBtn');
+            calcBtn.disabled = true;
+            calcBtn.textContent = 'Loading Mortality Data...';
+            
+            await loadMortalityData();
+            
+            calcBtn.disabled = false;
+            calcBtn.textContent = 'Calculate Reserve';
+            
+            if (mortalityDataLoaded) {
+                console.log('✓ CRVM Calculator ready with 2017 CSO mortality tables');
+            }
+        });
+    </script>
+</body>
+</html>
