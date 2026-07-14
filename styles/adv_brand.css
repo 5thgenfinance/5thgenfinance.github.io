@@ -7,8 +7,8 @@
   --offwhite: #f7f4ef;
   --charcoal: #2c2c2c;
 
-  --font-display: "Playfair Display", "Times New Roman", serif;
-  --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Playfair Display", "Georgia", serif;
+  --font-body: "Source Sans 3", "Calibri", Arial, sans-serif;
 
   --base-spacing: 8px;
 }
