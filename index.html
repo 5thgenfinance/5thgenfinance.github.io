@@ -1,39 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
-	<link rel="stylesheet" href="styles/5gdark.css">
-	<style>
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		margin: 0;
-	}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fifth Generation Advisers</title>
+  <meta name="description"
+        content="Fifth Generation Advisers · Registered Investment Adviser providing portfolio management, financial planning, and tax liability management." />
 
-	
-	.landcontainer {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 30px;
-		justify-content: center;
-		align-items: center;
-		width: fit-content;
-		height: fit-content;
-		max-width: 1240px
-		padding: 0;
-		margin: 0 auto;
-	}
+  <!-- Brand fonts (match Playfair Display + Source Sans 3) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
-	</style>
+  <!-- Brand stylesheet -->
+  <link rel="stylesheet" href="./styles/adv_brand.css" />
 </head>
 <body>
-    <div class="landcontainer">
-        <img src="brand_images/Banner Large.jpg" alt="Graphic">
-        <h1>My homepage lives here</h1>
+  <!-- HEADER WITH NAV + MOBILE HAMBURGER -->
+  <header class="site-header">
+    <div class="site-header-inner page">
+      <a class="brand-lockup" href="#home" aria-label="Fifth Generation Advisers home">
+        <img class="brand-logo-image"
+             src="./brand_images/navy_ribbon.png"
+             alt="Fifth Generation Advisers logo" />
+
+      </a>
+
+      <nav class="site-nav desktop-nav" aria-label="Primary">
+        <a href="#mission">About</a>
+        <a href="#advisers">Our Advisers</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <button class="mobile-menu-toggle"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#mission">About</a>
+      <a href="#advisers">Our Advisers</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO / IDENTITY -->
+    <section class="hero">
+      <div class="page">
+        <!--<p class="hero-subtitle">
+          Registered Investment Adviser · Wealth Management · Est. 2026
+        </p>-->
+        <h1 class="hero-title">Fifth Generation Advisers</h1>
+        <p class="hero-meta">(insert content here)</p>
+      </div>
+    </section>
+
+    <!-- BRAND MISSION / OVERVIEW -->
+    <section id="mission" class="section">
+      <div class="page">
+        <div class="section-header">
+          <p class="section-subtitle">About</p>
+          <h2 class="section-title">Brand Mission</h2>
+        </div>
+        <div class="section-body">
+          <p>(insert content here)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR ADVISERS -->
+    <section id="advisers" class="section">
+      <div class="page">
+        <div class="section-header">
+          <p class="section-subtitle">Our Advisers</p>
+          <h2 class="section-title">Experience you can trust</h2>
+        </div>
+
+        <div class="grid-12">
+          <article class="card primary-6">
+            <h3 class="card-title">Adviser One</h3>
+            <p>(insert content here)</p>
+          </article>
+          <article class="card primary-6">
+            <h3 class="card-title">Adviser Two</h3>
+            <p>(insert content here)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section id="strategy" class="section">
+      <div class="page">
+        <div class="section-header">
+          <p class="section-subtitle">Strategy</p>
+          <h2 class="section-title">How we manage wealth</h2>
+        </div>
+        <div class="section-body">
+          <p>(insert content here)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="page">
+        <div class="section-header">
+          <p class="section-subtitle">Services</p>
+          <h2 class="section-title">What we provide</h2>
+        </div>
+
+        <div class="grid-12">
+          <article class="card primary-4">
+            <h3 class="card-title">Portfolio Management</h3>
+            <p>(insert content here)</p>
+          </article>
+          <article class="card primary-4">
+            <h3 class="card-title">Financial Planning</h3>
+            <p>(insert content here)</p>
+          </article>
+          <article class="card primary-4">
+            <h3 class="card-title">Tax Liability Management</h3>
+            <p>(insert content here)</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="page">
+        <div class="section-header">
+          <p class="section-subtitle">Contact Us</p>
+          <h2 class="section-title">Start the conversation</h2>
+        </div>
+
+        <div class="grid-12">
+          <form class="card primary-8">
+            <label>
+              Name
+              <input type="text" name="name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5"></textarea>
+            </label>
+            <button type="submit" class="button">Send Message</button>
+          </form>
+
+          <aside class="card secondary-4">
+            <h3 class="card-title">Office</h3>
+            <p>(insert content here)</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page">
+      <p>© 2026 Fifth Generation Advisers</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU TOGGLE -->
+  <script>
+    const btn = document.querySelector('.mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const isOpen = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        menu.hidden = isOpen;
+      });
+    }
+  </script>
 </body>
 </html>
