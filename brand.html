@@ -29,104 +29,10 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="./styles/adv_brand.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest" defer></script>
-    <style>
-      :root {
-        --navy: #1a2744;
-        --bronze: #c49a4a;
-        --offwhite: #f7f4ef;
-        --charcoal: #2c2c2c;
-        --navy-light: #eef0f5;
-        --bronze-light: #d4b472;
-      }
-
-      * { box-sizing: border-box; }
-
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 72px;
-      }
-
-      body {
-        font-family: 'Source Sans 3', sans-serif;
-        color: var(--charcoal);
-        background-color: var(--offwhite);
-        margin: 0;
-        line-height: 1.6;
-      }
-
-      .font-playfair { font-family: 'Playfair Display', serif; }
-      .font-sourcesans { font-family: 'Source Sans 3', sans-serif; }
-
-      .section-divider {
-        border: none;
-        height: 1px;
-        background-color: var(--bronze);
-        margin: 0;
-      }
-
-      .card-accent {
-        border-left: 4px solid var(--bronze);
-        background: white;
-        box-shadow: 0 2px 12px rgba(34, 50, 94, 0.07);
-      }
-
-      .copy-btn {
-        transition: background-color 0.2s, color 0.2s;
-      }
-
-      .copy-btn:hover {
-        background-color: var(--bronze) !important;
-        color: white !important;
-      }
-
-      .nav-link {
-        position: relative;
-        transition: color 0.2s;
-      }
-
-      .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--bronze);
-        transition: width 0.3s;
-      }
-
-      .nav-link:hover::after,
-      .nav-link.active::after {
-        width: 100%;
-      }
-
-      .letterhead-preview {
-        aspect-ratio: 8.5 / 11;
-        max-width: 400px;
-        box-shadow: 0 8px 32px rgba(34, 50, 94, 0.15);
-      }
-
-      .spacing-box {
-        border: 2px dashed var(--bronze);
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .spacing-label {
-        font-size: 11px;
-        color: var(--bronze);
-        font-weight: 600;
-        letter-spacing: 0.5px;
-      }
-
-      @media print {
-        nav, .mobile-menu { display: none !important; }
-      }
-    </style>
+ 
   </head>
   <body data-id="0" class="bg-offwhite">
     <app-icon data-id="1" hidden data-icon="shield" data-palette="Dark"></app-icon>
@@ -135,7 +41,7 @@
     <nav data-id="2" id="main-nav-a1b2" class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg" style="font-family: 'Source Sans 3', sans-serif;">
       <div data-id="3" class="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-[72px]">
         <a data-id="4" href="#overview" class="font-playfair text-lg md:text-xl font-bold tracking-wide text-white flex items-center gap-2">
-          <span data-id="5" class="text-bronze">FGA</span>
+          <img class="brand-logo-image" src="./brand_images/navy_shield_tn.png" alt="Fifth Generation Advisers logo on navy background"/>
           <span data-id="6" class="hidden sm:inline">Fifth Generation Advisers</span>
         </a>
         <div data-id="7" class="hidden md:flex items-center gap-6 text-sm font-medium tracking-wide">

@@ -1,0 +1,365 @@
+/* ../styles/brand.css */
+
+/* Brand variables */
+:root {
+  --navy: #1a2744;
+  --bronze: #c49a4a;
+  --offwhite: #f7f4ef;
+  --charcoal: #2c2c2c;
+
+  --font-display: "Playfair Display", "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+
+  --base-spacing: 8px;
+}
+
+/* Global layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--navy);
+  color: var(--offwhite);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Page shell */
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: calc(var(--base-spacing) * 3);
+}
+
+/* Top navigation / header bar */
+.site-header {
+  background-color: var(--navy);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.site-header-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: calc(var(--base-spacing) * 2) calc(var(--base-spacing) * 3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--base-spacing) * 2);
+}
+
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: var(--base-spacing);
+}
+
+/* Shield logo in header (navy background) */
+.brand-logo-image {
+  display: block;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Optional helper classes using brand_images */
+.brand-logo-navy-shield {
+  background-image: url("../brand_images/navy_shield_tn.png");
+}
+
+.brand-logo-white-shield {
+  background-image: url("../brand_images/white_shield_tn.png");
+}
+
+.brand-logo-cream-shield {
+  background-image: url("../brand_images/cream_shield_tn.png");
+}
+
+.brand-logo-navy-card {
+  background-image: url("../brand_images/Shield logo navy.png");
+}
+
+/* If you use a div for shield logo */
+.brand-logo-shield {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Wordmark next to logo */
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bronze);
+  text-transform: uppercase;
+}
+
+.brand-name-main {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--offwhite);
+  margin-left: 4px;
+}
+
+/* Top nav links */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--base-spacing) * 2);
+  font-size: 0.85rem;
+}
+
+.site-nav a {
+  color: var(--offwhite);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: rgba(196, 154, 74, 0.6);
+}
+
+.site-nav a.active {
+  color: var(--bronze);
+  border-bottom-color: var(--bronze);
+}
+
+/* Hero section */
+.hero {
+  background-color: var(--navy);
+  padding: calc(var(--base-spacing) * 6) calc(var(--base-spacing) * 3)
+    calc(var(--base-spacing) * 4);
+  text-align: center;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin: 0 0 calc(var(--base-spacing) * 2);
+}
+
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--bronze);
+  margin-bottom: calc(var(--base-spacing) * 3);
+}
+
+.hero-meta {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--offwhite);
+  opacity: 0.8;
+}
+
+/* Section headings and body text */
+.section {
+  background-color: var(--offwhite);
+  color: var(--charcoal);
+  padding: calc(var(--base-spacing) * 4) calc(var(--base-spacing) * 3);
+}
+
+.section + .section {
+  border-top: 1px solid var(--bronze);
+}
+
+.section-header {
+  margin-bottom: calc(var(--base-spacing) * 3);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem; /* H1 */
+  font-weight: 700;
+  margin: 0 0 calc(var(--base-spacing) * 1);
+  color: var(--navy);
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--bronze);
+  margin: 0;
+}
+
+.section-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+/* Typography scale examples */
+.type-scale-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: calc(var(--base-spacing) * 3);
+  font-size: 0.9rem;
+}
+
+.type-scale-table th,
+.type-scale-table td {
+  padding: calc(var(--base-spacing));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.type-display {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.type-h1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.type-h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.type-h3 {
+  font-family: var(--font-body);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.type-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.type-caption {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Spacing & grid */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--base-spacing);
+}
+
+.grid-12 .primary-8 {
+  grid-column: span 8;
+}
+
+.grid-12 .secondary-4 {
+  grid-column: span 4;
+}
+
+/* Logo usage blocks */
+.logo-usage {
+  display: flex;
+  gap: calc(var(--base-spacing) * 2);
+  flex-wrap: wrap;
+}
+
+.logo-card {
+  flex: 0 0 220px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: calc(var(--base-spacing) * 2);
+  background-color: var(--offwhite);
+}
+
+.logo-card-title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--navy);
+  margin-bottom: calc(var(--base-spacing) * 1.5);
+}
+
+.logo-card-preview {
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Usage notes */
+.usage-list {
+  list-style: none;
+  padding: 0;
+  margin: calc(var(--base-spacing) * 2) 0 0;
+}
+
+.usage-list li {
+  margin-bottom: calc(var(--base-spacing));
+  font-size: 0.9rem;
+}
+
+/* Stationery preview */
+.stationery {
+  margin-top: calc(var(--base-spacing) * 4);
+  padding: calc(var(--base-spacing) * 3);
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.stationery-header {
+  margin-bottom: calc(var(--base-spacing) * 3);
+}
+
+.stationery-firm-name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.stationery-subline {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--bronze);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  background-color: var(--navy);
+  color: var(--offwhite);
+  font-size: 0.8rem;
+  padding: calc(var(--base-spacing) * 3);
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
