@@ -352,6 +352,53 @@ body {
   color: var(--bronze);
 }
 
+.adviser-bio {
+  align-items: flex-start;
+}
+
+.adviser-bio-photo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.adviser-headshot {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.adviser-bio-text p {
+  margin-bottom: calc(var(--base-spacing) * 2);
+}
+
+.adviser-subheading {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--bronze);
+  margin-top: calc(var(--base-spacing) * 2);
+  margin-bottom: calc(var(--base-spacing));
+}
+
+.adviser-experience-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 calc(var(--base-spacing) * 2);
+}
+
+.adviser-experience-list li {
+  margin-bottom: var(--base-spacing);
+}
+
+.adviser-location {
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  margin-bottom: calc(var(--base-spacing) * 1.5);
+}
+
 /* Footer */
 .site-footer {
   margin-top: auto;
