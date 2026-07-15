@@ -312,6 +312,40 @@ body {
   justify-content: center;
 }
 
+/* Services layout */
+.services-grid {
+  gap: calc(var(--base-spacing) * 3);
+  align-items: stretch;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: calc(var(--base-spacing) * 2);
+}
+
+/* Ensure service card text wraps normally and uses body font */
+.service-card p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Stack cards on small screens, 3 across on larger screens */
+@media (max-width: 767px) {
+  .services-grid .card.primary-4 {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-grid .card.primary-4 {
+    grid-column: span 4;
+  }
+}
+
+
 /* Usage notes */
 .usage-list {
   list-style: none;
@@ -432,3 +466,5 @@ body {
     display: none !important;
   }
 }
+
+
