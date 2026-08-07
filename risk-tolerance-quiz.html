@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluate Your Risk Tolerance | Fifth Generation Advisers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config={theme:{extend:{colors:{navy:'#1a2744','navy-light':'#eef0f5','navy-dark':'#1a2748',bronze:'#c49a4a','bronze-light':'#d4b472','bronze-dark':'#9f7233',offwhite:'#f7f4ef',charcoal:'#2c2c2c'},fontFamily:{playfair:['Playfair Display','serif'],sourcesans:['Source Sans 3','sans-serif']}}}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/advbrand.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <style>
+    .quiz-card{background:#fff;border:1px solid #d8dce5;border-radius:.5rem;padding:1.4rem;box-shadow:0 1px 3px rgba(26,39,68,.06)}
+    .quiz-card.invalid{border-color:#b42318;box-shadow:0 0 0 2px rgba(180,35,24,.12)}
+    .quiz-card legend{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:#1a2744;padding:0 .25rem}
+    .quiz-option{display:flex;gap:.7rem;align-items:flex-start;padding:.6rem .7rem;border:1px solid transparent;border-radius:.25rem;cursor:pointer}
+    .quiz-option:hover{background:#f7f4ef;border-color:#e4ded4}.quiz-option input{margin-top:.28rem;accent-color:#1a2744}.quiz-letter{font-weight:700;color:#c49a4a;min-width:1.15rem}
+    .quiz-progress{height:8px;overflow:hidden;border-radius:99px;background:#dde1e8}.quiz-progress div{height:100%;width:0;background:#c49a4a;transition:width .2s ease}
+  </style>
+</head>
+<body class="bg-offwhite font-sourcesans text-charcoal">
+  <!-- Shared landing-page ribbon/navigation -->
+  <nav id="main-nav-a1b2" class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-[72px]">
+      <a href="index.html#overview" class="font-playfair text-lg md:text-xl font-bold tracking-wide text-white flex items-center gap-2">
+          <img class="brand-logo-image" src="./brand_images/navy_ribbon.png" alt="Logo" style="height:56px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px;">
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium tracking-wide">
+        <a href="index.html#overview" class="nav-link text-gray-200 hover:text-bronze">About</a>
+        <a href="index.html#strategy" class="nav-link text-gray-200 hover:text-bronze">Strategy</a>
+        <a href="index.html#services" class="nav-link text-gray-200 hover:text-bronze">Services</a>
+        <a href="index.html#advisors" class="nav-link text-gray-200 hover:text-bronze">Advisors</a>
+        <a href="index.html#contact" class="nav-link text-gray-200 hover:text-bronze">Contact Us</a>
+
+      </div>
+      <button id="mobile-menu-btn-c3d4" class="md:hidden p-2 text-gray-200 hover:text-bronze" aria-label="Open menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+    </div>
+  </nav>
+  <div id="mobile-menu-e5f6" class="hidden fixed inset-0 bg-navy z-[60] flex flex-col p-6 md:hidden">
+    <div class="flex items-center justify-between mb-8"><img src="brand-images/navy-ribbon.png" alt="Fifth Generation Advisers" style="height:56px;width:auto"><button id="mobile-menu-close-g7h8" class="p-2 text-gray-200 hover:text-bronze" aria-label="Close menu"><i data-lucide="x" class="w-6 h-6"></i></button></div>
+    <div class="flex flex-col gap-5 text-lg"><a href="index.html#overview" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">About</a><a href="index.html#strategy" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Strategy</a><a href="index.html#services" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Services</a><a href="index.html#advisors" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Advisors</a><a href="index.html#contact" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Contact Us</a><a href="risk-tolerance-quiz.html" class="text-bronze font-semibold">Evaluate Your Risk Tolerance</a></div>
+  </div>
+
+  <main class="pt-16 md:pt-[72px]">
+    <section class="bg-navy text-white py-16 md:py-20 px-4"><div class="max-w-4xl mx-auto text-center"><p class="text-bronze uppercase tracking-[.18em] text-sm font-semibold mb-3">Fifth Generation Advisers</p><h1 class="font-playfair text-4xl md:text-6xl font-bold">Evaluate Your Risk Tolerance</h1><div class="w-16 h-0.5 bg-bronze mx-auto my-6"></div><p class="text-gray-300 max-w-2xl mx-auto">Answer each question based on your own preferences. There are no right or wrong answers.</p></div></section>
+    <section class="max-w-4xl mx-auto px-4 md:px-6 py-10 md:py-14"><div class="border-l-4 border-bronze bg-[#fff7e4] p-4 text-sm mb-7">This questionnaire is an educational screening tool, not personalized investment advice. Your final allocation should also reflect your objectives, time horizon, liquidity needs, financial circumstances, and capacity to absorb loss.</div><div class="flex justify-between gap-4 text-sm text-slate-500 mb-2"><span id="progress-text">0 of 13 answered</span><span>All questions required</span></div><div class="quiz-progress mb-7"><div id="progress-bar"></div></div><form id="quiz" class="grid gap-5" novalidate></form><section id="result" class="hidden mt-8 rounded-lg bg-navy text-white p-7" tabindex="-1" aria-live="polite"><h2 class="font-playfair text-3xl text-bronze">Your Result</h2><p id="score" class="text-4xl font-bold mt-2"></p><p id="level" class="text-xl font-bold text-bronze mt-1"></p><p id="result-text" class="mt-4 text-gray-200"></p><p class="mt-5 text-gray-200"><strong>Next step:</strong> Review this result with your adviser alongside your investment objectives, cash-flow needs, planned withdrawals, and capacity to bear losses.</p></section><p class="text-xs text-slate-500 mt-8">Questionnaire based on the 13-item financial risk-tolerance scale developed by John E. Grable and Ruth H. Lytton (1999). This score is a discussion input, not a portfolio recommendation.</p></section>
+  </main>
+  <footer class="bg-navy text-white py-8 px-4"><div class="max-w-6xl mx-auto text-center"><div class="w-12 h-1 bg-bronze mx-auto mb-4"></div><p class="text-xs text-gray-400 tracking-wide">2026 Fifth Generation Advisers. All Rights Reserved.</p><p class="text-[11px] text-gray-500 mt-2">5th Gen Finance - Software Architecture & Hosting</p></div></footer>
+<script>
+const questions=[
+['In general, how would your best friend describe you as a risk taker?',[['A real gambler',4],['Willing to take risks after completing adequate research',3],['Cautious',2],['A real risk avoider',1]]],
+['You are on a TV game show and can choose one of the following. Which would you take?',[['$1,000 in cash',1],['A 50% chance at winning $5,000',2],['A 25% chance at winning $10,000',3],['A 5% chance at winning $100,000',4]]],
+['You have just finished saving for a once-in-a-lifetime vacation. Three weeks before you plan to leave, you lose your job. You would:',[['Cancel the vacation',1],['Take a much more modest vacation',2],['Go as scheduled, reasoning that you need the time to prepare for a job search',3],['Extend your vacation, because this might be your last chance to go first-class',4]]],
+['If you unexpectedly received $20,000 to invest, what would you do?',[['Deposit it in a bank account, money market account, or insured CD',1],['Invest it in safe high-quality bonds or bond mutual funds',2],['Invest it in stocks or stock mutual funds',3]]],
+['In terms of experience, how comfortable are you investing in stocks or stock mutual funds?',[['Not at all comfortable',1],['Somewhat comfortable',2],['Very comfortable',3]]],
+['When you think of the word “risk,” which word comes to mind first?',[['Loss',1],['Uncertainty',2],['Opportunity',3],['Thrill',4]]],
+['Some experts predict hard assets (gold, jewels, collectibles, and real estate) will increase in value while bond prices may fall. Government bonds are relatively safe. Most of your assets are now in high-interest government bonds. What would you do?',[['Hold the bonds',1],['Sell the bonds, put half the proceeds into money market accounts, and the other half into hard assets',2],['Sell the bonds and put the total proceeds into hard assets',3],['Sell the bonds, put all the money into hard assets, and borrow additional money to buy more',4]]],
+['Given the best- and worst-case returns of the following investment choices, which would you prefer?',[['$200 gain best case; $0 gain/loss worst case',1],['$800 gain best case; $200 loss worst case',2],['$2,600 gain best case; $800 loss worst case',3],['$4,800 gain best case; $2,400 loss worst case',4]]],
+['In addition to whatever you own, you have been given $1,000. You are now asked to choose between:',[['A sure gain of $500',1],['A 50% chance to gain $1,000 and a 50% chance to gain nothing',3]]],
+['In addition to whatever you own, you have been given $2,000. You are now asked to choose between:',[['A sure loss of $500',1],['A 50% chance to lose $1,000 and a 50% chance to lose nothing',3]]],
+['Suppose a relative left you an inheritance of $100,000, stipulating that you invest all the money in one choice. Which would you select?',[['A savings account or money market mutual fund',1],['A mutual fund that owns stocks and bonds',2],['A portfolio of 15 common stocks',3],['Commodities like gold, silver, and oil',4]]],
+['If you had to invest $20,000, which choice would you find most appealing?',[['60% low-risk, 30% medium-risk, 10% high-risk investments',1],['30% low-risk, 40% medium-risk, 30% high-risk investments',2],['10% low-risk, 40% medium-risk, 50% high-risk investments',3]]],
+['Your trusted friend and neighbor, an experienced geologist, is putting together an exploratory gold-mining venture. It could pay back 50 to 100 times the investment if successful; if it is a bust, the entire investment is worthless. The chance of success is estimated at 20%. If you had the money, how much would you invest?',[['Nothing',1],['One month’s salary',2],['Three months’ salary',3],['Six months’ salary',4]]]
+];
+const quiz=document.querySelector('#quiz');quiz.innerHTML=questions.map((q,i)=>`<fieldset class="quiz-card" data-q="${i+1}"><legend><span class="text-bronze mr-1">${i+1}.</span>${q[0]}</legend><div class="grid gap-1 mt-4">${q[1].map((a,j)=>`<label class="quiz-option"><input type="radio" name="q${i+1}" value="${a[1]}"><span class="quiz-letter">${String.fromCharCode(65+j)}.</span><span>${a[0]}</span></label>`).join('')}</div></fieldset>`).join('')+'<div class="flex flex-wrap gap-3"><button class="bg-navy text-white font-semibold px-5 py-3 rounded hover:bg-navy-dark" type="submit">Calculate My Result</button><button class="bg-slate-200 text-charcoal font-semibold px-5 py-3 rounded hover:bg-slate-300" type="reset">Clear Answers</button></div><p id="message" class="text-red-700 font-semibold" role="alert"></p>';
+function progress(){let n=questions.filter((_,i)=>quiz.querySelector(`[name="q${i+1}"]:checked`)).length;document.querySelector('#progress-text').textContent=`${n} of 13 answered`;document.querySelector('#progress-bar').style.width=`${n/questions.length*100}%`}
+quiz.addEventListener('change',e=>{e.target.closest('fieldset').classList.remove('invalid');message.textContent='';progress()});quiz.addEventListener('reset',()=>setTimeout(()=>{document.querySelectorAll('.quiz-card').forEach(x=>x.classList.remove('invalid'));result.classList.add('hidden');message.textContent='';progress()}));quiz.addEventListener('submit',e=>{e.preventDefault();let missing=questions.map((_,i)=>i+1).filter(n=>!quiz.querySelector(`[name="q${n}"]:checked`));if(missing.length){message.textContent=`Please answer all questions. Missing: ${missing.join(', ')}.`;let f=quiz.querySelector(`[data-q="${missing[0]}"]`);f.classList.add('invalid');f.scrollIntoView({behavior:'smooth',block:'center'});return}let v=n=>+quiz.querySelector(`[name="q${n}"]:checked`).value;let s=[1,2,3,4,5,6,7,8,11,12,13].reduce((x,n)=>x+v(n),0)+(v(9)+v(10))/2;s=Math.round(s);let l=s<=18?'Low Tolerance for Risk':s<=22?'Below-Average Tolerance for Risk':s<=28?'Average / Moderate Tolerance for Risk':s<=32?'Above-Average Tolerance for Risk':'High Tolerance for Risk';score.textContent=`Score: ${s} / 47`;level.textContent=l;document.querySelector('#result-text').textContent='This result is a starting point for an adviser discussion, not a portfolio recommendation.';result.classList.remove('hidden');result.scrollIntoView({behavior:'smooth',block:'start'});result.focus({preventScroll:true})});
+const mobile=document.querySelector('#mobile-menu-e5f6'),open=document.querySelector('#mobile-menu-btn-c3d4'),close=document.querySelector('#mobile-menu-close-g7h8');open.addEventListener('click',()=>mobile.classList.remove('hidden'));close.addEventListener('click',()=>mobile.classList.add('hidden'));document.querySelectorAll('.mobile-nav-link').forEach(a=>a.addEventListener('click',()=>mobile.classList.add('hidden')));document.addEventListener('DOMContentLoaded',()=>{if(window.lucide)lucide.createIcons();progress()});
+</script>
+<script src="scripts/site.js" defer></script>
+</body></html>
