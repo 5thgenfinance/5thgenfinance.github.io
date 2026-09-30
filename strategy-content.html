@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategy Content | Fifth Generation Advisers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { navy:'#1a2744','navy-light':'#eef0f5','navy-dark':'#1a2748',
+            bronze:'#c49a4a','bronze-light':'#d4b472','bronze-dark':'#9f7233',
+            offwhite:'#f7f4ef', charcoal:'#2c2c2c' },
+  fontFamily: { playfair:['Playfair Display','serif'], sourcesans:['Source Sans 3','sans-serif'] }
+}}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./styles/advbrand.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body class="bg-offwhite">
+
+<!-- NAV (same as main site) -->
+<nav id="main-nav-a1b2" class="fixed top-0 left-0 right-0 z-50 bg-navy text-white shadow-lg" style="font-family:'Source Sans 3',sans-serif">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-[72px]">
+    <a href="index.html#overview" class="font-playfair text-lg md:text-xl font-bold tracking-wide text-white flex items-center gap-2">
+      <img class="brand-logo-image" src="./brand_images/navy_ribbon.png" alt="Logo" style="height:56px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px">
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium tracking-wide">
+      <a href="index.html#overview" class="nav-link text-gray-200 hover:text-bronze">About</a>
+      <a href="index.html#strategy" class="nav-link text-gray-200 hover:text-bronze">Strategy</a>
+      <a href="strategy-content.html" class="nav-link text-bronze">Strategy Content</a>
+      <a href="index.html#services" class="nav-link text-gray-200 hover:text-bronze">Services</a>
+      <a href="index.html#advisors" class="nav-link text-gray-200 hover:text-bronze">Advisors</a>
+      <a href="index.html#contact" class="nav-link text-gray-200 hover:text-bronze">Contact Us</a>
+      <a href="risk-tolerance-quiz.html" class="nav-link text-gray-200 hover:text-bronze">What's My Risk Level?</a>
+    </div>
+    <button id="mobile-menu-btn-c3d4" class="md:hidden p-2 text-gray-200 hover:text-bronze" aria-label="Open menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu-e5f6" class="hidden fixed inset-0 bg-navy z-60 flex flex-col p-6 md:hidden" style="font-family:'Source Sans 3',sans-serif">
+  <div class="flex items-center justify-between mb-8">
+    <span class="font-playfair text-xl font-bold text-white">
+      <img src="./brand_images/navy_ribbon.png" alt="Logo" style="height:56px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px">
+    </span>
+    <button id="mobile-menu-close-g7h8" class="p-2 text-gray-200 hover:text-bronze" aria-label="Close menu">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+  </div>
+  <div class="flex flex-col gap-5 text-lg">
+    <a href="index.html#overview" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">About</a>
+    <a href="index.html#strategy" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Strategy</a>
+    <a href="strategy-content.html" class="mobile-nav-link text-bronze font-medium border-b border-white/10 pb-3">Strategy Content</a>
+    <a href="index.html#services" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Services</a>
+    <a href="index.html#advisors" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Advisors</a>
+    <a href="index.html#contact" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">Contact Us</a>
+    <a href="risk-tolerance-quiz.html" class="mobile-nav-link text-gray-200 hover:text-bronze font-medium border-b border-white/10 pb-3">What's My Risk Level?</a>
+  </div>
+</div>
+
+<main>
+  <section class="pt-16 md:pt-[72px]">
+    <div class="bg-navy text-white py-16 md:py-24 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="font-playfair text-4xl md:text-5xl font-bold tracking-tight mb-6">Strategy Content</h1>
+        <div class="w-16 h-[2px] bg-bronze mx-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-16 space-y-8">
+    <div class="card-accent rounded-lg p-4 md:p-8 bg-white shadow">
+      <div class="relative w-full" style="padding-top:56.25%">
+        <iframe class="absolute inset-0 w-full h-full rounded"
+          src="https://www.youtube.com/embed/DqkxEbw55as"
+          title="Fifth Generation Advisers Portfolio Strategy"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="card-accent rounded-lg p-4 md:p-8 bg-white shadow">
+      <div class="relative w-full" style="padding-top:56.25%">
+        <iframe class="absolute inset-0 w-full h-full rounded"
+          src="https://www.youtube.com/embed/VaK5lxc9OG0"
+          title="Fifth Generation Advisers Income Sleeve Strategy"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-navy text-white py-8 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <div class="w-12 h-px bg-bronze mx-auto mb-4"></div>
+    <p class="font-sourcesans text-xs text-gray-400 tracking-wide">© 2026 Fifth Generation Advisers. All Rights Reserved.</p>
+    <p class="font-sourcesans text-[11px] text-gray-500 mt-2">5th Gen Finance - Software Architecture &amp; Hosting</p>
+  </div>
+</footer>
+
+<script src="./scripts/site.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded',()=>window.lucide&&lucide.createIcons());</script>
+</body>
+</html>
