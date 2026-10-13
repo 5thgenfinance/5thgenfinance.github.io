@@ -1,0 +1,170 @@
+[
+  {
+    "id": "t3_01",
+    "name": "Slow Burn",
+    "text": "Share unhurried kisses, taking breaks whenever either of you wants.",
+    "duration_sec": 180,
+    "tier": 3
+  },
+  {
+    "id": "t3_02",
+    "name": "Closer",
+    "text": "Sit comfortably together and share kisses or a cuddle.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_03",
+    "name": "Whisper",
+    "text": "Whisper a romantic idea you would enjoy sharing later. It is an invitation, not an obligation.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_04",
+    "name": "Massage Break",
+    "text": "Offer a gentle shoulder or upper-back massage.",
+    "duration_sec": 300,
+    "tier": 3
+  },
+  {
+    "id": "t3_05",
+    "name": "Eyes Closed",
+    "text": "If welcomed, offer gentle kisses on agreed places such as the cheek, forehead, or hand.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_06",
+    "name": "Five Favorites",
+    "text": "The receiver chooses five places such as the forehead, cheeks, hands, or shoulders for a gentle kiss.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_07",
+    "name": "Your Wish",
+    "text": "The receiver chooses a kiss, cuddle, or shoulder massage.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_08",
+    "name": "Warm Welcome",
+    "text": "Wrap yourselves in a cozy blanket and share an embrace.",
+    "duration_sec": 90,
+    "tier": 3
+  },
+  {
+    "id": "t3_09",
+    "name": "Hold My Gaze",
+    "text": "Hold hands and each say one thing you appreciate about the other.",
+    "duration_sec": 60,
+    "tier": 3
+  },
+  {
+    "id": "t3_10",
+    "name": "Tell Me",
+    "text": "Describe a favorite romantic memory and what made it meaningful.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_11",
+    "name": "Guided Comfort",
+    "text": "Offer a hand or shoulder massage with pressure guided by the receiver.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_12",
+    "name": "Gentle Touch",
+    "text": "Offer gentle touches on hands, arms, or shoulders, checking what feels welcome.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_13",
+    "name": "Take the Lead",
+    "text": "Offer a mutually agreed sequence of kisses, cuddles, or dancing. Either person can change the plan.",
+    "duration_sec": 300,
+    "tier": 3
+  },
+  {
+    "id": "t3_14",
+    "name": "Show Me",
+    "text": "Demonstrate a hand massage and let your partner try.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_15",
+    "name": "Name It",
+    "text": "Ask what helps your partner feel loved. They may answer, choose another question, or pass.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_16",
+    "name": "Shared Pause",
+    "text": "Put the device aside and enjoy a quiet embrace.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_17",
+    "name": "Mirror",
+    "text": "Take turns offering and mirroring a hand squeeze, forehead kiss, or hug.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_18",
+    "name": "Welcome Back",
+    "text": "Re-create a romantic greeting with a compliment and a kiss if welcomed.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_19",
+    "name": "Date Invitation",
+    "text": "Suggest a comfortable outfit or a theme for a future date. Your partner may change or decline it.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_20",
+    "name": "Invitation",
+    "text": "Offer an idea for a romantic moment later, without a promise or debt.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_21",
+    "name": "Dance",
+    "text": "Share a private slow dance to a song you both enjoy.",
+    "duration_sec": 120,
+    "tier": 3
+  },
+  {
+    "id": "t3_22",
+    "name": "Say It",
+    "text": "Name three things you find attractive about your partner, including a quality beyond appearance.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_23",
+    "name": "Encore",
+    "text": "Repeat a previously enjoyed kiss, cuddle, dance, or massage if both want to.",
+    "duration_sec": null,
+    "tier": 3
+  },
+  {
+    "id": "t3_24",
+    "name": "Thirty-Second Kiss",
+    "text": "Offer an unhurried kiss for up to thirty seconds, stopping sooner whenever either person wants.",
+    "duration_sec": 30,
+    "tier": 3
+  }
+]

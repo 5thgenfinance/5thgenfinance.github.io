@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "name": "Reset Together",
+    "text": "Pause and share a reassuring hug if welcomed. Then return to the board.",
+    "duration_sec": 30
+  },
+  {
+    "id": "a2",
+    "name": "Secret Debrief",
+    "text": "Each share one thing that made the clue surprising. No blame or obligation.",
+    "duration_sec": null
+  },
+  {
+    "id": "a3",
+    "name": "Kind Words",
+    "text": "Offer your partner one sincere compliment.",
+    "duration_sec": null
+  },
+  {
+    "id": "a4",
+    "name": "Dance Reset",
+    "text": "Share a short slow dance if you both want to.",
+    "duration_sec": 60
+  }
+]
