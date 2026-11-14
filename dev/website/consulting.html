@@ -6,9 +6,71 @@
 <link rel="stylesheet" href="styles/fga-layout.css">
 </head><body>
 <main class="content">
-<section class="hero"><h1 class="hero-title">Consulting</h1><div class="hero-subtitle">Actuarial &amp; technology consulting</div></section>
-<section class="section"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Consulting</p><h2 class="section-title">Consulting services</h2></div><div class="section-body">
-<p>Describe your consulting offerings here.</p>
+<section class="hero"><h1 class="hero-title">Consulting</h1><div class="hero-subtitle">Actuarial system conversion &middot; AI engineering &middot; Excel Lambda &middot; Automation</div></section>
+<section class="section"><div class="page-inner"><div class="section-header"><p class="section-subtitle">What we do</p><h2 class="section-title">Convert, control and automate your actuarial models</h2></div><div class="section-body">
+<p>Actuarial models run the business, and moving them is risky. A conversion has to reproduce the numbers, show its work, and leave behind controls that an auditor will accept. We have done this work for more than 20 years across the major actuarial platforms, including Prophet, AXIS, CASE and MOSES, and we now add AI engineering to speed it up without loosening the controls.</p>
+<div class="card-grid">
+ <div class="tile"><h3>Actuarial system conversion</h3><p>Platform-to-platform migrations of valuation, projection and reserving models. We build the mapping, the reconciliation and the test plan, and show where results differ and why.</p></div>
+ <div class="tile"><h3>AI engineering</h3><p>AI-assisted refactoring of spreadsheets and legacy model code into tested Python, plus AI agents that follow a written methodology and show their sources.</p></div>
+ <div class="tile"><h3>Excel Lambda engineering</h3><p>Reusable, unit-tested Lambda function libraries that turn complex actuarial calculations into readable, auditable workbooks.</p></div>
+ <div class="tile"><h3>Controls &amp; governance</h3><p>Reconciliation checks, version control, change management, documented assumptions and audit trails, designed to fit your validation and review processes.</p></div>
+ <div class="tile"><h3>End-to-end automation</h3><p>Data intake, model runs, validation, reporting and distribution, automated from source data to the finished report.</p></div>
+</div>
+<p style="margin-top:24px"><a href="#example-1">Example 1: Excel Lambda library</a> &middot; <a href="#example-2">Example 2: Excel to production</a> &middot; <a href="#example-3">Example 3: Investment analytics agent</a></p>
+</div></div></section>
+<section class="section" style="background-color:#eef0f5"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Our approach</p><h2 class="section-title">How a conversion works</h2></div><div class="section-body">
+<ol>
+<li><strong>Inventory.</strong> Document the current model, its inputs, outputs and known quirks.</li>
+<li><strong>Specify.</strong> Write the specification and glossary first. AI tools guess a meaning when none is given, so definitions come before code.</li>
+<li><strong>Convert.</strong> Build in stages. Each stage has its own tests as a gate.</li>
+<li><strong>Reconcile.</strong> Run the old and new models side by side and explain every difference.</li>
+<li><strong>Control and automate.</strong> Add version control, run logs, exception reports and a repeatable end-to-end process.</li>
+</ol>
+<p>AI tools draft and refactor. People own the specification, review each stage and sign off on the results.</p>
+</div></div></section>
+<section id="example-1" class="section"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Example 1: Excel Lambda engineering</p><h2 class="section-title">Calculation libraries inside Excel</h2></div><div class="section-body">
+<p>Excel remains the fastest place to build and prove a model, and it can be built well. We use Excel&rsquo;s LAMBDA function to replace long, fragile cell formulas with named, reusable functions that behave like a small calculation library.</p>
+<div class="card-grid">
+ <div class="tile"><h3>Function libraries</h3><p>Named Lambda functions for actuarial-style calculations such as survivorship from a mortality table, discounting and annuity values, reserve roll-forwards, and tax and distribution schedules.</p></div>
+ <div class="tile"><h3>Tested in the workbook</h3><p>Each function has test cases with expected results, so a change that breaks a number shows up right away.</p></div>
+ <div class="tile"><h3>Documented and portable</h3><p>Clear names, notes on every input and output, and a spec that lets the model move to Python later without guessing at what a formula was meant to do. In our retirement model, AI converted the Lambda library to Python with little difficulty.</p></div>
+ <div class="tile"><h3>Excel as the benchmark</h3><p>The finished workbook becomes the check for a production system. Every number in the new system should tie back to it.</p></div>
+</div><div class="tile" style="margin-top:24px;padding:16px"><div style="position:relative;width:100%;padding-top:56.25%">
+<iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px" src="https://www.youtube.com/embed/bBA0OdslieI" title="Excel Lambda library" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+<p style="margin:12px 0 0;font-size:.9rem;color:var(--charcoal)">Video: our Excel Lambda library.</p></div>
+</div></div></section>
+<section id="example-2" class="section" style="background-color:#eef0f5"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Example 2: Zero-CTO Excel to production</p><h2 class="section-title">From Excel to a live retirement app</h2></div><div class="section-body">
+<p>The problem: an adviser needs to show a client what the future looks like, with savings, investment returns, taxes, inflation, mortality, and spending all moving over decades. The question is how to turn that spreadsheet into a real web application without a developer, an architect or a software budget.</p>
+<p>The approach was to build the model in Excel first and to treat that workbook as the source of truth. We then wrote a detailed specification and had AI tools refactor the model to Python under a staged plan. Last, we deployed the result as a web app. It is live at <a href="https://fifthgenerationadvisers.streamlit.app/" target="_blank" rel="noopener noreferrer">our Retirement Planning app</a>.</p>
+<div class="card-grid">
+ <div class="tile"><h3>1. Sandbox</h3><p>Excel prototype with roughly 100 projection columns, a library of custom Lambda functions and unit-tested sections. It covers survivorship, expense reserves, Social Security, required distributions and federal tax.</p></div>
+ <div class="tile"><h3>2. Specification</h3><p>Copilot reviewed the workbook for errors and deprecated functions, including off-by-one roll-forward mistakes, then produced a model specification of about 489 lines in Markdown.</p></div>
+ <div class="tile"><h3>3. Refactor to Python</h3><p>Claude drafted a setup phase plus seven build phases. Each phase had its own tests as a stage gate.</p></div>
+ <div class="tile"><h3>4. Deployment</h3><p>Streamlit app on GitHub test and main branches, with results matched back to the Excel model.</p></div>
+</div>
+<p style="margin-top:24px">In this project the AI plan estimated about five weeks of work, and the build took roughly an hour and a half. That is an estimate from one project, not a guarantee. The user interface still needs more work before it is ready for less financially experienced users.</p><div class="tile" style="margin-top:24px;padding:16px"><div style="position:relative;width:100%;padding-top:56.25%">
+<iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px" src="https://www.youtube.com/embed/m1FQ2tl4dDQ" title="The Excel to Production LLM Model" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+<p style="margin:12px 0 0;font-size:.9rem;color:var(--charcoal)">Video (37 min): The Excel to Production LLM Model.</p></div>
+</div></div></section>
+<section id="example-3" class="section"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Example 3: Investment analytics agent engineering</p><h2 class="section-title">An AI research agent that shows its work</h2></div><div class="section-body">
+<p>The problem: company research written by an AI is only useful if you can see where each number came from and trust that the same method was applied each time. We built an agent-based research workflow for natural resource companies around a written methodology rather than a free-form prompt, and then improved it across two releases.</p>
+<div class="card-grid">
+ <div class="tile"><h3>Release 1: agent from a written spec</h3><p>The agent was generated from one chapter of a published valuation book and then tuned. The result is a plain-text Markdown file of about 556 lines, with a ten-factor scorecard, formula definitions, a report format and a metadata log. Data-quality checks for accuracy, hallucination and sycophancy sit at the top of every report.</p></div>
+ <div class="tile"><h3>Release 2.1: a governed workflow</h3><p>A YAML workflow defines each step: find the technical reports, pull the latest, cross-reference the numbers, validate, compute, then score. It adds a formula library, an output format library, determinism settings, and a way to work around regulator-site throttling.</p></div>
+ <div class="tile"><h3>Controls and sources</h3><p>The agent works from filings and technical reports first, and never from social media. Reports show an audit trail, assumptions and sensitivities. Follow-up questions let the user correct inputs and recast the report.</p></div>
+ <div class="tile"><h3>Tested across platforms</h3><p>We ran the same agent on several AI platforms and compared the results with published reference figures. We recorded where results differed and why, and about 100 hours of testing went into the second release.</p></div>
+</div>
+<p style="margin-top:24px">Known limits are stated openly. Very large filings can exceed a model&rsquo;s context window and understate resource totals, so key inputs such as resources and share counts must be checked. Our current methodology guide is versioned, with a dated revision note for each change.</p>
+<p>The same pattern applies to any investment analytics process: write the method down, make the agent follow it, require sources, test the assumptions and keep a version history. The research is general information and is not investment advice. The methodology is our own application of a published framework, and the author does not endorse our analysis.</p><div class="tile" style="margin-top:24px;padding:16px"><div style="position:relative;width:100%;padding-top:56.25%">
+<iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px" src="https://www.youtube.com/embed/lZX--DYIDmg" title="Value Gold and Silver Mining Stock - Don Durrett" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+<p style="margin:12px 0 0;font-size:.9rem;color:var(--charcoal)">Video 1 (25 min): building the first agent from a written specification.</p></div><div class="tile" style="margin-top:24px;padding:16px"><div style="position:relative;width:100%;padding-top:56.25%">
+<iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px" src="https://www.youtube.com/embed/J4v5ILU4DIw" title="Don Durrett 2.1 RAG Workflow" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+<p style="margin:12px 0 0;font-size:.9rem;color:var(--charcoal)">Video 2 (48 min): the 2.1 release, workflow and formula library.</p></div>
+</div></div></section>
+<section class="section" style="background-color:#eef0f5"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Work with us</p><h2 class="section-title">Start a conversation</h2></div><div class="section-body">
+<p>Tell us about your platform, your timeline and what has to tie out. We will respond with a scoped plan and the checks we would use to validate the results.</p>
+<p>Email <a href="mailto:adviser@5thgenfinance.com">adviser@5thgenfinance.com</a>.</p>
+<p style="font-size:.85rem;opacity:.8">Product and platform names are trademarks of their respective owners. Consulting services are provided separately from investment advisory services. Fifth Generation Advisers is not your investment adviser unless you have entered into an advisory agreement with us.</p>
 </div></div></section>
 </main>
 <script src="scripts/nav.js"></script>
