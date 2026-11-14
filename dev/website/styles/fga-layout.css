@@ -1,0 +1,60 @@
+/* Load AFTER styles/adv_brand.css. Fonts: static TTFs from /fonts. */
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf") format("truetype");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf") format("truetype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");font-weight:800;font-style:italic;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf") format("truetype");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf") format("truetype");font-weight:900;font-style:italic;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-Light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-LightItalic.ttf") format("truetype");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-Italic.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-MediumItalic.ttf") format("truetype");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-Bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url("../fonts/Source_Sans_3/static/SourceSans3-BoldItalic.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
+
+html,body{font-family:"Source Sans 3","Calibri",Arial,sans-serif}
+h1,h2,h3,.hero-title,.section-title,.card-title{font-family:"Playfair Display",Georgia,serif}
+.site-header{position:sticky;top:0;z-index:50}
+.site-nav a,.nav-dd-btn{color:var(--offwhite);text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;padding-bottom:2px;border:0;border-bottom:2px solid transparent;background:none;cursor:pointer;font-family:"Source Sans 3",sans-serif}
+.site-nav a:hover,.nav-dd-btn:hover{border-bottom-color:rgba(196,154,74,.6)}
+.site-nav a.active,.nav-dd-btn.active{color:var(--bronze);border-bottom-color:var(--bronze)}
+.nav-dd{position:relative}
+.nav-dd-menu{display:none;position:absolute;right:0;top:100%;margin-top:10px;min-width:230px;background:var(--navy);border:1px solid var(--bronze);box-shadow:0 12px 28px rgba(0,0,0,.35);padding:8px 0}
+.nav-dd.open .nav-dd-menu{display:block}
+.nav-dd-menu a{display:block;padding:10px 18px;border:0;white-space:nowrap}
+.nav-dd-menu a:hover{background:rgba(196,154,74,.15)}
+.nav-burger{display:none;background:none;border:1px solid var(--bronze);color:var(--bronze);font-size:1.4rem;min-width:44px;min-height:44px}
+.mobile-nav{background:var(--navy);padding:8px 24px 16px;border-top:1px solid rgba(196,154,74,.4)}
+.mobile-nav a{display:block;color:var(--offwhite);text-decoration:none;text-transform:uppercase;letter-spacing:.1em;padding:12px 0}
+.mobile-nav a.active{color:var(--bronze)}
+.mobile-nav .m-group{color:var(--bronze);text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;padding:12px 0 0}
+.mobile-nav[hidden]{display:none}
+@media(max-width:860px){.site-nav{display:none}.nav-burger{display:block}}
+@media(min-width:861px){.mobile-nav{display:none!important}}
+.hero-brand{display:flex;align-items:center;justify-content:center;gap:24px;margin:0 0 calc(var(--base-spacing)*2)}
+.hero-brand .hero-title{margin:0}
+.hero-logo{height:96px;width:auto;margin:0}
+@media(max-width:600px){.hero-brand{flex-direction:column;gap:12px}.hero-brand .hero-title{font-size:2.2rem}}
+.hero-cta{display:inline-block;margin-top:24px;padding:12px 28px;background:var(--bronze);color:var(--navy);text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-weight:600}
+.hero-cta.alt{background:none;color:var(--offwhite);border:1px solid var(--bronze);margin-left:12px}
+.hero-rule{width:64px;height:2px;background:var(--bronze);margin:0 auto 24px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin-top:24px}
+.tile{background:#fff;border-top:3px solid var(--bronze);padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.07);color:var(--charcoal)}
+.tile h3{color:var(--navy);margin:0 0 8px}
+.tile a{color:var(--bronze);text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+.page-inner{max-width:1120px;margin:0 auto}
+.section-body p{margin:0 0 16px}
+.section a{color:var(--bronze)}
+main.content{flex:1}
+/* Pin brand fonts on shared header/footer even where Tailwind is loaded (quiz page) */
+.site-header,.site-header *,.site-footer,.site-footer *,.mobile-nav,.mobile-nav *{font-family:"Source Sans 3",Calibri,Arial,sans-serif!important}
