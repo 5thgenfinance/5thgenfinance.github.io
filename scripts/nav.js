@@ -8,6 +8,7 @@ const NAV = [
   { label: "Substack",            href: "https://www.5thgenfinance.com", external: true },
   { label: "Client Apps", children: [
       { label: "Retirement Planning",   href: "https://fifthgenerationadvisers.streamlit.app/", external: true },
+      { label: "Tax Planning",          href: "https://fgatax.streamlit.app/", external: true } ,
       { label: "What's My Risk Level?", href: "risk-tolerance-quiz.html" }
   ]}
 ];
