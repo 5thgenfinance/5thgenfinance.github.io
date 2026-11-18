@@ -17,6 +17,18 @@ const CONTACT = {
   city: "Houston, Texas",
   email: "adviser@5thgenfinance.com"
 };
+/* Site icons: injected into <head> on every page that loads nav.js. Edit here to change them. */
+const ICONS = [
+  { rel: "icon", type: "image/png", sizes: "32x32",   href: "/brand_images/favicon-32.png" },
+  { rel: "icon", type: "image/png", sizes: "512x512", href: "/brand_images/icon-512.png" },
+  { rel: "apple-touch-icon",                          href: "/brand_images/apple-touch-icon.png" }
+];
+ICONS.forEach(a => {
+  if (document.head.querySelector(`link[rel="${a.rel}"][href="${a.href}"]`)) return;
+  const l = document.createElement("link");
+  Object.entries(a).forEach(([k, v]) => l.setAttribute(k, v));
+  document.head.appendChild(l);
+});
 (function () {
   const cur = location.pathname.split("/").pop() || "index.html";
   const on = h => h === cur;
