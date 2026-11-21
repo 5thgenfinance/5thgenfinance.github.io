@@ -45,9 +45,11 @@
  <div class="tile"><h3>Documented and portable</h3><p>Clear names, notes on every input and output, and a spec that lets the model move to Python later without guessing at what a formula was meant to do.</p></div>
  <div class="tile"><h3>Excel as the benchmark</h3><p>The finished workbook becomes the check for a production system. Every number in the new system should tie back to it.</p></div>
 </div>
+<div class="tile" style="margin-top:24px;padding:16px"><div style="position:relative;width:100%;padding-top:56.25%">
+<iframe style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:4px" src="https://www.youtube.com/embed/bBA0OdslieI" title="Calculation libraries inside Excel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div></div>
 </div></div></section>
 <section class="section" style="background-color:#eef0f5"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Example 2: Excel to production</p><h2 class="section-title">From Excel to a live retirement app</h2></div><div class="section-body">
-<p>The problem: an adviser needs to show a client what the future looks like, with savings, investment returns, taxes, inflation, mortality, and spending all moving over decades.</p>
+<p><b>The problem: an adviser needs to show a client what the future looks like, with savings, investment returns, taxes, inflation, mortality, and spending all moving over decades.</p>
 <p>The approach was to build the model in Excel first and to treat that workbook as the source of truth. We then wrote a detailed specification and had AI tools refactor the model to Python under a staged plan. Last, we deployed the result as a web app. It is live at <a href="https://fifthgenerationadvisers.streamlit.app/" target="_blank" rel="noopener noreferrer">our Retirement Planning app</a>.</p>
 <div class="card-grid">
  <div class="tile"><h3>1. Sandbox</h3><p>Excel prototype with roughly 100 projection columns, a library of custom Lambda functions and unit-tested sections. It covers survivorship, expense reserves, Social Security, required distributions and federal tax.</p></div>
@@ -61,18 +63,20 @@
 <p style="margin-top:12px;font-size:.9rem">Watch the full 37-minute walkthrough: <em>The Excel to Production LLM Model</em>.</p>
 </div></div></section>
 <section class="section"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Example 3: Investment analytics agent engineering</p><h2 class="section-title">An AI research agent that shows its work</h2></div><div class="section-body">
-<p>The problem: company research written by an AI is only useful if you can see where each number came from and trust that the same method was applied each time. We built an agent-based research workflow for natural resource companies, starting with uranium developers and producers, around a written methodology rather than a free-form prompt.</p>
+<p>Repeatable workflow requires design discipline!</b>  The problem: company research written by an AI is only useful if you can see where each number came from and trust that the same method was applied each time. We built an agent-based research workflow for natural resource companies, starting with uranium developers and producers, around a written methodology rather than a free-form prompt.</p>
 <div class="card-grid">
  <div class="tile"><h3>Methodology as the spec</h3><p>A versioned guide defines the scorecard, the sum-of-the-parts valuation, resource weights, stage factors, the discount rate and the cost basis. Each revision carries a dated note, and reports built under older rules are flagged for a rerun.</p></div>
  <div class="tile"><h3>Source discipline</h3><p>The agent works from technical reports and regulatory filings first, then company releases, then secondary sources. It records the source, date, units and ownership basis of every material input, and marks each as verified, provisional or assumed.</p></div>
  <div class="tile"><h3>Built-in controls</h3><p>Reports show their assumptions, run sensitivities, list unresolved conflicts, and include a data-quality self-assessment. Missing inputs are never invented, and unsupported upside is left out of the base case rather than guessed.</p></div>
  <div class="tile"><h3>Repeatable output</h3><p>Dated, branded reports in Markdown and PDF, produced from the same template, so that a review can be compared with the last one and with other companies.</p></div>
 </div>
+<p style="margin-top:24px"><a href="https://www.5thgenfinance.com/p/has-there-been-a-better-time-to-master" target="_blank" rel="noopener noreferrer">Read the article: Has there been a better time to master&hellip;? &rarr;</a></p>
+<div class="tile" style="margin-top:16px;padding:16px;text-align:center"><img src="brand_images/U3O8%20Workflow.png" alt="U3O8 research agent workflow diagram" style="max-width:100%;height:auto;border-radius:4px" loading="lazy"></div>
 <p style="margin-top:24px">The same pattern applies to any investment analytics process: write the method down, make the agent follow it, require sources, test the assumptions and keep a version history. The research is general information and is not investment advice. The methodology is our own application of a published framework and is not endorsed by its author.</p>
 </div></div></section>
 <section class="section" style="background-color:#eef0f5"><div class="page-inner"><div class="section-header"><p class="section-subtitle">Work with us</p><h2 class="section-title">Start a conversation</h2></div><div class="section-body">
 <p>Tell us about your platform, your timeline and what has to tie out. We will respond with a scoped plan and the checks we would use to validate the results.</p>
-<p>Email <a href="mailto:adviser@5thgenfinance.com">adviser@5thgenfinance.com</a>.</p>
+<p>Email <a href="mailto:consulting@5thgenfinance.com">consulting@5thgenfinance.com</a>.</p>
 <p style="font-size:.85rem;opacity:.8">Product and platform names are trademarks of their respective owners. Consulting services are provided separately from investment advisory services. Fifth Generation Advisers is not your investment adviser unless you have entered into an advisory agreement with us.</p>
 </div></div></section>
 </main>
